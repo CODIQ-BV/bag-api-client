@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace BAG\Client;
+namespace Swagger\Client;
 
 /**
  * StandplaatsTest Class Doc Comment
  *
  * @category    Class
  * @description Een Standplaats is een door het bevoegde gemeentelijke orgaan als zodanig aangewezen terrein of gedeelte daarvan dat bestemd is voor het permanent plaatsen van een niet direct en niet duurzaam met de aarde verbonden en voor woon-, bedrijfsmatige, of recreatieve doeleinden geschikte ruimte.
- * @package     BAG\Client
+ * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

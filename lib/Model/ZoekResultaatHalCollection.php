@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * ZoekResultaatHalCollection Class Doc Comment
  *
  * @category Class
  * @description Resultaten als lijst
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +57,8 @@ class ZoekResultaatHalCollection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        '_links' => '\BAG\Client\Model\HalPaginationLinks',
-'_embedded' => '\BAG\Client\Model\ZoekResultaatHalCollectionEmbedded'    ];
+        '_links' => '\Swagger\Client\Model\HalPaginationLinks',
+'_embedded' => '\Swagger\Client\Model\ZoekResultaatHalCollectionEmbedded'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -206,7 +206,7 @@ class ZoekResultaatHalCollection implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAG\Client\Model\HalPaginationLinks
+     * @return \Swagger\Client\Model\HalPaginationLinks
      */
     public function getLinks()
     {
@@ -216,7 +216,7 @@ class ZoekResultaatHalCollection implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAG\Client\Model\HalPaginationLinks $_links _links
+     * @param \Swagger\Client\Model\HalPaginationLinks $_links _links
      *
      * @return $this
      */
@@ -230,7 +230,7 @@ class ZoekResultaatHalCollection implements ModelInterface, ArrayAccess
     /**
      * Gets _embedded
      *
-     * @return \BAG\Client\Model\ZoekResultaatHalCollectionEmbedded
+     * @return \Swagger\Client\Model\ZoekResultaatHalCollectionEmbedded
      */
     public function getEmbedded()
     {
@@ -240,7 +240,7 @@ class ZoekResultaatHalCollection implements ModelInterface, ArrayAccess
     /**
      * Sets _embedded
      *
-     * @param \BAG\Client\Model\ZoekResultaatHalCollectionEmbedded $_embedded _embedded
+     * @param \Swagger\Client\Model\ZoekResultaatHalCollectionEmbedded $_embedded _embedded
      *
      * @return $this
      */

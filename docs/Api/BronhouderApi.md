@@ -1,4 +1,4 @@
-# BAG\Client\BronhouderApi
+# Swagger\Client\BronhouderApi
 
 All URIs are relative to *https://api.bag.acceptatie.kadaster.nl/lvbag/individuelebevragingen/v2*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**zoekBronhouder**](BronhouderApi.md#zoekbronhouder) | **GET** /bronhouders | Bevragen bronhouder met een object identificatie.
 
 # **bevragenBronhouder**
-> \BAG\Client\Model\BronhouderHal bevragenBronhouder($identificatie, $geldig_op, $beschikbaar_op)
+> \Swagger\Client\Model\BronhouderHal bevragenBronhouder($identificatie, $geldig_op, $beschikbaar_op)
 
 Bevragen bronhouder met de bronhouder identificatie (gemeentecode).
 
@@ -20,11 +20,11 @@ Bevragen/raadplegen van een bronhouder met de identificatie van een bronhouder (
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\Client\Api\BronhouderApi(
+$apiInstance = new Swagger\Client\Api\BronhouderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\Client\Model\BronhouderHal**](../Model/BronhouderHal.md)
+[**\Swagger\Client\Model\BronhouderHal**](../Model/BronhouderHal.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bronhouderIdentificatieVoorkomen**
-> \BAG\Client\Model\BronhouderHal bronhouderIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv)
+> \Swagger\Client\Model\BronhouderHal bronhouderIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv)
 
 bevragen voorkomen van een bronhouder met de identificatie van een bronhouder en de identificatie van een voorkomen, bestaande uit een versie en een timestamp van het tijdstip van registratie in de LV BAG.
 
@@ -78,11 +78,11 @@ Bevragen/raadplegen van een voorkomen van een bronhouder met de identificatie va
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\Client\Api\BronhouderApi(
+$apiInstance = new Swagger\Client\Api\BronhouderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -111,7 +111,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\Client\Model\BronhouderHal**](../Model/BronhouderHal.md)
+[**\Swagger\Client\Model\BronhouderHal**](../Model/BronhouderHal.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **zoekBronhouder**
-> \BAG\Client\Model\BronhouderHalCollection zoekBronhouder($woonplaats_identificatie, $object_identificatie, $geldig_op, $beschikbaar_op)
+> \Swagger\Client\Model\BronhouderHalCollection zoekBronhouder($woonplaats_identificatie, $object_identificatie, $geldig_op, $beschikbaar_op)
 
 Bevragen bronhouder met een object identificatie.
 
@@ -136,11 +136,11 @@ Bevragen/raadplegen van een bronhouder met de identificatie van een object. De i
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\Client\Api\BronhouderApi(
+$apiInstance = new Swagger\Client\Api\BronhouderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -171,7 +171,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\Client\Model\BronhouderHalCollection**](../Model/BronhouderHalCollection.md)
+[**\Swagger\Client\Model\BronhouderHalCollection**](../Model/BronhouderHalCollection.md)
 
 ### Authorization
 

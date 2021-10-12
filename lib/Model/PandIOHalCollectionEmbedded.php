@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * PandIOHalCollectionEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class PandIOHalCollectionEmbedded implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'panden' => '\BAG\Client\Model\PandIOHal[]'    ];
+        'panden' => '\Swagger\Client\Model\PandIOHal[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class PandIOHalCollectionEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets panden
      *
-     * @return \BAG\Client\Model\PandIOHal[]
+     * @return \Swagger\Client\Model\PandIOHal[]
      */
     public function getPanden()
     {
@@ -209,7 +209,7 @@ class PandIOHalCollectionEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets panden
      *
-     * @param \BAG\Client\Model\PandIOHal[] $panden panden
+     * @param \Swagger\Client\Model\PandIOHal[] $panden panden
      *
      * @return $this
      */

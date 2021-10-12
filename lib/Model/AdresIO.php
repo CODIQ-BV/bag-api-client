@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
-use \BAG\Client\ObjectSerializer;
+namespace Swagger\Client\Model;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * AdresIO Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -54,8 +54,8 @@ class AdresIO extends Adres
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'geconstateerd' => '\BAG\Client\Model\Geconstateerd',
-'inonderzoek' => '\BAG\Client\Model\AdresInOnderzoek'    ];
+        'geconstateerd' => '\Swagger\Client\Model\Geconstateerd',
+'inonderzoek' => '\Swagger\Client\Model\AdresInOnderzoek'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class AdresIO extends Adres
     /**
      * Gets geconstateerd
      *
-     * @return \BAG\Client\Model\Geconstateerd
+     * @return \Swagger\Client\Model\Geconstateerd
      */
     public function getGeconstateerd()
     {
@@ -209,7 +209,7 @@ class AdresIO extends Adres
     /**
      * Sets geconstateerd
      *
-     * @param \BAG\Client\Model\Geconstateerd $geconstateerd geconstateerd
+     * @param \Swagger\Client\Model\Geconstateerd $geconstateerd geconstateerd
      *
      * @return $this
      */
@@ -223,7 +223,7 @@ class AdresIO extends Adres
     /**
      * Gets inonderzoek
      *
-     * @return \BAG\Client\Model\AdresInOnderzoek
+     * @return \Swagger\Client\Model\AdresInOnderzoek
      */
     public function getInonderzoek()
     {
@@ -233,7 +233,7 @@ class AdresIO extends Adres
     /**
      * Sets inonderzoek
      *
-     * @param \BAG\Client\Model\AdresInOnderzoek $inonderzoek inonderzoek
+     * @param \Swagger\Client\Model\AdresInOnderzoek $inonderzoek inonderzoek
      *
      * @return $this
      */

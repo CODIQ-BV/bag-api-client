@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * WoonplaatsLinks Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class WoonplaatsLinks implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'self' => '\BAG\Client\Model\HalLink',
-'bronhouders' => '\BAG\Client\Model\HalLink[]'    ];
+        'self' => '\Swagger\Client\Model\HalLink',
+'bronhouders' => '\Swagger\Client\Model\HalLink[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -208,7 +208,7 @@ class WoonplaatsLinks implements ModelInterface, ArrayAccess
     /**
      * Gets self
      *
-     * @return \BAG\Client\Model\HalLink
+     * @return \Swagger\Client\Model\HalLink
      */
     public function getSelf()
     {
@@ -218,7 +218,7 @@ class WoonplaatsLinks implements ModelInterface, ArrayAccess
     /**
      * Sets self
      *
-     * @param \BAG\Client\Model\HalLink $self self
+     * @param \Swagger\Client\Model\HalLink $self self
      *
      * @return $this
      */
@@ -232,7 +232,7 @@ class WoonplaatsLinks implements ModelInterface, ArrayAccess
     /**
      * Gets bronhouders
      *
-     * @return \BAG\Client\Model\HalLink[]
+     * @return \Swagger\Client\Model\HalLink[]
      */
     public function getBronhouders()
     {
@@ -242,7 +242,7 @@ class WoonplaatsLinks implements ModelInterface, ArrayAccess
     /**
      * Sets bronhouders
      *
-     * @param \BAG\Client\Model\HalLink[] $bronhouders De gemeente(n) waar de woonplaats onderdeel van uitmaakt.
+     * @param \Swagger\Client\Model\HalLink[] $bronhouders De gemeente(n) waar de woonplaats onderdeel van uitmaakt.
      *
      * @return $this
      */

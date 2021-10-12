@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * PandLinks Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class PandLinks implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'self' => '\BAG\Client\Model\HalLink'    ];
+        'self' => '\Swagger\Client\Model\HalLink'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -202,7 +202,7 @@ class PandLinks implements ModelInterface, ArrayAccess
     /**
      * Gets self
      *
-     * @return \BAG\Client\Model\HalLink
+     * @return \Swagger\Client\Model\HalLink
      */
     public function getSelf()
     {
@@ -212,7 +212,7 @@ class PandLinks implements ModelInterface, ArrayAccess
     /**
      * Sets self
      *
-     * @param \BAG\Client\Model\HalLink $self self
+     * @param \Swagger\Client\Model\HalLink $self self
      *
      * @return $this
      */

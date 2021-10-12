@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace BAG\Client;
+namespace Swagger\Client;
 
 /**
  * TypeOpenbareRuimteTest Class Doc Comment
  *
  * @category    Class
  * @description Een codering van de verschillende waarden die de typering van een openbare ruimte kan aannemen.
- * @package     BAG\Client
+ * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

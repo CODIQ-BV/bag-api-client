@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * NummeraanduidingIOLvcHalCollectionEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class NummeraanduidingIOLvcHalCollectionEmbedded implements ModelInterface, Arra
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'voorkomens' => '\BAG\Client\Model\NummeraanduidingIOHal[]'    ];
+        'voorkomens' => '\Swagger\Client\Model\NummeraanduidingIOHal[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class NummeraanduidingIOLvcHalCollectionEmbedded implements ModelInterface, Arra
     /**
      * Gets voorkomens
      *
-     * @return \BAG\Client\Model\NummeraanduidingIOHal[]
+     * @return \Swagger\Client\Model\NummeraanduidingIOHal[]
      */
     public function getVoorkomens()
     {
@@ -209,7 +209,7 @@ class NummeraanduidingIOLvcHalCollectionEmbedded implements ModelInterface, Arra
     /**
      * Sets voorkomens
      *
-     * @param \BAG\Client\Model\NummeraanduidingIOHal[] $voorkomens voorkomens
+     * @param \Swagger\Client\Model\NummeraanduidingIOHal[] $voorkomens voorkomens
      *
      * @return $this
      */

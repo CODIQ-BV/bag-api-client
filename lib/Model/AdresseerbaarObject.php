@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * AdresseerbaarObject Class Doc Comment
  *
  * @category Class
  * @description Abstract type adresseerbaar object
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,9 +57,9 @@ class AdresseerbaarObject implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'heeft_als_hoofd_adres' => '\BAG\Client\Model\NummeraanduidingIdentificatie',
-'heeft_als_neven_adres' => '\BAG\Client\Model\NummeraanduidingIdentificatie[]',
-'type' => '\BAG\Client\Model\TypeAdresseerbaarObject'    ];
+        'heeft_als_hoofd_adres' => '\Swagger\Client\Model\NummeraanduidingIdentificatie',
+'heeft_als_neven_adres' => '\Swagger\Client\Model\NummeraanduidingIdentificatie[]',
+'type' => '\Swagger\Client\Model\TypeAdresseerbaarObject'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -222,7 +222,7 @@ class AdresseerbaarObject implements ModelInterface, ArrayAccess
     /**
      * Gets heeft_als_hoofd_adres
      *
-     * @return \BAG\Client\Model\NummeraanduidingIdentificatie
+     * @return \Swagger\Client\Model\NummeraanduidingIdentificatie
      */
     public function getHeeftAlsHoofdAdres()
     {
@@ -232,7 +232,7 @@ class AdresseerbaarObject implements ModelInterface, ArrayAccess
     /**
      * Sets heeft_als_hoofd_adres
      *
-     * @param \BAG\Client\Model\NummeraanduidingIdentificatie $heeft_als_hoofd_adres heeft_als_hoofd_adres
+     * @param \Swagger\Client\Model\NummeraanduidingIdentificatie $heeft_als_hoofd_adres heeft_als_hoofd_adres
      *
      * @return $this
      */
@@ -246,7 +246,7 @@ class AdresseerbaarObject implements ModelInterface, ArrayAccess
     /**
      * Gets heeft_als_neven_adres
      *
-     * @return \BAG\Client\Model\NummeraanduidingIdentificatie[]
+     * @return \Swagger\Client\Model\NummeraanduidingIdentificatie[]
      */
     public function getHeeftAlsNevenAdres()
     {
@@ -256,7 +256,7 @@ class AdresseerbaarObject implements ModelInterface, ArrayAccess
     /**
      * Sets heeft_als_neven_adres
      *
-     * @param \BAG\Client\Model\NummeraanduidingIdentificatie[] $heeft_als_neven_adres heeft_als_neven_adres
+     * @param \Swagger\Client\Model\NummeraanduidingIdentificatie[] $heeft_als_neven_adres heeft_als_neven_adres
      *
      * @return $this
      */
@@ -270,7 +270,7 @@ class AdresseerbaarObject implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \BAG\Client\Model\TypeAdresseerbaarObject
+     * @return \Swagger\Client\Model\TypeAdresseerbaarObject
      */
     public function getType()
     {
@@ -280,7 +280,7 @@ class AdresseerbaarObject implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \BAG\Client\Model\TypeAdresseerbaarObject $type type
+     * @param \Swagger\Client\Model\TypeAdresseerbaarObject $type type
      *
      * @return $this
      */

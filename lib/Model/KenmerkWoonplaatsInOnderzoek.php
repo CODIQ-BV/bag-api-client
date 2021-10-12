@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * KenmerkWoonplaatsInOnderzoek Class Doc Comment
  *
  * @category Class
  * @description Limitatieve opsomming van alle kenmerken van dit object die in onderzoek zijn op dit moment, of van alle kenmerken die ooit in onderzoek zijn geweest als er een tijdreisvraag is gesteld of een vraag naar de levenscyclus.
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class KenmerkWoonplaatsInOnderzoek implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'kenmerk' => '\BAG\Client\Model\InOnderzoekWoonplaats',
-'identificatie_van_woonplaats' => '\BAG\Client\Model\WoonplaatsIdentificatie',
-'in_onderzoek' => '\BAG\Client\Model\Indicatie',
-'historie' => '\BAG\Client\Model\HistorieInOnderzoek',
+        'kenmerk' => '\Swagger\Client\Model\InOnderzoekWoonplaats',
+'identificatie_van_woonplaats' => '\Swagger\Client\Model\WoonplaatsIdentificatie',
+'in_onderzoek' => '\Swagger\Client\Model\Indicatie',
+'historie' => '\Swagger\Client\Model\HistorieInOnderzoek',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string'    ];
 
@@ -248,7 +248,7 @@ class KenmerkWoonplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets kenmerk
      *
-     * @return \BAG\Client\Model\InOnderzoekWoonplaats
+     * @return \Swagger\Client\Model\InOnderzoekWoonplaats
      */
     public function getKenmerk()
     {
@@ -258,7 +258,7 @@ class KenmerkWoonplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets kenmerk
      *
-     * @param \BAG\Client\Model\InOnderzoekWoonplaats $kenmerk kenmerk
+     * @param \Swagger\Client\Model\InOnderzoekWoonplaats $kenmerk kenmerk
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class KenmerkWoonplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets identificatie_van_woonplaats
      *
-     * @return \BAG\Client\Model\WoonplaatsIdentificatie
+     * @return \Swagger\Client\Model\WoonplaatsIdentificatie
      */
     public function getIdentificatieVanWoonplaats()
     {
@@ -282,7 +282,7 @@ class KenmerkWoonplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets identificatie_van_woonplaats
      *
-     * @param \BAG\Client\Model\WoonplaatsIdentificatie $identificatie_van_woonplaats identificatie_van_woonplaats
+     * @param \Swagger\Client\Model\WoonplaatsIdentificatie $identificatie_van_woonplaats identificatie_van_woonplaats
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class KenmerkWoonplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets in_onderzoek
      *
-     * @return \BAG\Client\Model\Indicatie
+     * @return \Swagger\Client\Model\Indicatie
      */
     public function getInOnderzoek()
     {
@@ -306,7 +306,7 @@ class KenmerkWoonplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets in_onderzoek
      *
-     * @param \BAG\Client\Model\Indicatie $in_onderzoek in_onderzoek
+     * @param \Swagger\Client\Model\Indicatie $in_onderzoek in_onderzoek
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class KenmerkWoonplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets historie
      *
-     * @return \BAG\Client\Model\HistorieInOnderzoek
+     * @return \Swagger\Client\Model\HistorieInOnderzoek
      */
     public function getHistorie()
     {
@@ -330,7 +330,7 @@ class KenmerkWoonplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets historie
      *
-     * @param \BAG\Client\Model\HistorieInOnderzoek $historie historie
+     * @param \Swagger\Client\Model\HistorieInOnderzoek $historie historie
      *
      * @return $this
      */

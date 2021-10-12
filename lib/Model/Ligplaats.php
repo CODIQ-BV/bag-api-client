@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
-use \BAG\Client\ObjectSerializer;
+namespace Swagger\Client\Model;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * Ligplaats Class Doc Comment
  *
  * @category Class
  * @description Een Ligplaats is een door het bevoegde gemeentelijke orgaan als zodanig aangewezen plaats in het water al dan niet aangevuld met een op de oever aanwezig terrein of een gedeelte daarvan, die bestemd is voor het permanent afmeren van een voor woon-, bedrijfsmatige of recreatieve doeleinden geschikt drijvend object.
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -55,14 +55,14 @@ class Ligplaats extends AdresseerbaarObject
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'identificatie' => '\BAG\Client\Model\LigplaatsIdentificatie',
+        'identificatie' => '\Swagger\Client\Model\LigplaatsIdentificatie',
 'domein' => 'string',
-'status' => '\BAG\Client\Model\StatusPlaats',
-'geometrie' => '\BAG\Client\Model\Surface',
-'geconstateerd' => '\BAG\Client\Model\Indicatie',
+'status' => '\Swagger\Client\Model\StatusPlaats',
+'geometrie' => '\Swagger\Client\Model\Surface',
+'geconstateerd' => '\Swagger\Client\Model\Indicatie',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string',
-'voorkomen' => '\BAG\Client\Model\Voorkomen'    ];
+'voorkomen' => '\Swagger\Client\Model\Voorkomen'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -260,7 +260,7 @@ class Ligplaats extends AdresseerbaarObject
     /**
      * Gets identificatie
      *
-     * @return \BAG\Client\Model\LigplaatsIdentificatie
+     * @return \Swagger\Client\Model\LigplaatsIdentificatie
      */
     public function getIdentificatie()
     {
@@ -270,7 +270,7 @@ class Ligplaats extends AdresseerbaarObject
     /**
      * Sets identificatie
      *
-     * @param \BAG\Client\Model\LigplaatsIdentificatie $identificatie identificatie
+     * @param \Swagger\Client\Model\LigplaatsIdentificatie $identificatie identificatie
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class Ligplaats extends AdresseerbaarObject
     /**
      * Gets status
      *
-     * @return \BAG\Client\Model\StatusPlaats
+     * @return \Swagger\Client\Model\StatusPlaats
      */
     public function getStatus()
     {
@@ -318,7 +318,7 @@ class Ligplaats extends AdresseerbaarObject
     /**
      * Sets status
      *
-     * @param \BAG\Client\Model\StatusPlaats $status status
+     * @param \Swagger\Client\Model\StatusPlaats $status status
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class Ligplaats extends AdresseerbaarObject
     /**
      * Gets geometrie
      *
-     * @return \BAG\Client\Model\Surface
+     * @return \Swagger\Client\Model\Surface
      */
     public function getGeometrie()
     {
@@ -342,7 +342,7 @@ class Ligplaats extends AdresseerbaarObject
     /**
      * Sets geometrie
      *
-     * @param \BAG\Client\Model\Surface $geometrie geometrie
+     * @param \Swagger\Client\Model\Surface $geometrie geometrie
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class Ligplaats extends AdresseerbaarObject
     /**
      * Gets geconstateerd
      *
-     * @return \BAG\Client\Model\Indicatie
+     * @return \Swagger\Client\Model\Indicatie
      */
     public function getGeconstateerd()
     {
@@ -366,7 +366,7 @@ class Ligplaats extends AdresseerbaarObject
     /**
      * Sets geconstateerd
      *
-     * @param \BAG\Client\Model\Indicatie $geconstateerd geconstateerd
+     * @param \Swagger\Client\Model\Indicatie $geconstateerd geconstateerd
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class Ligplaats extends AdresseerbaarObject
     /**
      * Gets voorkomen
      *
-     * @return \BAG\Client\Model\Voorkomen
+     * @return \Swagger\Client\Model\Voorkomen
      */
     public function getVoorkomen()
     {
@@ -438,7 +438,7 @@ class Ligplaats extends AdresseerbaarObject
     /**
      * Sets voorkomen
      *
-     * @param \BAG\Client\Model\Voorkomen $voorkomen voorkomen
+     * @param \Swagger\Client\Model\Voorkomen $voorkomen voorkomen
      *
      * @return $this
      */

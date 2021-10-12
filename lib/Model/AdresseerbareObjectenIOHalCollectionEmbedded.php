@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * AdresseerbareObjectenIOHalCollectionEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class AdresseerbareObjectenIOHalCollectionEmbedded implements ModelInterface, Ar
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adresseerbare_objecten' => '\BAG\Client\Model\AdresseerbaarObjectIOHal[]'    ];
+        'adresseerbare_objecten' => '\Swagger\Client\Model\AdresseerbaarObjectIOHal[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class AdresseerbareObjectenIOHalCollectionEmbedded implements ModelInterface, Ar
     /**
      * Gets adresseerbare_objecten
      *
-     * @return \BAG\Client\Model\AdresseerbaarObjectIOHal[]
+     * @return \Swagger\Client\Model\AdresseerbaarObjectIOHal[]
      */
     public function getAdresseerbareObjecten()
     {
@@ -209,7 +209,7 @@ class AdresseerbareObjectenIOHalCollectionEmbedded implements ModelInterface, Ar
     /**
      * Sets adresseerbare_objecten
      *
-     * @param \BAG\Client\Model\AdresseerbaarObjectIOHal[] $adresseerbare_objecten adresseerbare_objecten
+     * @param \Swagger\Client\Model\AdresseerbaarObjectIOHal[] $adresseerbare_objecten adresseerbare_objecten
      *
      * @return $this
      */

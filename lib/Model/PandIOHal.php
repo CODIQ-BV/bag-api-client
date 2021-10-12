@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * PandIOHal Class Doc Comment
  *
  * @category Class
  * @description Een Pand is de kleinste, bij de totstandkoming functioneel en bouwkundig-constructief zelfstandige eenheid die direct en duurzaam met de aarde is verbonden en betreedbaar en afsluitbaar is. Inclusief aanduiding of deze in onderzoek is
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,9 +57,9 @@ class PandIOHal implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pand' => '\BAG\Client\Model\Pand',
-'inonderzoek' => '\BAG\Client\Model\KenmerkPandInOnderzoek[]',
-'_links' => '\BAG\Client\Model\PandLinks'    ];
+        'pand' => '\Swagger\Client\Model\Pand',
+'inonderzoek' => '\Swagger\Client\Model\KenmerkPandInOnderzoek[]',
+'_links' => '\Swagger\Client\Model\PandLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -215,7 +215,7 @@ class PandIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets pand
      *
-     * @return \BAG\Client\Model\Pand
+     * @return \Swagger\Client\Model\Pand
      */
     public function getPand()
     {
@@ -225,7 +225,7 @@ class PandIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets pand
      *
-     * @param \BAG\Client\Model\Pand $pand pand
+     * @param \Swagger\Client\Model\Pand $pand pand
      *
      * @return $this
      */
@@ -239,7 +239,7 @@ class PandIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets inonderzoek
      *
-     * @return \BAG\Client\Model\KenmerkPandInOnderzoek[]
+     * @return \Swagger\Client\Model\KenmerkPandInOnderzoek[]
      */
     public function getInonderzoek()
     {
@@ -249,7 +249,7 @@ class PandIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets inonderzoek
      *
-     * @param \BAG\Client\Model\KenmerkPandInOnderzoek[] $inonderzoek inonderzoek
+     * @param \Swagger\Client\Model\KenmerkPandInOnderzoek[] $inonderzoek inonderzoek
      *
      * @return $this
      */
@@ -263,7 +263,7 @@ class PandIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAG\Client\Model\PandLinks
+     * @return \Swagger\Client\Model\PandLinks
      */
     public function getLinks()
     {
@@ -273,7 +273,7 @@ class PandIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAG\Client\Model\PandLinks $_links _links
+     * @param \Swagger\Client\Model\PandLinks $_links _links
      *
      * @return $this
      */

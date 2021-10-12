@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * PandIOHalCollection Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class PandIOHalCollection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        '_embedded' => '\BAG\Client\Model\PandIOHalCollectionEmbedded',
-'_links' => '\BAG\Client\Model\HalCollectionLinks'    ];
+        '_embedded' => '\Swagger\Client\Model\PandIOHalCollectionEmbedded',
+'_links' => '\Swagger\Client\Model\HalCollectionLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class PandIOHalCollection implements ModelInterface, ArrayAccess
     /**
      * Gets _embedded
      *
-     * @return \BAG\Client\Model\PandIOHalCollectionEmbedded
+     * @return \Swagger\Client\Model\PandIOHalCollectionEmbedded
      */
     public function getEmbedded()
     {
@@ -215,7 +215,7 @@ class PandIOHalCollection implements ModelInterface, ArrayAccess
     /**
      * Sets _embedded
      *
-     * @param \BAG\Client\Model\PandIOHalCollectionEmbedded $_embedded _embedded
+     * @param \Swagger\Client\Model\PandIOHalCollectionEmbedded $_embedded _embedded
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class PandIOHalCollection implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAG\Client\Model\HalCollectionLinks
+     * @return \Swagger\Client\Model\HalCollectionLinks
      */
     public function getLinks()
     {
@@ -239,7 +239,7 @@ class PandIOHalCollection implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAG\Client\Model\HalCollectionLinks $_links _links
+     * @param \Swagger\Client\Model\HalCollectionLinks $_links _links
      *
      * @return $this
      */

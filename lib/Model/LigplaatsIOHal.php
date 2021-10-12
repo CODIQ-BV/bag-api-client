@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * LigplaatsIOHal Class Doc Comment
  *
  * @category Class
  * @description Een verzameling van een Ligplaats en een lijst van alle bijbehorende inonderzoek informatie.
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class LigplaatsIOHal implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'ligplaats' => '\BAG\Client\Model\Ligplaats',
-'inonderzoek' => '\BAG\Client\Model\KenmerkLigplaatsInOnderzoek[]',
-'_embedded' => '\BAG\Client\Model\LigplaatsEmbedded',
-'_links' => '\BAG\Client\Model\LigplaatsLinks'    ];
+        'ligplaats' => '\Swagger\Client\Model\Ligplaats',
+'inonderzoek' => '\Swagger\Client\Model\KenmerkLigplaatsInOnderzoek[]',
+'_embedded' => '\Swagger\Client\Model\LigplaatsEmbedded',
+'_links' => '\Swagger\Client\Model\LigplaatsLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -221,7 +221,7 @@ class LigplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets ligplaats
      *
-     * @return \BAG\Client\Model\Ligplaats
+     * @return \Swagger\Client\Model\Ligplaats
      */
     public function getLigplaats()
     {
@@ -231,7 +231,7 @@ class LigplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets ligplaats
      *
-     * @param \BAG\Client\Model\Ligplaats $ligplaats ligplaats
+     * @param \Swagger\Client\Model\Ligplaats $ligplaats ligplaats
      *
      * @return $this
      */
@@ -245,7 +245,7 @@ class LigplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets inonderzoek
      *
-     * @return \BAG\Client\Model\KenmerkLigplaatsInOnderzoek[]
+     * @return \Swagger\Client\Model\KenmerkLigplaatsInOnderzoek[]
      */
     public function getInonderzoek()
     {
@@ -255,7 +255,7 @@ class LigplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets inonderzoek
      *
-     * @param \BAG\Client\Model\KenmerkLigplaatsInOnderzoek[] $inonderzoek inonderzoek
+     * @param \Swagger\Client\Model\KenmerkLigplaatsInOnderzoek[] $inonderzoek inonderzoek
      *
      * @return $this
      */
@@ -269,7 +269,7 @@ class LigplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _embedded
      *
-     * @return \BAG\Client\Model\LigplaatsEmbedded
+     * @return \Swagger\Client\Model\LigplaatsEmbedded
      */
     public function getEmbedded()
     {
@@ -279,7 +279,7 @@ class LigplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _embedded
      *
-     * @param \BAG\Client\Model\LigplaatsEmbedded $_embedded _embedded
+     * @param \Swagger\Client\Model\LigplaatsEmbedded $_embedded _embedded
      *
      * @return $this
      */
@@ -293,7 +293,7 @@ class LigplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAG\Client\Model\LigplaatsLinks
+     * @return \Swagger\Client\Model\LigplaatsLinks
      */
     public function getLinks()
     {
@@ -303,7 +303,7 @@ class LigplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAG\Client\Model\LigplaatsLinks $_links _links
+     * @param \Swagger\Client\Model\LigplaatsLinks $_links _links
      *
      * @return $this
      */

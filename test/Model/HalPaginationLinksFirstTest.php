@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace BAG\Client;
+namespace Swagger\Client;
 
 /**
  * HalPaginationLinksFirstTest Class Doc Comment
  *
  * @category    Class
  * @description uri voor het opvragen van de eerste pagina van deze collectie
- * @package     BAG\Client
+ * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

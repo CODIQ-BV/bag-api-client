@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * Pand Class Doc Comment
  *
  * @category Class
  * @description Een Pand is de kleinste, bij de totstandkoming functioneel en bouwkundig-constructief zelfstandige eenheid die direct en duurzaam met de aarde is verbonden en betreedbaar en afsluitbaar is.
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,15 +57,15 @@ class Pand implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'identificatie' => '\BAG\Client\Model\PandIdentificatie',
+        'identificatie' => '\Swagger\Client\Model\PandIdentificatie',
 'domein' => 'string',
-'geometrie' => '\BAG\Client\Model\Surface',
+'geometrie' => '\Swagger\Client\Model\Surface',
 'oorspronkelijk_bouwjaar' => 'string',
-'status' => '\BAG\Client\Model\StatusPand',
-'geconstateerd' => '\BAG\Client\Model\Indicatie',
+'status' => '\Swagger\Client\Model\StatusPand',
+'geconstateerd' => '\Swagger\Client\Model\Indicatie',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string',
-'voorkomen' => '\BAG\Client\Model\Voorkomen'    ];
+'voorkomen' => '\Swagger\Client\Model\Voorkomen'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -275,7 +275,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Gets identificatie
      *
-     * @return \BAG\Client\Model\PandIdentificatie
+     * @return \Swagger\Client\Model\PandIdentificatie
      */
     public function getIdentificatie()
     {
@@ -285,7 +285,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Sets identificatie
      *
-     * @param \BAG\Client\Model\PandIdentificatie $identificatie identificatie
+     * @param \Swagger\Client\Model\PandIdentificatie $identificatie identificatie
      *
      * @return $this
      */
@@ -323,7 +323,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Gets geometrie
      *
-     * @return \BAG\Client\Model\Surface
+     * @return \Swagger\Client\Model\Surface
      */
     public function getGeometrie()
     {
@@ -333,7 +333,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Sets geometrie
      *
-     * @param \BAG\Client\Model\Surface $geometrie geometrie
+     * @param \Swagger\Client\Model\Surface $geometrie geometrie
      *
      * @return $this
      */
@@ -371,7 +371,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \BAG\Client\Model\StatusPand
+     * @return \Swagger\Client\Model\StatusPand
      */
     public function getStatus()
     {
@@ -381,7 +381,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \BAG\Client\Model\StatusPand $status status
+     * @param \Swagger\Client\Model\StatusPand $status status
      *
      * @return $this
      */
@@ -395,7 +395,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Gets geconstateerd
      *
-     * @return \BAG\Client\Model\Indicatie
+     * @return \Swagger\Client\Model\Indicatie
      */
     public function getGeconstateerd()
     {
@@ -405,7 +405,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Sets geconstateerd
      *
-     * @param \BAG\Client\Model\Indicatie $geconstateerd geconstateerd
+     * @param \Swagger\Client\Model\Indicatie $geconstateerd geconstateerd
      *
      * @return $this
      */
@@ -467,7 +467,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Gets voorkomen
      *
-     * @return \BAG\Client\Model\Voorkomen
+     * @return \Swagger\Client\Model\Voorkomen
      */
     public function getVoorkomen()
     {
@@ -477,7 +477,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Sets voorkomen
      *
-     * @param \BAG\Client\Model\Voorkomen $voorkomen voorkomen
+     * @param \Swagger\Client\Model\Voorkomen $voorkomen voorkomen
      *
      * @return $this
      */

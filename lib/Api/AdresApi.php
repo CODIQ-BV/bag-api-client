@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Api;
+namespace Swagger\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use BAG\Client\ApiException;
-use BAG\Client\Configuration;
-use BAG\Client\HeaderSelector;
-use BAG\Client\ObjectSerializer;
+use Swagger\Client\ApiException;
+use Swagger\Client\Configuration;
+use Swagger\Client\HeaderSelector;
+use Swagger\Client\ObjectSerializer;
 
 /**
  * AdresApi Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -105,9 +105,9 @@ class AdresApi
      * @param  int $page Pagina nummer (optional, default to 1)
      * @param  int $page_size Aantal resultaten per pagina (optional, default to 20)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAG\Client\Model\AdresIOHalCollection
+     * @return \Swagger\Client\Model\AdresIOHalCollection
      */
     public function bevraagAdressen($zoekresultaat_identificatie = null, $postcode = null, $huisnummer = null, $huisnummertoevoeging = null, $huisletter = null, $exacte_match = 'false', $adresseerbaar_object_identificatie = null, $woonplaats_naam = null, $openbare_ruimte_naam = null, $pand_identificatie = null, $expand = null, $page = '1', $page_size = '20')
     {
@@ -134,13 +134,13 @@ class AdresApi
      * @param  int $page Pagina nummer (optional, default to 1)
      * @param  int $page_size Aantal resultaten per pagina (optional, default to 20)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAG\Client\Model\AdresIOHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\AdresIOHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function bevraagAdressenWithHttpInfo($zoekresultaat_identificatie = null, $postcode = null, $huisnummer = null, $huisnummertoevoeging = null, $huisletter = null, $exacte_match = 'false', $adresseerbaar_object_identificatie = null, $woonplaats_naam = null, $openbare_ruimte_naam = null, $pand_identificatie = null, $expand = null, $page = '1', $page_size = '20')
     {
-        $returnType = '\BAG\Client\Model\AdresIOHalCollection';
+        $returnType = '\Swagger\Client\Model\AdresIOHalCollection';
         $request = $this->bevraagAdressenRequest($zoekresultaat_identificatie, $postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $adresseerbaar_object_identificatie, $woonplaats_naam, $openbare_ruimte_naam, $pand_identificatie, $expand, $page, $page_size);
 
         try {
@@ -192,7 +192,7 @@ class AdresApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\AdresIOHalCollection',
+                        '\Swagger\Client\Model\AdresIOHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -200,7 +200,7 @@ class AdresApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -208,7 +208,7 @@ class AdresApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -216,7 +216,7 @@ class AdresApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -224,7 +224,7 @@ class AdresApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -232,7 +232,7 @@ class AdresApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -240,7 +240,7 @@ class AdresApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -248,7 +248,7 @@ class AdresApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -256,7 +256,7 @@ class AdresApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -322,7 +322,7 @@ class AdresApi
      */
     public function bevraagAdressenAsyncWithHttpInfo($zoekresultaat_identificatie = null, $postcode = null, $huisnummer = null, $huisnummertoevoeging = null, $huisletter = null, $exacte_match = 'false', $adresseerbaar_object_identificatie = null, $woonplaats_naam = null, $openbare_ruimte_naam = null, $pand_identificatie = null, $expand = null, $page = '1', $page_size = '20')
     {
-        $returnType = '\BAG\Client\Model\AdresIOHalCollection';
+        $returnType = '\Swagger\Client\Model\AdresIOHalCollection';
         $request = $this->bevraagAdressenRequest($zoekresultaat_identificatie, $postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $adresseerbaar_object_identificatie, $woonplaats_naam, $openbare_ruimte_naam, $pand_identificatie, $expand, $page, $page_size);
 
         return $this->client
@@ -523,9 +523,9 @@ class AdresApi
      * @param  string $nummeraanduiding_identificatie Identificatie van een nummeraanduiding uit de BAG. Deze is 16 cijfers lang. (required)
      * @param  string $expand Hier kan aangegeven worden welke gerelateerde resources meegeladen moeten worden. Resources en velden van resources die gewenst zijn kunnen in de expand parameter kommagescheiden worden opgegeven. Specifieke velden van resource kunnen worden opgegeven door het opgeven van de resource-naam gevolgd door de veldnaam, met daartussen een punt. (optional)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAG\Client\Model\AdresIOHal
+     * @return \Swagger\Client\Model\AdresIOHal
      */
     public function bevraagAdressenMetNumId($nummeraanduiding_identificatie, $expand = null)
     {
@@ -541,13 +541,13 @@ class AdresApi
      * @param  string $nummeraanduiding_identificatie Identificatie van een nummeraanduiding uit de BAG. Deze is 16 cijfers lang. (required)
      * @param  string $expand Hier kan aangegeven worden welke gerelateerde resources meegeladen moeten worden. Resources en velden van resources die gewenst zijn kunnen in de expand parameter kommagescheiden worden opgegeven. Specifieke velden van resource kunnen worden opgegeven door het opgeven van de resource-naam gevolgd door de veldnaam, met daartussen een punt. (optional)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAG\Client\Model\AdresIOHal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\AdresIOHal, HTTP status code, HTTP response headers (array of strings)
      */
     public function bevraagAdressenMetNumIdWithHttpInfo($nummeraanduiding_identificatie, $expand = null)
     {
-        $returnType = '\BAG\Client\Model\AdresIOHal';
+        $returnType = '\Swagger\Client\Model\AdresIOHal';
         $request = $this->bevraagAdressenMetNumIdRequest($nummeraanduiding_identificatie, $expand);
 
         try {
@@ -599,7 +599,7 @@ class AdresApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\AdresIOHal',
+                        '\Swagger\Client\Model\AdresIOHal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -607,7 +607,7 @@ class AdresApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -615,7 +615,7 @@ class AdresApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -623,7 +623,7 @@ class AdresApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -631,7 +631,7 @@ class AdresApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -639,7 +639,7 @@ class AdresApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -647,7 +647,7 @@ class AdresApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -655,7 +655,7 @@ class AdresApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -663,7 +663,7 @@ class AdresApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -671,7 +671,7 @@ class AdresApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -715,7 +715,7 @@ class AdresApi
      */
     public function bevraagAdressenMetNumIdAsyncWithHttpInfo($nummeraanduiding_identificatie, $expand = null)
     {
-        $returnType = '\BAG\Client\Model\AdresIOHal';
+        $returnType = '\Swagger\Client\Model\AdresIOHal';
         $request = $this->bevraagAdressenMetNumIdRequest($nummeraanduiding_identificatie, $expand);
 
         return $this->client
@@ -872,9 +872,9 @@ class AdresApi
      * @param  int $page Pagina nummer (optional, default to 1)
      * @param  int $page_size Aantal resultaten per pagina (optional, default to 20)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAG\Client\Model\ZoekResultaatHalCollection
+     * @return \Swagger\Client\Model\ZoekResultaatHalCollection
      */
     public function zoek($zoek, $page = '1', $page_size = '20')
     {
@@ -891,13 +891,13 @@ class AdresApi
      * @param  int $page Pagina nummer (optional, default to 1)
      * @param  int $page_size Aantal resultaten per pagina (optional, default to 20)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAG\Client\Model\ZoekResultaatHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\ZoekResultaatHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function zoekWithHttpInfo($zoek, $page = '1', $page_size = '20')
     {
-        $returnType = '\BAG\Client\Model\ZoekResultaatHalCollection';
+        $returnType = '\Swagger\Client\Model\ZoekResultaatHalCollection';
         $request = $this->zoekRequest($zoek, $page, $page_size);
 
         try {
@@ -949,7 +949,7 @@ class AdresApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\ZoekResultaatHalCollection',
+                        '\Swagger\Client\Model\ZoekResultaatHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -957,7 +957,7 @@ class AdresApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -965,7 +965,7 @@ class AdresApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -973,7 +973,7 @@ class AdresApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -981,7 +981,7 @@ class AdresApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -989,7 +989,7 @@ class AdresApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -997,7 +997,7 @@ class AdresApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1043,7 +1043,7 @@ class AdresApi
      */
     public function zoekAsyncWithHttpInfo($zoek, $page = '1', $page_size = '20')
     {
-        $returnType = '\BAG\Client\Model\ZoekResultaatHalCollection';
+        $returnType = '\Swagger\Client\Model\ZoekResultaatHalCollection';
         $request = $this->zoekRequest($zoek, $page, $page_size);
 
         return $this->client

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * OpenbareRuimteEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class OpenbareRuimteEmbedded implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'ligt_in_woonplaats' => '\BAG\Client\Model\WoonplaatsIOHal'    ];
+        'ligt_in_woonplaats' => '\Swagger\Client\Model\WoonplaatsIOHal'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class OpenbareRuimteEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets ligt_in_woonplaats
      *
-     * @return \BAG\Client\Model\WoonplaatsIOHal
+     * @return \Swagger\Client\Model\WoonplaatsIOHal
      */
     public function getLigtInWoonplaats()
     {
@@ -209,7 +209,7 @@ class OpenbareRuimteEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets ligt_in_woonplaats
      *
-     * @param \BAG\Client\Model\WoonplaatsIOHal $ligt_in_woonplaats ligt_in_woonplaats
+     * @param \Swagger\Client\Model\WoonplaatsIOHal $ligt_in_woonplaats ligt_in_woonplaats
      *
      * @return $this
      */

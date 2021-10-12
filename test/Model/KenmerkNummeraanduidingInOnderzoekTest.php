@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace BAG\Client;
+namespace Swagger\Client;
 
 /**
  * KenmerkNummeraanduidingInOnderzoekTest Class Doc Comment
  *
  * @category    Class
  * @description Limitatieve opsomming van alle kenmerken van dit object die in onderzoek zijn op dit moment, of van alle kenmerken die ooit in onderzoek zijn geweest als er een tijdreisvraag is gesteld of een vraag naar de levenscyclus.
- * @package     BAG\Client
+ * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

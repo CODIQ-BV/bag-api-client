@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**href** | [**\BAG\Client\Model\Href**](Href.md) |  | 
+**href** | [**\Swagger\Client\Model\Href**](Href.md) |  | 
 **templated** | **bool** |  | [optional] 
 **title** | **string** | Voor mens leesbaar label bij de link | [optional] 
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * StandplaatsIOHalCollectionEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class StandplaatsIOHalCollectionEmbedded implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'standplaatsen' => '\BAG\Client\Model\StandplaatsIOHal[]'    ];
+        'standplaatsen' => '\Swagger\Client\Model\StandplaatsIOHal[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class StandplaatsIOHalCollectionEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets standplaatsen
      *
-     * @return \BAG\Client\Model\StandplaatsIOHal[]
+     * @return \Swagger\Client\Model\StandplaatsIOHal[]
      */
     public function getStandplaatsen()
     {
@@ -209,7 +209,7 @@ class StandplaatsIOHalCollectionEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets standplaatsen
      *
-     * @param \BAG\Client\Model\StandplaatsIOHal[] $standplaatsen standplaatsen
+     * @param \Swagger\Client\Model\StandplaatsIOHal[] $standplaatsen standplaatsen
      *
      * @return $this
      */

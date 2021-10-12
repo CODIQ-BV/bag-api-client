@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * Adres Class Doc Comment
  *
  * @category Class
  * @description Door het bevoegde gemeentelijke orgaan aan een verblijfsobject, een standplaats of een ligplaats toegekende benaming, bestaande uit een combinatie van de naam van een openbare ruimte, een nummeraanduiding en de naam van een woonplaats.
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,11 +64,11 @@ class Adres implements ModelInterface, ArrayAccess
 'huisnummertoevoeging' => 'string',
 'postcode' => 'string',
 'woonplaats_naam' => 'string',
-'nummeraanduiding_identificatie' => '\BAG\Client\Model\NummeraanduidingIdentificatie',
-'openbare_ruimte_identificatie' => '\BAG\Client\Model\OpenbareRuimteIdentificatie',
-'woonplaats_identificatie' => '\BAG\Client\Model\WoonplaatsIdentificatie',
-'adresseerbaar_object_identificatie' => '\BAG\Client\Model\AdresseerbaarObjectIdentificatie',
-'pand_identificaties' => '\BAG\Client\Model\PandIdentificatie[]',
+'nummeraanduiding_identificatie' => '\Swagger\Client\Model\NummeraanduidingIdentificatie',
+'openbare_ruimte_identificatie' => '\Swagger\Client\Model\OpenbareRuimteIdentificatie',
+'woonplaats_identificatie' => '\Swagger\Client\Model\WoonplaatsIdentificatie',
+'adresseerbaar_object_identificatie' => '\Swagger\Client\Model\AdresseerbaarObjectIdentificatie',
+'pand_identificaties' => '\Swagger\Client\Model\PandIdentificatie[]',
 'indicatie_nevenadres' => 'bool'    ];
 
     /**
@@ -458,7 +458,7 @@ class Adres implements ModelInterface, ArrayAccess
     /**
      * Gets nummeraanduiding_identificatie
      *
-     * @return \BAG\Client\Model\NummeraanduidingIdentificatie
+     * @return \Swagger\Client\Model\NummeraanduidingIdentificatie
      */
     public function getNummeraanduidingIdentificatie()
     {
@@ -468,7 +468,7 @@ class Adres implements ModelInterface, ArrayAccess
     /**
      * Sets nummeraanduiding_identificatie
      *
-     * @param \BAG\Client\Model\NummeraanduidingIdentificatie $nummeraanduiding_identificatie nummeraanduiding_identificatie
+     * @param \Swagger\Client\Model\NummeraanduidingIdentificatie $nummeraanduiding_identificatie nummeraanduiding_identificatie
      *
      * @return $this
      */
@@ -482,7 +482,7 @@ class Adres implements ModelInterface, ArrayAccess
     /**
      * Gets openbare_ruimte_identificatie
      *
-     * @return \BAG\Client\Model\OpenbareRuimteIdentificatie
+     * @return \Swagger\Client\Model\OpenbareRuimteIdentificatie
      */
     public function getOpenbareRuimteIdentificatie()
     {
@@ -492,7 +492,7 @@ class Adres implements ModelInterface, ArrayAccess
     /**
      * Sets openbare_ruimte_identificatie
      *
-     * @param \BAG\Client\Model\OpenbareRuimteIdentificatie $openbare_ruimte_identificatie openbare_ruimte_identificatie
+     * @param \Swagger\Client\Model\OpenbareRuimteIdentificatie $openbare_ruimte_identificatie openbare_ruimte_identificatie
      *
      * @return $this
      */
@@ -506,7 +506,7 @@ class Adres implements ModelInterface, ArrayAccess
     /**
      * Gets woonplaats_identificatie
      *
-     * @return \BAG\Client\Model\WoonplaatsIdentificatie
+     * @return \Swagger\Client\Model\WoonplaatsIdentificatie
      */
     public function getWoonplaatsIdentificatie()
     {
@@ -516,7 +516,7 @@ class Adres implements ModelInterface, ArrayAccess
     /**
      * Sets woonplaats_identificatie
      *
-     * @param \BAG\Client\Model\WoonplaatsIdentificatie $woonplaats_identificatie woonplaats_identificatie
+     * @param \Swagger\Client\Model\WoonplaatsIdentificatie $woonplaats_identificatie woonplaats_identificatie
      *
      * @return $this
      */
@@ -530,7 +530,7 @@ class Adres implements ModelInterface, ArrayAccess
     /**
      * Gets adresseerbaar_object_identificatie
      *
-     * @return \BAG\Client\Model\AdresseerbaarObjectIdentificatie
+     * @return \Swagger\Client\Model\AdresseerbaarObjectIdentificatie
      */
     public function getAdresseerbaarObjectIdentificatie()
     {
@@ -540,7 +540,7 @@ class Adres implements ModelInterface, ArrayAccess
     /**
      * Sets adresseerbaar_object_identificatie
      *
-     * @param \BAG\Client\Model\AdresseerbaarObjectIdentificatie $adresseerbaar_object_identificatie adresseerbaar_object_identificatie
+     * @param \Swagger\Client\Model\AdresseerbaarObjectIdentificatie $adresseerbaar_object_identificatie adresseerbaar_object_identificatie
      *
      * @return $this
      */
@@ -554,7 +554,7 @@ class Adres implements ModelInterface, ArrayAccess
     /**
      * Gets pand_identificaties
      *
-     * @return \BAG\Client\Model\PandIdentificatie[]
+     * @return \Swagger\Client\Model\PandIdentificatie[]
      */
     public function getPandIdentificaties()
     {
@@ -564,7 +564,7 @@ class Adres implements ModelInterface, ArrayAccess
     /**
      * Sets pand_identificaties
      *
-     * @param \BAG\Client\Model\PandIdentificatie[] $pand_identificaties Identificatie(s) van het pand of de panden waar het verblijfsobject deel van uit maakt.
+     * @param \Swagger\Client\Model\PandIdentificatie[] $pand_identificaties Identificatie(s) van het pand of de panden waar het verblijfsobject deel van uit maakt.
      *
      * @return $this
      */

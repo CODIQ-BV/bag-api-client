@@ -1,4 +1,4 @@
-# BAG\Client\OpenbareRuimteApi
+# Swagger\Client\OpenbareRuimteApi
 
 All URIs are relative to *https://api.bag.acceptatie.kadaster.nl/lvbag/individuelebevragingen/v2*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**zoekOpenbareRuimten**](OpenbareRuimteApi.md#zoekopenbareruimten) | **GET** /openbareruimten | bevragen openbare ruimte(n) op basis van de verschillende combinaties van parameters.
 
 # **openbareruimteIdentificatie**
-> \BAG\Client\Model\OpenbareRuimteIOHal openbareruimteIdentificatie($openbare_ruimte_identificatie, $geldig_op, $beschikbaar_op, $expand)
+> \Swagger\Client\Model\OpenbareRuimteIOHal openbareruimteIdentificatie($openbare_ruimte_identificatie, $geldig_op, $beschikbaar_op, $expand)
 
 bevragen van een openbare ruimte met de identificatie van een openbare ruimte.
 
@@ -21,11 +21,11 @@ Bevragen/raadplegen van een openbare ruimte met de identificatie van een openbar
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\Client\Api\OpenbareRuimteApi(
+$apiInstance = new Swagger\Client\Api\OpenbareRuimteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\Client\Model\OpenbareRuimteIOHal**](../Model/OpenbareRuimteIOHal.md)
+[**\Swagger\Client\Model\OpenbareRuimteIOHal**](../Model/OpenbareRuimteIOHal.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **openbareruimteIdentificatieVoorkomen**
-> \BAG\Client\Model\OpenbareRuimteIOHal openbareruimteIdentificatieVoorkomen($openbare_ruimte_identificatie, $versie, $timestamp_registratie_lv)
+> \Swagger\Client\Model\OpenbareRuimteIOHal openbareruimteIdentificatieVoorkomen($openbare_ruimte_identificatie, $versie, $timestamp_registratie_lv)
 
 bevragen van een voorkomen van een openbare ruimte met de identificatie van een openbare ruimte en de identificatie van een voorkomen, bestaande uit een versie en een timestamp van het tijdstip van registratie in de LV BAG.
 
@@ -81,11 +81,11 @@ Bevragen/raadplegen van een voorkomen van een openbare ruimte met de identificat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\Client\Api\OpenbareRuimteApi(
+$apiInstance = new Swagger\Client\Api\OpenbareRuimteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\Client\Model\OpenbareRuimteIOHal**](../Model/OpenbareRuimteIOHal.md)
+[**\Swagger\Client\Model\OpenbareRuimteIOHal**](../Model/OpenbareRuimteIOHal.md)
 
 ### Authorization
 
@@ -128,7 +128,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **openbareruimteLvcIdentificatie**
-> \BAG\Client\Model\OpenbareRuimteIOLvcHalCollection openbareruimteLvcIdentificatie($openbare_ruimte_identificatie, $gehele_lvc)
+> \Swagger\Client\Model\OpenbareRuimteIOLvcHalCollection openbareruimteLvcIdentificatie($openbare_ruimte_identificatie, $gehele_lvc)
 
 bevragen levenscyclus van een openbare ruimte met de identificatie van een openbare ruimte.
 
@@ -139,11 +139,11 @@ Bevragen/raadplegen van de levenscyclus van één openbare ruimte, via de identi
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\Client\Api\OpenbareRuimteApi(
+$apiInstance = new Swagger\Client\Api\OpenbareRuimteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -170,7 +170,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\Client\Model\OpenbareRuimteIOLvcHalCollection**](../Model/OpenbareRuimteIOLvcHalCollection.md)
+[**\Swagger\Client\Model\OpenbareRuimteIOLvcHalCollection**](../Model/OpenbareRuimteIOLvcHalCollection.md)
 
 ### Authorization
 
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **zoekOpenbareRuimten**
-> \BAG\Client\Model\OpenbareRuimteIOHalCollection zoekOpenbareRuimten($woonplaats_naam, $openbare_ruimte_naam, $woonplaats_identificatie, $huidig, $geldig_op, $beschikbaar_op, $page, $page_size, $expand)
+> \Swagger\Client\Model\OpenbareRuimteIOHalCollection zoekOpenbareRuimten($woonplaats_naam, $openbare_ruimte_naam, $woonplaats_identificatie, $huidig, $geldig_op, $beschikbaar_op, $page, $page_size, $expand)
 
 bevragen openbare ruimte(n) op basis van de verschillende combinaties van parameters.
 
@@ -195,11 +195,11 @@ De volgende (combinaties van) parameters worden ondersteund:<br/> <ol>   <li>   
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\Client\Api\OpenbareRuimteApi(
+$apiInstance = new Swagger\Client\Api\OpenbareRuimteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -240,7 +240,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\Client\Model\OpenbareRuimteIOHalCollection**](../Model/OpenbareRuimteIOHalCollection.md)
+[**\Swagger\Client\Model\OpenbareRuimteIOHalCollection**](../Model/OpenbareRuimteIOHalCollection.md)
 
 ### Authorization
 

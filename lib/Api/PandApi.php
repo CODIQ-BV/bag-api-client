@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Api;
+namespace Swagger\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use BAG\Client\ApiException;
-use BAG\Client\Configuration;
-use BAG\Client\HeaderSelector;
-use BAG\Client\ObjectSerializer;
+use Swagger\Client\ApiException;
+use Swagger\Client\Configuration;
+use Swagger\Client\HeaderSelector;
+use Swagger\Client\ObjectSerializer;
 
 /**
  * PandApi Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,16 +91,16 @@ class PandApi
      *
      * bevragen panden met een geometrische locatie.
      *
-     * @param  \BAG\Client\Model\Point $body Geometrisch punt waarop de panden bepaald moeten worden. (required)
+     * @param  \Swagger\Client\Model\Point $body Geometrisch punt waarop de panden bepaald moeten worden. (required)
      * @param  string $content_crs CRS van de meegegeven geometrie. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      * @param  \DateTime $geldig_op Filtert op objecten die geldig zijn op de opgegeven datum &#x60;JJJJ-MM-DD&#x60; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
      * @param  \DateTime $beschikbaar_op Filtert op objecten die beschikbaar zijn op de opgegeven datum en tijd &#x60;YYYY-MM-DDThh:mm:ss.sss&#x27; Hierin kunnen de seconden &#x27;:ss&#x27; en milliseconden &#x27;.sss&#x27; of alleen de milliseconden conform ISO 8601 specificatie worden weggelaten, in dat geval krijgen deze automatisch de waarde &#x27;:00&#x27; respectievelijk &#x27;.000&#x27;. Indien er voor de milliseconden &#x27;.sss&#x27; meer dan 3 cijfers worden opgegeven, bv. &#x27;.12345&#x27;, dan wordt dit afgekapt tot &#x27;.123&#x27;. Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
      * @param  bool $huidig Indicatie dat alleen actuele object voorkomens zonder eindstatus gewenst zijn. (optional, default to false)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAG\Client\Model\PandIOHalCollection
+     * @return \Swagger\Client\Model\PandIOHalCollection
      */
     public function pandGeometrie($body, $content_crs = null, $accept_crs = null, $geldig_op = null, $beschikbaar_op = null, $huidig = 'false')
     {
@@ -113,20 +113,20 @@ class PandApi
      *
      * bevragen panden met een geometrische locatie.
      *
-     * @param  \BAG\Client\Model\Point $body Geometrisch punt waarop de panden bepaald moeten worden. (required)
+     * @param  \Swagger\Client\Model\Point $body Geometrisch punt waarop de panden bepaald moeten worden. (required)
      * @param  string $content_crs CRS van de meegegeven geometrie. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      * @param  \DateTime $geldig_op Filtert op objecten die geldig zijn op de opgegeven datum &#x60;JJJJ-MM-DD&#x60; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
      * @param  \DateTime $beschikbaar_op Filtert op objecten die beschikbaar zijn op de opgegeven datum en tijd &#x60;YYYY-MM-DDThh:mm:ss.sss&#x27; Hierin kunnen de seconden &#x27;:ss&#x27; en milliseconden &#x27;.sss&#x27; of alleen de milliseconden conform ISO 8601 specificatie worden weggelaten, in dat geval krijgen deze automatisch de waarde &#x27;:00&#x27; respectievelijk &#x27;.000&#x27;. Indien er voor de milliseconden &#x27;.sss&#x27; meer dan 3 cijfers worden opgegeven, bv. &#x27;.12345&#x27;, dan wordt dit afgekapt tot &#x27;.123&#x27;. Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
      * @param  bool $huidig Indicatie dat alleen actuele object voorkomens zonder eindstatus gewenst zijn. (optional, default to false)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAG\Client\Model\PandIOHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\PandIOHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function pandGeometrieWithHttpInfo($body, $content_crs = null, $accept_crs = null, $geldig_op = null, $beschikbaar_op = null, $huidig = 'false')
     {
-        $returnType = '\BAG\Client\Model\PandIOHalCollection';
+        $returnType = '\Swagger\Client\Model\PandIOHalCollection';
         $request = $this->pandGeometrieRequest($body, $content_crs, $accept_crs, $geldig_op, $beschikbaar_op, $huidig);
 
         try {
@@ -178,7 +178,7 @@ class PandApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\PandIOHalCollection',
+                        '\Swagger\Client\Model\PandIOHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -186,7 +186,7 @@ class PandApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -194,7 +194,7 @@ class PandApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -202,7 +202,7 @@ class PandApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class PandApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class PandApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -226,7 +226,7 @@ class PandApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -234,7 +234,7 @@ class PandApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -242,7 +242,7 @@ class PandApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -250,7 +250,7 @@ class PandApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -258,7 +258,7 @@ class PandApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -266,7 +266,7 @@ class PandApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -281,7 +281,7 @@ class PandApi
      *
      * bevragen panden met een geometrische locatie.
      *
-     * @param  \BAG\Client\Model\Point $body Geometrisch punt waarop de panden bepaald moeten worden. (required)
+     * @param  \Swagger\Client\Model\Point $body Geometrisch punt waarop de panden bepaald moeten worden. (required)
      * @param  string $content_crs CRS van de meegegeven geometrie. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      * @param  \DateTime $geldig_op Filtert op objecten die geldig zijn op de opgegeven datum &#x60;JJJJ-MM-DD&#x60; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
@@ -306,7 +306,7 @@ class PandApi
      *
      * bevragen panden met een geometrische locatie.
      *
-     * @param  \BAG\Client\Model\Point $body Geometrisch punt waarop de panden bepaald moeten worden. (required)
+     * @param  \Swagger\Client\Model\Point $body Geometrisch punt waarop de panden bepaald moeten worden. (required)
      * @param  string $content_crs CRS van de meegegeven geometrie. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      * @param  \DateTime $geldig_op Filtert op objecten die geldig zijn op de opgegeven datum &#x60;JJJJ-MM-DD&#x60; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
@@ -318,7 +318,7 @@ class PandApi
      */
     public function pandGeometrieAsyncWithHttpInfo($body, $content_crs = null, $accept_crs = null, $geldig_op = null, $beschikbaar_op = null, $huidig = 'false')
     {
-        $returnType = '\BAG\Client\Model\PandIOHalCollection';
+        $returnType = '\Swagger\Client\Model\PandIOHalCollection';
         $request = $this->pandGeometrieRequest($body, $content_crs, $accept_crs, $geldig_op, $beschikbaar_op, $huidig);
 
         return $this->client
@@ -361,7 +361,7 @@ class PandApi
     /**
      * Create request for operation 'pandGeometrie'
      *
-     * @param  \BAG\Client\Model\Point $body Geometrisch punt waarop de panden bepaald moeten worden. (required)
+     * @param  \Swagger\Client\Model\Point $body Geometrisch punt waarop de panden bepaald moeten worden. (required)
      * @param  string $content_crs CRS van de meegegeven geometrie. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      * @param  \DateTime $geldig_op Filtert op objecten die geldig zijn op de opgegeven datum &#x60;JJJJ-MM-DD&#x60; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
@@ -491,9 +491,9 @@ class PandApi
      * @param  \DateTime $beschikbaar_op Filtert op objecten die beschikbaar zijn op de opgegeven datum en tijd &#x60;YYYY-MM-DDThh:mm:ss.sss&#x27; Hierin kunnen de seconden &#x27;:ss&#x27; en milliseconden &#x27;.sss&#x27; of alleen de milliseconden conform ISO 8601 specificatie worden weggelaten, in dat geval krijgen deze automatisch de waarde &#x27;:00&#x27; respectievelijk &#x27;.000&#x27;. Indien er voor de milliseconden &#x27;.sss&#x27; meer dan 3 cijfers worden opgegeven, bv. &#x27;.12345&#x27;, dan wordt dit afgekapt tot &#x27;.123&#x27;. Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAG\Client\Model\PandIOHal
+     * @return \Swagger\Client\Model\PandIOHal
      */
     public function pandIdentificatie($identificatie, $geldig_op = null, $beschikbaar_op = null, $accept_crs = null)
     {
@@ -511,13 +511,13 @@ class PandApi
      * @param  \DateTime $beschikbaar_op Filtert op objecten die beschikbaar zijn op de opgegeven datum en tijd &#x60;YYYY-MM-DDThh:mm:ss.sss&#x27; Hierin kunnen de seconden &#x27;:ss&#x27; en milliseconden &#x27;.sss&#x27; of alleen de milliseconden conform ISO 8601 specificatie worden weggelaten, in dat geval krijgen deze automatisch de waarde &#x27;:00&#x27; respectievelijk &#x27;.000&#x27;. Indien er voor de milliseconden &#x27;.sss&#x27; meer dan 3 cijfers worden opgegeven, bv. &#x27;.12345&#x27;, dan wordt dit afgekapt tot &#x27;.123&#x27;. Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAG\Client\Model\PandIOHal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\PandIOHal, HTTP status code, HTTP response headers (array of strings)
      */
     public function pandIdentificatieWithHttpInfo($identificatie, $geldig_op = null, $beschikbaar_op = null, $accept_crs = null)
     {
-        $returnType = '\BAG\Client\Model\PandIOHal';
+        $returnType = '\Swagger\Client\Model\PandIOHal';
         $request = $this->pandIdentificatieRequest($identificatie, $geldig_op, $beschikbaar_op, $accept_crs);
 
         try {
@@ -569,7 +569,7 @@ class PandApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\PandIOHal',
+                        '\Swagger\Client\Model\PandIOHal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -577,7 +577,7 @@ class PandApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -585,7 +585,7 @@ class PandApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -593,7 +593,7 @@ class PandApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -601,7 +601,7 @@ class PandApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -609,7 +609,7 @@ class PandApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -617,7 +617,7 @@ class PandApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -625,7 +625,7 @@ class PandApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -633,7 +633,7 @@ class PandApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -641,7 +641,7 @@ class PandApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -649,7 +649,7 @@ class PandApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -697,7 +697,7 @@ class PandApi
      */
     public function pandIdentificatieAsyncWithHttpInfo($identificatie, $geldig_op = null, $beschikbaar_op = null, $accept_crs = null)
     {
-        $returnType = '\BAG\Client\Model\PandIOHal';
+        $returnType = '\Swagger\Client\Model\PandIOHal';
         $request = $this->pandIdentificatieRequest($identificatie, $geldig_op, $beschikbaar_op, $accept_crs);
 
         return $this->client
@@ -865,9 +865,9 @@ class PandApi
      * @param  string $timestamp_registratie_lv Een timestamp van het tijdstip waarop een voorkomen is geregistreerd in de LV BAG (required)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAG\Client\Model\PandIOHal
+     * @return \Swagger\Client\Model\PandIOHal
      */
     public function pandIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $accept_crs = null)
     {
@@ -885,13 +885,13 @@ class PandApi
      * @param  string $timestamp_registratie_lv Een timestamp van het tijdstip waarop een voorkomen is geregistreerd in de LV BAG (required)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAG\Client\Model\PandIOHal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\PandIOHal, HTTP status code, HTTP response headers (array of strings)
      */
     public function pandIdentificatieVoorkomenWithHttpInfo($identificatie, $versie, $timestamp_registratie_lv, $accept_crs = null)
     {
-        $returnType = '\BAG\Client\Model\PandIOHal';
+        $returnType = '\Swagger\Client\Model\PandIOHal';
         $request = $this->pandIdentificatieVoorkomenRequest($identificatie, $versie, $timestamp_registratie_lv, $accept_crs);
 
         try {
@@ -943,7 +943,7 @@ class PandApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\PandIOHal',
+                        '\Swagger\Client\Model\PandIOHal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -951,7 +951,7 @@ class PandApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -959,7 +959,7 @@ class PandApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -967,7 +967,7 @@ class PandApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -975,7 +975,7 @@ class PandApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -983,7 +983,7 @@ class PandApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -991,7 +991,7 @@ class PandApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -999,7 +999,7 @@ class PandApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1007,7 +1007,7 @@ class PandApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1015,7 +1015,7 @@ class PandApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1023,7 +1023,7 @@ class PandApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1071,7 +1071,7 @@ class PandApi
      */
     public function pandIdentificatieVoorkomenAsyncWithHttpInfo($identificatie, $versie, $timestamp_registratie_lv, $accept_crs = null)
     {
-        $returnType = '\BAG\Client\Model\PandIOHal';
+        $returnType = '\Swagger\Client\Model\PandIOHal';
         $request = $this->pandIdentificatieVoorkomenRequest($identificatie, $versie, $timestamp_registratie_lv, $accept_crs);
 
         return $this->client
@@ -1258,9 +1258,9 @@ class PandApi
      * @param  bool $gehele_lvc Filtert naast geldige voorkomens ook de voorkomens die uit de geldige levenscyclus van het object zijn verwijderd. Als deze parameter wordt weggelaten worden alleen geldige voorkomens geretourneerd (default is false). Voor een toelichting zie de [Praktijkhandleiding BAG](https://imbag.github.io/praktijkhandleiding/artikelen/wat-is-het-verschil-tussen-actieve-voorkomens-actuele-voorkomens-en-huidige-voorkomens). (optional, default to false)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAG\Client\Model\PandIOLvcHalCollection
+     * @return \Swagger\Client\Model\PandIOLvcHalCollection
      */
     public function pandLvcIdentificatie($identificatie, $gehele_lvc = 'false', $accept_crs = null)
     {
@@ -1277,13 +1277,13 @@ class PandApi
      * @param  bool $gehele_lvc Filtert naast geldige voorkomens ook de voorkomens die uit de geldige levenscyclus van het object zijn verwijderd. Als deze parameter wordt weggelaten worden alleen geldige voorkomens geretourneerd (default is false). Voor een toelichting zie de [Praktijkhandleiding BAG](https://imbag.github.io/praktijkhandleiding/artikelen/wat-is-het-verschil-tussen-actieve-voorkomens-actuele-voorkomens-en-huidige-voorkomens). (optional, default to false)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAG\Client\Model\PandIOLvcHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\PandIOLvcHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function pandLvcIdentificatieWithHttpInfo($identificatie, $gehele_lvc = 'false', $accept_crs = null)
     {
-        $returnType = '\BAG\Client\Model\PandIOLvcHalCollection';
+        $returnType = '\Swagger\Client\Model\PandIOLvcHalCollection';
         $request = $this->pandLvcIdentificatieRequest($identificatie, $gehele_lvc, $accept_crs);
 
         try {
@@ -1335,7 +1335,7 @@ class PandApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\PandIOLvcHalCollection',
+                        '\Swagger\Client\Model\PandIOLvcHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1343,7 +1343,7 @@ class PandApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1351,7 +1351,7 @@ class PandApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1359,7 +1359,7 @@ class PandApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1367,7 +1367,7 @@ class PandApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1375,7 +1375,7 @@ class PandApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1383,7 +1383,7 @@ class PandApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1391,7 +1391,7 @@ class PandApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1399,7 +1399,7 @@ class PandApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1407,7 +1407,7 @@ class PandApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1415,7 +1415,7 @@ class PandApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1461,7 +1461,7 @@ class PandApi
      */
     public function pandLvcIdentificatieAsyncWithHttpInfo($identificatie, $gehele_lvc = 'false', $accept_crs = null)
     {
-        $returnType = '\BAG\Client\Model\PandIOLvcHalCollection';
+        $returnType = '\Swagger\Client\Model\PandIOLvcHalCollection';
         $request = $this->pandLvcIdentificatieRequest($identificatie, $gehele_lvc, $accept_crs);
 
         return $this->client

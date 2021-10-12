@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * VerblijfsobjectIOHal Class Doc Comment
  *
  * @category Class
  * @description Een verzameling van een verblijfsobject en een lijst van alle bijbehorende inonderzoek informatie.
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class VerblijfsobjectIOHal implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'verblijfsobject' => '\BAG\Client\Model\Verblijfsobject',
-'inonderzoek' => '\BAG\Client\Model\KenmerkVerblijfsobjectInOnderzoek[]',
-'_embedded' => '\BAG\Client\Model\VerblijfsobjectEmbedded',
-'_links' => '\BAG\Client\Model\VerblijfsobjectLinks'    ];
+        'verblijfsobject' => '\Swagger\Client\Model\Verblijfsobject',
+'inonderzoek' => '\Swagger\Client\Model\KenmerkVerblijfsobjectInOnderzoek[]',
+'_embedded' => '\Swagger\Client\Model\VerblijfsobjectEmbedded',
+'_links' => '\Swagger\Client\Model\VerblijfsobjectLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -221,7 +221,7 @@ class VerblijfsobjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets verblijfsobject
      *
-     * @return \BAG\Client\Model\Verblijfsobject
+     * @return \Swagger\Client\Model\Verblijfsobject
      */
     public function getVerblijfsobject()
     {
@@ -231,7 +231,7 @@ class VerblijfsobjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets verblijfsobject
      *
-     * @param \BAG\Client\Model\Verblijfsobject $verblijfsobject verblijfsobject
+     * @param \Swagger\Client\Model\Verblijfsobject $verblijfsobject verblijfsobject
      *
      * @return $this
      */
@@ -245,7 +245,7 @@ class VerblijfsobjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets inonderzoek
      *
-     * @return \BAG\Client\Model\KenmerkVerblijfsobjectInOnderzoek[]
+     * @return \Swagger\Client\Model\KenmerkVerblijfsobjectInOnderzoek[]
      */
     public function getInonderzoek()
     {
@@ -255,7 +255,7 @@ class VerblijfsobjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets inonderzoek
      *
-     * @param \BAG\Client\Model\KenmerkVerblijfsobjectInOnderzoek[] $inonderzoek inonderzoek
+     * @param \Swagger\Client\Model\KenmerkVerblijfsobjectInOnderzoek[] $inonderzoek inonderzoek
      *
      * @return $this
      */
@@ -269,7 +269,7 @@ class VerblijfsobjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _embedded
      *
-     * @return \BAG\Client\Model\VerblijfsobjectEmbedded
+     * @return \Swagger\Client\Model\VerblijfsobjectEmbedded
      */
     public function getEmbedded()
     {
@@ -279,7 +279,7 @@ class VerblijfsobjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _embedded
      *
-     * @param \BAG\Client\Model\VerblijfsobjectEmbedded $_embedded _embedded
+     * @param \Swagger\Client\Model\VerblijfsobjectEmbedded $_embedded _embedded
      *
      * @return $this
      */
@@ -293,7 +293,7 @@ class VerblijfsobjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAG\Client\Model\VerblijfsobjectLinks
+     * @return \Swagger\Client\Model\VerblijfsobjectLinks
      */
     public function getLinks()
     {
@@ -303,7 +303,7 @@ class VerblijfsobjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAG\Client\Model\VerblijfsobjectLinks $_links _links
+     * @param \Swagger\Client\Model\VerblijfsobjectLinks $_links _links
      *
      * @return $this
      */

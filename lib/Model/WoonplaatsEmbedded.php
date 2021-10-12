@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * WoonplaatsEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class WoonplaatsEmbedded implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'geometrie' => '\BAG\Client\Model\VlakOfMultivlak',
-'bronhouders' => '\BAG\Client\Model\Bronhouder[]'    ];
+        'geometrie' => '\Swagger\Client\Model\VlakOfMultivlak',
+'bronhouders' => '\Swagger\Client\Model\Bronhouder[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class WoonplaatsEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets geometrie
      *
-     * @return \BAG\Client\Model\VlakOfMultivlak
+     * @return \Swagger\Client\Model\VlakOfMultivlak
      */
     public function getGeometrie()
     {
@@ -215,7 +215,7 @@ class WoonplaatsEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets geometrie
      *
-     * @param \BAG\Client\Model\VlakOfMultivlak $geometrie geometrie
+     * @param \Swagger\Client\Model\VlakOfMultivlak $geometrie geometrie
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class WoonplaatsEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets bronhouders
      *
-     * @return \BAG\Client\Model\Bronhouder[]
+     * @return \Swagger\Client\Model\Bronhouder[]
      */
     public function getBronhouders()
     {
@@ -239,7 +239,7 @@ class WoonplaatsEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets bronhouders
      *
-     * @param \BAG\Client\Model\Bronhouder[] $bronhouders bronhouders
+     * @param \Swagger\Client\Model\Bronhouder[] $bronhouders bronhouders
      *
      * @return $this
      */

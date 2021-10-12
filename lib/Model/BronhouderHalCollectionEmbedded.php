@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * BronhouderHalCollectionEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class BronhouderHalCollectionEmbedded implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'bronhouders' => '\BAG\Client\Model\BronhouderHal[]'    ];
+        'bronhouders' => '\Swagger\Client\Model\BronhouderHal[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class BronhouderHalCollectionEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets bronhouders
      *
-     * @return \BAG\Client\Model\BronhouderHal[]
+     * @return \Swagger\Client\Model\BronhouderHal[]
      */
     public function getBronhouders()
     {
@@ -209,7 +209,7 @@ class BronhouderHalCollectionEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets bronhouders
      *
-     * @param \BAG\Client\Model\BronhouderHal[] $bronhouders bronhouders
+     * @param \Swagger\Client\Model\BronhouderHal[] $bronhouders bronhouders
      *
      * @return $this
      */

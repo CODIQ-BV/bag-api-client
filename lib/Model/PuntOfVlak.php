@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * PuntOfVlak Class Doc Comment
  *
  * @category Class
  * @description Een samengesteld geometriegegevenstype waarbij wordt afgedwongen dat voor de geometrie een keuze gemaakt moet worden tussen een punt of een vlak.
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +57,8 @@ class PuntOfVlak implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'punt' => '\BAG\Client\Model\Point',
-'vlak' => '\BAG\Client\Model\Surface'    ];
+        'punt' => '\Swagger\Client\Model\Point',
+'vlak' => '\Swagger\Client\Model\Surface'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -206,7 +206,7 @@ class PuntOfVlak implements ModelInterface, ArrayAccess
     /**
      * Gets punt
      *
-     * @return \BAG\Client\Model\Point
+     * @return \Swagger\Client\Model\Point
      */
     public function getPunt()
     {
@@ -216,7 +216,7 @@ class PuntOfVlak implements ModelInterface, ArrayAccess
     /**
      * Sets punt
      *
-     * @param \BAG\Client\Model\Point $punt punt
+     * @param \Swagger\Client\Model\Point $punt punt
      *
      * @return $this
      */
@@ -230,7 +230,7 @@ class PuntOfVlak implements ModelInterface, ArrayAccess
     /**
      * Gets vlak
      *
-     * @return \BAG\Client\Model\Surface
+     * @return \Swagger\Client\Model\Surface
      */
     public function getVlak()
     {
@@ -240,7 +240,7 @@ class PuntOfVlak implements ModelInterface, ArrayAccess
     /**
      * Sets vlak
      *
-     * @param \BAG\Client\Model\Surface $vlak vlak
+     * @param \Swagger\Client\Model\Surface $vlak vlak
      *
      * @return $this
      */

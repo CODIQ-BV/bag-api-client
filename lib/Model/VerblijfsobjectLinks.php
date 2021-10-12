@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * VerblijfsobjectLinks Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,10 +56,10 @@ class VerblijfsobjectLinks implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'self' => '\BAG\Client\Model\HalLink',
-'heeft_als_hoofd_adres' => '\BAG\Client\Model\HalLink',
-'heeft_als_neven_adres' => '\BAG\Client\Model\HalLink[]',
-'maakt_deel_uit_van' => '\BAG\Client\Model\HalLink[]'    ];
+        'self' => '\Swagger\Client\Model\HalLink',
+'heeft_als_hoofd_adres' => '\Swagger\Client\Model\HalLink',
+'heeft_als_neven_adres' => '\Swagger\Client\Model\HalLink[]',
+'maakt_deel_uit_van' => '\Swagger\Client\Model\HalLink[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -226,7 +226,7 @@ class VerblijfsobjectLinks implements ModelInterface, ArrayAccess
     /**
      * Gets self
      *
-     * @return \BAG\Client\Model\HalLink
+     * @return \Swagger\Client\Model\HalLink
      */
     public function getSelf()
     {
@@ -236,7 +236,7 @@ class VerblijfsobjectLinks implements ModelInterface, ArrayAccess
     /**
      * Sets self
      *
-     * @param \BAG\Client\Model\HalLink $self self
+     * @param \Swagger\Client\Model\HalLink $self self
      *
      * @return $this
      */
@@ -250,7 +250,7 @@ class VerblijfsobjectLinks implements ModelInterface, ArrayAccess
     /**
      * Gets heeft_als_hoofd_adres
      *
-     * @return \BAG\Client\Model\HalLink
+     * @return \Swagger\Client\Model\HalLink
      */
     public function getHeeftAlsHoofdAdres()
     {
@@ -260,7 +260,7 @@ class VerblijfsobjectLinks implements ModelInterface, ArrayAccess
     /**
      * Sets heeft_als_hoofd_adres
      *
-     * @param \BAG\Client\Model\HalLink $heeft_als_hoofd_adres heeft_als_hoofd_adres
+     * @param \Swagger\Client\Model\HalLink $heeft_als_hoofd_adres heeft_als_hoofd_adres
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class VerblijfsobjectLinks implements ModelInterface, ArrayAccess
     /**
      * Gets heeft_als_neven_adres
      *
-     * @return \BAG\Client\Model\HalLink[]
+     * @return \Swagger\Client\Model\HalLink[]
      */
     public function getHeeftAlsNevenAdres()
     {
@@ -284,7 +284,7 @@ class VerblijfsobjectLinks implements ModelInterface, ArrayAccess
     /**
      * Sets heeft_als_neven_adres
      *
-     * @param \BAG\Client\Model\HalLink[] $heeft_als_neven_adres De nummeraanduidingen die dit adresseerbare object als nevenadressen heeft. Van deze gerelateerd nummeraanduiding: hiervan het voorkomen van nummeraanduiding die gevonden wordt op basis van dezelfde tijdreisparameters als waarmee het adresseerbare object voorkomen gevonden is.
+     * @param \Swagger\Client\Model\HalLink[] $heeft_als_neven_adres De nummeraanduidingen die dit adresseerbare object als nevenadressen heeft. Van deze gerelateerd nummeraanduiding: hiervan het voorkomen van nummeraanduiding die gevonden wordt op basis van dezelfde tijdreisparameters als waarmee het adresseerbare object voorkomen gevonden is.
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class VerblijfsobjectLinks implements ModelInterface, ArrayAccess
     /**
      * Gets maakt_deel_uit_van
      *
-     * @return \BAG\Client\Model\HalLink[]
+     * @return \Swagger\Client\Model\HalLink[]
      */
     public function getMaaktDeelUitVan()
     {
@@ -308,7 +308,7 @@ class VerblijfsobjectLinks implements ModelInterface, ArrayAccess
     /**
      * Sets maakt_deel_uit_van
      *
-     * @param \BAG\Client\Model\HalLink[] $maakt_deel_uit_van De panden (1 of meer) waarvan dit verblijfsobject deel uit maakt. Van deze panden: hiervan het voorkomen van pand die gevonden worden op basis van dezelfde tijdreisparameters als waarmee het verblijfsobject voorkomen gevonden is.
+     * @param \Swagger\Client\Model\HalLink[] $maakt_deel_uit_van De panden (1 of meer) waarvan dit verblijfsobject deel uit maakt. Van deze panden: hiervan het voorkomen van pand die gevonden worden op basis van dezelfde tijdreisparameters als waarmee het verblijfsobject voorkomen gevonden is.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * Woonplaats Class Doc Comment
  *
  * @category Class
  * @description Een Woonplaats is een door het bevoegde gemeentelijke orgaan als zodanig aangewezen en van een naam voorzien gedeelte van het grondgebied van de gemeente.
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,14 +57,14 @@ class Woonplaats implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'identificatie' => '\BAG\Client\Model\WoonplaatsIdentificatie',
+        'identificatie' => '\Swagger\Client\Model\WoonplaatsIdentificatie',
 'domein' => 'string',
 'naam' => 'string',
-'status' => '\BAG\Client\Model\StatusWoonplaats',
-'geconstateerd' => '\BAG\Client\Model\Indicatie',
+'status' => '\Swagger\Client\Model\StatusWoonplaats',
+'geconstateerd' => '\Swagger\Client\Model\Indicatie',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string',
-'voorkomen' => '\BAG\Client\Model\Voorkomen'    ];
+'voorkomen' => '\Swagger\Client\Model\Voorkomen'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -266,7 +266,7 @@ class Woonplaats implements ModelInterface, ArrayAccess
     /**
      * Gets identificatie
      *
-     * @return \BAG\Client\Model\WoonplaatsIdentificatie
+     * @return \Swagger\Client\Model\WoonplaatsIdentificatie
      */
     public function getIdentificatie()
     {
@@ -276,7 +276,7 @@ class Woonplaats implements ModelInterface, ArrayAccess
     /**
      * Sets identificatie
      *
-     * @param \BAG\Client\Model\WoonplaatsIdentificatie $identificatie identificatie
+     * @param \Swagger\Client\Model\WoonplaatsIdentificatie $identificatie identificatie
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class Woonplaats implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \BAG\Client\Model\StatusWoonplaats
+     * @return \Swagger\Client\Model\StatusWoonplaats
      */
     public function getStatus()
     {
@@ -348,7 +348,7 @@ class Woonplaats implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \BAG\Client\Model\StatusWoonplaats $status status
+     * @param \Swagger\Client\Model\StatusWoonplaats $status status
      *
      * @return $this
      */
@@ -362,7 +362,7 @@ class Woonplaats implements ModelInterface, ArrayAccess
     /**
      * Gets geconstateerd
      *
-     * @return \BAG\Client\Model\Indicatie
+     * @return \Swagger\Client\Model\Indicatie
      */
     public function getGeconstateerd()
     {
@@ -372,7 +372,7 @@ class Woonplaats implements ModelInterface, ArrayAccess
     /**
      * Sets geconstateerd
      *
-     * @param \BAG\Client\Model\Indicatie $geconstateerd geconstateerd
+     * @param \Swagger\Client\Model\Indicatie $geconstateerd geconstateerd
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class Woonplaats implements ModelInterface, ArrayAccess
     /**
      * Gets voorkomen
      *
-     * @return \BAG\Client\Model\Voorkomen
+     * @return \Swagger\Client\Model\Voorkomen
      */
     public function getVoorkomen()
     {
@@ -444,7 +444,7 @@ class Woonplaats implements ModelInterface, ArrayAccess
     /**
      * Sets voorkomen
      *
-     * @param \BAG\Client\Model\Voorkomen $voorkomen voorkomen
+     * @param \Swagger\Client\Model\Voorkomen $voorkomen voorkomen
      *
      * @return $this
      */

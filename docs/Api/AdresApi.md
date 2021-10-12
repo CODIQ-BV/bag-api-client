@@ -1,4 +1,4 @@
-# BAG\Client\AdresApi
+# Swagger\Client\AdresApi
 
 All URIs are relative to *https://api.bag.acceptatie.kadaster.nl/lvbag/individuelebevragingen/v2*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**zoek**](AdresApi.md#zoek) | **GET** /adressen/zoek | Zoeken van huidige adressen
 
 # **bevraagAdressen**
-> \BAG\Client\Model\AdresIOHalCollection bevraagAdressen($zoekresultaat_identificatie, $postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $adresseerbaar_object_identificatie, $woonplaats_naam, $openbare_ruimte_naam, $pand_identificatie, $expand, $page, $page_size)
+> \Swagger\Client\Model\AdresIOHalCollection bevraagAdressen($zoekresultaat_identificatie, $postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $adresseerbaar_object_identificatie, $woonplaats_naam, $openbare_ruimte_naam, $pand_identificatie, $expand, $page, $page_size)
 
 Bevragen van huidige adressen met een (combinatie van) zoek parameters.
 
@@ -20,11 +20,11 @@ De volgende bevragingen worden ondersteund: <ol>   <li>     Bevragen van één h
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\Client\Api\AdresApi(
+$apiInstance = new Swagger\Client\Api\AdresApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\Client\Model\AdresIOHalCollection**](../Model/AdresIOHalCollection.md)
+[**\Swagger\Client\Model\AdresIOHalCollection**](../Model/AdresIOHalCollection.md)
 
 ### Authorization
 
@@ -87,7 +87,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bevraagAdressenMetNumId**
-> \BAG\Client\Model\AdresIOHal bevraagAdressenMetNumId($nummeraanduiding_identificatie, $expand)
+> \Swagger\Client\Model\AdresIOHal bevraagAdressenMetNumId($nummeraanduiding_identificatie, $expand)
 
 Bevragen van een huidig adres met de identificatie van een nummeraanduiding.
 
@@ -98,11 +98,11 @@ Bevragen van een huidig adres met de identificatie van een nummeraanduiding. Als
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\Client\Api\AdresApi(
+$apiInstance = new Swagger\Client\Api\AdresApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\Client\Model\AdresIOHal**](../Model/AdresIOHal.md)
+[**\Swagger\Client\Model\AdresIOHal**](../Model/AdresIOHal.md)
 
 ### Authorization
 
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **zoek**
-> \BAG\Client\Model\ZoekResultaatHalCollection zoek($zoek, $page, $page_size)
+> \Swagger\Client\Model\ZoekResultaatHalCollection zoek($zoek, $page, $page_size)
 
 Zoeken van huidige adressen
 
@@ -154,11 +154,11 @@ Zoeken van huidige adressen met postcode, woonplaats, straatnaam, huisnummer, hu
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\Client\Api\AdresApi(
+$apiInstance = new Swagger\Client\Api\AdresApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\Client\Model\ZoekResultaatHalCollection**](../Model/ZoekResultaatHalCollection.md)
+[**\Swagger\Client\Model\ZoekResultaatHalCollection**](../Model/ZoekResultaatHalCollection.md)
 
 ### Authorization
 

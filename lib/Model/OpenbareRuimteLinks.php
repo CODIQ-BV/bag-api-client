@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * OpenbareRuimteLinks Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class OpenbareRuimteLinks implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'self' => '\BAG\Client\Model\HalLink',
-'ligt_in_woonplaats' => '\BAG\Client\Model\HalLink'    ];
+        'self' => '\Swagger\Client\Model\HalLink',
+'ligt_in_woonplaats' => '\Swagger\Client\Model\HalLink'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -208,7 +208,7 @@ class OpenbareRuimteLinks implements ModelInterface, ArrayAccess
     /**
      * Gets self
      *
-     * @return \BAG\Client\Model\HalLink
+     * @return \Swagger\Client\Model\HalLink
      */
     public function getSelf()
     {
@@ -218,7 +218,7 @@ class OpenbareRuimteLinks implements ModelInterface, ArrayAccess
     /**
      * Sets self
      *
-     * @param \BAG\Client\Model\HalLink $self self
+     * @param \Swagger\Client\Model\HalLink $self self
      *
      * @return $this
      */
@@ -232,7 +232,7 @@ class OpenbareRuimteLinks implements ModelInterface, ArrayAccess
     /**
      * Gets ligt_in_woonplaats
      *
-     * @return \BAG\Client\Model\HalLink
+     * @return \Swagger\Client\Model\HalLink
      */
     public function getLigtInWoonplaats()
     {
@@ -242,7 +242,7 @@ class OpenbareRuimteLinks implements ModelInterface, ArrayAccess
     /**
      * Sets ligt_in_woonplaats
      *
-     * @param \BAG\Client\Model\HalLink $ligt_in_woonplaats ligt_in_woonplaats
+     * @param \Swagger\Client\Model\HalLink $ligt_in_woonplaats ligt_in_woonplaats
      *
      * @return $this
      */

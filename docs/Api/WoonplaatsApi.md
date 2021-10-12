@@ -1,4 +1,4 @@
-# BAG\Client\WoonplaatsApi
+# Swagger\Client\WoonplaatsApi
 
 All URIs are relative to *https://api.bag.acceptatie.kadaster.nl/lvbag/individuelebevragingen/v2*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**woonplaatsNaam**](WoonplaatsApi.md#woonplaatsnaam) | **GET** /woonplaatsen | bevragen van één of meer woonplaatsen met een woonplaatsnaam.
 
 # **woonplaatsGeometrie**
-> \BAG\Client\Model\WoonplaatsIOHalCollection woonplaatsGeometrie($body, $content_crs, $accept_crs, $geldig_op, $beschikbaar_op, $huidig, $expand)
+> \Swagger\Client\Model\WoonplaatsIOHalCollection woonplaatsGeometrie($body, $content_crs, $accept_crs, $geldig_op, $beschikbaar_op, $huidig, $expand)
 
 bevragen van een woonplaats met een geometrische locatie.
 
@@ -22,17 +22,17 @@ Bevragen/raadplegen van een voorkomen van een Woonplaats met een geometrische lo
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\Client\Api\WoonplaatsApi(
+$apiInstance = new Swagger\Client\Api\WoonplaatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \BAG\Client\Model\Point(); // \BAG\Client\Model\Point | Geometrisch punt waarop de woonplaatsen bepaald moeten worden.
+$body = new \Swagger\Client\Model\Point(); // \Swagger\Client\Model\Point | Geometrisch punt waarop de woonplaatsen bepaald moeten worden.
 $content_crs = "content_crs_example"; // string | CRS van de meegegeven geometrie.
 $accept_crs = "accept_crs_example"; // string | Gewenste CRS van de co�rdinaten in de response.
 $geldig_op = new \DateTime("2013-10-20"); // \DateTime | Filtert op objecten die geldig zijn op de opgegeven datum 'YYYY-MM-DD' Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen.
@@ -53,7 +53,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\BAG\Client\Model\Point**](../Model/Point.md)| Geometrisch punt waarop de woonplaatsen bepaald moeten worden. |
+ **body** | [**\Swagger\Client\Model\Point**](../Model/Point.md)| Geometrisch punt waarop de woonplaatsen bepaald moeten worden. |
  **content_crs** | **string**| CRS van de meegegeven geometrie. | [optional]
  **accept_crs** | **string**| Gewenste CRS van de co�rdinaten in de response. | [optional]
  **geldig_op** | **\DateTime**| Filtert op objecten die geldig zijn op de opgegeven datum &#x27;YYYY-MM-DD&#x27; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. | [optional]
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\Client\Model\WoonplaatsIOHalCollection**](../Model/WoonplaatsIOHalCollection.md)
+[**\Swagger\Client\Model\WoonplaatsIOHalCollection**](../Model/WoonplaatsIOHalCollection.md)
 
 ### Authorization
 
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **woonplaatsIdentificatie**
-> \BAG\Client\Model\WoonplaatsIOHal woonplaatsIdentificatie($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
+> \Swagger\Client\Model\WoonplaatsIOHal woonplaatsIdentificatie($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
 
 bevragen van een woonplaats met de identificatie van een woonplaats.
 
@@ -88,11 +88,11 @@ Bevragen/raadplegen van een voorkomen van een Woonplaats met de identificatie va
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\Client\Api\WoonplaatsApi(
+$apiInstance = new Swagger\Client\Api\WoonplaatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\Client\Model\WoonplaatsIOHal**](../Model/WoonplaatsIOHal.md)
+[**\Swagger\Client\Model\WoonplaatsIOHal**](../Model/WoonplaatsIOHal.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **woonplaatsIdentificatieVoorkomen**
-> \BAG\Client\Model\WoonplaatsIOHal woonplaatsIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $expand, $accept_crs)
+> \Swagger\Client\Model\WoonplaatsIOHal woonplaatsIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $expand, $accept_crs)
 
 bevragen van een voorkomen van een woonplaats met de identificatie van een woonplaats en de identificatie van een voorkomen, bestaande uit een versie en een timestamp van het tijdstip van registratie in de LV BAG.
 
@@ -150,11 +150,11 @@ Bevragen/raadplegen van een voorkomen van een Woonplaats met de identificatie va
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\Client\Api\WoonplaatsApi(
+$apiInstance = new Swagger\Client\Api\WoonplaatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\Client\Model\WoonplaatsIOHal**](../Model/WoonplaatsIOHal.md)
+[**\Swagger\Client\Model\WoonplaatsIOHal**](../Model/WoonplaatsIOHal.md)
 
 ### Authorization
 
@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **woonplaatsLvcIdentificatie**
-> \BAG\Client\Model\WoonplaatsIOLvcHalCollection woonplaatsLvcIdentificatie($identificatie, $gehele_lvc, $expand, $accept_crs)
+> \Swagger\Client\Model\WoonplaatsIOLvcHalCollection woonplaatsLvcIdentificatie($identificatie, $gehele_lvc, $expand, $accept_crs)
 
 bevragen van de levenscyclus van een woonplaats met de identificatie van een woonplaats.
 
@@ -212,11 +212,11 @@ Bevragen/raadplegen van de levenscyclus van een Woonplaats met de identificatie 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\Client\Api\WoonplaatsApi(
+$apiInstance = new Swagger\Client\Api\WoonplaatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -247,7 +247,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\Client\Model\WoonplaatsIOLvcHalCollection**](../Model/WoonplaatsIOLvcHalCollection.md)
+[**\Swagger\Client\Model\WoonplaatsIOLvcHalCollection**](../Model/WoonplaatsIOLvcHalCollection.md)
 
 ### Authorization
 
@@ -261,7 +261,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **woonplaatsNaam**
-> \BAG\Client\Model\WoonplaatsIOHalCollection woonplaatsNaam($naam, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
+> \Swagger\Client\Model\WoonplaatsIOHalCollection woonplaatsNaam($naam, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
 
 bevragen van één of meer woonplaatsen met een woonplaatsnaam.
 
@@ -272,11 +272,11 @@ Bevragen/raadplegen van één voorkomen van één of meer woonplaatsen met een w
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\Client\Api\WoonplaatsApi(
+$apiInstance = new Swagger\Client\Api\WoonplaatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -309,7 +309,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\Client\Model\WoonplaatsIOHalCollection**](../Model/WoonplaatsIOHalCollection.md)
+[**\Swagger\Client\Model\WoonplaatsIOHalCollection**](../Model/WoonplaatsIOHalCollection.md)
 
 ### Authorization
 

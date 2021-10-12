@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * AdresIOHalCollection Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class AdresIOHalCollection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        '_links' => '\BAG\Client\Model\HalPaginationLinks',
-'_embedded' => '\BAG\Client\Model\AdresIOHalCollectionEmbedded'    ];
+        '_links' => '\Swagger\Client\Model\HalPaginationLinks',
+'_embedded' => '\Swagger\Client\Model\AdresIOHalCollectionEmbedded'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class AdresIOHalCollection implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAG\Client\Model\HalPaginationLinks
+     * @return \Swagger\Client\Model\HalPaginationLinks
      */
     public function getLinks()
     {
@@ -215,7 +215,7 @@ class AdresIOHalCollection implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAG\Client\Model\HalPaginationLinks $_links _links
+     * @param \Swagger\Client\Model\HalPaginationLinks $_links _links
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class AdresIOHalCollection implements ModelInterface, ArrayAccess
     /**
      * Gets _embedded
      *
-     * @return \BAG\Client\Model\AdresIOHalCollectionEmbedded
+     * @return \Swagger\Client\Model\AdresIOHalCollectionEmbedded
      */
     public function getEmbedded()
     {
@@ -239,7 +239,7 @@ class AdresIOHalCollection implements ModelInterface, ArrayAccess
     /**
      * Sets _embedded
      *
-     * @param \BAG\Client\Model\AdresIOHalCollectionEmbedded $_embedded _embedded
+     * @param \Swagger\Client\Model\AdresIOHalCollectionEmbedded $_embedded _embedded
      *
      * @return $this
      */

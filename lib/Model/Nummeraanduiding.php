@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * Nummeraanduiding Class Doc Comment
  *
  * @category Class
  * @description Een Nummeraanduiding is een door het bevoegde gemeentelijke orgaan als zodanig toegekende aanduiding van een verblijfsobject, een standplaats of een ligplaats.
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,20 +57,20 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'identificatie' => '\BAG\Client\Model\NummeraanduidingIdentificatie',
+        'identificatie' => '\Swagger\Client\Model\NummeraanduidingIdentificatie',
 'domein' => 'string',
 'huisnummer' => 'int',
 'huisletter' => 'string',
 'huisnummertoevoeging' => 'string',
 'postcode' => 'string',
-'type_adresseerbaar_object' => '\BAG\Client\Model\TypeAdresseerbaarObject',
-'status' => '\BAG\Client\Model\StatusNaamgeving',
-'geconstateerd' => '\BAG\Client\Model\Indicatie',
+'type_adresseerbaar_object' => '\Swagger\Client\Model\TypeAdresseerbaarObject',
+'status' => '\Swagger\Client\Model\StatusNaamgeving',
+'geconstateerd' => '\Swagger\Client\Model\Indicatie',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string',
-'voorkomen' => '\BAG\Client\Model\Voorkomen',
-'ligt_in' => '\BAG\Client\Model\WoonplaatsIdentificatie',
-'ligt_aan' => '\BAG\Client\Model\OpenbareRuimteIdentificatie'    ];
+'voorkomen' => '\Swagger\Client\Model\Voorkomen',
+'ligt_in' => '\Swagger\Client\Model\WoonplaatsIdentificatie',
+'ligt_aan' => '\Swagger\Client\Model\OpenbareRuimteIdentificatie'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -308,7 +308,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Gets identificatie
      *
-     * @return \BAG\Client\Model\NummeraanduidingIdentificatie
+     * @return \Swagger\Client\Model\NummeraanduidingIdentificatie
      */
     public function getIdentificatie()
     {
@@ -318,7 +318,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Sets identificatie
      *
-     * @param \BAG\Client\Model\NummeraanduidingIdentificatie $identificatie identificatie
+     * @param \Swagger\Client\Model\NummeraanduidingIdentificatie $identificatie identificatie
      *
      * @return $this
      */
@@ -452,7 +452,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Gets type_adresseerbaar_object
      *
-     * @return \BAG\Client\Model\TypeAdresseerbaarObject
+     * @return \Swagger\Client\Model\TypeAdresseerbaarObject
      */
     public function getTypeAdresseerbaarObject()
     {
@@ -462,7 +462,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Sets type_adresseerbaar_object
      *
-     * @param \BAG\Client\Model\TypeAdresseerbaarObject $type_adresseerbaar_object type_adresseerbaar_object
+     * @param \Swagger\Client\Model\TypeAdresseerbaarObject $type_adresseerbaar_object type_adresseerbaar_object
      *
      * @return $this
      */
@@ -476,7 +476,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \BAG\Client\Model\StatusNaamgeving
+     * @return \Swagger\Client\Model\StatusNaamgeving
      */
     public function getStatus()
     {
@@ -486,7 +486,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \BAG\Client\Model\StatusNaamgeving $status status
+     * @param \Swagger\Client\Model\StatusNaamgeving $status status
      *
      * @return $this
      */
@@ -500,7 +500,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Gets geconstateerd
      *
-     * @return \BAG\Client\Model\Indicatie
+     * @return \Swagger\Client\Model\Indicatie
      */
     public function getGeconstateerd()
     {
@@ -510,7 +510,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Sets geconstateerd
      *
-     * @param \BAG\Client\Model\Indicatie $geconstateerd geconstateerd
+     * @param \Swagger\Client\Model\Indicatie $geconstateerd geconstateerd
      *
      * @return $this
      */
@@ -572,7 +572,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Gets voorkomen
      *
-     * @return \BAG\Client\Model\Voorkomen
+     * @return \Swagger\Client\Model\Voorkomen
      */
     public function getVoorkomen()
     {
@@ -582,7 +582,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Sets voorkomen
      *
-     * @param \BAG\Client\Model\Voorkomen $voorkomen voorkomen
+     * @param \Swagger\Client\Model\Voorkomen $voorkomen voorkomen
      *
      * @return $this
      */
@@ -596,7 +596,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Gets ligt_in
      *
-     * @return \BAG\Client\Model\WoonplaatsIdentificatie
+     * @return \Swagger\Client\Model\WoonplaatsIdentificatie
      */
     public function getLigtIn()
     {
@@ -606,7 +606,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Sets ligt_in
      *
-     * @param \BAG\Client\Model\WoonplaatsIdentificatie $ligt_in ligt_in
+     * @param \Swagger\Client\Model\WoonplaatsIdentificatie $ligt_in ligt_in
      *
      * @return $this
      */
@@ -620,7 +620,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Gets ligt_aan
      *
-     * @return \BAG\Client\Model\OpenbareRuimteIdentificatie
+     * @return \Swagger\Client\Model\OpenbareRuimteIdentificatie
      */
     public function getLigtAan()
     {
@@ -630,7 +630,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Sets ligt_aan
      *
-     * @param \BAG\Client\Model\OpenbareRuimteIdentificatie $ligt_aan ligt_aan
+     * @param \Swagger\Client\Model\OpenbareRuimteIdentificatie $ligt_aan ligt_aan
      *
      * @return $this
      */

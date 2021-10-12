@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * VlakOfMultivlak Class Doc Comment
  *
  * @category Class
  * @description Een samengesteld geometriegegevenstype waarbij wordt afgedwongen dat voor de geometrie een keuze gemaakt moet worden tussen een vlak (GM_Surface) of een multivlak (GM_MultiSurface).
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +57,8 @@ class VlakOfMultivlak implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'vlak' => '\BAG\Client\Model\Surface',
-'multivlak' => '\BAG\Client\Model\MultiSurface'    ];
+        'vlak' => '\Swagger\Client\Model\Surface',
+'multivlak' => '\Swagger\Client\Model\MultiSurface'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -206,7 +206,7 @@ class VlakOfMultivlak implements ModelInterface, ArrayAccess
     /**
      * Gets vlak
      *
-     * @return \BAG\Client\Model\Surface
+     * @return \Swagger\Client\Model\Surface
      */
     public function getVlak()
     {
@@ -216,7 +216,7 @@ class VlakOfMultivlak implements ModelInterface, ArrayAccess
     /**
      * Sets vlak
      *
-     * @param \BAG\Client\Model\Surface $vlak vlak
+     * @param \Swagger\Client\Model\Surface $vlak vlak
      *
      * @return $this
      */
@@ -230,7 +230,7 @@ class VlakOfMultivlak implements ModelInterface, ArrayAccess
     /**
      * Gets multivlak
      *
-     * @return \BAG\Client\Model\MultiSurface
+     * @return \Swagger\Client\Model\MultiSurface
      */
     public function getMultivlak()
     {
@@ -240,7 +240,7 @@ class VlakOfMultivlak implements ModelInterface, ArrayAccess
     /**
      * Sets multivlak
      *
-     * @param \BAG\Client\Model\MultiSurface $multivlak multivlak
+     * @param \Swagger\Client\Model\MultiSurface $multivlak multivlak
      *
      * @return $this
      */

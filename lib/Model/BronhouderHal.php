@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * BronhouderHal Class Doc Comment
  *
  * @category Class
  * @description Bronhouder aangevuld met HAL link.
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +57,8 @@ class BronhouderHal implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'bronhouder' => '\BAG\Client\Model\Bronhouder',
-'_links' => '\BAG\Client\Model\BronhouderLinks'    ];
+        'bronhouder' => '\Swagger\Client\Model\Bronhouder',
+'_links' => '\Swagger\Client\Model\BronhouderLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -209,7 +209,7 @@ class BronhouderHal implements ModelInterface, ArrayAccess
     /**
      * Gets bronhouder
      *
-     * @return \BAG\Client\Model\Bronhouder
+     * @return \Swagger\Client\Model\Bronhouder
      */
     public function getBronhouder()
     {
@@ -219,7 +219,7 @@ class BronhouderHal implements ModelInterface, ArrayAccess
     /**
      * Sets bronhouder
      *
-     * @param \BAG\Client\Model\Bronhouder $bronhouder bronhouder
+     * @param \Swagger\Client\Model\Bronhouder $bronhouder bronhouder
      *
      * @return $this
      */
@@ -233,7 +233,7 @@ class BronhouderHal implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAG\Client\Model\BronhouderLinks
+     * @return \Swagger\Client\Model\BronhouderLinks
      */
     public function getLinks()
     {
@@ -243,7 +243,7 @@ class BronhouderHal implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAG\Client\Model\BronhouderLinks $_links _links
+     * @param \Swagger\Client\Model\BronhouderLinks $_links _links
      *
      * @return $this
      */

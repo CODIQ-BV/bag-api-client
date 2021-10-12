@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * OpenbareRuimte Class Doc Comment
  *
  * @category Class
  * @description Een Openbare ruimte is een door het bevoegde gemeentelijke orgaan als zodanig aangewezen en van een naam voorziene buitenruimte die binnen één woonplaats is gelegen.
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,17 +57,17 @@ class OpenbareRuimte implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'identificatie' => '\BAG\Client\Model\OpenbareRuimteIdentificatie',
+        'identificatie' => '\Swagger\Client\Model\OpenbareRuimteIdentificatie',
 'domein' => 'string',
 'naam' => 'string',
-'type' => '\BAG\Client\Model\TypeOpenbareRuimte',
-'status' => '\BAG\Client\Model\StatusNaamgeving',
+'type' => '\Swagger\Client\Model\TypeOpenbareRuimte',
+'status' => '\Swagger\Client\Model\StatusNaamgeving',
 'korte_naam' => 'string',
-'geconstateerd' => '\BAG\Client\Model\Indicatie',
+'geconstateerd' => '\Swagger\Client\Model\Indicatie',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string',
-'voorkomen' => '\BAG\Client\Model\Voorkomen',
-'ligt_in' => '\BAG\Client\Model\WoonplaatsIdentificatie'    ];
+'voorkomen' => '\Swagger\Client\Model\Voorkomen',
+'ligt_in' => '\Swagger\Client\Model\WoonplaatsIdentificatie'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -293,7 +293,7 @@ class OpenbareRuimte implements ModelInterface, ArrayAccess
     /**
      * Gets identificatie
      *
-     * @return \BAG\Client\Model\OpenbareRuimteIdentificatie
+     * @return \Swagger\Client\Model\OpenbareRuimteIdentificatie
      */
     public function getIdentificatie()
     {
@@ -303,7 +303,7 @@ class OpenbareRuimte implements ModelInterface, ArrayAccess
     /**
      * Sets identificatie
      *
-     * @param \BAG\Client\Model\OpenbareRuimteIdentificatie $identificatie identificatie
+     * @param \Swagger\Client\Model\OpenbareRuimteIdentificatie $identificatie identificatie
      *
      * @return $this
      */
@@ -365,7 +365,7 @@ class OpenbareRuimte implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \BAG\Client\Model\TypeOpenbareRuimte
+     * @return \Swagger\Client\Model\TypeOpenbareRuimte
      */
     public function getType()
     {
@@ -375,7 +375,7 @@ class OpenbareRuimte implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \BAG\Client\Model\TypeOpenbareRuimte $type type
+     * @param \Swagger\Client\Model\TypeOpenbareRuimte $type type
      *
      * @return $this
      */
@@ -389,7 +389,7 @@ class OpenbareRuimte implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \BAG\Client\Model\StatusNaamgeving
+     * @return \Swagger\Client\Model\StatusNaamgeving
      */
     public function getStatus()
     {
@@ -399,7 +399,7 @@ class OpenbareRuimte implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \BAG\Client\Model\StatusNaamgeving $status status
+     * @param \Swagger\Client\Model\StatusNaamgeving $status status
      *
      * @return $this
      */
@@ -437,7 +437,7 @@ class OpenbareRuimte implements ModelInterface, ArrayAccess
     /**
      * Gets geconstateerd
      *
-     * @return \BAG\Client\Model\Indicatie
+     * @return \Swagger\Client\Model\Indicatie
      */
     public function getGeconstateerd()
     {
@@ -447,7 +447,7 @@ class OpenbareRuimte implements ModelInterface, ArrayAccess
     /**
      * Sets geconstateerd
      *
-     * @param \BAG\Client\Model\Indicatie $geconstateerd geconstateerd
+     * @param \Swagger\Client\Model\Indicatie $geconstateerd geconstateerd
      *
      * @return $this
      */
@@ -509,7 +509,7 @@ class OpenbareRuimte implements ModelInterface, ArrayAccess
     /**
      * Gets voorkomen
      *
-     * @return \BAG\Client\Model\Voorkomen
+     * @return \Swagger\Client\Model\Voorkomen
      */
     public function getVoorkomen()
     {
@@ -519,7 +519,7 @@ class OpenbareRuimte implements ModelInterface, ArrayAccess
     /**
      * Sets voorkomen
      *
-     * @param \BAG\Client\Model\Voorkomen $voorkomen voorkomen
+     * @param \Swagger\Client\Model\Voorkomen $voorkomen voorkomen
      *
      * @return $this
      */
@@ -533,7 +533,7 @@ class OpenbareRuimte implements ModelInterface, ArrayAccess
     /**
      * Gets ligt_in
      *
-     * @return \BAG\Client\Model\WoonplaatsIdentificatie
+     * @return \Swagger\Client\Model\WoonplaatsIdentificatie
      */
     public function getLigtIn()
     {
@@ -543,7 +543,7 @@ class OpenbareRuimte implements ModelInterface, ArrayAccess
     /**
      * Sets ligt_in
      *
-     * @param \BAG\Client\Model\WoonplaatsIdentificatie $ligt_in ligt_in
+     * @param \Swagger\Client\Model\WoonplaatsIdentificatie $ligt_in ligt_in
      *
      * @return $this
      */

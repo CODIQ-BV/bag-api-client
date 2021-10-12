@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace BAG\Client;
+namespace Swagger\Client;
 
 /**
  * AdresInOnderzoekTest Class Doc Comment
  *
  * @category    Class
  * @description Wanneer hier een property is opgenomen met de waarde true, dan is de waarde van het gelijknamige property in de resource in onderzoek. De juistheid van dit gegeven wordt op dit moment onderzocht. Onder property toelichting wordt toegelicht wat er mogelijk onjuist is aan het betreffende gegeven.
- * @package     BAG\Client
+ * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

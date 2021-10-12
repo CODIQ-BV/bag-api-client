@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * WoonplaatsIdentificatie Class Doc Comment
  *
  * @category Class
  * @description De identificatie wordt gebruikt in de operation, bv. /woonplaatsen/3560. Waarde: 0001-9999, formaat: ^[0-9]{3}[1-9]\\|[0-9]{2}[1-9][0-9]\\|[0-9][1-9][0-9]{2}\\|[1-9][0-9]{3}$.
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

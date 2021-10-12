@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Api;
+namespace Swagger\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use BAG\Client\ApiException;
-use BAG\Client\Configuration;
-use BAG\Client\HeaderSelector;
-use BAG\Client\ObjectSerializer;
+use Swagger\Client\ApiException;
+use Swagger\Client\Configuration;
+use Swagger\Client\HeaderSelector;
+use Swagger\Client\ObjectSerializer;
 
 /**
  * AdresseerbaarObjectApi Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -97,9 +97,9 @@ class AdresseerbaarObjectApi
      * @param  string $expand Hier kan aangegeven worden welke gerelateerde resources meegeladen moeten worden. Resources en velden van resources die gewenst zijn kunnen in de expand parameter kommagescheiden worden opgegeven. Specifieke velden van resource kunnen worden opgegeven door het opgeven van de resource-naam gevolgd door de veldnaam, met daartussen een punt. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAG\Client\Model\AdresseerbaarObjectIOHal
+     * @return \Swagger\Client\Model\AdresseerbaarObjectIOHal
      */
     public function bevragenAdresseerbaarObject($adresseerbaar_object_identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
@@ -118,13 +118,13 @@ class AdresseerbaarObjectApi
      * @param  string $expand Hier kan aangegeven worden welke gerelateerde resources meegeladen moeten worden. Resources en velden van resources die gewenst zijn kunnen in de expand parameter kommagescheiden worden opgegeven. Specifieke velden van resource kunnen worden opgegeven door het opgeven van de resource-naam gevolgd door de veldnaam, met daartussen een punt. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAG\Client\Model\AdresseerbaarObjectIOHal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\AdresseerbaarObjectIOHal, HTTP status code, HTTP response headers (array of strings)
      */
     public function bevragenAdresseerbaarObjectWithHttpInfo($adresseerbaar_object_identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAG\Client\Model\AdresseerbaarObjectIOHal';
+        $returnType = '\Swagger\Client\Model\AdresseerbaarObjectIOHal';
         $request = $this->bevragenAdresseerbaarObjectRequest($adresseerbaar_object_identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs);
 
         try {
@@ -176,7 +176,7 @@ class AdresseerbaarObjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\AdresseerbaarObjectIOHal',
+                        '\Swagger\Client\Model\AdresseerbaarObjectIOHal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -184,7 +184,7 @@ class AdresseerbaarObjectApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -192,7 +192,7 @@ class AdresseerbaarObjectApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -200,7 +200,7 @@ class AdresseerbaarObjectApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -208,7 +208,7 @@ class AdresseerbaarObjectApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -216,7 +216,7 @@ class AdresseerbaarObjectApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -224,7 +224,7 @@ class AdresseerbaarObjectApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -232,7 +232,7 @@ class AdresseerbaarObjectApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -240,7 +240,7 @@ class AdresseerbaarObjectApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -248,7 +248,7 @@ class AdresseerbaarObjectApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -298,7 +298,7 @@ class AdresseerbaarObjectApi
      */
     public function bevragenAdresseerbaarObjectAsyncWithHttpInfo($adresseerbaar_object_identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAG\Client\Model\AdresseerbaarObjectIOHal';
+        $returnType = '\Swagger\Client\Model\AdresseerbaarObjectIOHal';
         $request = $this->bevragenAdresseerbaarObjectRequest($adresseerbaar_object_identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs);
 
         return $this->client
@@ -470,9 +470,9 @@ class AdresseerbaarObjectApi
      * @param  bool $gehele_lvc Filtert naast geldige voorkomens ook de voorkomens die uit de geldige levenscyclus van het object zijn verwijderd. Als deze parameter wordt weggelaten worden alleen geldige voorkomens geretourneerd (default is false). (optional, default to false)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAG\Client\Model\AdresseerbaarObjectLvcIOHalCollection
+     * @return \Swagger\Client\Model\AdresseerbaarObjectLvcIOHalCollection
      */
     public function bevragenAdresseerbaarObjectLvc($adresseerbaar_object_identificatie, $gehele_lvc = 'false', $accept_crs = null)
     {
@@ -489,13 +489,13 @@ class AdresseerbaarObjectApi
      * @param  bool $gehele_lvc Filtert naast geldige voorkomens ook de voorkomens die uit de geldige levenscyclus van het object zijn verwijderd. Als deze parameter wordt weggelaten worden alleen geldige voorkomens geretourneerd (default is false). (optional, default to false)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAG\Client\Model\AdresseerbaarObjectLvcIOHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\AdresseerbaarObjectLvcIOHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function bevragenAdresseerbaarObjectLvcWithHttpInfo($adresseerbaar_object_identificatie, $gehele_lvc = 'false', $accept_crs = null)
     {
-        $returnType = '\BAG\Client\Model\AdresseerbaarObjectLvcIOHalCollection';
+        $returnType = '\Swagger\Client\Model\AdresseerbaarObjectLvcIOHalCollection';
         $request = $this->bevragenAdresseerbaarObjectLvcRequest($adresseerbaar_object_identificatie, $gehele_lvc, $accept_crs);
 
         try {
@@ -547,7 +547,7 @@ class AdresseerbaarObjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\AdresseerbaarObjectLvcIOHalCollection',
+                        '\Swagger\Client\Model\AdresseerbaarObjectLvcIOHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -555,7 +555,7 @@ class AdresseerbaarObjectApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -563,7 +563,7 @@ class AdresseerbaarObjectApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -571,7 +571,7 @@ class AdresseerbaarObjectApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -579,7 +579,7 @@ class AdresseerbaarObjectApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -587,7 +587,7 @@ class AdresseerbaarObjectApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -595,7 +595,7 @@ class AdresseerbaarObjectApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -603,7 +603,7 @@ class AdresseerbaarObjectApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -611,7 +611,7 @@ class AdresseerbaarObjectApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -619,7 +619,7 @@ class AdresseerbaarObjectApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -665,7 +665,7 @@ class AdresseerbaarObjectApi
      */
     public function bevragenAdresseerbaarObjectLvcAsyncWithHttpInfo($adresseerbaar_object_identificatie, $gehele_lvc = 'false', $accept_crs = null)
     {
-        $returnType = '\BAG\Client\Model\AdresseerbaarObjectLvcIOHalCollection';
+        $returnType = '\Swagger\Client\Model\AdresseerbaarObjectLvcIOHalCollection';
         $request = $this->bevragenAdresseerbaarObjectLvcRequest($adresseerbaar_object_identificatie, $gehele_lvc, $accept_crs);
 
         return $this->client
@@ -830,9 +830,9 @@ class AdresseerbaarObjectApi
      * @param  string $expand Hier kan aangegeven worden welke gerelateerde resources meegeladen moeten worden. Resources en velden van resources die gewenst zijn kunnen in de expand parameter kommagescheiden worden opgegeven. Specifieke velden van resource kunnen worden opgegeven door het opgeven van de resource-naam gevolgd door de veldnaam, met daartussen een punt. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAG\Client\Model\AdresseerbareObjectenIOHalCollection
+     * @return \Swagger\Client\Model\AdresseerbareObjectenIOHalCollection
      */
     public function zoekAdresseerbaarObject($nummeraanduiding_identificatie = null, $huidig = 'false', $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
@@ -852,13 +852,13 @@ class AdresseerbaarObjectApi
      * @param  string $expand Hier kan aangegeven worden welke gerelateerde resources meegeladen moeten worden. Resources en velden van resources die gewenst zijn kunnen in de expand parameter kommagescheiden worden opgegeven. Specifieke velden van resource kunnen worden opgegeven door het opgeven van de resource-naam gevolgd door de veldnaam, met daartussen een punt. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\Client\ApiException on non-2xx response
+     * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAG\Client\Model\AdresseerbareObjectenIOHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\AdresseerbareObjectenIOHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function zoekAdresseerbaarObjectWithHttpInfo($nummeraanduiding_identificatie = null, $huidig = 'false', $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAG\Client\Model\AdresseerbareObjectenIOHalCollection';
+        $returnType = '\Swagger\Client\Model\AdresseerbareObjectenIOHalCollection';
         $request = $this->zoekAdresseerbaarObjectRequest($nummeraanduiding_identificatie, $huidig, $geldig_op, $beschikbaar_op, $expand, $accept_crs);
 
         try {
@@ -910,7 +910,7 @@ class AdresseerbaarObjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\AdresseerbareObjectenIOHalCollection',
+                        '\Swagger\Client\Model\AdresseerbareObjectenIOHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -918,7 +918,7 @@ class AdresseerbaarObjectApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -926,7 +926,7 @@ class AdresseerbaarObjectApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -934,7 +934,7 @@ class AdresseerbaarObjectApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -942,7 +942,7 @@ class AdresseerbaarObjectApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -950,7 +950,7 @@ class AdresseerbaarObjectApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -958,7 +958,7 @@ class AdresseerbaarObjectApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -966,7 +966,7 @@ class AdresseerbaarObjectApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -974,7 +974,7 @@ class AdresseerbaarObjectApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\Client\Model\Error',
+                        '\Swagger\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1026,7 +1026,7 @@ class AdresseerbaarObjectApi
      */
     public function zoekAdresseerbaarObjectAsyncWithHttpInfo($nummeraanduiding_identificatie = null, $huidig = 'false', $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAG\Client\Model\AdresseerbareObjectenIOHalCollection';
+        $returnType = '\Swagger\Client\Model\AdresseerbareObjectenIOHalCollection';
         $request = $this->zoekAdresseerbaarObjectRequest($nummeraanduiding_identificatie, $huidig, $geldig_op, $beschikbaar_op, $expand, $accept_crs);
 
         return $this->client

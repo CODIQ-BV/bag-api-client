@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * NummeraanduidingIOHalCollectionEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class NummeraanduidingIOHalCollectionEmbedded implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'nummeraanduidingen' => '\BAG\Client\Model\NummeraanduidingIOHal[]'    ];
+        'nummeraanduidingen' => '\Swagger\Client\Model\NummeraanduidingIOHal[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class NummeraanduidingIOHalCollectionEmbedded implements ModelInterface, ArrayAc
     /**
      * Gets nummeraanduidingen
      *
-     * @return \BAG\Client\Model\NummeraanduidingIOHal[]
+     * @return \Swagger\Client\Model\NummeraanduidingIOHal[]
      */
     public function getNummeraanduidingen()
     {
@@ -209,7 +209,7 @@ class NummeraanduidingIOHalCollectionEmbedded implements ModelInterface, ArrayAc
     /**
      * Sets nummeraanduidingen
      *
-     * @param \BAG\Client\Model\NummeraanduidingIOHal[] $nummeraanduidingen nummeraanduidingen
+     * @param \Swagger\Client\Model\NummeraanduidingIOHal[] $nummeraanduidingen nummeraanduidingen
      *
      * @return $this
      */

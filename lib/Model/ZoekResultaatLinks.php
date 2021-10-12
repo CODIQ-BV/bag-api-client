@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * ZoekResultaatLinks Class Doc Comment
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class ZoekResultaatLinks implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adres' => '\BAG\Client\Model\HalLink'    ];
+        'adres' => '\Swagger\Client\Model\HalLink'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class ZoekResultaatLinks implements ModelInterface, ArrayAccess
     /**
      * Gets adres
      *
-     * @return \BAG\Client\Model\HalLink
+     * @return \Swagger\Client\Model\HalLink
      */
     public function getAdres()
     {
@@ -209,7 +209,7 @@ class ZoekResultaatLinks implements ModelInterface, ArrayAccess
     /**
      * Sets adres
      *
-     * @param \BAG\Client\Model\HalLink $adres adres
+     * @param \Swagger\Client\Model\HalLink $adres adres
      *
      * @return $this
      */

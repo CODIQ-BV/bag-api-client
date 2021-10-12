@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
-use \BAG\Client\ObjectSerializer;
+namespace Swagger\Client\Model;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * Verblijfsobject Class Doc Comment
  *
  * @category Class
  * @description Een Verblijfsobject is de kleinste binnen een of meer panden gelegen en voor woon-, bedrijfsmatige, of recreatieve doeleinden geschikte eenheid van gebruik die ontsloten wordt via een eigen afsluitbare toegang vanaf de openbare weg, een erf of een gedeelde verkeersruimte, onderwerp kan zijn van goederenrechtelijke rechtshandelingen en in functioneel opzicht zelfstandig is.
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -55,17 +55,17 @@ class Verblijfsobject extends AdresseerbaarObject
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'identificatie' => '\BAG\Client\Model\VerblijfsobjectIdentificatie',
+        'identificatie' => '\Swagger\Client\Model\VerblijfsobjectIdentificatie',
 'domein' => 'string',
-'geometrie' => '\BAG\Client\Model\PuntOfVlak',
-'gebruiksdoelen' => '\BAG\Client\Model\Gebruiksdoel[]',
+'geometrie' => '\Swagger\Client\Model\PuntOfVlak',
+'gebruiksdoelen' => '\Swagger\Client\Model\Gebruiksdoel[]',
 'oppervlakte' => 'int',
-'status' => '\BAG\Client\Model\StatusVerblijfsobject',
-'geconstateerd' => '\BAG\Client\Model\Indicatie',
+'status' => '\Swagger\Client\Model\StatusVerblijfsobject',
+'geconstateerd' => '\Swagger\Client\Model\Indicatie',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string',
-'voorkomen' => '\BAG\Client\Model\Voorkomen',
-'maakt_deel_uit_van' => '\BAG\Client\Model\PandIdentificatie[]'    ];
+'voorkomen' => '\Swagger\Client\Model\Voorkomen',
+'maakt_deel_uit_van' => '\Swagger\Client\Model\PandIdentificatie[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -287,7 +287,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets identificatie
      *
-     * @return \BAG\Client\Model\VerblijfsobjectIdentificatie
+     * @return \Swagger\Client\Model\VerblijfsobjectIdentificatie
      */
     public function getIdentificatie()
     {
@@ -297,7 +297,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets identificatie
      *
-     * @param \BAG\Client\Model\VerblijfsobjectIdentificatie $identificatie identificatie
+     * @param \Swagger\Client\Model\VerblijfsobjectIdentificatie $identificatie identificatie
      *
      * @return $this
      */
@@ -335,7 +335,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets geometrie
      *
-     * @return \BAG\Client\Model\PuntOfVlak
+     * @return \Swagger\Client\Model\PuntOfVlak
      */
     public function getGeometrie()
     {
@@ -345,7 +345,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets geometrie
      *
-     * @param \BAG\Client\Model\PuntOfVlak $geometrie geometrie
+     * @param \Swagger\Client\Model\PuntOfVlak $geometrie geometrie
      *
      * @return $this
      */
@@ -359,7 +359,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets gebruiksdoelen
      *
-     * @return \BAG\Client\Model\Gebruiksdoel[]
+     * @return \Swagger\Client\Model\Gebruiksdoel[]
      */
     public function getGebruiksdoelen()
     {
@@ -369,7 +369,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets gebruiksdoelen
      *
-     * @param \BAG\Client\Model\Gebruiksdoel[] $gebruiksdoelen gebruiksdoelen
+     * @param \Swagger\Client\Model\Gebruiksdoel[] $gebruiksdoelen gebruiksdoelen
      *
      * @return $this
      */
@@ -407,7 +407,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets status
      *
-     * @return \BAG\Client\Model\StatusVerblijfsobject
+     * @return \Swagger\Client\Model\StatusVerblijfsobject
      */
     public function getStatus()
     {
@@ -417,7 +417,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets status
      *
-     * @param \BAG\Client\Model\StatusVerblijfsobject $status status
+     * @param \Swagger\Client\Model\StatusVerblijfsobject $status status
      *
      * @return $this
      */
@@ -431,7 +431,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets geconstateerd
      *
-     * @return \BAG\Client\Model\Indicatie
+     * @return \Swagger\Client\Model\Indicatie
      */
     public function getGeconstateerd()
     {
@@ -441,7 +441,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets geconstateerd
      *
-     * @param \BAG\Client\Model\Indicatie $geconstateerd geconstateerd
+     * @param \Swagger\Client\Model\Indicatie $geconstateerd geconstateerd
      *
      * @return $this
      */
@@ -503,7 +503,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets voorkomen
      *
-     * @return \BAG\Client\Model\Voorkomen
+     * @return \Swagger\Client\Model\Voorkomen
      */
     public function getVoorkomen()
     {
@@ -513,7 +513,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets voorkomen
      *
-     * @param \BAG\Client\Model\Voorkomen $voorkomen voorkomen
+     * @param \Swagger\Client\Model\Voorkomen $voorkomen voorkomen
      *
      * @return $this
      */
@@ -527,7 +527,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets maakt_deel_uit_van
      *
-     * @return \BAG\Client\Model\PandIdentificatie[]
+     * @return \Swagger\Client\Model\PandIdentificatie[]
      */
     public function getMaaktDeelUitVan()
     {
@@ -537,7 +537,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets maakt_deel_uit_van
      *
-     * @param \BAG\Client\Model\PandIdentificatie[] $maakt_deel_uit_van maakt_deel_uit_van
+     * @param \Swagger\Client\Model\PandIdentificatie[] $maakt_deel_uit_van maakt_deel_uit_van
      *
      * @return $this
      */

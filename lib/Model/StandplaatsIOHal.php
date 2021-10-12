@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
-use \BAG\Client\ObjectSerializer;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * StandplaatsIOHal Class Doc Comment
  *
  * @category Class
  * @description Een verzameling van een Standplaats en een lijst van alle bijbehorende inonderzoek informatie.
- * @package  BAG\Client
+ * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class StandplaatsIOHal implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'standplaats' => '\BAG\Client\Model\Standplaats',
-'inonderzoek' => '\BAG\Client\Model\KenmerkStandplaatsInOnderzoek[]',
-'_embedded' => '\BAG\Client\Model\StandplaatsEmbedded',
-'_links' => '\BAG\Client\Model\StandplaatsLinks'    ];
+        'standplaats' => '\Swagger\Client\Model\Standplaats',
+'inonderzoek' => '\Swagger\Client\Model\KenmerkStandplaatsInOnderzoek[]',
+'_embedded' => '\Swagger\Client\Model\StandplaatsEmbedded',
+'_links' => '\Swagger\Client\Model\StandplaatsLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -221,7 +221,7 @@ class StandplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets standplaats
      *
-     * @return \BAG\Client\Model\Standplaats
+     * @return \Swagger\Client\Model\Standplaats
      */
     public function getStandplaats()
     {
@@ -231,7 +231,7 @@ class StandplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets standplaats
      *
-     * @param \BAG\Client\Model\Standplaats $standplaats standplaats
+     * @param \Swagger\Client\Model\Standplaats $standplaats standplaats
      *
      * @return $this
      */
@@ -245,7 +245,7 @@ class StandplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets inonderzoek
      *
-     * @return \BAG\Client\Model\KenmerkStandplaatsInOnderzoek[]
+     * @return \Swagger\Client\Model\KenmerkStandplaatsInOnderzoek[]
      */
     public function getInonderzoek()
     {
@@ -255,7 +255,7 @@ class StandplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets inonderzoek
      *
-     * @param \BAG\Client\Model\KenmerkStandplaatsInOnderzoek[] $inonderzoek inonderzoek
+     * @param \Swagger\Client\Model\KenmerkStandplaatsInOnderzoek[] $inonderzoek inonderzoek
      *
      * @return $this
      */
@@ -269,7 +269,7 @@ class StandplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _embedded
      *
-     * @return \BAG\Client\Model\StandplaatsEmbedded
+     * @return \Swagger\Client\Model\StandplaatsEmbedded
      */
     public function getEmbedded()
     {
@@ -279,7 +279,7 @@ class StandplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _embedded
      *
-     * @param \BAG\Client\Model\StandplaatsEmbedded $_embedded _embedded
+     * @param \Swagger\Client\Model\StandplaatsEmbedded $_embedded _embedded
      *
      * @return $this
      */
@@ -293,7 +293,7 @@ class StandplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAG\Client\Model\StandplaatsLinks
+     * @return \Swagger\Client\Model\StandplaatsLinks
      */
     public function getLinks()
     {
@@ -303,7 +303,7 @@ class StandplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAG\Client\Model\StandplaatsLinks $_links _links
+     * @param \Swagger\Client\Model\StandplaatsLinks $_links _links
      *
      * @return $this
      */
