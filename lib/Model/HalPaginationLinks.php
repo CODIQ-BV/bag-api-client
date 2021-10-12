@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
-use \BAGClient\ObjectSerializer;
+namespace BAG\Client\Model;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * HalPaginationLinks Class Doc Comment
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -54,10 +54,10 @@ class HalPaginationLinks extends HalCollectionLinks
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'first' => '\BAGClient\Model\HalPaginationLinksFirst',
-'previous' => '\BAGClient\Model\HalPaginationLinksPrevious',
-'next' => '\BAGClient\Model\HalPaginationLinksNext',
-'last' => '\BAGClient\Model\HalPaginationLinksLast'    ];
+        'first' => '\BAG\Client\Model\HalPaginationLinksFirst',
+'previous' => '\BAG\Client\Model\HalPaginationLinksPrevious',
+'next' => '\BAG\Client\Model\HalPaginationLinksNext',
+'last' => '\BAG\Client\Model\HalPaginationLinksLast'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -211,7 +211,7 @@ class HalPaginationLinks extends HalCollectionLinks
     /**
      * Gets first
      *
-     * @return \BAGClient\Model\HalPaginationLinksFirst
+     * @return \BAG\Client\Model\HalPaginationLinksFirst
      */
     public function getFirst()
     {
@@ -221,7 +221,7 @@ class HalPaginationLinks extends HalCollectionLinks
     /**
      * Sets first
      *
-     * @param \BAGClient\Model\HalPaginationLinksFirst $first first
+     * @param \BAG\Client\Model\HalPaginationLinksFirst $first first
      *
      * @return $this
      */
@@ -235,7 +235,7 @@ class HalPaginationLinks extends HalCollectionLinks
     /**
      * Gets previous
      *
-     * @return \BAGClient\Model\HalPaginationLinksPrevious
+     * @return \BAG\Client\Model\HalPaginationLinksPrevious
      */
     public function getPrevious()
     {
@@ -245,7 +245,7 @@ class HalPaginationLinks extends HalCollectionLinks
     /**
      * Sets previous
      *
-     * @param \BAGClient\Model\HalPaginationLinksPrevious $previous previous
+     * @param \BAG\Client\Model\HalPaginationLinksPrevious $previous previous
      *
      * @return $this
      */
@@ -259,7 +259,7 @@ class HalPaginationLinks extends HalCollectionLinks
     /**
      * Gets next
      *
-     * @return \BAGClient\Model\HalPaginationLinksNext
+     * @return \BAG\Client\Model\HalPaginationLinksNext
      */
     public function getNext()
     {
@@ -269,7 +269,7 @@ class HalPaginationLinks extends HalCollectionLinks
     /**
      * Sets next
      *
-     * @param \BAGClient\Model\HalPaginationLinksNext $next next
+     * @param \BAG\Client\Model\HalPaginationLinksNext $next next
      *
      * @return $this
      */
@@ -283,7 +283,7 @@ class HalPaginationLinks extends HalCollectionLinks
     /**
      * Gets last
      *
-     * @return \BAGClient\Model\HalPaginationLinksLast
+     * @return \BAG\Client\Model\HalPaginationLinksLast
      */
     public function getLast()
     {
@@ -293,7 +293,7 @@ class HalPaginationLinks extends HalCollectionLinks
     /**
      * Sets last
      *
-     * @param \BAGClient\Model\HalPaginationLinksLast $last last
+     * @param \BAG\Client\Model\HalPaginationLinksLast $last last
      *
      * @return $this
      */

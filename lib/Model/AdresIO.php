@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
-use \BAGClient\ObjectSerializer;
+namespace BAG\Client\Model;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * AdresIO Class Doc Comment
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -54,8 +54,8 @@ class AdresIO extends Adres
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'geconstateerd' => '\BAGClient\Model\Geconstateerd',
-'inonderzoek' => '\BAGClient\Model\AdresInOnderzoek'    ];
+        'geconstateerd' => '\BAG\Client\Model\Geconstateerd',
+'inonderzoek' => '\BAG\Client\Model\AdresInOnderzoek'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class AdresIO extends Adres
     /**
      * Gets geconstateerd
      *
-     * @return \BAGClient\Model\Geconstateerd
+     * @return \BAG\Client\Model\Geconstateerd
      */
     public function getGeconstateerd()
     {
@@ -209,7 +209,7 @@ class AdresIO extends Adres
     /**
      * Sets geconstateerd
      *
-     * @param \BAGClient\Model\Geconstateerd $geconstateerd geconstateerd
+     * @param \BAG\Client\Model\Geconstateerd $geconstateerd geconstateerd
      *
      * @return $this
      */
@@ -223,7 +223,7 @@ class AdresIO extends Adres
     /**
      * Gets inonderzoek
      *
-     * @return \BAGClient\Model\AdresInOnderzoek
+     * @return \BAG\Client\Model\AdresInOnderzoek
      */
     public function getInonderzoek()
     {
@@ -233,7 +233,7 @@ class AdresIO extends Adres
     /**
      * Sets inonderzoek
      *
-     * @param \BAGClient\Model\AdresInOnderzoek $inonderzoek inonderzoek
+     * @param \BAG\Client\Model\AdresInOnderzoek $inonderzoek inonderzoek
      *
      * @return $this
      */

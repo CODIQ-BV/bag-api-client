@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
+namespace BAG\Client\Model;
 
 use \ArrayAccess;
-use \BAGClient\ObjectSerializer;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * HalCollectionLinks Class Doc Comment
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class HalCollectionLinks implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'self' => '\BAGClient\Model\HalLink'    ];
+        'self' => '\BAG\Client\Model\HalLink'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class HalCollectionLinks implements ModelInterface, ArrayAccess
     /**
      * Gets self
      *
-     * @return \BAGClient\Model\HalLink
+     * @return \BAG\Client\Model\HalLink
      */
     public function getSelf()
     {
@@ -209,7 +209,7 @@ class HalCollectionLinks implements ModelInterface, ArrayAccess
     /**
      * Sets self
      *
-     * @param \BAGClient\Model\HalLink $self self
+     * @param \BAG\Client\Model\HalLink $self self
      *
      * @return $this
      */

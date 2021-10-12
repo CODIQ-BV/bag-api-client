@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
+namespace BAG\Client\Model;
 
 use \ArrayAccess;
-use \BAGClient\ObjectSerializer;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * PuntOfVlak Class Doc Comment
  *
  * @category Class
  * @description Een samengesteld geometriegegevenstype waarbij wordt afgedwongen dat voor de geometrie een keuze gemaakt moet worden tussen een punt of een vlak.
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +57,8 @@ class PuntOfVlak implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'punt' => '\BAGClient\Model\Point',
-'vlak' => '\BAGClient\Model\Surface'    ];
+        'punt' => '\BAG\Client\Model\Point',
+'vlak' => '\BAG\Client\Model\Surface'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -206,7 +206,7 @@ class PuntOfVlak implements ModelInterface, ArrayAccess
     /**
      * Gets punt
      *
-     * @return \BAGClient\Model\Point
+     * @return \BAG\Client\Model\Point
      */
     public function getPunt()
     {
@@ -216,7 +216,7 @@ class PuntOfVlak implements ModelInterface, ArrayAccess
     /**
      * Sets punt
      *
-     * @param \BAGClient\Model\Point $punt punt
+     * @param \BAG\Client\Model\Point $punt punt
      *
      * @return $this
      */
@@ -230,7 +230,7 @@ class PuntOfVlak implements ModelInterface, ArrayAccess
     /**
      * Gets vlak
      *
-     * @return \BAGClient\Model\Surface
+     * @return \BAG\Client\Model\Surface
      */
     public function getVlak()
     {
@@ -240,7 +240,7 @@ class PuntOfVlak implements ModelInterface, ArrayAccess
     /**
      * Sets vlak
      *
-     * @param \BAGClient\Model\Surface $vlak vlak
+     * @param \BAG\Client\Model\Surface $vlak vlak
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient\Model
+ * @package  BAG\Client\Model
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,12 +26,12 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
+namespace BAG\Client\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package BAGClient\Model
+ * @package BAG\Client\Model
  * @author  Swagger Codegen team
  */
 interface ModelInterface

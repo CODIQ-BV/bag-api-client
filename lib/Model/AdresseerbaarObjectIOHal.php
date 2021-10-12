@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
+namespace BAG\Client\Model;
 
 use \ArrayAccess;
-use \BAGClient\ObjectSerializer;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * AdresseerbaarObjectIOHal Class Doc Comment
  *
  * @category Class
  * @description Een adresseerbaar object kan een ligplaats, standplaats of verblijfsobject zijn, er wordt van onderstaande properties dus altijd maar één ingevuld.
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class AdresseerbaarObjectIOHal implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        '_links' => '\BAGClient\Model\HalCollectionLinks',
-'ligplaats' => '\BAGClient\Model\LigplaatsIOHal',
-'standplaats' => '\BAGClient\Model\StandplaatsIOHal',
-'verblijfsobject' => '\BAGClient\Model\VerblijfsobjectIOHal'    ];
+        '_links' => '\BAG\Client\Model\HalCollectionLinks',
+'ligplaats' => '\BAG\Client\Model\LigplaatsIOHal',
+'standplaats' => '\BAG\Client\Model\StandplaatsIOHal',
+'verblijfsobject' => '\BAG\Client\Model\VerblijfsobjectIOHal'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -218,7 +218,7 @@ class AdresseerbaarObjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAGClient\Model\HalCollectionLinks
+     * @return \BAG\Client\Model\HalCollectionLinks
      */
     public function getLinks()
     {
@@ -228,7 +228,7 @@ class AdresseerbaarObjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAGClient\Model\HalCollectionLinks $_links _links
+     * @param \BAG\Client\Model\HalCollectionLinks $_links _links
      *
      * @return $this
      */
@@ -242,7 +242,7 @@ class AdresseerbaarObjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets ligplaats
      *
-     * @return \BAGClient\Model\LigplaatsIOHal
+     * @return \BAG\Client\Model\LigplaatsIOHal
      */
     public function getLigplaats()
     {
@@ -252,7 +252,7 @@ class AdresseerbaarObjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets ligplaats
      *
-     * @param \BAGClient\Model\LigplaatsIOHal $ligplaats ligplaats
+     * @param \BAG\Client\Model\LigplaatsIOHal $ligplaats ligplaats
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class AdresseerbaarObjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets standplaats
      *
-     * @return \BAGClient\Model\StandplaatsIOHal
+     * @return \BAG\Client\Model\StandplaatsIOHal
      */
     public function getStandplaats()
     {
@@ -276,7 +276,7 @@ class AdresseerbaarObjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets standplaats
      *
-     * @param \BAGClient\Model\StandplaatsIOHal $standplaats standplaats
+     * @param \BAG\Client\Model\StandplaatsIOHal $standplaats standplaats
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class AdresseerbaarObjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets verblijfsobject
      *
-     * @return \BAGClient\Model\VerblijfsobjectIOHal
+     * @return \BAG\Client\Model\VerblijfsobjectIOHal
      */
     public function getVerblijfsobject()
     {
@@ -300,7 +300,7 @@ class AdresseerbaarObjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets verblijfsobject
      *
-     * @param \BAGClient\Model\VerblijfsobjectIOHal $verblijfsobject verblijfsobject
+     * @param \BAG\Client\Model\VerblijfsobjectIOHal $verblijfsobject verblijfsobject
      *
      * @return $this
      */

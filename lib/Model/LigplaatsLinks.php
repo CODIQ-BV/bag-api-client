@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
+namespace BAG\Client\Model;
 
 use \ArrayAccess;
-use \BAGClient\ObjectSerializer;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * LigplaatsLinks Class Doc Comment
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,9 +56,9 @@ class LigplaatsLinks implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'self' => '\BAGClient\Model\HalLink',
-'heeft_als_hoofd_adres' => '\BAGClient\Model\HalLink',
-'heeft_als_neven_adres' => '\BAGClient\Model\HalLink[]'    ];
+        'self' => '\BAG\Client\Model\HalLink',
+'heeft_als_hoofd_adres' => '\BAG\Client\Model\HalLink',
+'heeft_als_neven_adres' => '\BAG\Client\Model\HalLink[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -217,7 +217,7 @@ class LigplaatsLinks implements ModelInterface, ArrayAccess
     /**
      * Gets self
      *
-     * @return \BAGClient\Model\HalLink
+     * @return \BAG\Client\Model\HalLink
      */
     public function getSelf()
     {
@@ -227,7 +227,7 @@ class LigplaatsLinks implements ModelInterface, ArrayAccess
     /**
      * Sets self
      *
-     * @param \BAGClient\Model\HalLink $self self
+     * @param \BAG\Client\Model\HalLink $self self
      *
      * @return $this
      */
@@ -241,7 +241,7 @@ class LigplaatsLinks implements ModelInterface, ArrayAccess
     /**
      * Gets heeft_als_hoofd_adres
      *
-     * @return \BAGClient\Model\HalLink
+     * @return \BAG\Client\Model\HalLink
      */
     public function getHeeftAlsHoofdAdres()
     {
@@ -251,7 +251,7 @@ class LigplaatsLinks implements ModelInterface, ArrayAccess
     /**
      * Sets heeft_als_hoofd_adres
      *
-     * @param \BAGClient\Model\HalLink $heeft_als_hoofd_adres heeft_als_hoofd_adres
+     * @param \BAG\Client\Model\HalLink $heeft_als_hoofd_adres heeft_als_hoofd_adres
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class LigplaatsLinks implements ModelInterface, ArrayAccess
     /**
      * Gets heeft_als_neven_adres
      *
-     * @return \BAGClient\Model\HalLink[]
+     * @return \BAG\Client\Model\HalLink[]
      */
     public function getHeeftAlsNevenAdres()
     {
@@ -275,7 +275,7 @@ class LigplaatsLinks implements ModelInterface, ArrayAccess
     /**
      * Sets heeft_als_neven_adres
      *
-     * @param \BAGClient\Model\HalLink[] $heeft_als_neven_adres De nummeraanduidingen die dit adresseerbare object als nevenadressen heeft. Van deze gerelateerd nummeraanduiding: hiervan het voorkomen van nummeraanduiding die gevonden wordt op basis van dezelfde tijdreisparameters als waarmee het adresseerbare object voorkomen gevonden is.
+     * @param \BAG\Client\Model\HalLink[] $heeft_als_neven_adres De nummeraanduidingen die dit adresseerbare object als nevenadressen heeft. Van deze gerelateerd nummeraanduiding: hiervan het voorkomen van nummeraanduiding die gevonden wordt op basis van dezelfde tijdreisparameters als waarmee het adresseerbare object voorkomen gevonden is.
      *
      * @return $this
      */

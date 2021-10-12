@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
+namespace BAG\Client\Model;
 
 use \ArrayAccess;
-use \BAGClient\ObjectSerializer;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * KenmerkOpenbareRuimteInOnderzoek Class Doc Comment
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,10 +56,10 @@ class KenmerkOpenbareRuimteInOnderzoek implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'kenmerk' => '\BAGClient\Model\InOnderzoekOpenbareRuimte',
-'identificatie_van_openbare_ruimte' => '\BAGClient\Model\OpenbareRuimteIdentificatie',
-'in_onderzoek' => '\BAGClient\Model\Indicatie',
-'historie' => '\BAGClient\Model\HistorieInOnderzoek',
+        'kenmerk' => '\BAG\Client\Model\InOnderzoekOpenbareRuimte',
+'identificatie_van_openbare_ruimte' => '\BAG\Client\Model\OpenbareRuimteIdentificatie',
+'in_onderzoek' => '\BAG\Client\Model\Indicatie',
+'historie' => '\BAG\Client\Model\HistorieInOnderzoek',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string'    ];
 
@@ -247,7 +247,7 @@ class KenmerkOpenbareRuimteInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets kenmerk
      *
-     * @return \BAGClient\Model\InOnderzoekOpenbareRuimte
+     * @return \BAG\Client\Model\InOnderzoekOpenbareRuimte
      */
     public function getKenmerk()
     {
@@ -257,7 +257,7 @@ class KenmerkOpenbareRuimteInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets kenmerk
      *
-     * @param \BAGClient\Model\InOnderzoekOpenbareRuimte $kenmerk kenmerk
+     * @param \BAG\Client\Model\InOnderzoekOpenbareRuimte $kenmerk kenmerk
      *
      * @return $this
      */
@@ -271,7 +271,7 @@ class KenmerkOpenbareRuimteInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets identificatie_van_openbare_ruimte
      *
-     * @return \BAGClient\Model\OpenbareRuimteIdentificatie
+     * @return \BAG\Client\Model\OpenbareRuimteIdentificatie
      */
     public function getIdentificatieVanOpenbareRuimte()
     {
@@ -281,7 +281,7 @@ class KenmerkOpenbareRuimteInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets identificatie_van_openbare_ruimte
      *
-     * @param \BAGClient\Model\OpenbareRuimteIdentificatie $identificatie_van_openbare_ruimte identificatie_van_openbare_ruimte
+     * @param \BAG\Client\Model\OpenbareRuimteIdentificatie $identificatie_van_openbare_ruimte identificatie_van_openbare_ruimte
      *
      * @return $this
      */
@@ -295,7 +295,7 @@ class KenmerkOpenbareRuimteInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets in_onderzoek
      *
-     * @return \BAGClient\Model\Indicatie
+     * @return \BAG\Client\Model\Indicatie
      */
     public function getInOnderzoek()
     {
@@ -305,7 +305,7 @@ class KenmerkOpenbareRuimteInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets in_onderzoek
      *
-     * @param \BAGClient\Model\Indicatie $in_onderzoek in_onderzoek
+     * @param \BAG\Client\Model\Indicatie $in_onderzoek in_onderzoek
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class KenmerkOpenbareRuimteInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets historie
      *
-     * @return \BAGClient\Model\HistorieInOnderzoek
+     * @return \BAG\Client\Model\HistorieInOnderzoek
      */
     public function getHistorie()
     {
@@ -329,7 +329,7 @@ class KenmerkOpenbareRuimteInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets historie
      *
-     * @param \BAGClient\Model\HistorieInOnderzoek $historie historie
+     * @param \BAG\Client\Model\HistorieInOnderzoek $historie historie
      *
      * @return $this
      */

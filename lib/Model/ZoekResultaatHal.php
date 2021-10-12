@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
-use \BAGClient\ObjectSerializer;
+namespace BAG\Client\Model;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * ZoekResultaatHal Class Doc Comment
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -54,7 +54,7 @@ class ZoekResultaatHal extends ZoekResultaat
       * @var string[]
       */
     protected static $swaggerTypes = [
-        '_links' => '\BAGClient\Model\ZoekResultaatLinks'    ];
+        '_links' => '\BAG\Client\Model\ZoekResultaatLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -193,7 +193,7 @@ class ZoekResultaatHal extends ZoekResultaat
     /**
      * Gets _links
      *
-     * @return \BAGClient\Model\ZoekResultaatLinks
+     * @return \BAG\Client\Model\ZoekResultaatLinks
      */
     public function getLinks()
     {
@@ -203,7 +203,7 @@ class ZoekResultaatHal extends ZoekResultaat
     /**
      * Sets _links
      *
-     * @param \BAGClient\Model\ZoekResultaatLinks $_links _links
+     * @param \BAG\Client\Model\ZoekResultaatLinks $_links _links
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Api;
+namespace BAG\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use BAGClient\ApiException;
-use BAGClient\Configuration;
-use BAGClient\HeaderSelector;
-use BAGClient\ObjectSerializer;
+use BAG\Client\ApiException;
+use BAG\Client\Configuration;
+use BAG\Client\HeaderSelector;
+use BAG\Client\ObjectSerializer;
 
 /**
  * StandplaatsApi Class Doc Comment
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,7 +91,7 @@ class StandplaatsApi
      *
      * bevragen van een standplaats met een geometrische locatie.
      *
-     * @param  \BAGClient\Model\Point $body Geometrisch punt waarop de standplaatsen bepaald moeten worden. (required)
+     * @param  \BAG\Client\Model\Point $body Geometrisch punt waarop de standplaatsen bepaald moeten worden. (required)
      * @param  string $content_crs CRS van de meegegeven geometrie. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      * @param  \DateTime $geldig_op Filtert op objecten die geldig zijn op de opgegeven datum &#x60;JJJJ-MM-DD&#x60; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
@@ -99,9 +99,9 @@ class StandplaatsApi
      * @param  bool $huidig Indicatie dat alleen actuele object voorkomens zonder eindstatus gewenst zijn. (optional, default to false)
      * @param  string $expand Hier kan aangegeven worden welke gerelateerde resources meegeladen moeten worden. Resources en velden van resources die gewenst zijn kunnen in de expand parameter kommagescheiden worden opgegeven. Specifieke velden van resource kunnen worden opgegeven door het opgeven van de resource-naam gevolgd door de veldnaam, met daartussen een punt. (optional)
      *
-     * @throws \BAGClient\ApiException on non-2xx response
+     * @throws \BAG\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\Model\StandplaatsIOHalCollection
+     * @return \BAG\Client\Model\StandplaatsIOHalCollection
      */
     public function standplaatsGeometrie($body, $content_crs = null, $accept_crs = null, $geldig_op = null, $beschikbaar_op = null, $huidig = 'false', $expand = null)
     {
@@ -114,7 +114,7 @@ class StandplaatsApi
      *
      * bevragen van een standplaats met een geometrische locatie.
      *
-     * @param  \BAGClient\Model\Point $body Geometrisch punt waarop de standplaatsen bepaald moeten worden. (required)
+     * @param  \BAG\Client\Model\Point $body Geometrisch punt waarop de standplaatsen bepaald moeten worden. (required)
      * @param  string $content_crs CRS van de meegegeven geometrie. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      * @param  \DateTime $geldig_op Filtert op objecten die geldig zijn op de opgegeven datum &#x60;JJJJ-MM-DD&#x60; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
@@ -122,13 +122,13 @@ class StandplaatsApi
      * @param  bool $huidig Indicatie dat alleen actuele object voorkomens zonder eindstatus gewenst zijn. (optional, default to false)
      * @param  string $expand Hier kan aangegeven worden welke gerelateerde resources meegeladen moeten worden. Resources en velden van resources die gewenst zijn kunnen in de expand parameter kommagescheiden worden opgegeven. Specifieke velden van resource kunnen worden opgegeven door het opgeven van de resource-naam gevolgd door de veldnaam, met daartussen een punt. (optional)
      *
-     * @throws \BAGClient\ApiException on non-2xx response
+     * @throws \BAG\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\Model\StandplaatsIOHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAG\Client\Model\StandplaatsIOHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function standplaatsGeometrieWithHttpInfo($body, $content_crs = null, $accept_crs = null, $geldig_op = null, $beschikbaar_op = null, $huidig = 'false', $expand = null)
     {
-        $returnType = '\BAGClient\Model\StandplaatsIOHalCollection';
+        $returnType = '\BAG\Client\Model\StandplaatsIOHalCollection';
         $request = $this->standplaatsGeometrieRequest($body, $content_crs, $accept_crs, $geldig_op, $beschikbaar_op, $huidig, $expand);
 
         try {
@@ -180,7 +180,7 @@ class StandplaatsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\StandplaatsIOHalCollection',
+                        '\BAG\Client\Model\StandplaatsIOHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class StandplaatsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -196,7 +196,7 @@ class StandplaatsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -204,7 +204,7 @@ class StandplaatsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -212,7 +212,7 @@ class StandplaatsApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -220,7 +220,7 @@ class StandplaatsApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -228,7 +228,7 @@ class StandplaatsApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -236,7 +236,7 @@ class StandplaatsApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -244,7 +244,7 @@ class StandplaatsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -252,7 +252,7 @@ class StandplaatsApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -260,7 +260,7 @@ class StandplaatsApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -275,7 +275,7 @@ class StandplaatsApi
      *
      * bevragen van een standplaats met een geometrische locatie.
      *
-     * @param  \BAGClient\Model\Point $body Geometrisch punt waarop de standplaatsen bepaald moeten worden. (required)
+     * @param  \BAG\Client\Model\Point $body Geometrisch punt waarop de standplaatsen bepaald moeten worden. (required)
      * @param  string $content_crs CRS van de meegegeven geometrie. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      * @param  \DateTime $geldig_op Filtert op objecten die geldig zijn op de opgegeven datum &#x60;JJJJ-MM-DD&#x60; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
@@ -301,7 +301,7 @@ class StandplaatsApi
      *
      * bevragen van een standplaats met een geometrische locatie.
      *
-     * @param  \BAGClient\Model\Point $body Geometrisch punt waarop de standplaatsen bepaald moeten worden. (required)
+     * @param  \BAG\Client\Model\Point $body Geometrisch punt waarop de standplaatsen bepaald moeten worden. (required)
      * @param  string $content_crs CRS van de meegegeven geometrie. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      * @param  \DateTime $geldig_op Filtert op objecten die geldig zijn op de opgegeven datum &#x60;JJJJ-MM-DD&#x60; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
@@ -314,7 +314,7 @@ class StandplaatsApi
      */
     public function standplaatsGeometrieAsyncWithHttpInfo($body, $content_crs = null, $accept_crs = null, $geldig_op = null, $beschikbaar_op = null, $huidig = 'false', $expand = null)
     {
-        $returnType = '\BAGClient\Model\StandplaatsIOHalCollection';
+        $returnType = '\BAG\Client\Model\StandplaatsIOHalCollection';
         $request = $this->standplaatsGeometrieRequest($body, $content_crs, $accept_crs, $geldig_op, $beschikbaar_op, $huidig, $expand);
 
         return $this->client
@@ -357,7 +357,7 @@ class StandplaatsApi
     /**
      * Create request for operation 'standplaatsGeometrie'
      *
-     * @param  \BAGClient\Model\Point $body Geometrisch punt waarop de standplaatsen bepaald moeten worden. (required)
+     * @param  \BAG\Client\Model\Point $body Geometrisch punt waarop de standplaatsen bepaald moeten worden. (required)
      * @param  string $content_crs CRS van de meegegeven geometrie. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      * @param  \DateTime $geldig_op Filtert op objecten die geldig zijn op de opgegeven datum &#x60;JJJJ-MM-DD&#x60; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
@@ -493,9 +493,9 @@ class StandplaatsApi
      * @param  string $expand Hier kan aangegeven worden welke gerelateerde resources meegeladen moeten worden. Resources en velden van resources die gewenst zijn kunnen in de expand parameter kommagescheiden worden opgegeven. Specifieke velden van resource kunnen worden opgegeven door het opgeven van de resource-naam gevolgd door de veldnaam, met daartussen een punt. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAGClient\ApiException on non-2xx response
+     * @throws \BAG\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\Model\StandplaatsIOHal
+     * @return \BAG\Client\Model\StandplaatsIOHal
      */
     public function standplaatsIdentificatie($identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
@@ -514,13 +514,13 @@ class StandplaatsApi
      * @param  string $expand Hier kan aangegeven worden welke gerelateerde resources meegeladen moeten worden. Resources en velden van resources die gewenst zijn kunnen in de expand parameter kommagescheiden worden opgegeven. Specifieke velden van resource kunnen worden opgegeven door het opgeven van de resource-naam gevolgd door de veldnaam, met daartussen een punt. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAGClient\ApiException on non-2xx response
+     * @throws \BAG\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\Model\StandplaatsIOHal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAG\Client\Model\StandplaatsIOHal, HTTP status code, HTTP response headers (array of strings)
      */
     public function standplaatsIdentificatieWithHttpInfo($identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAGClient\Model\StandplaatsIOHal';
+        $returnType = '\BAG\Client\Model\StandplaatsIOHal';
         $request = $this->standplaatsIdentificatieRequest($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs);
 
         try {
@@ -572,7 +572,7 @@ class StandplaatsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\StandplaatsIOHal',
+                        '\BAG\Client\Model\StandplaatsIOHal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -580,7 +580,7 @@ class StandplaatsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -588,7 +588,7 @@ class StandplaatsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -596,7 +596,7 @@ class StandplaatsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -604,7 +604,7 @@ class StandplaatsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -612,7 +612,7 @@ class StandplaatsApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -620,7 +620,7 @@ class StandplaatsApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -628,7 +628,7 @@ class StandplaatsApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -636,7 +636,7 @@ class StandplaatsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -644,7 +644,7 @@ class StandplaatsApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -652,7 +652,7 @@ class StandplaatsApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -702,7 +702,7 @@ class StandplaatsApi
      */
     public function standplaatsIdentificatieAsyncWithHttpInfo($identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAGClient\Model\StandplaatsIOHal';
+        $returnType = '\BAG\Client\Model\StandplaatsIOHal';
         $request = $this->standplaatsIdentificatieRequest($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs);
 
         return $this->client
@@ -875,9 +875,9 @@ class StandplaatsApi
      * @param  string $timestamp_registratie_lv Een timestamp van het tijdstip waarop een voorkomen is geregistreerd in de LV BAG (required)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAGClient\ApiException on non-2xx response
+     * @throws \BAG\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\Model\StandplaatsIOHal
+     * @return \BAG\Client\Model\StandplaatsIOHal
      */
     public function standplaatsIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $accept_crs = null)
     {
@@ -895,13 +895,13 @@ class StandplaatsApi
      * @param  string $timestamp_registratie_lv Een timestamp van het tijdstip waarop een voorkomen is geregistreerd in de LV BAG (required)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAGClient\ApiException on non-2xx response
+     * @throws \BAG\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\Model\StandplaatsIOHal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAG\Client\Model\StandplaatsIOHal, HTTP status code, HTTP response headers (array of strings)
      */
     public function standplaatsIdentificatieVoorkomenWithHttpInfo($identificatie, $versie, $timestamp_registratie_lv, $accept_crs = null)
     {
-        $returnType = '\BAGClient\Model\StandplaatsIOHal';
+        $returnType = '\BAG\Client\Model\StandplaatsIOHal';
         $request = $this->standplaatsIdentificatieVoorkomenRequest($identificatie, $versie, $timestamp_registratie_lv, $accept_crs);
 
         try {
@@ -953,7 +953,7 @@ class StandplaatsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\StandplaatsIOHal',
+                        '\BAG\Client\Model\StandplaatsIOHal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -961,7 +961,7 @@ class StandplaatsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -969,7 +969,7 @@ class StandplaatsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -977,7 +977,7 @@ class StandplaatsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -985,7 +985,7 @@ class StandplaatsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -993,7 +993,7 @@ class StandplaatsApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1001,7 +1001,7 @@ class StandplaatsApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1009,7 +1009,7 @@ class StandplaatsApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1017,7 +1017,7 @@ class StandplaatsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1025,7 +1025,7 @@ class StandplaatsApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1033,7 +1033,7 @@ class StandplaatsApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1081,7 +1081,7 @@ class StandplaatsApi
      */
     public function standplaatsIdentificatieVoorkomenAsyncWithHttpInfo($identificatie, $versie, $timestamp_registratie_lv, $accept_crs = null)
     {
-        $returnType = '\BAGClient\Model\StandplaatsIOHal';
+        $returnType = '\BAG\Client\Model\StandplaatsIOHal';
         $request = $this->standplaatsIdentificatieVoorkomenRequest($identificatie, $versie, $timestamp_registratie_lv, $accept_crs);
 
         return $this->client
@@ -1268,9 +1268,9 @@ class StandplaatsApi
      * @param  bool $gehele_lvc Filtert naast geldige voorkomens ook de voorkomens die uit de geldige levenscyclus van het object zijn verwijderd. Als deze parameter wordt weggelaten worden alleen geldige voorkomens geretourneerd (default is false). Voor een toelichting zie de [Praktijkhandleiding BAG](https://imbag.github.io/praktijkhandleiding/artikelen/wat-is-het-verschil-tussen-actieve-voorkomens-actuele-voorkomens-en-huidige-voorkomens). (optional, default to false)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAGClient\ApiException on non-2xx response
+     * @throws \BAG\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\Model\StandplaatsIOLvcHalCollection
+     * @return \BAG\Client\Model\StandplaatsIOLvcHalCollection
      */
     public function standplaatsLvcIdentificatie($identificatie, $gehele_lvc = 'false', $accept_crs = null)
     {
@@ -1287,13 +1287,13 @@ class StandplaatsApi
      * @param  bool $gehele_lvc Filtert naast geldige voorkomens ook de voorkomens die uit de geldige levenscyclus van het object zijn verwijderd. Als deze parameter wordt weggelaten worden alleen geldige voorkomens geretourneerd (default is false). Voor een toelichting zie de [Praktijkhandleiding BAG](https://imbag.github.io/praktijkhandleiding/artikelen/wat-is-het-verschil-tussen-actieve-voorkomens-actuele-voorkomens-en-huidige-voorkomens). (optional, default to false)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAGClient\ApiException on non-2xx response
+     * @throws \BAG\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\Model\StandplaatsIOLvcHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAG\Client\Model\StandplaatsIOLvcHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function standplaatsLvcIdentificatieWithHttpInfo($identificatie, $gehele_lvc = 'false', $accept_crs = null)
     {
-        $returnType = '\BAGClient\Model\StandplaatsIOLvcHalCollection';
+        $returnType = '\BAG\Client\Model\StandplaatsIOLvcHalCollection';
         $request = $this->standplaatsLvcIdentificatieRequest($identificatie, $gehele_lvc, $accept_crs);
 
         try {
@@ -1345,7 +1345,7 @@ class StandplaatsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\StandplaatsIOLvcHalCollection',
+                        '\BAG\Client\Model\StandplaatsIOLvcHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1353,7 +1353,7 @@ class StandplaatsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1361,7 +1361,7 @@ class StandplaatsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1369,7 +1369,7 @@ class StandplaatsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1377,7 +1377,7 @@ class StandplaatsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1385,7 +1385,7 @@ class StandplaatsApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1393,7 +1393,7 @@ class StandplaatsApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1401,7 +1401,7 @@ class StandplaatsApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1409,7 +1409,7 @@ class StandplaatsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1417,7 +1417,7 @@ class StandplaatsApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1425,7 +1425,7 @@ class StandplaatsApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1471,7 +1471,7 @@ class StandplaatsApi
      */
     public function standplaatsLvcIdentificatieAsyncWithHttpInfo($identificatie, $gehele_lvc = 'false', $accept_crs = null)
     {
-        $returnType = '\BAGClient\Model\StandplaatsIOLvcHalCollection';
+        $returnType = '\BAG\Client\Model\StandplaatsIOLvcHalCollection';
         $request = $this->standplaatsLvcIdentificatieRequest($identificatie, $gehele_lvc, $accept_crs);
 
         return $this->client

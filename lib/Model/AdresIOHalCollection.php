@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
+namespace BAG\Client\Model;
 
 use \ArrayAccess;
-use \BAGClient\ObjectSerializer;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * AdresIOHalCollection Class Doc Comment
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class AdresIOHalCollection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        '_links' => '\BAGClient\Model\HalPaginationLinks',
-'_embedded' => '\BAGClient\Model\AdresIOHalCollectionEmbedded'    ];
+        '_links' => '\BAG\Client\Model\HalPaginationLinks',
+'_embedded' => '\BAG\Client\Model\AdresIOHalCollectionEmbedded'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class AdresIOHalCollection implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAGClient\Model\HalPaginationLinks
+     * @return \BAG\Client\Model\HalPaginationLinks
      */
     public function getLinks()
     {
@@ -215,7 +215,7 @@ class AdresIOHalCollection implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAGClient\Model\HalPaginationLinks $_links _links
+     * @param \BAG\Client\Model\HalPaginationLinks $_links _links
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class AdresIOHalCollection implements ModelInterface, ArrayAccess
     /**
      * Gets _embedded
      *
-     * @return \BAGClient\Model\AdresIOHalCollectionEmbedded
+     * @return \BAG\Client\Model\AdresIOHalCollectionEmbedded
      */
     public function getEmbedded()
     {
@@ -239,7 +239,7 @@ class AdresIOHalCollection implements ModelInterface, ArrayAccess
     /**
      * Sets _embedded
      *
-     * @param \BAGClient\Model\AdresIOHalCollectionEmbedded $_embedded _embedded
+     * @param \BAG\Client\Model\AdresIOHalCollectionEmbedded $_embedded _embedded
      *
      * @return $this
      */

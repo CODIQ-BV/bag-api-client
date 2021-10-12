@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
+namespace BAG\Client\Model;
 
 use \ArrayAccess;
-use \BAGClient\ObjectSerializer;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * AdresIOEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,9 +56,9 @@ class AdresIOEmbedded implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'openbare_ruimte' => '\BAGClient\Model\OpenbareRuimteIOHal',
-'nummeraanduiding' => '\BAGClient\Model\NummeraanduidingIOHal',
-'woonplaats' => '\BAGClient\Model\WoonplaatsIOHal'    ];
+        'openbare_ruimte' => '\BAG\Client\Model\OpenbareRuimteIOHal',
+'nummeraanduiding' => '\BAG\Client\Model\NummeraanduidingIOHal',
+'woonplaats' => '\BAG\Client\Model\WoonplaatsIOHal'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -211,7 +211,7 @@ class AdresIOEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets openbare_ruimte
      *
-     * @return \BAGClient\Model\OpenbareRuimteIOHal
+     * @return \BAG\Client\Model\OpenbareRuimteIOHal
      */
     public function getOpenbareRuimte()
     {
@@ -221,7 +221,7 @@ class AdresIOEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets openbare_ruimte
      *
-     * @param \BAGClient\Model\OpenbareRuimteIOHal $openbare_ruimte openbare_ruimte
+     * @param \BAG\Client\Model\OpenbareRuimteIOHal $openbare_ruimte openbare_ruimte
      *
      * @return $this
      */
@@ -235,7 +235,7 @@ class AdresIOEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets nummeraanduiding
      *
-     * @return \BAGClient\Model\NummeraanduidingIOHal
+     * @return \BAG\Client\Model\NummeraanduidingIOHal
      */
     public function getNummeraanduiding()
     {
@@ -245,7 +245,7 @@ class AdresIOEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets nummeraanduiding
      *
-     * @param \BAGClient\Model\NummeraanduidingIOHal $nummeraanduiding nummeraanduiding
+     * @param \BAG\Client\Model\NummeraanduidingIOHal $nummeraanduiding nummeraanduiding
      *
      * @return $this
      */
@@ -259,7 +259,7 @@ class AdresIOEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets woonplaats
      *
-     * @return \BAGClient\Model\WoonplaatsIOHal
+     * @return \BAG\Client\Model\WoonplaatsIOHal
      */
     public function getWoonplaats()
     {
@@ -269,7 +269,7 @@ class AdresIOEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets woonplaats
      *
-     * @param \BAGClient\Model\WoonplaatsIOHal $woonplaats woonplaats
+     * @param \BAG\Client\Model\WoonplaatsIOHal $woonplaats woonplaats
      *
      * @return $this
      */

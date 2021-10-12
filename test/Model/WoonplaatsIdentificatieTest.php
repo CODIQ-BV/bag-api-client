@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace BAGClient;
+namespace BAG\Client;
 
 /**
  * WoonplaatsIdentificatieTest Class Doc Comment
  *
  * @category    Class
  * @description De identificatie wordt gebruikt in de operation, bv. /woonplaatsen/3560. Waarde: 0001-9999, formaat: ^[0-9]{3}[1-9]\\|[0-9]{2}[1-9][0-9]\\|[0-9][1-9][0-9]{2}\\|[1-9][0-9]{3}$.
- * @package     BAGClient
+ * @package     BAG\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

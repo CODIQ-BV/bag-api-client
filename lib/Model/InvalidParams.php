@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
+namespace BAG\Client\Model;
 
 use \ArrayAccess;
-use \BAGClient\ObjectSerializer;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * InvalidParams Class Doc Comment
  *
  * @category Class
  * @description Wanneer de fout is veroorzaakt door fouten in requestparameters (of request body), wordt invalid-params gevuld met details over elke foute parameter. Wanneer er fouten zitten op meerdere parameters, wordt er per validatiefout een invalid-params instantie opgenomen in het antwoord. Alle fouten worden dus teruggegeven. Een gedetailleerde beschrijving hoe de onderstaande attributen ingevuld moeten worden staat op: https://github.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen/blob/master/features/foutafhandeling.feature
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
+namespace BAG\Client\Model;
 
 use \ArrayAccess;
-use \BAGClient\ObjectSerializer;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * ZoekResultaatHalCollection Class Doc Comment
  *
  * @category Class
  * @description Resultaten als lijst
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +57,8 @@ class ZoekResultaatHalCollection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        '_links' => '\BAGClient\Model\HalPaginationLinks',
-'_embedded' => '\BAGClient\Model\ZoekResultaatHalCollectionEmbedded'    ];
+        '_links' => '\BAG\Client\Model\HalPaginationLinks',
+'_embedded' => '\BAG\Client\Model\ZoekResultaatHalCollectionEmbedded'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -206,7 +206,7 @@ class ZoekResultaatHalCollection implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAGClient\Model\HalPaginationLinks
+     * @return \BAG\Client\Model\HalPaginationLinks
      */
     public function getLinks()
     {
@@ -216,7 +216,7 @@ class ZoekResultaatHalCollection implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAGClient\Model\HalPaginationLinks $_links _links
+     * @param \BAG\Client\Model\HalPaginationLinks $_links _links
      *
      * @return $this
      */
@@ -230,7 +230,7 @@ class ZoekResultaatHalCollection implements ModelInterface, ArrayAccess
     /**
      * Gets _embedded
      *
-     * @return \BAGClient\Model\ZoekResultaatHalCollectionEmbedded
+     * @return \BAG\Client\Model\ZoekResultaatHalCollectionEmbedded
      */
     public function getEmbedded()
     {
@@ -240,7 +240,7 @@ class ZoekResultaatHalCollection implements ModelInterface, ArrayAccess
     /**
      * Sets _embedded
      *
-     * @param \BAGClient\Model\ZoekResultaatHalCollectionEmbedded $_embedded _embedded
+     * @param \BAG\Client\Model\ZoekResultaatHalCollectionEmbedded $_embedded _embedded
      *
      * @return $this
      */

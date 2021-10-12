@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Api;
+namespace BAG\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use BAGClient\ApiException;
-use BAGClient\Configuration;
-use BAGClient\HeaderSelector;
-use BAGClient\ObjectSerializer;
+use BAG\Client\ApiException;
+use BAG\Client\Configuration;
+use BAG\Client\HeaderSelector;
+use BAG\Client\ObjectSerializer;
 
 /**
  * AlgemeneInformatieApi Class Doc Comment
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class AlgemeneInformatieApi
      * Algemene info van de API
      *
      *
-     * @throws \BAGClient\ApiException on non-2xx response
+     * @throws \BAG\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\Model\APIInfo
+     * @return \BAG\Client\Model\APIInfo
      */
     public function getInfo()
     {
@@ -108,13 +108,13 @@ class AlgemeneInformatieApi
      * Algemene info van de API
      *
      *
-     * @throws \BAGClient\ApiException on non-2xx response
+     * @throws \BAG\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\Model\APIInfo, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAG\Client\Model\APIInfo, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInfoWithHttpInfo()
     {
-        $returnType = '\BAGClient\Model\APIInfo';
+        $returnType = '\BAG\Client\Model\APIInfo';
         $request = $this->getInfoRequest();
 
         try {
@@ -166,7 +166,7 @@ class AlgemeneInformatieApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\APIInfo',
+                        '\BAG\Client\Model\APIInfo',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -174,7 +174,7 @@ class AlgemeneInformatieApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\Model\Error',
+                        '\BAG\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class AlgemeneInformatieApi
      */
     public function getInfoAsyncWithHttpInfo()
     {
-        $returnType = '\BAGClient\Model\APIInfo';
+        $returnType = '\BAG\Client\Model\APIInfo';
         $request = $this->getInfoRequest();
 
         return $this->client

@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **detail** | **string** | Een gedetailleerde beschrijving van de HTTP status code. | 
 **instance** | **string** | URI van de aanroep die fout heeft veroorzaakt. | 
 **code** | **string** | Systeem code die het type fout aangeeft. | [optional] 
-**invalid_params** | [**\BAGClient\Model\InvalidParams[]**](InvalidParams.md) |  | [optional] 
+**invalid_params** | [**\BAG\Client\Model\InvalidParams[]**](InvalidParams.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

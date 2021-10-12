@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
+namespace BAG\Client\Model;
 
 use \ArrayAccess;
-use \BAGClient\ObjectSerializer;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * NummeraanduidingLinks Class Doc Comment
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,9 +56,9 @@ class NummeraanduidingLinks implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'self' => '\BAGClient\Model\HalLink',
-'ligt_in_woonplaats' => '\BAGClient\Model\HalLink',
-'ligt_aan_openbare_ruimte' => '\BAGClient\Model\HalLink'    ];
+        'self' => '\BAG\Client\Model\HalLink',
+'ligt_in_woonplaats' => '\BAG\Client\Model\HalLink',
+'ligt_aan_openbare_ruimte' => '\BAG\Client\Model\HalLink'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -214,7 +214,7 @@ class NummeraanduidingLinks implements ModelInterface, ArrayAccess
     /**
      * Gets self
      *
-     * @return \BAGClient\Model\HalLink
+     * @return \BAG\Client\Model\HalLink
      */
     public function getSelf()
     {
@@ -224,7 +224,7 @@ class NummeraanduidingLinks implements ModelInterface, ArrayAccess
     /**
      * Sets self
      *
-     * @param \BAGClient\Model\HalLink $self self
+     * @param \BAG\Client\Model\HalLink $self self
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class NummeraanduidingLinks implements ModelInterface, ArrayAccess
     /**
      * Gets ligt_in_woonplaats
      *
-     * @return \BAGClient\Model\HalLink
+     * @return \BAG\Client\Model\HalLink
      */
     public function getLigtInWoonplaats()
     {
@@ -248,7 +248,7 @@ class NummeraanduidingLinks implements ModelInterface, ArrayAccess
     /**
      * Sets ligt_in_woonplaats
      *
-     * @param \BAGClient\Model\HalLink $ligt_in_woonplaats ligt_in_woonplaats
+     * @param \BAG\Client\Model\HalLink $ligt_in_woonplaats ligt_in_woonplaats
      *
      * @return $this
      */
@@ -262,7 +262,7 @@ class NummeraanduidingLinks implements ModelInterface, ArrayAccess
     /**
      * Gets ligt_aan_openbare_ruimte
      *
-     * @return \BAGClient\Model\HalLink
+     * @return \BAG\Client\Model\HalLink
      */
     public function getLigtAanOpenbareRuimte()
     {
@@ -272,7 +272,7 @@ class NummeraanduidingLinks implements ModelInterface, ArrayAccess
     /**
      * Sets ligt_aan_openbare_ruimte
      *
-     * @param \BAGClient\Model\HalLink $ligt_aan_openbare_ruimte ligt_aan_openbare_ruimte
+     * @param \BAG\Client\Model\HalLink $ligt_aan_openbare_ruimte ligt_aan_openbare_ruimte
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
+namespace BAG\Client\Model;
 
 use \ArrayAccess;
-use \BAGClient\ObjectSerializer;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * KenmerkNummeraanduidingInOnderzoek Class Doc Comment
  *
  * @category Class
  * @description Limitatieve opsomming van alle kenmerken van dit object die in onderzoek zijn op dit moment, of van alle kenmerken die ooit in onderzoek zijn geweest als er een tijdreisvraag is gesteld of een vraag naar de levenscyclus.
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class KenmerkNummeraanduidingInOnderzoek implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'kenmerk' => '\BAGClient\Model\InOnderzoekNummeraanduiding',
-'identificatie_van_nummeraanduiding' => '\BAGClient\Model\NummeraanduidingIdentificatie',
-'in_onderzoek' => '\BAGClient\Model\Indicatie',
-'historie' => '\BAGClient\Model\HistorieInOnderzoek',
+        'kenmerk' => '\BAG\Client\Model\InOnderzoekNummeraanduiding',
+'identificatie_van_nummeraanduiding' => '\BAG\Client\Model\NummeraanduidingIdentificatie',
+'in_onderzoek' => '\BAG\Client\Model\Indicatie',
+'historie' => '\BAG\Client\Model\HistorieInOnderzoek',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string'    ];
 
@@ -242,7 +242,7 @@ class KenmerkNummeraanduidingInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets kenmerk
      *
-     * @return \BAGClient\Model\InOnderzoekNummeraanduiding
+     * @return \BAG\Client\Model\InOnderzoekNummeraanduiding
      */
     public function getKenmerk()
     {
@@ -252,7 +252,7 @@ class KenmerkNummeraanduidingInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets kenmerk
      *
-     * @param \BAGClient\Model\InOnderzoekNummeraanduiding $kenmerk kenmerk
+     * @param \BAG\Client\Model\InOnderzoekNummeraanduiding $kenmerk kenmerk
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class KenmerkNummeraanduidingInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets identificatie_van_nummeraanduiding
      *
-     * @return \BAGClient\Model\NummeraanduidingIdentificatie
+     * @return \BAG\Client\Model\NummeraanduidingIdentificatie
      */
     public function getIdentificatieVanNummeraanduiding()
     {
@@ -276,7 +276,7 @@ class KenmerkNummeraanduidingInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets identificatie_van_nummeraanduiding
      *
-     * @param \BAGClient\Model\NummeraanduidingIdentificatie $identificatie_van_nummeraanduiding identificatie_van_nummeraanduiding
+     * @param \BAG\Client\Model\NummeraanduidingIdentificatie $identificatie_van_nummeraanduiding identificatie_van_nummeraanduiding
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class KenmerkNummeraanduidingInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets in_onderzoek
      *
-     * @return \BAGClient\Model\Indicatie
+     * @return \BAG\Client\Model\Indicatie
      */
     public function getInOnderzoek()
     {
@@ -300,7 +300,7 @@ class KenmerkNummeraanduidingInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets in_onderzoek
      *
-     * @param \BAGClient\Model\Indicatie $in_onderzoek in_onderzoek
+     * @param \BAG\Client\Model\Indicatie $in_onderzoek in_onderzoek
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class KenmerkNummeraanduidingInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets historie
      *
-     * @return \BAGClient\Model\HistorieInOnderzoek
+     * @return \BAG\Client\Model\HistorieInOnderzoek
      */
     public function getHistorie()
     {
@@ -324,7 +324,7 @@ class KenmerkNummeraanduidingInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets historie
      *
-     * @param \BAGClient\Model\HistorieInOnderzoek $historie historie
+     * @param \BAG\Client\Model\HistorieInOnderzoek $historie historie
      *
      * @return $this
      */

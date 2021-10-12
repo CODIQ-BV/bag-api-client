@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
+namespace BAG\Client\Model;
 
 use \ArrayAccess;
-use \BAGClient\ObjectSerializer;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * AdresIOLinks Class Doc Comment
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,12 +56,12 @@ class AdresIOLinks implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'self' => '\BAGClient\Model\HalLink',
-'openbare_ruimte' => '\BAGClient\Model\HalLink',
-'nummeraanduiding' => '\BAGClient\Model\HalLink',
-'woonplaats' => '\BAGClient\Model\HalLink',
-'adresseerbaar_object' => '\BAGClient\Model\HalLink',
-'panden' => '\BAGClient\Model\HalLink[]'    ];
+        'self' => '\BAG\Client\Model\HalLink',
+'openbare_ruimte' => '\BAG\Client\Model\HalLink',
+'nummeraanduiding' => '\BAG\Client\Model\HalLink',
+'woonplaats' => '\BAG\Client\Model\HalLink',
+'adresseerbaar_object' => '\BAG\Client\Model\HalLink',
+'panden' => '\BAG\Client\Model\HalLink[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -229,7 +229,7 @@ class AdresIOLinks implements ModelInterface, ArrayAccess
     /**
      * Gets self
      *
-     * @return \BAGClient\Model\HalLink
+     * @return \BAG\Client\Model\HalLink
      */
     public function getSelf()
     {
@@ -239,7 +239,7 @@ class AdresIOLinks implements ModelInterface, ArrayAccess
     /**
      * Sets self
      *
-     * @param \BAGClient\Model\HalLink $self self
+     * @param \BAG\Client\Model\HalLink $self self
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class AdresIOLinks implements ModelInterface, ArrayAccess
     /**
      * Gets openbare_ruimte
      *
-     * @return \BAGClient\Model\HalLink
+     * @return \BAG\Client\Model\HalLink
      */
     public function getOpenbareRuimte()
     {
@@ -263,7 +263,7 @@ class AdresIOLinks implements ModelInterface, ArrayAccess
     /**
      * Sets openbare_ruimte
      *
-     * @param \BAGClient\Model\HalLink $openbare_ruimte openbare_ruimte
+     * @param \BAG\Client\Model\HalLink $openbare_ruimte openbare_ruimte
      *
      * @return $this
      */
@@ -277,7 +277,7 @@ class AdresIOLinks implements ModelInterface, ArrayAccess
     /**
      * Gets nummeraanduiding
      *
-     * @return \BAGClient\Model\HalLink
+     * @return \BAG\Client\Model\HalLink
      */
     public function getNummeraanduiding()
     {
@@ -287,7 +287,7 @@ class AdresIOLinks implements ModelInterface, ArrayAccess
     /**
      * Sets nummeraanduiding
      *
-     * @param \BAGClient\Model\HalLink $nummeraanduiding nummeraanduiding
+     * @param \BAG\Client\Model\HalLink $nummeraanduiding nummeraanduiding
      *
      * @return $this
      */
@@ -301,7 +301,7 @@ class AdresIOLinks implements ModelInterface, ArrayAccess
     /**
      * Gets woonplaats
      *
-     * @return \BAGClient\Model\HalLink
+     * @return \BAG\Client\Model\HalLink
      */
     public function getWoonplaats()
     {
@@ -311,7 +311,7 @@ class AdresIOLinks implements ModelInterface, ArrayAccess
     /**
      * Sets woonplaats
      *
-     * @param \BAGClient\Model\HalLink $woonplaats woonplaats
+     * @param \BAG\Client\Model\HalLink $woonplaats woonplaats
      *
      * @return $this
      */
@@ -325,7 +325,7 @@ class AdresIOLinks implements ModelInterface, ArrayAccess
     /**
      * Gets adresseerbaar_object
      *
-     * @return \BAGClient\Model\HalLink
+     * @return \BAG\Client\Model\HalLink
      */
     public function getAdresseerbaarObject()
     {
@@ -335,7 +335,7 @@ class AdresIOLinks implements ModelInterface, ArrayAccess
     /**
      * Sets adresseerbaar_object
      *
-     * @param \BAGClient\Model\HalLink $adresseerbaar_object adresseerbaar_object
+     * @param \BAG\Client\Model\HalLink $adresseerbaar_object adresseerbaar_object
      *
      * @return $this
      */
@@ -349,7 +349,7 @@ class AdresIOLinks implements ModelInterface, ArrayAccess
     /**
      * Gets panden
      *
-     * @return \BAGClient\Model\HalLink[]
+     * @return \BAG\Client\Model\HalLink[]
      */
     public function getPanden()
     {
@@ -359,7 +359,7 @@ class AdresIOLinks implements ModelInterface, ArrayAccess
     /**
      * Sets panden
      *
-     * @param \BAGClient\Model\HalLink[] $panden Het/de aan het adres gerelateerde pand(en).
+     * @param \BAG\Client\Model\HalLink[] $panden Het/de aan het adres gerelateerde pand(en).
      *
      * @return $this
      */

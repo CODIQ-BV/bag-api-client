@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
+namespace BAG\Client\Model;
 
 use \ArrayAccess;
-use \BAGClient\ObjectSerializer;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * LigplaatsIOHalCollectionEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class LigplaatsIOHalCollectionEmbedded implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'ligplaatsen' => '\BAGClient\Model\LigplaatsIOHal[]'    ];
+        'ligplaatsen' => '\BAG\Client\Model\LigplaatsIOHal[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class LigplaatsIOHalCollectionEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets ligplaatsen
      *
-     * @return \BAGClient\Model\LigplaatsIOHal[]
+     * @return \BAG\Client\Model\LigplaatsIOHal[]
      */
     public function getLigplaatsen()
     {
@@ -209,7 +209,7 @@ class LigplaatsIOHalCollectionEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets ligplaatsen
      *
-     * @param \BAGClient\Model\LigplaatsIOHal[] $ligplaatsen ligplaatsen
+     * @param \BAG\Client\Model\LigplaatsIOHal[] $ligplaatsen ligplaatsen
      *
      * @return $this
      */

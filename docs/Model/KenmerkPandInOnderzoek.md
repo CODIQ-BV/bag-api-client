@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**kenmerk** | [**\BAGClient\Model\InOnderzoekPand**](InOnderzoekPand.md) |  | 
-**identificatie_van_pand** | [**\BAGClient\Model\PandIdentificatie**](PandIdentificatie.md) |  | 
-**in_onderzoek** | [**\BAGClient\Model\Indicatie**](Indicatie.md) |  | 
-**historie** | [**\BAGClient\Model\HistorieInOnderzoek**](HistorieInOnderzoek.md) |  | 
+**kenmerk** | [**\BAG\Client\Model\InOnderzoekPand**](InOnderzoekPand.md) |  | 
+**identificatie_van_pand** | [**\BAG\Client\Model\PandIdentificatie**](PandIdentificatie.md) |  | 
+**in_onderzoek** | [**\BAG\Client\Model\Indicatie**](Indicatie.md) |  | 
+**historie** | [**\BAG\Client\Model\HistorieInOnderzoek**](HistorieInOnderzoek.md) |  | 
 **documentdatum** | [**\DateTime**](\DateTime.md) | De datum van het document waarin de grondslag van het onderzoek wordt vastgelegd. Dit wordt vastgelegd in het attribuut documentdatum. | 
 **documentnummer** | **string** | Het nummer van het document waarin de grondslag van het onderzoek wordt vastgelegd. Dit wordt vastgelegd in het attribuut documentnummer. | 
 

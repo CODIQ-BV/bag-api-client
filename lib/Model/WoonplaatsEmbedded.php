@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
+namespace BAG\Client\Model;
 
 use \ArrayAccess;
-use \BAGClient\ObjectSerializer;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * WoonplaatsEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class WoonplaatsEmbedded implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'geometrie' => '\BAGClient\Model\VlakOfMultivlak',
-'bronhouders' => '\BAGClient\Model\Bronhouder[]'    ];
+        'geometrie' => '\BAG\Client\Model\VlakOfMultivlak',
+'bronhouders' => '\BAG\Client\Model\Bronhouder[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class WoonplaatsEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets geometrie
      *
-     * @return \BAGClient\Model\VlakOfMultivlak
+     * @return \BAG\Client\Model\VlakOfMultivlak
      */
     public function getGeometrie()
     {
@@ -215,7 +215,7 @@ class WoonplaatsEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets geometrie
      *
-     * @param \BAGClient\Model\VlakOfMultivlak $geometrie geometrie
+     * @param \BAG\Client\Model\VlakOfMultivlak $geometrie geometrie
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class WoonplaatsEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets bronhouders
      *
-     * @return \BAGClient\Model\Bronhouder[]
+     * @return \BAG\Client\Model\Bronhouder[]
      */
     public function getBronhouders()
     {
@@ -239,7 +239,7 @@ class WoonplaatsEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets bronhouders
      *
-     * @param \BAGClient\Model\Bronhouder[] $bronhouders bronhouders
+     * @param \BAG\Client\Model\Bronhouder[] $bronhouders bronhouders
      *
      * @return $this
      */

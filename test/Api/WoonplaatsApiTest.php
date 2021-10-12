@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,17 +25,17 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace BAGClient;
+namespace BAG\Client;
 
-use BAGClient\Configuration;
-use BAGClient\ApiException;
-use BAGClient\ObjectSerializer;
+use BAG\Client\Configuration;
+use BAG\Client\ApiException;
+use BAG\Client\ObjectSerializer;
 
 /**
  * WoonplaatsApiTest Class Doc Comment
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

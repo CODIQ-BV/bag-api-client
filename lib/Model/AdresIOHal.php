@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
-use \BAGClient\ObjectSerializer;
+namespace BAG\Client\Model;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * AdresIOHal Class Doc Comment
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -54,8 +54,8 @@ class AdresIOHal extends AdresIO
       * @var string[]
       */
     protected static $swaggerTypes = [
-        '_embedded' => '\BAGClient\Model\AdresIOEmbedded',
-'_links' => '\BAGClient\Model\AdresIOLinks'    ];
+        '_embedded' => '\BAG\Client\Model\AdresIOEmbedded',
+'_links' => '\BAG\Client\Model\AdresIOLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class AdresIOHal extends AdresIO
     /**
      * Gets _embedded
      *
-     * @return \BAGClient\Model\AdresIOEmbedded
+     * @return \BAG\Client\Model\AdresIOEmbedded
      */
     public function getEmbedded()
     {
@@ -209,7 +209,7 @@ class AdresIOHal extends AdresIO
     /**
      * Sets _embedded
      *
-     * @param \BAGClient\Model\AdresIOEmbedded $_embedded _embedded
+     * @param \BAG\Client\Model\AdresIOEmbedded $_embedded _embedded
      *
      * @return $this
      */
@@ -223,7 +223,7 @@ class AdresIOHal extends AdresIO
     /**
      * Gets _links
      *
-     * @return \BAGClient\Model\AdresIOLinks
+     * @return \BAG\Client\Model\AdresIOLinks
      */
     public function getLinks()
     {
@@ -233,7 +233,7 @@ class AdresIOHal extends AdresIO
     /**
      * Sets _links
      *
-     * @param \BAGClient\Model\AdresIOLinks $_links _links
+     * @param \BAG\Client\Model\AdresIOLinks $_links _links
      *
      * @return $this
      */

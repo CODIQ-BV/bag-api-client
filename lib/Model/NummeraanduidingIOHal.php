@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
+namespace BAG\Client\Model;
 
 use \ArrayAccess;
-use \BAGClient\ObjectSerializer;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * NummeraanduidingIOHal Class Doc Comment
  *
  * @category Class
  * @description Nummeraanduiding, aangevuld met een limitatieve opsomming van alle kenmerken van dit object die in onderzoek zijn(als metadata). Bij een normale vraag wordt aangegeven welke kenmerken er op dit moment in onderzoek zijn. Bij een tijdreisvraag wordt aangegeven welke gegevens er ooit in onderzoek zijn geweest. Bij een levenscyclus vraag wordt aangegeven welke gegevens er ooit in onderzoek zijn geweest.
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class NummeraanduidingIOHal implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'nummeraanduiding' => '\BAGClient\Model\Nummeraanduiding',
-'inonderzoek' => '\BAGClient\Model\KenmerkNummeraanduidingInOnderzoek[]',
-'_embedded' => '\BAGClient\Model\NummeraanduidingEmbedded',
-'_links' => '\BAGClient\Model\NummeraanduidingLinks'    ];
+        'nummeraanduiding' => '\BAG\Client\Model\Nummeraanduiding',
+'inonderzoek' => '\BAG\Client\Model\KenmerkNummeraanduidingInOnderzoek[]',
+'_embedded' => '\BAG\Client\Model\NummeraanduidingEmbedded',
+'_links' => '\BAG\Client\Model\NummeraanduidingLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -221,7 +221,7 @@ class NummeraanduidingIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets nummeraanduiding
      *
-     * @return \BAGClient\Model\Nummeraanduiding
+     * @return \BAG\Client\Model\Nummeraanduiding
      */
     public function getNummeraanduiding()
     {
@@ -231,7 +231,7 @@ class NummeraanduidingIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets nummeraanduiding
      *
-     * @param \BAGClient\Model\Nummeraanduiding $nummeraanduiding nummeraanduiding
+     * @param \BAG\Client\Model\Nummeraanduiding $nummeraanduiding nummeraanduiding
      *
      * @return $this
      */
@@ -245,7 +245,7 @@ class NummeraanduidingIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets inonderzoek
      *
-     * @return \BAGClient\Model\KenmerkNummeraanduidingInOnderzoek[]
+     * @return \BAG\Client\Model\KenmerkNummeraanduidingInOnderzoek[]
      */
     public function getInonderzoek()
     {
@@ -255,7 +255,7 @@ class NummeraanduidingIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets inonderzoek
      *
-     * @param \BAGClient\Model\KenmerkNummeraanduidingInOnderzoek[] $inonderzoek inonderzoek
+     * @param \BAG\Client\Model\KenmerkNummeraanduidingInOnderzoek[] $inonderzoek inonderzoek
      *
      * @return $this
      */
@@ -269,7 +269,7 @@ class NummeraanduidingIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _embedded
      *
-     * @return \BAGClient\Model\NummeraanduidingEmbedded
+     * @return \BAG\Client\Model\NummeraanduidingEmbedded
      */
     public function getEmbedded()
     {
@@ -279,7 +279,7 @@ class NummeraanduidingIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _embedded
      *
-     * @param \BAGClient\Model\NummeraanduidingEmbedded $_embedded _embedded
+     * @param \BAG\Client\Model\NummeraanduidingEmbedded $_embedded _embedded
      *
      * @return $this
      */
@@ -293,7 +293,7 @@ class NummeraanduidingIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAGClient\Model\NummeraanduidingLinks
+     * @return \BAG\Client\Model\NummeraanduidingLinks
      */
     public function getLinks()
     {
@@ -303,7 +303,7 @@ class NummeraanduidingIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAGClient\Model\NummeraanduidingLinks $_links _links
+     * @param \BAG\Client\Model\NummeraanduidingLinks $_links _links
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
-use \BAGClient\ObjectSerializer;
+namespace BAG\Client\Model;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * Verblijfsobject Class Doc Comment
  *
  * @category Class
  * @description Een Verblijfsobject is de kleinste binnen een of meer panden gelegen en voor woon-, bedrijfsmatige, of recreatieve doeleinden geschikte eenheid van gebruik die ontsloten wordt via een eigen afsluitbare toegang vanaf de openbare weg, een erf of een gedeelde verkeersruimte, onderwerp kan zijn van goederenrechtelijke rechtshandelingen en in functioneel opzicht zelfstandig is.
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -55,17 +55,17 @@ class Verblijfsobject extends AdresseerbaarObject
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'identificatie' => '\BAGClient\Model\VerblijfsobjectIdentificatie',
+        'identificatie' => '\BAG\Client\Model\VerblijfsobjectIdentificatie',
 'domein' => 'string',
-'geometrie' => '\BAGClient\Model\PuntOfVlak',
-'gebruiksdoelen' => '\BAGClient\Model\Gebruiksdoel[]',
+'geometrie' => '\BAG\Client\Model\PuntOfVlak',
+'gebruiksdoelen' => '\BAG\Client\Model\Gebruiksdoel[]',
 'oppervlakte' => 'int',
-'status' => '\BAGClient\Model\StatusVerblijfsobject',
-'geconstateerd' => '\BAGClient\Model\Indicatie',
+'status' => '\BAG\Client\Model\StatusVerblijfsobject',
+'geconstateerd' => '\BAG\Client\Model\Indicatie',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string',
-'voorkomen' => '\BAGClient\Model\Voorkomen',
-'maakt_deel_uit_van' => '\BAGClient\Model\PandIdentificatie[]'    ];
+'voorkomen' => '\BAG\Client\Model\Voorkomen',
+'maakt_deel_uit_van' => '\BAG\Client\Model\PandIdentificatie[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -287,7 +287,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets identificatie
      *
-     * @return \BAGClient\Model\VerblijfsobjectIdentificatie
+     * @return \BAG\Client\Model\VerblijfsobjectIdentificatie
      */
     public function getIdentificatie()
     {
@@ -297,7 +297,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets identificatie
      *
-     * @param \BAGClient\Model\VerblijfsobjectIdentificatie $identificatie identificatie
+     * @param \BAG\Client\Model\VerblijfsobjectIdentificatie $identificatie identificatie
      *
      * @return $this
      */
@@ -335,7 +335,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets geometrie
      *
-     * @return \BAGClient\Model\PuntOfVlak
+     * @return \BAG\Client\Model\PuntOfVlak
      */
     public function getGeometrie()
     {
@@ -345,7 +345,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets geometrie
      *
-     * @param \BAGClient\Model\PuntOfVlak $geometrie geometrie
+     * @param \BAG\Client\Model\PuntOfVlak $geometrie geometrie
      *
      * @return $this
      */
@@ -359,7 +359,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets gebruiksdoelen
      *
-     * @return \BAGClient\Model\Gebruiksdoel[]
+     * @return \BAG\Client\Model\Gebruiksdoel[]
      */
     public function getGebruiksdoelen()
     {
@@ -369,7 +369,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets gebruiksdoelen
      *
-     * @param \BAGClient\Model\Gebruiksdoel[] $gebruiksdoelen gebruiksdoelen
+     * @param \BAG\Client\Model\Gebruiksdoel[] $gebruiksdoelen gebruiksdoelen
      *
      * @return $this
      */
@@ -407,7 +407,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets status
      *
-     * @return \BAGClient\Model\StatusVerblijfsobject
+     * @return \BAG\Client\Model\StatusVerblijfsobject
      */
     public function getStatus()
     {
@@ -417,7 +417,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets status
      *
-     * @param \BAGClient\Model\StatusVerblijfsobject $status status
+     * @param \BAG\Client\Model\StatusVerblijfsobject $status status
      *
      * @return $this
      */
@@ -431,7 +431,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets geconstateerd
      *
-     * @return \BAGClient\Model\Indicatie
+     * @return \BAG\Client\Model\Indicatie
      */
     public function getGeconstateerd()
     {
@@ -441,7 +441,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets geconstateerd
      *
-     * @param \BAGClient\Model\Indicatie $geconstateerd geconstateerd
+     * @param \BAG\Client\Model\Indicatie $geconstateerd geconstateerd
      *
      * @return $this
      */
@@ -503,7 +503,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets voorkomen
      *
-     * @return \BAGClient\Model\Voorkomen
+     * @return \BAG\Client\Model\Voorkomen
      */
     public function getVoorkomen()
     {
@@ -513,7 +513,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets voorkomen
      *
-     * @param \BAGClient\Model\Voorkomen $voorkomen voorkomen
+     * @param \BAG\Client\Model\Voorkomen $voorkomen voorkomen
      *
      * @return $this
      */
@@ -527,7 +527,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets maakt_deel_uit_van
      *
-     * @return \BAGClient\Model\PandIdentificatie[]
+     * @return \BAG\Client\Model\PandIdentificatie[]
      */
     public function getMaaktDeelUitVan()
     {
@@ -537,7 +537,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets maakt_deel_uit_van
      *
-     * @param \BAGClient\Model\PandIdentificatie[] $maakt_deel_uit_van maakt_deel_uit_van
+     * @param \BAG\Client\Model\PandIdentificatie[] $maakt_deel_uit_van maakt_deel_uit_van
      *
      * @return $this
      */

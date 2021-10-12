@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAGClient\Model;
+namespace BAG\Client\Model;
 
 use \ArrayAccess;
-use \BAGClient\ObjectSerializer;
+use \BAG\Client\ObjectSerializer;
 
 /**
  * KenmerkLigplaatsInOnderzoek Class Doc Comment
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,10 +56,10 @@ class KenmerkLigplaatsInOnderzoek implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'kenmerk' => '\BAGClient\Model\InOnderzoekLigplaats',
-'identificatie_van_ligplaats' => '\BAGClient\Model\LigplaatsIdentificatie',
-'in_onderzoek' => '\BAGClient\Model\Indicatie',
-'historie' => '\BAGClient\Model\HistorieInOnderzoek',
+        'kenmerk' => '\BAG\Client\Model\InOnderzoekLigplaats',
+'identificatie_van_ligplaats' => '\BAG\Client\Model\LigplaatsIdentificatie',
+'in_onderzoek' => '\BAG\Client\Model\Indicatie',
+'historie' => '\BAG\Client\Model\HistorieInOnderzoek',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string'    ];
 
@@ -247,7 +247,7 @@ class KenmerkLigplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets kenmerk
      *
-     * @return \BAGClient\Model\InOnderzoekLigplaats
+     * @return \BAG\Client\Model\InOnderzoekLigplaats
      */
     public function getKenmerk()
     {
@@ -257,7 +257,7 @@ class KenmerkLigplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets kenmerk
      *
-     * @param \BAGClient\Model\InOnderzoekLigplaats $kenmerk kenmerk
+     * @param \BAG\Client\Model\InOnderzoekLigplaats $kenmerk kenmerk
      *
      * @return $this
      */
@@ -271,7 +271,7 @@ class KenmerkLigplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets identificatie_van_ligplaats
      *
-     * @return \BAGClient\Model\LigplaatsIdentificatie
+     * @return \BAG\Client\Model\LigplaatsIdentificatie
      */
     public function getIdentificatieVanLigplaats()
     {
@@ -281,7 +281,7 @@ class KenmerkLigplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets identificatie_van_ligplaats
      *
-     * @param \BAGClient\Model\LigplaatsIdentificatie $identificatie_van_ligplaats identificatie_van_ligplaats
+     * @param \BAG\Client\Model\LigplaatsIdentificatie $identificatie_van_ligplaats identificatie_van_ligplaats
      *
      * @return $this
      */
@@ -295,7 +295,7 @@ class KenmerkLigplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets in_onderzoek
      *
-     * @return \BAGClient\Model\Indicatie
+     * @return \BAG\Client\Model\Indicatie
      */
     public function getInOnderzoek()
     {
@@ -305,7 +305,7 @@ class KenmerkLigplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets in_onderzoek
      *
-     * @param \BAGClient\Model\Indicatie $in_onderzoek in_onderzoek
+     * @param \BAG\Client\Model\Indicatie $in_onderzoek in_onderzoek
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class KenmerkLigplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets historie
      *
-     * @return \BAGClient\Model\HistorieInOnderzoek
+     * @return \BAG\Client\Model\HistorieInOnderzoek
      */
     public function getHistorie()
     {
@@ -329,7 +329,7 @@ class KenmerkLigplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets historie
      *
-     * @param \BAGClient\Model\HistorieInOnderzoek $historie historie
+     * @param \BAG\Client\Model\HistorieInOnderzoek $historie historie
      *
      * @return $this
      */

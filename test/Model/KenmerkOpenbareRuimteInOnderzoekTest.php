@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAGClient
+ * @package  BAG\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace BAGClient;
+namespace BAG\Client;
 
 /**
  * KenmerkOpenbareRuimteInOnderzoekTest Class Doc Comment
  *
  * @category    Class
  * @description KenmerkOpenbareRuimteInOnderzoek
- * @package     BAGClient
+ * @package     BAG\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
