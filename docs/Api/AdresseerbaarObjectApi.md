@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**zoekAdresseerbaarObject**](AdresseerbaarObjectApi.md#zoekadresseerbaarobject) | **GET** /adresseerbareobjecten | Bevragen van één of meer adresseerbare objecten op basis van een nummeraanduiding identificatie.
 
 # **bevragenAdresseerbaarObject**
-> \BAGClient\BAG\AdresseerbaarObjectIOHal bevragenAdresseerbaarObject($adresseerbaar_object_identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
+> \BAGClient\Model\AdresseerbaarObjectIOHal bevragenAdresseerbaarObject($adresseerbaar_object_identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
 
 Bevragen van één adresseerbaar object met een adresseerbaar object identificatie.
 
@@ -24,7 +24,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\AdresseerbaarObjectApi(
+$apiInstance = new BAGClient\Api\AdresseerbaarObjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\AdresseerbaarObjectIOHal**](../Model/AdresseerbaarObjectIOHal.md)
+[**\BAGClient\Model\AdresseerbaarObjectIOHal**](../Model/AdresseerbaarObjectIOHal.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bevragenAdresseerbaarObjectLvc**
-> \BAGClient\BAG\AdresseerbaarObjectLvcIOHalCollection bevragenAdresseerbaarObjectLvc($adresseerbaar_object_identificatie, $gehele_lvc, $accept_crs)
+> \BAGClient\Model\AdresseerbaarObjectLvcIOHalCollection bevragenAdresseerbaarObjectLvc($adresseerbaar_object_identificatie, $gehele_lvc, $accept_crs)
 
 Bevragen van de levenscyclus van een adresseerbaar object met een adresseerbaar object identificatie.
 
@@ -86,7 +86,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\AdresseerbaarObjectApi(
+$apiInstance = new BAGClient\Api\AdresseerbaarObjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -115,7 +115,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\AdresseerbaarObjectLvcIOHalCollection**](../Model/AdresseerbaarObjectLvcIOHalCollection.md)
+[**\BAGClient\Model\AdresseerbaarObjectLvcIOHalCollection**](../Model/AdresseerbaarObjectLvcIOHalCollection.md)
 
 ### Authorization
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **zoekAdresseerbaarObject**
-> \BAGClient\BAG\AdresseerbareObjectenIOHalCollection zoekAdresseerbaarObject($nummeraanduiding_identificatie, $huidig, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
+> \BAGClient\Model\AdresseerbareObjectenIOHalCollection zoekAdresseerbaarObject($nummeraanduiding_identificatie, $huidig, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
 
 Bevragen van één of meer adresseerbare objecten op basis van een nummeraanduiding identificatie.
 
@@ -144,7 +144,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\AdresseerbaarObjectApi(
+$apiInstance = new BAGClient\Api\AdresseerbaarObjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\AdresseerbareObjectenIOHalCollection**](../Model/AdresseerbareObjectenIOHalCollection.md)
+[**\BAGClient\Model\AdresseerbareObjectenIOHalCollection**](../Model/AdresseerbareObjectenIOHalCollection.md)
 
 ### Authorization
 

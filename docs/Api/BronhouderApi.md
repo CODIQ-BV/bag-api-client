@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**zoekBronhouder**](BronhouderApi.md#zoekbronhouder) | **GET** /bronhouders | Bevragen bronhouder met een object identificatie.
 
 # **bevragenBronhouder**
-> \BAGClient\BAG\BronhouderHal bevragenBronhouder($identificatie, $geldig_op, $beschikbaar_op)
+> \BAGClient\Model\BronhouderHal bevragenBronhouder($identificatie, $geldig_op, $beschikbaar_op)
 
 Bevragen bronhouder met de bronhouder identificatie (gemeentecode).
 
@@ -24,7 +24,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\BronhouderApi(
+$apiInstance = new BAGClient\Api\BronhouderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\BronhouderHal**](../Model/BronhouderHal.md)
+[**\BAGClient\Model\BronhouderHal**](../Model/BronhouderHal.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bronhouderIdentificatieVoorkomen**
-> \BAGClient\BAG\BronhouderHal bronhouderIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv)
+> \BAGClient\Model\BronhouderHal bronhouderIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv)
 
 bevragen voorkomen van een bronhouder met de identificatie van een bronhouder en de identificatie van een voorkomen, bestaande uit een versie en een timestamp van het tijdstip van registratie in de LV BAG.
 
@@ -82,7 +82,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\BronhouderApi(
+$apiInstance = new BAGClient\Api\BronhouderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -111,7 +111,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\BronhouderHal**](../Model/BronhouderHal.md)
+[**\BAGClient\Model\BronhouderHal**](../Model/BronhouderHal.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **zoekBronhouder**
-> \BAGClient\BAG\BronhouderHalCollection zoekBronhouder($woonplaats_identificatie, $object_identificatie, $geldig_op, $beschikbaar_op)
+> \BAGClient\Model\BronhouderHalCollection zoekBronhouder($woonplaats_identificatie, $object_identificatie, $geldig_op, $beschikbaar_op)
 
 Bevragen bronhouder met een object identificatie.
 
@@ -140,7 +140,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\BronhouderApi(
+$apiInstance = new BAGClient\Api\BronhouderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -171,7 +171,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\BronhouderHalCollection**](../Model/BronhouderHalCollection.md)
+[**\BAGClient\Model\BronhouderHalCollection**](../Model/BronhouderHalCollection.md)
 
 ### Authorization
 

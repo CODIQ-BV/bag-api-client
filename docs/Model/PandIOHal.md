@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**pand** | [**\BAGClient\BAG\Pand**](Pand.md) |  | 
-**inonderzoek** | [**\BAGClient\BAG\KenmerkPandInOnderzoek[]**](KenmerkPandInOnderzoek.md) |  | [optional] 
-**_links** | [**\BAGClient\BAG\PandLinks**](PandLinks.md) |  | [optional] 
+**pand** | [**\BAGClient\Model\Pand**](Pand.md) |  | 
+**inonderzoek** | [**\BAGClient\Model\KenmerkPandInOnderzoek[]**](KenmerkPandInOnderzoek.md) |  | [optional] 
+**_links** | [**\BAGClient\Model\PandLinks**](PandLinks.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

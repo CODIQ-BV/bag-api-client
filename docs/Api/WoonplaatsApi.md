@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**woonplaatsNaam**](WoonplaatsApi.md#woonplaatsnaam) | **GET** /woonplaatsen | bevragen van één of meer woonplaatsen met een woonplaatsnaam.
 
 # **woonplaatsGeometrie**
-> \BAGClient\BAG\WoonplaatsIOHalCollection woonplaatsGeometrie($body, $content_crs, $accept_crs, $geldig_op, $beschikbaar_op, $huidig, $expand)
+> \BAGClient\Model\WoonplaatsIOHalCollection woonplaatsGeometrie($body, $content_crs, $accept_crs, $geldig_op, $beschikbaar_op, $huidig, $expand)
 
 bevragen van een woonplaats met een geometrische locatie.
 
@@ -26,13 +26,13 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\WoonplaatsApi(
+$apiInstance = new BAGClient\Api\WoonplaatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \BAGClient\BAG\Point(); // \BAGClient\BAG\Point | Geometrisch punt waarop de woonplaatsen bepaald moeten worden.
+$body = new \BAGClient\Model\Point(); // \BAGClient\Model\Point | Geometrisch punt waarop de woonplaatsen bepaald moeten worden.
 $content_crs = "content_crs_example"; // string | CRS van de meegegeven geometrie.
 $accept_crs = "accept_crs_example"; // string | Gewenste CRS van de co�rdinaten in de response.
 $geldig_op = new \DateTime("2013-10-20"); // \DateTime | Filtert op objecten die geldig zijn op de opgegeven datum 'YYYY-MM-DD' Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen.
@@ -53,7 +53,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\BAGClient\BAG\Point**](../Model/Point.md)| Geometrisch punt waarop de woonplaatsen bepaald moeten worden. |
+ **body** | [**\BAGClient\Model\Point**](../Model/Point.md)| Geometrisch punt waarop de woonplaatsen bepaald moeten worden. |
  **content_crs** | **string**| CRS van de meegegeven geometrie. | [optional]
  **accept_crs** | **string**| Gewenste CRS van de co�rdinaten in de response. | [optional]
  **geldig_op** | **\DateTime**| Filtert op objecten die geldig zijn op de opgegeven datum &#x27;YYYY-MM-DD&#x27; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. | [optional]
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\WoonplaatsIOHalCollection**](../Model/WoonplaatsIOHalCollection.md)
+[**\BAGClient\Model\WoonplaatsIOHalCollection**](../Model/WoonplaatsIOHalCollection.md)
 
 ### Authorization
 
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **woonplaatsIdentificatie**
-> \BAGClient\BAG\WoonplaatsIOHal woonplaatsIdentificatie($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
+> \BAGClient\Model\WoonplaatsIOHal woonplaatsIdentificatie($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
 
 bevragen van een woonplaats met de identificatie van een woonplaats.
 
@@ -92,7 +92,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\WoonplaatsApi(
+$apiInstance = new BAGClient\Api\WoonplaatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\WoonplaatsIOHal**](../Model/WoonplaatsIOHal.md)
+[**\BAGClient\Model\WoonplaatsIOHal**](../Model/WoonplaatsIOHal.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **woonplaatsIdentificatieVoorkomen**
-> \BAGClient\BAG\WoonplaatsIOHal woonplaatsIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $expand, $accept_crs)
+> \BAGClient\Model\WoonplaatsIOHal woonplaatsIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $expand, $accept_crs)
 
 bevragen van een voorkomen van een woonplaats met de identificatie van een woonplaats en de identificatie van een voorkomen, bestaande uit een versie en een timestamp van het tijdstip van registratie in de LV BAG.
 
@@ -154,7 +154,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\WoonplaatsApi(
+$apiInstance = new BAGClient\Api\WoonplaatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\WoonplaatsIOHal**](../Model/WoonplaatsIOHal.md)
+[**\BAGClient\Model\WoonplaatsIOHal**](../Model/WoonplaatsIOHal.md)
 
 ### Authorization
 
@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **woonplaatsLvcIdentificatie**
-> \BAGClient\BAG\WoonplaatsIOLvcHalCollection woonplaatsLvcIdentificatie($identificatie, $gehele_lvc, $expand, $accept_crs)
+> \BAGClient\Model\WoonplaatsIOLvcHalCollection woonplaatsLvcIdentificatie($identificatie, $gehele_lvc, $expand, $accept_crs)
 
 bevragen van de levenscyclus van een woonplaats met de identificatie van een woonplaats.
 
@@ -216,7 +216,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\WoonplaatsApi(
+$apiInstance = new BAGClient\Api\WoonplaatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -247,7 +247,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\WoonplaatsIOLvcHalCollection**](../Model/WoonplaatsIOLvcHalCollection.md)
+[**\BAGClient\Model\WoonplaatsIOLvcHalCollection**](../Model/WoonplaatsIOLvcHalCollection.md)
 
 ### Authorization
 
@@ -261,7 +261,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **woonplaatsNaam**
-> \BAGClient\BAG\WoonplaatsIOHalCollection woonplaatsNaam($naam, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
+> \BAGClient\Model\WoonplaatsIOHalCollection woonplaatsNaam($naam, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
 
 bevragen van één of meer woonplaatsen met een woonplaatsnaam.
 
@@ -276,7 +276,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\WoonplaatsApi(
+$apiInstance = new BAGClient\Api\WoonplaatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -309,7 +309,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\WoonplaatsIOHalCollection**](../Model/WoonplaatsIOHalCollection.md)
+[**\BAGClient\Model\WoonplaatsIOHalCollection**](../Model/WoonplaatsIOHalCollection.md)
 
 ### Authorization
 

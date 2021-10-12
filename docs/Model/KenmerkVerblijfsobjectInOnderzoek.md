@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**kenmerk** | [**\BAGClient\BAG\InOnderzoekVerblijfsobject**](InOnderzoekVerblijfsobject.md) |  | 
-**identificatie_van_verblijfsobject** | [**\BAGClient\BAG\VerblijfsobjectIdentificatie**](VerblijfsobjectIdentificatie.md) |  | 
-**in_onderzoek** | [**\BAGClient\BAG\Indicatie**](Indicatie.md) |  | 
-**historie** | [**\BAGClient\BAG\HistorieInOnderzoek**](HistorieInOnderzoek.md) |  | 
+**kenmerk** | [**\BAGClient\Model\InOnderzoekVerblijfsobject**](InOnderzoekVerblijfsobject.md) |  | 
+**identificatie_van_verblijfsobject** | [**\BAGClient\Model\VerblijfsobjectIdentificatie**](VerblijfsobjectIdentificatie.md) |  | 
+**in_onderzoek** | [**\BAGClient\Model\Indicatie**](Indicatie.md) |  | 
+**historie** | [**\BAGClient\Model\HistorieInOnderzoek**](HistorieInOnderzoek.md) |  | 
 **documentdatum** | [**\DateTime**](\DateTime.md) | De datum van het document waarin de grondslag van het onderzoek wordt vastgelegd. Dit wordt vastgelegd in het attribuut documentdatum. | 
 **documentnummer** | **string** | Het nummer van het document waarin de grondslag van het onderzoek wordt vastgelegd. Dit wordt vastgelegd in het attribuut documentnummer. | 
 

@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**zoekAdresUitgebreid**](AdresUitgebreidApi.md#zoekadresuitgebreid) | **GET** /adressenuitgebreid | Bevragen van de uitgebreide informatie van één of meer huidige adressen op basis van verschillende combinaties van parameters.
 
 # **bevraagAdresUitgebreidMetNumId**
-> \BAGClient\BAG\AdresUitgebreidHal bevraagAdresUitgebreidMetNumId($nummeraanduiding_identificatie, $accept_crs)
+> \BAGClient\Model\AdresUitgebreidHal bevraagAdresUitgebreidMetNumId($nummeraanduiding_identificatie, $accept_crs)
 
 Bevragen van de uitgebreide informatie van één huidig adres met de identificatie van een nummeraanduiding.
 
@@ -23,7 +23,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\AdresUitgebreidApi(
+$apiInstance = new BAGClient\Api\AdresUitgebreidApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\AdresUitgebreidHal**](../Model/AdresUitgebreidHal.md)
+[**\BAGClient\Model\AdresUitgebreidHal**](../Model/AdresUitgebreidHal.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **zoekAdresUitgebreid**
-> \BAGClient\BAG\AdresUitgebreidHalCollection zoekAdresUitgebreid($postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $adresseerbaar_object_identificatie, $woonplaats_naam, $openbare_ruimte_naam, $accept_crs)
+> \BAGClient\Model\AdresUitgebreidHalCollection zoekAdresUitgebreid($postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $adresseerbaar_object_identificatie, $woonplaats_naam, $openbare_ruimte_naam, $accept_crs)
 
 Bevragen van de uitgebreide informatie van één of meer huidige adressen op basis van verschillende combinaties van parameters.
 
@@ -79,7 +79,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\AdresUitgebreidApi(
+$apiInstance = new BAGClient\Api\AdresUitgebreidApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\AdresUitgebreidHalCollection**](../Model/AdresUitgebreidHalCollection.md)
+[**\BAGClient\Model\AdresUitgebreidHalCollection**](../Model/AdresUitgebreidHalCollection.md)
 
 ### Authorization
 

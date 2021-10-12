@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**getInfo**](AlgemeneInformatieApi.md#getinfo) | **GET** /info | Algemene info van de API
 
 # **getInfo**
-> \BAGClient\BAG\APIInfo getInfo()
+> \BAGClient\Model\APIInfo getInfo()
 
 Algemene info van de API
 
@@ -20,7 +20,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\AlgemeneInformatieApi(
+$apiInstance = new BAGClient\Api\AlgemeneInformatieApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -41,7 +41,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\BAGClient\BAG\APIInfo**](../Model/APIInfo.md)
+[**\BAGClient\Model\APIInfo**](../Model/APIInfo.md)
 
 ### Authorization
 

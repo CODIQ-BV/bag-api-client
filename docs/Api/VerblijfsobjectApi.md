@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**zoekVerblijfsobjecten**](VerblijfsobjectApi.md#zoekverblijfsobjecten) | **GET** /verblijfsobjecten | bevragen van alle aan een pand gerelateerde verblijfsobjecten (met paginering).
 
 # **verblijfsobjectIdentificatie**
-> \BAGClient\BAG\VerblijfsobjectIOHal verblijfsobjectIdentificatie($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
+> \BAGClient\Model\VerblijfsobjectIOHal verblijfsobjectIdentificatie($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
 
 bevragen 1 verblijfsobject met de identificatie van een verblijfsobject.
 
@@ -25,7 +25,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\VerblijfsobjectApi(
+$apiInstance = new BAGClient\Api\VerblijfsobjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\VerblijfsobjectIOHal**](../Model/VerblijfsobjectIOHal.md)
+[**\BAGClient\Model\VerblijfsobjectIOHal**](../Model/VerblijfsobjectIOHal.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **verblijfsobjectIdentificatieVoorkomen**
-> \BAGClient\BAG\VerblijfsobjectIOHal verblijfsobjectIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $accept_crs)
+> \BAGClient\Model\VerblijfsobjectIOHal verblijfsobjectIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $accept_crs)
 
 bevragen voorkomen van een verblijfsobject, op basis van de identificatie van een verblijfsobject en de identificatie van een voorkomen
 
@@ -87,7 +87,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\VerblijfsobjectApi(
+$apiInstance = new BAGClient\Api\VerblijfsobjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -118,7 +118,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\VerblijfsobjectIOHal**](../Model/VerblijfsobjectIOHal.md)
+[**\BAGClient\Model\VerblijfsobjectIOHal**](../Model/VerblijfsobjectIOHal.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **verblijfsobjectLvcIdentificatie**
-> \BAGClient\BAG\VerblijfsobjectIOLvcHalCollection verblijfsobjectLvcIdentificatie($identificatie, $gehele_lvc, $accept_crs)
+> \BAGClient\Model\VerblijfsobjectIOLvcHalCollection verblijfsobjectLvcIdentificatie($identificatie, $gehele_lvc, $accept_crs)
 
 bevragen levenscyclus van een verblijfsobject met de identificatie van een verblijfsobject.
 
@@ -147,7 +147,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\VerblijfsobjectApi(
+$apiInstance = new BAGClient\Api\VerblijfsobjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -176,7 +176,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\VerblijfsobjectIOLvcHalCollection**](../Model/VerblijfsobjectIOLvcHalCollection.md)
+[**\BAGClient\Model\VerblijfsobjectIOLvcHalCollection**](../Model/VerblijfsobjectIOLvcHalCollection.md)
 
 ### Authorization
 
@@ -190,7 +190,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **zoekVerblijfsobjecten**
-> \BAGClient\BAG\VerblijfsobjectIOHalCollection zoekVerblijfsobjecten($pand_identificatie, $huidig, $geldig_op, $beschikbaar_op, $page, $page_size, $accept_crs)
+> \BAGClient\Model\VerblijfsobjectIOHalCollection zoekVerblijfsobjecten($pand_identificatie, $huidig, $geldig_op, $beschikbaar_op, $page, $page_size, $accept_crs)
 
 bevragen van alle aan een pand gerelateerde verblijfsobjecten (met paginering).
 
@@ -205,7 +205,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\VerblijfsobjectApi(
+$apiInstance = new BAGClient\Api\VerblijfsobjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\VerblijfsobjectIOHalCollection**](../Model/VerblijfsobjectIOHalCollection.md)
+[**\BAGClient\Model\VerblijfsobjectIOHalCollection**](../Model/VerblijfsobjectIOHalCollection.md)
 
 ### Authorization
 

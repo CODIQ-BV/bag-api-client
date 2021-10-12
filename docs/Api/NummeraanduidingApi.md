@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**zoekNummeraanduiding**](NummeraanduidingApi.md#zoeknummeraanduiding) | **GET** /nummeraanduidingen | bevragen nummeraanduiding(en) op basis van verschillende combinaties van parameters.
 
 # **nummeraanduidingIdentificatie**
-> \BAGClient\BAG\NummeraanduidingIOHal nummeraanduidingIdentificatie($nummeraanduiding_identificatie, $geldig_op, $beschikbaar_op, $expand)
+> \BAGClient\Model\NummeraanduidingIOHal nummeraanduidingIdentificatie($nummeraanduiding_identificatie, $geldig_op, $beschikbaar_op, $expand)
 
 bevragen van een nummeraanduiding op basis van de identificatie van een nummeraanduiding
 
@@ -25,7 +25,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\NummeraanduidingApi(
+$apiInstance = new BAGClient\Api\NummeraanduidingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\NummeraanduidingIOHal**](../Model/NummeraanduidingIOHal.md)
+[**\BAGClient\Model\NummeraanduidingIOHal**](../Model/NummeraanduidingIOHal.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **nummeraanduidingIdentificatieVoorkomen**
-> \BAGClient\BAG\NummeraanduidingIOHal nummeraanduidingIdentificatieVoorkomen($nummeraanduiding_identificatie, $versie, $timestamp_registratie_lv)
+> \BAGClient\Model\NummeraanduidingIOHal nummeraanduidingIdentificatieVoorkomen($nummeraanduiding_identificatie, $versie, $timestamp_registratie_lv)
 
 bevragen van een voorkomen van een nummeraanduiding, op basis van de identificatie van een nummeraanduiding en de identificatie van een voorkomen, bestaande uit een versie en een timestamp van het tijdstip van registratie in de LV BAG.
 
@@ -85,7 +85,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\NummeraanduidingApi(
+$apiInstance = new BAGClient\Api\NummeraanduidingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\NummeraanduidingIOHal**](../Model/NummeraanduidingIOHal.md)
+[**\BAGClient\Model\NummeraanduidingIOHal**](../Model/NummeraanduidingIOHal.md)
 
 ### Authorization
 
@@ -128,7 +128,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **nummeraanduidingLvcIdentificatie**
-> \BAGClient\BAG\NummeraanduidingIOLvcHalCollection nummeraanduidingLvcIdentificatie($nummeraanduiding_identificatie, $gehele_lvc)
+> \BAGClient\Model\NummeraanduidingIOLvcHalCollection nummeraanduidingLvcIdentificatie($nummeraanduiding_identificatie, $gehele_lvc)
 
 bevragen levenscyclus van een nummeraanduiding met de identificatie van een nummeraanduiding.
 
@@ -143,7 +143,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\NummeraanduidingApi(
+$apiInstance = new BAGClient\Api\NummeraanduidingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -170,7 +170,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\NummeraanduidingIOLvcHalCollection**](../Model/NummeraanduidingIOLvcHalCollection.md)
+[**\BAGClient\Model\NummeraanduidingIOLvcHalCollection**](../Model/NummeraanduidingIOLvcHalCollection.md)
 
 ### Authorization
 
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **zoekNummeraanduiding**
-> \BAGClient\BAG\NummeraanduidingIOHalCollection zoekNummeraanduiding($postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $woonplaats_naam, $openbare_ruimte_naam, $openbare_ruimte_identificatie, $huidig, $geldig_op, $beschikbaar_op, $page, $page_size, $expand)
+> \BAGClient\Model\NummeraanduidingIOHalCollection zoekNummeraanduiding($postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $woonplaats_naam, $openbare_ruimte_naam, $openbare_ruimte_identificatie, $huidig, $geldig_op, $beschikbaar_op, $page, $page_size, $expand)
 
 bevragen nummeraanduiding(en) op basis van verschillende combinaties van parameters.
 
@@ -199,7 +199,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\NummeraanduidingApi(
+$apiInstance = new BAGClient\Api\NummeraanduidingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -250,7 +250,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\NummeraanduidingIOHalCollection**](../Model/NummeraanduidingIOHalCollection.md)
+[**\BAGClient\Model\NummeraanduidingIOHalCollection**](../Model/NummeraanduidingIOHalCollection.md)
 
 ### Authorization
 

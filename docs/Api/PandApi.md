@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**pandLvcIdentificatie**](PandApi.md#pandlvcidentificatie) | **GET** /panden/{identificatie}/lvc | bevragen levenscyclus van een pand met de identificatie van een pand.
 
 # **pandGeometrie**
-> \BAGClient\BAG\PandIOHalCollection pandGeometrie($body, $content_crs, $accept_crs, $geldig_op, $beschikbaar_op, $huidig)
+> \BAGClient\Model\PandIOHalCollection pandGeometrie($body, $content_crs, $accept_crs, $geldig_op, $beschikbaar_op, $huidig)
 
 bevragen panden met een geometrische locatie.
 
@@ -25,13 +25,13 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\PandApi(
+$apiInstance = new BAGClient\Api\PandApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \BAGClient\BAG\Point(); // \BAGClient\BAG\Point | Geometrisch punt waarop de panden bepaald moeten worden.
+$body = new \BAGClient\Model\Point(); // \BAGClient\Model\Point | Geometrisch punt waarop de panden bepaald moeten worden.
 $content_crs = "content_crs_example"; // string | CRS van de meegegeven geometrie.
 $accept_crs = "accept_crs_example"; // string | Gewenste CRS van de co�rdinaten in de response.
 $geldig_op = new \DateTime("2013-10-20"); // \DateTime | Filtert op objecten die geldig zijn op de opgegeven datum `JJJJ-MM-DD` Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen.
@@ -51,7 +51,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\BAGClient\BAG\Point**](../Model/Point.md)| Geometrisch punt waarop de panden bepaald moeten worden. |
+ **body** | [**\BAGClient\Model\Point**](../Model/Point.md)| Geometrisch punt waarop de panden bepaald moeten worden. |
  **content_crs** | **string**| CRS van de meegegeven geometrie. | [optional]
  **accept_crs** | **string**| Gewenste CRS van de co�rdinaten in de response. | [optional]
  **geldig_op** | **\DateTime**| Filtert op objecten die geldig zijn op de opgegeven datum &#x60;JJJJ-MM-DD&#x60; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. | [optional]
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\PandIOHalCollection**](../Model/PandIOHalCollection.md)
+[**\BAGClient\Model\PandIOHalCollection**](../Model/PandIOHalCollection.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pandIdentificatie**
-> \BAGClient\BAG\PandIOHal pandIdentificatie($identificatie, $geldig_op, $beschikbaar_op, $accept_crs)
+> \BAGClient\Model\PandIOHal pandIdentificatie($identificatie, $geldig_op, $beschikbaar_op, $accept_crs)
 
 bevragen van een pand met de identificatie van een pand.
 
@@ -89,7 +89,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\PandApi(
+$apiInstance = new BAGClient\Api\PandApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\PandIOHal**](../Model/PandIOHal.md)
+[**\BAGClient\Model\PandIOHal**](../Model/PandIOHal.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pandIdentificatieVoorkomen**
-> \BAGClient\BAG\PandIOHal pandIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $accept_crs)
+> \BAGClient\Model\PandIOHal pandIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $accept_crs)
 
 bevragen voorkomen van een pand met de identificatie van een pand en de identificatie van een voorkomen, bestaande uit een versie en een timestamp van het tijdstip van registratie in de LV BAG.
 
@@ -149,7 +149,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\PandApi(
+$apiInstance = new BAGClient\Api\PandApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -180,7 +180,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\PandIOHal**](../Model/PandIOHal.md)
+[**\BAGClient\Model\PandIOHal**](../Model/PandIOHal.md)
 
 ### Authorization
 
@@ -194,7 +194,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pandLvcIdentificatie**
-> \BAGClient\BAG\PandIOLvcHalCollection pandLvcIdentificatie($identificatie, $gehele_lvc, $accept_crs)
+> \BAGClient\Model\PandIOLvcHalCollection pandLvcIdentificatie($identificatie, $gehele_lvc, $accept_crs)
 
 bevragen levenscyclus van een pand met de identificatie van een pand.
 
@@ -209,7 +209,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\PandApi(
+$apiInstance = new BAGClient\Api\PandApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -238,7 +238,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\PandIOLvcHalCollection**](../Model/PandIOLvcHalCollection.md)
+[**\BAGClient\Model\PandIOLvcHalCollection**](../Model/PandIOLvcHalCollection.md)
 
 ### Authorization
 

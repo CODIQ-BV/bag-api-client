@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**zoek**](AdresApi.md#zoek) | **GET** /adressen/zoek | Zoeken van huidige adressen
 
 # **bevraagAdressen**
-> \BAGClient\BAG\AdresIOHalCollection bevraagAdressen($zoekresultaat_identificatie, $postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $adresseerbaar_object_identificatie, $woonplaats_naam, $openbare_ruimte_naam, $pand_identificatie, $expand, $page, $page_size)
+> \BAGClient\Model\AdresIOHalCollection bevraagAdressen($zoekresultaat_identificatie, $postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $adresseerbaar_object_identificatie, $woonplaats_naam, $openbare_ruimte_naam, $pand_identificatie, $expand, $page, $page_size)
 
 Bevragen van huidige adressen met een (combinatie van) zoek parameters.
 
@@ -24,7 +24,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\AdresApi(
+$apiInstance = new BAGClient\Api\AdresApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\AdresIOHalCollection**](../Model/AdresIOHalCollection.md)
+[**\BAGClient\Model\AdresIOHalCollection**](../Model/AdresIOHalCollection.md)
 
 ### Authorization
 
@@ -87,7 +87,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bevraagAdressenMetNumId**
-> \BAGClient\BAG\AdresIOHal bevraagAdressenMetNumId($nummeraanduiding_identificatie, $expand)
+> \BAGClient\Model\AdresIOHal bevraagAdressenMetNumId($nummeraanduiding_identificatie, $expand)
 
 Bevragen van een huidig adres met de identificatie van een nummeraanduiding.
 
@@ -102,7 +102,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\AdresApi(
+$apiInstance = new BAGClient\Api\AdresApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\AdresIOHal**](../Model/AdresIOHal.md)
+[**\BAGClient\Model\AdresIOHal**](../Model/AdresIOHal.md)
 
 ### Authorization
 
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **zoek**
-> \BAGClient\BAG\ZoekResultaatHalCollection zoek($zoek, $page, $page_size)
+> \BAGClient\Model\ZoekResultaatHalCollection zoek($zoek, $page, $page_size)
 
 Zoeken van huidige adressen
 
@@ -158,7 +158,7 @@ $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-K
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAGClient\BAG\AdresApi(
+$apiInstance = new BAGClient\Api\AdresApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAG\ZoekResultaatHalCollection**](../Model/ZoekResultaatHalCollection.md)
+[**\BAGClient\Model\ZoekResultaatHalCollection**](../Model/ZoekResultaatHalCollection.md)
 
 ### Authorization
 
