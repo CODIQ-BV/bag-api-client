@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * OpenbareRuimteIOHalCollectionEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class OpenbareRuimteIOHalCollectionEmbedded implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'openbareruimten' => '\BAG\BAG\OpenbareRuimteIOHal[]'    ];
+        'openbareruimten' => '\BAGClient\BAGClient\OpenbareRuimteIOHal[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class OpenbareRuimteIOHalCollectionEmbedded implements ModelInterface, ArrayAcce
     /**
      * Gets openbareruimten
      *
-     * @return \BAG\BAG\OpenbareRuimteIOHal[]
+     * @return \BAGClient\BAGClient\OpenbareRuimteIOHal[]
      */
     public function getOpenbareruimten()
     {
@@ -209,7 +209,7 @@ class OpenbareRuimteIOHalCollectionEmbedded implements ModelInterface, ArrayAcce
     /**
      * Sets openbareruimten
      *
-     * @param \BAG\BAG\OpenbareRuimteIOHal[] $openbareruimten openbareruimten
+     * @param \BAGClient\BAGClient\OpenbareRuimteIOHal[] $openbareruimten openbareruimten
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use BAG\ApiException;
-use BAG\Configuration;
-use BAG\HeaderSelector;
-use BAG\ObjectSerializer;
+use BAGClient\ApiException;
+use BAGClient\Configuration;
+use BAGClient\HeaderSelector;
+use BAGClient\ObjectSerializer;
 
 /**
  * VerblijfsobjectApi Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -97,9 +97,9 @@ class VerblijfsobjectApi
      * @param  string $expand Hier kan aangegeven worden welke gerelateerde resources meegeladen moeten worden. Resources en velden van resources die gewenst zijn kunnen in de expand parameter kommagescheiden worden opgegeven. Specifieke velden van resource kunnen worden opgegeven door het opgeven van de resource-naam gevolgd door de veldnaam, met daartussen een punt. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\ApiException on non-2xx response
+     * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAG\BAG\VerblijfsobjectIOHal
+     * @return \BAGClient\BAGClient\VerblijfsobjectIOHal
      */
     public function verblijfsobjectIdentificatie($identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
@@ -118,13 +118,13 @@ class VerblijfsobjectApi
      * @param  string $expand Hier kan aangegeven worden welke gerelateerde resources meegeladen moeten worden. Resources en velden van resources die gewenst zijn kunnen in de expand parameter kommagescheiden worden opgegeven. Specifieke velden van resource kunnen worden opgegeven door het opgeven van de resource-naam gevolgd door de veldnaam, met daartussen een punt. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\ApiException on non-2xx response
+     * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAG\BAG\VerblijfsobjectIOHal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAGClient\VerblijfsobjectIOHal, HTTP status code, HTTP response headers (array of strings)
      */
     public function verblijfsobjectIdentificatieWithHttpInfo($identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAG\BAG\VerblijfsobjectIOHal';
+        $returnType = '\BAGClient\BAGClient\VerblijfsobjectIOHal';
         $request = $this->verblijfsobjectIdentificatieRequest($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs);
 
         try {
@@ -176,7 +176,7 @@ class VerblijfsobjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\VerblijfsobjectIOHal',
+                        '\BAGClient\BAGClient\VerblijfsobjectIOHal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -184,7 +184,7 @@ class VerblijfsobjectApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -192,7 +192,7 @@ class VerblijfsobjectApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -200,7 +200,7 @@ class VerblijfsobjectApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -208,7 +208,7 @@ class VerblijfsobjectApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -216,7 +216,7 @@ class VerblijfsobjectApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -224,7 +224,7 @@ class VerblijfsobjectApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -232,7 +232,7 @@ class VerblijfsobjectApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -240,7 +240,7 @@ class VerblijfsobjectApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -248,7 +248,7 @@ class VerblijfsobjectApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -256,7 +256,7 @@ class VerblijfsobjectApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -306,7 +306,7 @@ class VerblijfsobjectApi
      */
     public function verblijfsobjectIdentificatieAsyncWithHttpInfo($identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAG\BAG\VerblijfsobjectIOHal';
+        $returnType = '\BAGClient\BAGClient\VerblijfsobjectIOHal';
         $request = $this->verblijfsobjectIdentificatieRequest($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs);
 
         return $this->client
@@ -479,9 +479,9 @@ class VerblijfsobjectApi
      * @param  string $timestamp_registratie_lv Een timestamp van het tijdstip waarop een voorkomen is geregistreerd in de LV BAG (required)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\ApiException on non-2xx response
+     * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAG\BAG\VerblijfsobjectIOHal
+     * @return \BAGClient\BAGClient\VerblijfsobjectIOHal
      */
     public function verblijfsobjectIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $accept_crs = null)
     {
@@ -499,13 +499,13 @@ class VerblijfsobjectApi
      * @param  string $timestamp_registratie_lv Een timestamp van het tijdstip waarop een voorkomen is geregistreerd in de LV BAG (required)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\ApiException on non-2xx response
+     * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAG\BAG\VerblijfsobjectIOHal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAGClient\VerblijfsobjectIOHal, HTTP status code, HTTP response headers (array of strings)
      */
     public function verblijfsobjectIdentificatieVoorkomenWithHttpInfo($identificatie, $versie, $timestamp_registratie_lv, $accept_crs = null)
     {
-        $returnType = '\BAG\BAG\VerblijfsobjectIOHal';
+        $returnType = '\BAGClient\BAGClient\VerblijfsobjectIOHal';
         $request = $this->verblijfsobjectIdentificatieVoorkomenRequest($identificatie, $versie, $timestamp_registratie_lv, $accept_crs);
 
         try {
@@ -557,7 +557,7 @@ class VerblijfsobjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\VerblijfsobjectIOHal',
+                        '\BAGClient\BAGClient\VerblijfsobjectIOHal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -565,7 +565,7 @@ class VerblijfsobjectApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -573,7 +573,7 @@ class VerblijfsobjectApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -581,7 +581,7 @@ class VerblijfsobjectApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -589,7 +589,7 @@ class VerblijfsobjectApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -597,7 +597,7 @@ class VerblijfsobjectApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -605,7 +605,7 @@ class VerblijfsobjectApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -613,7 +613,7 @@ class VerblijfsobjectApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -621,7 +621,7 @@ class VerblijfsobjectApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -629,7 +629,7 @@ class VerblijfsobjectApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -637,7 +637,7 @@ class VerblijfsobjectApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -685,7 +685,7 @@ class VerblijfsobjectApi
      */
     public function verblijfsobjectIdentificatieVoorkomenAsyncWithHttpInfo($identificatie, $versie, $timestamp_registratie_lv, $accept_crs = null)
     {
-        $returnType = '\BAG\BAG\VerblijfsobjectIOHal';
+        $returnType = '\BAGClient\BAGClient\VerblijfsobjectIOHal';
         $request = $this->verblijfsobjectIdentificatieVoorkomenRequest($identificatie, $versie, $timestamp_registratie_lv, $accept_crs);
 
         return $this->client
@@ -872,9 +872,9 @@ class VerblijfsobjectApi
      * @param  bool $gehele_lvc Filtert naast geldige voorkomens ook de voorkomens die uit de geldige levenscyclus van het object zijn verwijderd. Als deze parameter wordt weggelaten worden alleen geldige voorkomens geretourneerd (default is false). Voor een toelichting zie de [Praktijkhandleiding BAG](https://imbag.github.io/praktijkhandleiding/artikelen/wat-is-het-verschil-tussen-actieve-voorkomens-actuele-voorkomens-en-huidige-voorkomens). (optional, default to false)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\ApiException on non-2xx response
+     * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAG\BAG\VerblijfsobjectIOLvcHalCollection
+     * @return \BAGClient\BAGClient\VerblijfsobjectIOLvcHalCollection
      */
     public function verblijfsobjectLvcIdentificatie($identificatie, $gehele_lvc = 'false', $accept_crs = null)
     {
@@ -891,13 +891,13 @@ class VerblijfsobjectApi
      * @param  bool $gehele_lvc Filtert naast geldige voorkomens ook de voorkomens die uit de geldige levenscyclus van het object zijn verwijderd. Als deze parameter wordt weggelaten worden alleen geldige voorkomens geretourneerd (default is false). Voor een toelichting zie de [Praktijkhandleiding BAG](https://imbag.github.io/praktijkhandleiding/artikelen/wat-is-het-verschil-tussen-actieve-voorkomens-actuele-voorkomens-en-huidige-voorkomens). (optional, default to false)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\ApiException on non-2xx response
+     * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAG\BAG\VerblijfsobjectIOLvcHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAGClient\VerblijfsobjectIOLvcHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function verblijfsobjectLvcIdentificatieWithHttpInfo($identificatie, $gehele_lvc = 'false', $accept_crs = null)
     {
-        $returnType = '\BAG\BAG\VerblijfsobjectIOLvcHalCollection';
+        $returnType = '\BAGClient\BAGClient\VerblijfsobjectIOLvcHalCollection';
         $request = $this->verblijfsobjectLvcIdentificatieRequest($identificatie, $gehele_lvc, $accept_crs);
 
         try {
@@ -949,7 +949,7 @@ class VerblijfsobjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\VerblijfsobjectIOLvcHalCollection',
+                        '\BAGClient\BAGClient\VerblijfsobjectIOLvcHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -957,7 +957,7 @@ class VerblijfsobjectApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -965,7 +965,7 @@ class VerblijfsobjectApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -973,7 +973,7 @@ class VerblijfsobjectApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -981,7 +981,7 @@ class VerblijfsobjectApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -989,7 +989,7 @@ class VerblijfsobjectApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -997,7 +997,7 @@ class VerblijfsobjectApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1005,7 +1005,7 @@ class VerblijfsobjectApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1013,7 +1013,7 @@ class VerblijfsobjectApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1021,7 +1021,7 @@ class VerblijfsobjectApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1029,7 +1029,7 @@ class VerblijfsobjectApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1075,7 +1075,7 @@ class VerblijfsobjectApi
      */
     public function verblijfsobjectLvcIdentificatieAsyncWithHttpInfo($identificatie, $gehele_lvc = 'false', $accept_crs = null)
     {
-        $returnType = '\BAG\BAG\VerblijfsobjectIOLvcHalCollection';
+        $returnType = '\BAGClient\BAGClient\VerblijfsobjectIOLvcHalCollection';
         $request = $this->verblijfsobjectLvcIdentificatieRequest($identificatie, $gehele_lvc, $accept_crs);
 
         return $this->client
@@ -1241,9 +1241,9 @@ class VerblijfsobjectApi
      * @param  int $page_size Aantal resultaten per pagina (optional, default to 20)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\ApiException on non-2xx response
+     * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAG\BAG\VerblijfsobjectIOHalCollection
+     * @return \BAGClient\BAGClient\VerblijfsobjectIOHalCollection
      */
     public function zoekVerblijfsobjecten($pand_identificatie, $huidig = 'false', $geldig_op = null, $beschikbaar_op = null, $page = '1', $page_size = '20', $accept_crs = null)
     {
@@ -1264,13 +1264,13 @@ class VerblijfsobjectApi
      * @param  int $page_size Aantal resultaten per pagina (optional, default to 20)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      *
-     * @throws \BAG\ApiException on non-2xx response
+     * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAG\BAG\VerblijfsobjectIOHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAGClient\VerblijfsobjectIOHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function zoekVerblijfsobjectenWithHttpInfo($pand_identificatie, $huidig = 'false', $geldig_op = null, $beschikbaar_op = null, $page = '1', $page_size = '20', $accept_crs = null)
     {
-        $returnType = '\BAG\BAG\VerblijfsobjectIOHalCollection';
+        $returnType = '\BAGClient\BAGClient\VerblijfsobjectIOHalCollection';
         $request = $this->zoekVerblijfsobjectenRequest($pand_identificatie, $huidig, $geldig_op, $beschikbaar_op, $page, $page_size, $accept_crs);
 
         try {
@@ -1322,7 +1322,7 @@ class VerblijfsobjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\VerblijfsobjectIOHalCollection',
+                        '\BAGClient\BAGClient\VerblijfsobjectIOHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1330,7 +1330,7 @@ class VerblijfsobjectApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1338,7 +1338,7 @@ class VerblijfsobjectApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1346,7 +1346,7 @@ class VerblijfsobjectApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1354,7 +1354,7 @@ class VerblijfsobjectApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1362,7 +1362,7 @@ class VerblijfsobjectApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1370,7 +1370,7 @@ class VerblijfsobjectApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1378,7 +1378,7 @@ class VerblijfsobjectApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1386,7 +1386,7 @@ class VerblijfsobjectApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1394,7 +1394,7 @@ class VerblijfsobjectApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAG\BAG\Error',
+                        '\BAGClient\BAGClient\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1448,7 +1448,7 @@ class VerblijfsobjectApi
      */
     public function zoekVerblijfsobjectenAsyncWithHttpInfo($pand_identificatie, $huidig = 'false', $geldig_op = null, $beschikbaar_op = null, $page = '1', $page_size = '20', $accept_crs = null)
     {
-        $returnType = '\BAG\BAG\VerblijfsobjectIOHalCollection';
+        $returnType = '\BAGClient\BAGClient\VerblijfsobjectIOHalCollection';
         $request = $this->zoekVerblijfsobjectenRequest($pand_identificatie, $huidig, $geldig_op, $beschikbaar_op, $page, $page_size, $accept_crs);
 
         return $this->client

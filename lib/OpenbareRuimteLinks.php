@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * OpenbareRuimteLinks Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class OpenbareRuimteLinks implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'self' => '\BAG\BAG\HalLink',
-'ligt_in_woonplaats' => '\BAG\BAG\HalLink'    ];
+        'self' => '\BAGClient\BAGClient\HalLink',
+'ligt_in_woonplaats' => '\BAGClient\BAGClient\HalLink'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -208,7 +208,7 @@ class OpenbareRuimteLinks implements ModelInterface, ArrayAccess
     /**
      * Gets self
      *
-     * @return \BAG\BAG\HalLink
+     * @return \BAGClient\BAGClient\HalLink
      */
     public function getSelf()
     {
@@ -218,7 +218,7 @@ class OpenbareRuimteLinks implements ModelInterface, ArrayAccess
     /**
      * Sets self
      *
-     * @param \BAG\BAG\HalLink $self self
+     * @param \BAGClient\BAGClient\HalLink $self self
      *
      * @return $this
      */
@@ -232,7 +232,7 @@ class OpenbareRuimteLinks implements ModelInterface, ArrayAccess
     /**
      * Gets ligt_in_woonplaats
      *
-     * @return \BAG\BAG\HalLink
+     * @return \BAGClient\BAGClient\HalLink
      */
     public function getLigtInWoonplaats()
     {
@@ -242,7 +242,7 @@ class OpenbareRuimteLinks implements ModelInterface, ArrayAccess
     /**
      * Sets ligt_in_woonplaats
      *
-     * @param \BAG\BAG\HalLink $ligt_in_woonplaats ligt_in_woonplaats
+     * @param \BAGClient\BAGClient\HalLink $ligt_in_woonplaats ligt_in_woonplaats
      *
      * @return $this
      */

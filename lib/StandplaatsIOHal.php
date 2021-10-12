@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * StandplaatsIOHal Class Doc Comment
  *
  * @category Class
  * @description Een verzameling van een Standplaats en een lijst van alle bijbehorende inonderzoek informatie.
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class StandplaatsIOHal implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'standplaats' => '\BAG\BAG\Standplaats',
-'inonderzoek' => '\BAG\BAG\KenmerkStandplaatsInOnderzoek[]',
-'_embedded' => '\BAG\BAG\StandplaatsEmbedded',
-'_links' => '\BAG\BAG\StandplaatsLinks'    ];
+        'standplaats' => '\BAGClient\BAGClient\Standplaats',
+'inonderzoek' => '\BAGClient\BAGClient\KenmerkStandplaatsInOnderzoek[]',
+'_embedded' => '\BAGClient\BAGClient\StandplaatsEmbedded',
+'_links' => '\BAGClient\BAGClient\StandplaatsLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -221,7 +221,7 @@ class StandplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets standplaats
      *
-     * @return \BAG\BAG\Standplaats
+     * @return \BAGClient\BAGClient\Standplaats
      */
     public function getStandplaats()
     {
@@ -231,7 +231,7 @@ class StandplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets standplaats
      *
-     * @param \BAG\BAG\Standplaats $standplaats standplaats
+     * @param \BAGClient\BAGClient\Standplaats $standplaats standplaats
      *
      * @return $this
      */
@@ -245,7 +245,7 @@ class StandplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets inonderzoek
      *
-     * @return \BAG\BAG\KenmerkStandplaatsInOnderzoek[]
+     * @return \BAGClient\BAGClient\KenmerkStandplaatsInOnderzoek[]
      */
     public function getInonderzoek()
     {
@@ -255,7 +255,7 @@ class StandplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets inonderzoek
      *
-     * @param \BAG\BAG\KenmerkStandplaatsInOnderzoek[] $inonderzoek inonderzoek
+     * @param \BAGClient\BAGClient\KenmerkStandplaatsInOnderzoek[] $inonderzoek inonderzoek
      *
      * @return $this
      */
@@ -269,7 +269,7 @@ class StandplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _embedded
      *
-     * @return \BAG\BAG\StandplaatsEmbedded
+     * @return \BAGClient\BAGClient\StandplaatsEmbedded
      */
     public function getEmbedded()
     {
@@ -279,7 +279,7 @@ class StandplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _embedded
      *
-     * @param \BAG\BAG\StandplaatsEmbedded $_embedded _embedded
+     * @param \BAGClient\BAGClient\StandplaatsEmbedded $_embedded _embedded
      *
      * @return $this
      */
@@ -293,7 +293,7 @@ class StandplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAG\BAG\StandplaatsLinks
+     * @return \BAGClient\BAGClient\StandplaatsLinks
      */
     public function getLinks()
     {
@@ -303,7 +303,7 @@ class StandplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAG\BAG\StandplaatsLinks $_links _links
+     * @param \BAGClient\BAGClient\StandplaatsLinks $_links _links
      *
      * @return $this
      */

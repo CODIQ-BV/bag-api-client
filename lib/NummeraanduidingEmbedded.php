@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * NummeraanduidingEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class NummeraanduidingEmbedded implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'ligt_in_woonplaats' => '\BAG\BAG\WoonplaatsIOHal',
-'ligt_aan_openbare_ruimte' => '\BAG\BAG\OpenbareRuimteIOHal'    ];
+        'ligt_in_woonplaats' => '\BAGClient\BAGClient\WoonplaatsIOHal',
+'ligt_aan_openbare_ruimte' => '\BAGClient\BAGClient\OpenbareRuimteIOHal'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class NummeraanduidingEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets ligt_in_woonplaats
      *
-     * @return \BAG\BAG\WoonplaatsIOHal
+     * @return \BAGClient\BAGClient\WoonplaatsIOHal
      */
     public function getLigtInWoonplaats()
     {
@@ -215,7 +215,7 @@ class NummeraanduidingEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets ligt_in_woonplaats
      *
-     * @param \BAG\BAG\WoonplaatsIOHal $ligt_in_woonplaats ligt_in_woonplaats
+     * @param \BAGClient\BAGClient\WoonplaatsIOHal $ligt_in_woonplaats ligt_in_woonplaats
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class NummeraanduidingEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets ligt_aan_openbare_ruimte
      *
-     * @return \BAG\BAG\OpenbareRuimteIOHal
+     * @return \BAGClient\BAGClient\OpenbareRuimteIOHal
      */
     public function getLigtAanOpenbareRuimte()
     {
@@ -239,7 +239,7 @@ class NummeraanduidingEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets ligt_aan_openbare_ruimte
      *
-     * @param \BAG\BAG\OpenbareRuimteIOHal $ligt_aan_openbare_ruimte ligt_aan_openbare_ruimte
+     * @param \BAGClient\BAGClient\OpenbareRuimteIOHal $ligt_aan_openbare_ruimte ligt_aan_openbare_ruimte
      *
      * @return $this
      */

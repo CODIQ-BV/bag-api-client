@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * KenmerkVerblijfsobjectInOnderzoek Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,10 +56,10 @@ class KenmerkVerblijfsobjectInOnderzoek implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'kenmerk' => '\BAG\BAG\InOnderzoekVerblijfsobject',
-'identificatie_van_verblijfsobject' => '\BAG\BAG\VerblijfsobjectIdentificatie',
-'in_onderzoek' => '\BAG\BAG\Indicatie',
-'historie' => '\BAG\BAG\HistorieInOnderzoek',
+        'kenmerk' => '\BAGClient\BAGClient\InOnderzoekVerblijfsobject',
+'identificatie_van_verblijfsobject' => '\BAGClient\BAGClient\VerblijfsobjectIdentificatie',
+'in_onderzoek' => '\BAGClient\BAGClient\Indicatie',
+'historie' => '\BAGClient\BAGClient\HistorieInOnderzoek',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string'    ];
 
@@ -247,7 +247,7 @@ class KenmerkVerblijfsobjectInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets kenmerk
      *
-     * @return \BAG\BAG\InOnderzoekVerblijfsobject
+     * @return \BAGClient\BAGClient\InOnderzoekVerblijfsobject
      */
     public function getKenmerk()
     {
@@ -257,7 +257,7 @@ class KenmerkVerblijfsobjectInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets kenmerk
      *
-     * @param \BAG\BAG\InOnderzoekVerblijfsobject $kenmerk kenmerk
+     * @param \BAGClient\BAGClient\InOnderzoekVerblijfsobject $kenmerk kenmerk
      *
      * @return $this
      */
@@ -271,7 +271,7 @@ class KenmerkVerblijfsobjectInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets identificatie_van_verblijfsobject
      *
-     * @return \BAG\BAG\VerblijfsobjectIdentificatie
+     * @return \BAGClient\BAGClient\VerblijfsobjectIdentificatie
      */
     public function getIdentificatieVanVerblijfsobject()
     {
@@ -281,7 +281,7 @@ class KenmerkVerblijfsobjectInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets identificatie_van_verblijfsobject
      *
-     * @param \BAG\BAG\VerblijfsobjectIdentificatie $identificatie_van_verblijfsobject identificatie_van_verblijfsobject
+     * @param \BAGClient\BAGClient\VerblijfsobjectIdentificatie $identificatie_van_verblijfsobject identificatie_van_verblijfsobject
      *
      * @return $this
      */
@@ -295,7 +295,7 @@ class KenmerkVerblijfsobjectInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets in_onderzoek
      *
-     * @return \BAG\BAG\Indicatie
+     * @return \BAGClient\BAGClient\Indicatie
      */
     public function getInOnderzoek()
     {
@@ -305,7 +305,7 @@ class KenmerkVerblijfsobjectInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets in_onderzoek
      *
-     * @param \BAG\BAG\Indicatie $in_onderzoek in_onderzoek
+     * @param \BAGClient\BAGClient\Indicatie $in_onderzoek in_onderzoek
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class KenmerkVerblijfsobjectInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets historie
      *
-     * @return \BAG\BAG\HistorieInOnderzoek
+     * @return \BAGClient\BAGClient\HistorieInOnderzoek
      */
     public function getHistorie()
     {
@@ -329,7 +329,7 @@ class KenmerkVerblijfsobjectInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets historie
      *
-     * @param \BAG\BAG\HistorieInOnderzoek $historie historie
+     * @param \BAGClient\BAGClient\HistorieInOnderzoek $historie historie
      *
      * @return $this
      */

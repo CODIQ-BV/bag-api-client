@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
-use \BAG\ObjectSerializer;
+namespace BAGClient\BAGClient;
+use \BAGClient\ObjectSerializer;
 
 /**
  * AdresUitgebreidHal Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -54,7 +54,7 @@ class AdresUitgebreidHal extends AdresUitgebreid
       * @var string[]
       */
     protected static $swaggerTypes = [
-        '_links' => '\BAG\BAG\AdresUitgebreidLinks'    ];
+        '_links' => '\BAGClient\BAGClient\AdresUitgebreidLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -193,7 +193,7 @@ class AdresUitgebreidHal extends AdresUitgebreid
     /**
      * Gets _links
      *
-     * @return \BAG\BAG\AdresUitgebreidLinks
+     * @return \BAGClient\BAGClient\AdresUitgebreidLinks
      */
     public function getLinks()
     {
@@ -203,7 +203,7 @@ class AdresUitgebreidHal extends AdresUitgebreid
     /**
      * Sets _links
      *
-     * @param \BAG\BAG\AdresUitgebreidLinks $_links _links
+     * @param \BAGClient\BAGClient\AdresUitgebreidLinks $_links _links
      *
      * @return $this
      */

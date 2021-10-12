@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
-use \BAG\ObjectSerializer;
+namespace BAGClient\BAGClient;
+use \BAGClient\ObjectSerializer;
 
 /**
  * Standplaats Class Doc Comment
  *
  * @category Class
  * @description Een Standplaats is een door het bevoegde gemeentelijke orgaan als zodanig aangewezen terrein of gedeelte daarvan dat bestemd is voor het permanent plaatsen van een niet direct en niet duurzaam met de aarde verbonden en voor woon-, bedrijfsmatige, of recreatieve doeleinden geschikte ruimte.
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -55,14 +55,14 @@ class Standplaats extends AdresseerbaarObject
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'identificatie' => '\BAG\BAG\StandplaatsIdentificatie',
+        'identificatie' => '\BAGClient\BAGClient\StandplaatsIdentificatie',
 'domein' => 'string',
-'status' => '\BAG\BAG\StatusPlaats',
-'geometrie' => '\BAG\BAG\Surface',
-'geconstateerd' => '\BAG\BAG\Indicatie',
+'status' => '\BAGClient\BAGClient\StatusPlaats',
+'geometrie' => '\BAGClient\BAGClient\Surface',
+'geconstateerd' => '\BAGClient\BAGClient\Indicatie',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string',
-'voorkomen' => '\BAG\BAG\Voorkomen'    ];
+'voorkomen' => '\BAGClient\BAGClient\Voorkomen'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -260,7 +260,7 @@ class Standplaats extends AdresseerbaarObject
     /**
      * Gets identificatie
      *
-     * @return \BAG\BAG\StandplaatsIdentificatie
+     * @return \BAGClient\BAGClient\StandplaatsIdentificatie
      */
     public function getIdentificatie()
     {
@@ -270,7 +270,7 @@ class Standplaats extends AdresseerbaarObject
     /**
      * Sets identificatie
      *
-     * @param \BAG\BAG\StandplaatsIdentificatie $identificatie identificatie
+     * @param \BAGClient\BAGClient\StandplaatsIdentificatie $identificatie identificatie
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class Standplaats extends AdresseerbaarObject
     /**
      * Gets status
      *
-     * @return \BAG\BAG\StatusPlaats
+     * @return \BAGClient\BAGClient\StatusPlaats
      */
     public function getStatus()
     {
@@ -318,7 +318,7 @@ class Standplaats extends AdresseerbaarObject
     /**
      * Sets status
      *
-     * @param \BAG\BAG\StatusPlaats $status status
+     * @param \BAGClient\BAGClient\StatusPlaats $status status
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class Standplaats extends AdresseerbaarObject
     /**
      * Gets geometrie
      *
-     * @return \BAG\BAG\Surface
+     * @return \BAGClient\BAGClient\Surface
      */
     public function getGeometrie()
     {
@@ -342,7 +342,7 @@ class Standplaats extends AdresseerbaarObject
     /**
      * Sets geometrie
      *
-     * @param \BAG\BAG\Surface $geometrie geometrie
+     * @param \BAGClient\BAGClient\Surface $geometrie geometrie
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class Standplaats extends AdresseerbaarObject
     /**
      * Gets geconstateerd
      *
-     * @return \BAG\BAG\Indicatie
+     * @return \BAGClient\BAGClient\Indicatie
      */
     public function getGeconstateerd()
     {
@@ -366,7 +366,7 @@ class Standplaats extends AdresseerbaarObject
     /**
      * Sets geconstateerd
      *
-     * @param \BAG\BAG\Indicatie $geconstateerd geconstateerd
+     * @param \BAGClient\BAGClient\Indicatie $geconstateerd geconstateerd
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class Standplaats extends AdresseerbaarObject
     /**
      * Gets voorkomen
      *
-     * @return \BAG\BAG\Voorkomen
+     * @return \BAGClient\BAGClient\Voorkomen
      */
     public function getVoorkomen()
     {
@@ -438,7 +438,7 @@ class Standplaats extends AdresseerbaarObject
     /**
      * Sets voorkomen
      *
-     * @param \BAG\BAG\Voorkomen $voorkomen voorkomen
+     * @param \BAGClient\BAGClient\Voorkomen $voorkomen voorkomen
      *
      * @return $this
      */

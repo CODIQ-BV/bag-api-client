@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * Pand Class Doc Comment
  *
  * @category Class
  * @description Een Pand is de kleinste, bij de totstandkoming functioneel en bouwkundig-constructief zelfstandige eenheid die direct en duurzaam met de aarde is verbonden en betreedbaar en afsluitbaar is.
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,15 +57,15 @@ class Pand implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'identificatie' => '\BAG\BAG\PandIdentificatie',
+        'identificatie' => '\BAGClient\BAGClient\PandIdentificatie',
 'domein' => 'string',
-'geometrie' => '\BAG\BAG\Surface',
+'geometrie' => '\BAGClient\BAGClient\Surface',
 'oorspronkelijk_bouwjaar' => 'string',
-'status' => '\BAG\BAG\StatusPand',
-'geconstateerd' => '\BAG\BAG\Indicatie',
+'status' => '\BAGClient\BAGClient\StatusPand',
+'geconstateerd' => '\BAGClient\BAGClient\Indicatie',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string',
-'voorkomen' => '\BAG\BAG\Voorkomen'    ];
+'voorkomen' => '\BAGClient\BAGClient\Voorkomen'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -275,7 +275,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Gets identificatie
      *
-     * @return \BAG\BAG\PandIdentificatie
+     * @return \BAGClient\BAGClient\PandIdentificatie
      */
     public function getIdentificatie()
     {
@@ -285,7 +285,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Sets identificatie
      *
-     * @param \BAG\BAG\PandIdentificatie $identificatie identificatie
+     * @param \BAGClient\BAGClient\PandIdentificatie $identificatie identificatie
      *
      * @return $this
      */
@@ -323,7 +323,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Gets geometrie
      *
-     * @return \BAG\BAG\Surface
+     * @return \BAGClient\BAGClient\Surface
      */
     public function getGeometrie()
     {
@@ -333,7 +333,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Sets geometrie
      *
-     * @param \BAG\BAG\Surface $geometrie geometrie
+     * @param \BAGClient\BAGClient\Surface $geometrie geometrie
      *
      * @return $this
      */
@@ -371,7 +371,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \BAG\BAG\StatusPand
+     * @return \BAGClient\BAGClient\StatusPand
      */
     public function getStatus()
     {
@@ -381,7 +381,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \BAG\BAG\StatusPand $status status
+     * @param \BAGClient\BAGClient\StatusPand $status status
      *
      * @return $this
      */
@@ -395,7 +395,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Gets geconstateerd
      *
-     * @return \BAG\BAG\Indicatie
+     * @return \BAGClient\BAGClient\Indicatie
      */
     public function getGeconstateerd()
     {
@@ -405,7 +405,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Sets geconstateerd
      *
-     * @param \BAG\BAG\Indicatie $geconstateerd geconstateerd
+     * @param \BAGClient\BAGClient\Indicatie $geconstateerd geconstateerd
      *
      * @return $this
      */
@@ -467,7 +467,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Gets voorkomen
      *
-     * @return \BAG\BAG\Voorkomen
+     * @return \BAGClient\BAGClient\Voorkomen
      */
     public function getVoorkomen()
     {
@@ -477,7 +477,7 @@ class Pand implements ModelInterface, ArrayAccess
     /**
      * Sets voorkomen
      *
-     * @param \BAG\BAG\Voorkomen $voorkomen voorkomen
+     * @param \BAGClient\BAGClient\Voorkomen $voorkomen voorkomen
      *
      * @return $this
      */

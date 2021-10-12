@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**voorkomens** | [**\BAG\BAG\LigplaatsIOHal[]**](LigplaatsIOHal.md) |  | [optional] 
+**voorkomens** | [**\BAGClient\BAGClient\LigplaatsIOHal[]**](LigplaatsIOHal.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

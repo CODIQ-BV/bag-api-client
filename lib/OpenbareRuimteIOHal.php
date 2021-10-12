@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * OpenbareRuimteIOHal Class Doc Comment
  *
  * @category Class
  * @description Openbare ruimte, aangevuld met een limitatieve opsomming van alle kenmerken van dit object die in onderzoek zijn(als metadata). Bij een normale vraag wordt aangegeven welke kenmerken er op dit moment in onderzoek zijn. Bij een tijdreisvraag wordt aangegeven welke gegevens er ooit in onderzoek zijn geweest. Bij een levenscyclus vraag wordt aangegeven welke gegevens er ooit in onderzoek zijn geweest.
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class OpenbareRuimteIOHal implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'openbare_ruimte' => '\BAG\BAG\OpenbareRuimte',
-'inonderzoek' => '\BAG\BAG\KenmerkOpenbareRuimteInOnderzoek[]',
-'_embedded' => '\BAG\BAG\OpenbareRuimteEmbedded',
-'_links' => '\BAG\BAG\OpenbareRuimteLinks'    ];
+        'openbare_ruimte' => '\BAGClient\BAGClient\OpenbareRuimte',
+'inonderzoek' => '\BAGClient\BAGClient\KenmerkOpenbareRuimteInOnderzoek[]',
+'_embedded' => '\BAGClient\BAGClient\OpenbareRuimteEmbedded',
+'_links' => '\BAGClient\BAGClient\OpenbareRuimteLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -221,7 +221,7 @@ class OpenbareRuimteIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets openbare_ruimte
      *
-     * @return \BAG\BAG\OpenbareRuimte
+     * @return \BAGClient\BAGClient\OpenbareRuimte
      */
     public function getOpenbareRuimte()
     {
@@ -231,7 +231,7 @@ class OpenbareRuimteIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets openbare_ruimte
      *
-     * @param \BAG\BAG\OpenbareRuimte $openbare_ruimte openbare_ruimte
+     * @param \BAGClient\BAGClient\OpenbareRuimte $openbare_ruimte openbare_ruimte
      *
      * @return $this
      */
@@ -245,7 +245,7 @@ class OpenbareRuimteIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets inonderzoek
      *
-     * @return \BAG\BAG\KenmerkOpenbareRuimteInOnderzoek[]
+     * @return \BAGClient\BAGClient\KenmerkOpenbareRuimteInOnderzoek[]
      */
     public function getInonderzoek()
     {
@@ -255,7 +255,7 @@ class OpenbareRuimteIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets inonderzoek
      *
-     * @param \BAG\BAG\KenmerkOpenbareRuimteInOnderzoek[] $inonderzoek inonderzoek
+     * @param \BAGClient\BAGClient\KenmerkOpenbareRuimteInOnderzoek[] $inonderzoek inonderzoek
      *
      * @return $this
      */
@@ -269,7 +269,7 @@ class OpenbareRuimteIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _embedded
      *
-     * @return \BAG\BAG\OpenbareRuimteEmbedded
+     * @return \BAGClient\BAGClient\OpenbareRuimteEmbedded
      */
     public function getEmbedded()
     {
@@ -279,7 +279,7 @@ class OpenbareRuimteIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _embedded
      *
-     * @param \BAG\BAG\OpenbareRuimteEmbedded $_embedded _embedded
+     * @param \BAGClient\BAGClient\OpenbareRuimteEmbedded $_embedded _embedded
      *
      * @return $this
      */
@@ -293,7 +293,7 @@ class OpenbareRuimteIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAG\BAG\OpenbareRuimteLinks
+     * @return \BAGClient\BAGClient\OpenbareRuimteLinks
      */
     public function getLinks()
     {
@@ -303,7 +303,7 @@ class OpenbareRuimteIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAG\BAG\OpenbareRuimteLinks $_links _links
+     * @param \BAGClient\BAGClient\OpenbareRuimteLinks $_links _links
      *
      * @return $this
      */

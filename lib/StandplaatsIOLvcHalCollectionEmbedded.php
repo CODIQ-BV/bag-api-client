@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * StandplaatsIOLvcHalCollectionEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class StandplaatsIOLvcHalCollectionEmbedded implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'voorkomens' => '\BAG\BAG\StandplaatsIOHal[]'    ];
+        'voorkomens' => '\BAGClient\BAGClient\StandplaatsIOHal[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class StandplaatsIOLvcHalCollectionEmbedded implements ModelInterface, ArrayAcce
     /**
      * Gets voorkomens
      *
-     * @return \BAG\BAG\StandplaatsIOHal[]
+     * @return \BAGClient\BAGClient\StandplaatsIOHal[]
      */
     public function getVoorkomens()
     {
@@ -209,7 +209,7 @@ class StandplaatsIOLvcHalCollectionEmbedded implements ModelInterface, ArrayAcce
     /**
      * Sets voorkomens
      *
-     * @param \BAG\BAG\StandplaatsIOHal[] $voorkomens voorkomens
+     * @param \BAGClient\BAGClient\StandplaatsIOHal[] $voorkomens voorkomens
      *
      * @return $this
      */

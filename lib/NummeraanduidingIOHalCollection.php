@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * NummeraanduidingIOHalCollection Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class NummeraanduidingIOHalCollection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        '_embedded' => '\BAG\BAG\NummeraanduidingIOHalCollectionEmbedded',
-'_links' => '\BAG\BAG\HalPaginationLinks'    ];
+        '_embedded' => '\BAGClient\BAGClient\NummeraanduidingIOHalCollectionEmbedded',
+'_links' => '\BAGClient\BAGClient\HalPaginationLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class NummeraanduidingIOHalCollection implements ModelInterface, ArrayAccess
     /**
      * Gets _embedded
      *
-     * @return \BAG\BAG\NummeraanduidingIOHalCollectionEmbedded
+     * @return \BAGClient\BAGClient\NummeraanduidingIOHalCollectionEmbedded
      */
     public function getEmbedded()
     {
@@ -215,7 +215,7 @@ class NummeraanduidingIOHalCollection implements ModelInterface, ArrayAccess
     /**
      * Sets _embedded
      *
-     * @param \BAG\BAG\NummeraanduidingIOHalCollectionEmbedded $_embedded _embedded
+     * @param \BAGClient\BAGClient\NummeraanduidingIOHalCollectionEmbedded $_embedded _embedded
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class NummeraanduidingIOHalCollection implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAG\BAG\HalPaginationLinks
+     * @return \BAGClient\BAGClient\HalPaginationLinks
      */
     public function getLinks()
     {
@@ -239,7 +239,7 @@ class NummeraanduidingIOHalCollection implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAG\BAG\HalPaginationLinks $_links _links
+     * @param \BAGClient\BAGClient\HalPaginationLinks $_links _links
      *
      * @return $this
      */

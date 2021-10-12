@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * VerblijfsobjectIOHalCollectionEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class VerblijfsobjectIOHalCollectionEmbedded implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'verblijfsobjecten' => '\BAG\BAG\VerblijfsobjectIOHal[]'    ];
+        'verblijfsobjecten' => '\BAGClient\BAGClient\VerblijfsobjectIOHal[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class VerblijfsobjectIOHalCollectionEmbedded implements ModelInterface, ArrayAcc
     /**
      * Gets verblijfsobjecten
      *
-     * @return \BAG\BAG\VerblijfsobjectIOHal[]
+     * @return \BAGClient\BAGClient\VerblijfsobjectIOHal[]
      */
     public function getVerblijfsobjecten()
     {
@@ -209,7 +209,7 @@ class VerblijfsobjectIOHalCollectionEmbedded implements ModelInterface, ArrayAcc
     /**
      * Sets verblijfsobjecten
      *
-     * @param \BAG\BAG\VerblijfsobjectIOHal[] $verblijfsobjecten verblijfsobjecten
+     * @param \BAGClient\BAGClient\VerblijfsobjectIOHal[] $verblijfsobjecten verblijfsobjecten
      *
      * @return $this
      */

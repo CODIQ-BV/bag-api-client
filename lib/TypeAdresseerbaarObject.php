@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
-use \BAG\ObjectSerializer;
+namespace BAGClient\BAGClient;
+use \BAGClient\ObjectSerializer;
 
 /**
  * TypeAdresseerbaarObject Class Doc Comment
  *
  * @category Class
  * @description De aard van het object waaraan een nummeraanduiding is toegekend.
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

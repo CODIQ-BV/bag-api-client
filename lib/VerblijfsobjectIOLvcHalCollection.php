@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * VerblijfsobjectIOLvcHalCollection Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class VerblijfsobjectIOLvcHalCollection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        '_embedded' => '\BAG\BAG\VerblijfsobjectIOLvcHalCollectionEmbedded',
-'_links' => '\BAG\BAG\HalCollectionLinks'    ];
+        '_embedded' => '\BAGClient\BAGClient\VerblijfsobjectIOLvcHalCollectionEmbedded',
+'_links' => '\BAGClient\BAGClient\HalCollectionLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class VerblijfsobjectIOLvcHalCollection implements ModelInterface, ArrayAccess
     /**
      * Gets _embedded
      *
-     * @return \BAG\BAG\VerblijfsobjectIOLvcHalCollectionEmbedded
+     * @return \BAGClient\BAGClient\VerblijfsobjectIOLvcHalCollectionEmbedded
      */
     public function getEmbedded()
     {
@@ -215,7 +215,7 @@ class VerblijfsobjectIOLvcHalCollection implements ModelInterface, ArrayAccess
     /**
      * Sets _embedded
      *
-     * @param \BAG\BAG\VerblijfsobjectIOLvcHalCollectionEmbedded $_embedded _embedded
+     * @param \BAGClient\BAGClient\VerblijfsobjectIOLvcHalCollectionEmbedded $_embedded _embedded
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class VerblijfsobjectIOLvcHalCollection implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAG\BAG\HalCollectionLinks
+     * @return \BAGClient\BAGClient\HalCollectionLinks
      */
     public function getLinks()
     {
@@ -239,7 +239,7 @@ class VerblijfsobjectIOLvcHalCollection implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAG\BAG\HalCollectionLinks $_links _links
+     * @param \BAGClient\BAGClient\HalCollectionLinks $_links _links
      *
      * @return $this
      */

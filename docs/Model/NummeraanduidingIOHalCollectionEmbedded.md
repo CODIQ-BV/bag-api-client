@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**nummeraanduidingen** | [**\BAG\BAG\NummeraanduidingIOHal[]**](NummeraanduidingIOHal.md) |  | [optional] 
+**nummeraanduidingen** | [**\BAGClient\BAGClient\NummeraanduidingIOHal[]**](NummeraanduidingIOHal.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

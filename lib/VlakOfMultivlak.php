@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * VlakOfMultivlak Class Doc Comment
  *
  * @category Class
  * @description Een samengesteld geometriegegevenstype waarbij wordt afgedwongen dat voor de geometrie een keuze gemaakt moet worden tussen een vlak (GM_Surface) of een multivlak (GM_MultiSurface).
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +57,8 @@ class VlakOfMultivlak implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'vlak' => '\BAG\BAG\Surface',
-'multivlak' => '\BAG\BAG\MultiSurface'    ];
+        'vlak' => '\BAGClient\BAGClient\Surface',
+'multivlak' => '\BAGClient\BAGClient\MultiSurface'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -206,7 +206,7 @@ class VlakOfMultivlak implements ModelInterface, ArrayAccess
     /**
      * Gets vlak
      *
-     * @return \BAG\BAG\Surface
+     * @return \BAGClient\BAGClient\Surface
      */
     public function getVlak()
     {
@@ -216,7 +216,7 @@ class VlakOfMultivlak implements ModelInterface, ArrayAccess
     /**
      * Sets vlak
      *
-     * @param \BAG\BAG\Surface $vlak vlak
+     * @param \BAGClient\BAGClient\Surface $vlak vlak
      *
      * @return $this
      */
@@ -230,7 +230,7 @@ class VlakOfMultivlak implements ModelInterface, ArrayAccess
     /**
      * Gets multivlak
      *
-     * @return \BAG\BAG\MultiSurface
+     * @return \BAGClient\BAGClient\MultiSurface
      */
     public function getMultivlak()
     {
@@ -240,7 +240,7 @@ class VlakOfMultivlak implements ModelInterface, ArrayAccess
     /**
      * Sets multivlak
      *
-     * @param \BAG\BAG\MultiSurface $multivlak multivlak
+     * @param \BAGClient\BAGClient\MultiSurface $multivlak multivlak
      *
      * @return $this
      */

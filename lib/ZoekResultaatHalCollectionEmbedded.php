@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * ZoekResultaatHalCollectionEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class ZoekResultaatHalCollectionEmbedded implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'zoekresultaten' => '\BAG\BAG\ZoekResultaatHal[]'    ];
+        'zoekresultaten' => '\BAGClient\BAGClient\ZoekResultaatHal[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class ZoekResultaatHalCollectionEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets zoekresultaten
      *
-     * @return \BAG\BAG\ZoekResultaatHal[]
+     * @return \BAGClient\BAGClient\ZoekResultaatHal[]
      */
     public function getZoekresultaten()
     {
@@ -209,7 +209,7 @@ class ZoekResultaatHalCollectionEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets zoekresultaten
      *
-     * @param \BAG\BAG\ZoekResultaatHal[] $zoekresultaten zoekresultaten
+     * @param \BAGClient\BAGClient\ZoekResultaatHal[] $zoekresultaten zoekresultaten
      *
      * @return $this
      */

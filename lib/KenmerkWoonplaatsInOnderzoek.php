@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * KenmerkWoonplaatsInOnderzoek Class Doc Comment
  *
  * @category Class
  * @description Limitatieve opsomming van alle kenmerken van dit object die in onderzoek zijn op dit moment, of van alle kenmerken die ooit in onderzoek zijn geweest als er een tijdreisvraag is gesteld of een vraag naar de levenscyclus.
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class KenmerkWoonplaatsInOnderzoek implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'kenmerk' => '\BAG\BAG\InOnderzoekWoonplaats',
-'identificatie_van_woonplaats' => '\BAG\BAG\WoonplaatsIdentificatie',
-'in_onderzoek' => '\BAG\BAG\Indicatie',
-'historie' => '\BAG\BAG\HistorieInOnderzoek',
+        'kenmerk' => '\BAGClient\BAGClient\InOnderzoekWoonplaats',
+'identificatie_van_woonplaats' => '\BAGClient\BAGClient\WoonplaatsIdentificatie',
+'in_onderzoek' => '\BAGClient\BAGClient\Indicatie',
+'historie' => '\BAGClient\BAGClient\HistorieInOnderzoek',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string'    ];
 
@@ -248,7 +248,7 @@ class KenmerkWoonplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets kenmerk
      *
-     * @return \BAG\BAG\InOnderzoekWoonplaats
+     * @return \BAGClient\BAGClient\InOnderzoekWoonplaats
      */
     public function getKenmerk()
     {
@@ -258,7 +258,7 @@ class KenmerkWoonplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets kenmerk
      *
-     * @param \BAG\BAG\InOnderzoekWoonplaats $kenmerk kenmerk
+     * @param \BAGClient\BAGClient\InOnderzoekWoonplaats $kenmerk kenmerk
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class KenmerkWoonplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets identificatie_van_woonplaats
      *
-     * @return \BAG\BAG\WoonplaatsIdentificatie
+     * @return \BAGClient\BAGClient\WoonplaatsIdentificatie
      */
     public function getIdentificatieVanWoonplaats()
     {
@@ -282,7 +282,7 @@ class KenmerkWoonplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets identificatie_van_woonplaats
      *
-     * @param \BAG\BAG\WoonplaatsIdentificatie $identificatie_van_woonplaats identificatie_van_woonplaats
+     * @param \BAGClient\BAGClient\WoonplaatsIdentificatie $identificatie_van_woonplaats identificatie_van_woonplaats
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class KenmerkWoonplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets in_onderzoek
      *
-     * @return \BAG\BAG\Indicatie
+     * @return \BAGClient\BAGClient\Indicatie
      */
     public function getInOnderzoek()
     {
@@ -306,7 +306,7 @@ class KenmerkWoonplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets in_onderzoek
      *
-     * @param \BAG\BAG\Indicatie $in_onderzoek in_onderzoek
+     * @param \BAGClient\BAGClient\Indicatie $in_onderzoek in_onderzoek
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class KenmerkWoonplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets historie
      *
-     * @return \BAG\BAG\HistorieInOnderzoek
+     * @return \BAGClient\BAGClient\HistorieInOnderzoek
      */
     public function getHistorie()
     {
@@ -330,7 +330,7 @@ class KenmerkWoonplaatsInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets historie
      *
-     * @param \BAG\BAG\HistorieInOnderzoek $historie historie
+     * @param \BAGClient\BAGClient\HistorieInOnderzoek $historie historie
      *
      * @return $this
      */

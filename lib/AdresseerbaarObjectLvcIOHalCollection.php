@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * AdresseerbaarObjectLvcIOHalCollection Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class AdresseerbaarObjectLvcIOHalCollection implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $swaggerTypes = [
-        '_embedded' => '\BAG\BAG\AdresseerbaarObjectLvcIOHalCollectionEmbedded',
-'_links' => '\BAG\BAG\HalCollectionLinks'    ];
+        '_embedded' => '\BAGClient\BAGClient\AdresseerbaarObjectLvcIOHalCollectionEmbedded',
+'_links' => '\BAGClient\BAGClient\HalCollectionLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class AdresseerbaarObjectLvcIOHalCollection implements ModelInterface, ArrayAcce
     /**
      * Gets _embedded
      *
-     * @return \BAG\BAG\AdresseerbaarObjectLvcIOHalCollectionEmbedded
+     * @return \BAGClient\BAGClient\AdresseerbaarObjectLvcIOHalCollectionEmbedded
      */
     public function getEmbedded()
     {
@@ -215,7 +215,7 @@ class AdresseerbaarObjectLvcIOHalCollection implements ModelInterface, ArrayAcce
     /**
      * Sets _embedded
      *
-     * @param \BAG\BAG\AdresseerbaarObjectLvcIOHalCollectionEmbedded $_embedded _embedded
+     * @param \BAGClient\BAGClient\AdresseerbaarObjectLvcIOHalCollectionEmbedded $_embedded _embedded
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class AdresseerbaarObjectLvcIOHalCollection implements ModelInterface, ArrayAcce
     /**
      * Gets _links
      *
-     * @return \BAG\BAG\HalCollectionLinks
+     * @return \BAGClient\BAGClient\HalCollectionLinks
      */
     public function getLinks()
     {
@@ -239,7 +239,7 @@ class AdresseerbaarObjectLvcIOHalCollection implements ModelInterface, ArrayAcce
     /**
      * Sets _links
      *
-     * @param \BAG\BAG\HalCollectionLinks $_links _links
+     * @param \BAGClient\BAGClient\HalCollectionLinks $_links _links
      *
      * @return $this
      */

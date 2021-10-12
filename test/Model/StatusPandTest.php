@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace BAG;
+namespace BAGClient;
 
 /**
  * StatusPandTest Class Doc Comment
  *
  * @category    Class
  * @description Een codering van de verschillende waarden die de status van een pand kan aannemen.
- * @package     BAG
+ * @package     BAGClient
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

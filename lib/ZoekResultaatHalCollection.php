@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * ZoekResultaatHalCollection Class Doc Comment
  *
  * @category Class
  * @description Resultaten als lijst
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +57,8 @@ class ZoekResultaatHalCollection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        '_links' => '\BAG\BAG\HalPaginationLinks',
-'_embedded' => '\BAG\BAG\ZoekResultaatHalCollectionEmbedded'    ];
+        '_links' => '\BAGClient\BAGClient\HalPaginationLinks',
+'_embedded' => '\BAGClient\BAGClient\ZoekResultaatHalCollectionEmbedded'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -206,7 +206,7 @@ class ZoekResultaatHalCollection implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAG\BAG\HalPaginationLinks
+     * @return \BAGClient\BAGClient\HalPaginationLinks
      */
     public function getLinks()
     {
@@ -216,7 +216,7 @@ class ZoekResultaatHalCollection implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAG\BAG\HalPaginationLinks $_links _links
+     * @param \BAGClient\BAGClient\HalPaginationLinks $_links _links
      *
      * @return $this
      */
@@ -230,7 +230,7 @@ class ZoekResultaatHalCollection implements ModelInterface, ArrayAccess
     /**
      * Gets _embedded
      *
-     * @return \BAG\BAG\ZoekResultaatHalCollectionEmbedded
+     * @return \BAGClient\BAGClient\ZoekResultaatHalCollectionEmbedded
      */
     public function getEmbedded()
     {
@@ -240,7 +240,7 @@ class ZoekResultaatHalCollection implements ModelInterface, ArrayAccess
     /**
      * Sets _embedded
      *
-     * @param \BAG\BAG\ZoekResultaatHalCollectionEmbedded $_embedded _embedded
+     * @param \BAGClient\BAGClient\ZoekResultaatHalCollectionEmbedded $_embedded _embedded
      *
      * @return $this
      */

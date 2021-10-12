@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * AdresseerbaarObjectLvcIOHalCollectionEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class AdresseerbaarObjectLvcIOHalCollectionEmbedded implements ModelInterface, A
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'voorkomens' => '\BAG\BAG\AdresseerbaarObjectIOHal[]'    ];
+        'voorkomens' => '\BAGClient\BAGClient\AdresseerbaarObjectIOHal[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class AdresseerbaarObjectLvcIOHalCollectionEmbedded implements ModelInterface, A
     /**
      * Gets voorkomens
      *
-     * @return \BAG\BAG\AdresseerbaarObjectIOHal[]
+     * @return \BAGClient\BAGClient\AdresseerbaarObjectIOHal[]
      */
     public function getVoorkomens()
     {
@@ -209,7 +209,7 @@ class AdresseerbaarObjectLvcIOHalCollectionEmbedded implements ModelInterface, A
     /**
      * Sets voorkomens
      *
-     * @param \BAG\BAG\AdresseerbaarObjectIOHal[] $voorkomens voorkomens
+     * @param \BAGClient\BAGClient\AdresseerbaarObjectIOHal[] $voorkomens voorkomens
      *
      * @return $this
      */

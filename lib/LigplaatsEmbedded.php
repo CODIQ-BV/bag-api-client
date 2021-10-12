@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * LigplaatsEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class LigplaatsEmbedded implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'heeft_als_hoofd_adres' => '\BAG\BAG\NummeraanduidingIOHal',
-'heeft_als_neven_adres' => '\BAG\BAG\NummeraanduidingIOHal[]'    ];
+        'heeft_als_hoofd_adres' => '\BAGClient\BAGClient\NummeraanduidingIOHal',
+'heeft_als_neven_adres' => '\BAGClient\BAGClient\NummeraanduidingIOHal[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -205,7 +205,7 @@ class LigplaatsEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets heeft_als_hoofd_adres
      *
-     * @return \BAG\BAG\NummeraanduidingIOHal
+     * @return \BAGClient\BAGClient\NummeraanduidingIOHal
      */
     public function getHeeftAlsHoofdAdres()
     {
@@ -215,7 +215,7 @@ class LigplaatsEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets heeft_als_hoofd_adres
      *
-     * @param \BAG\BAG\NummeraanduidingIOHal $heeft_als_hoofd_adres heeft_als_hoofd_adres
+     * @param \BAGClient\BAGClient\NummeraanduidingIOHal $heeft_als_hoofd_adres heeft_als_hoofd_adres
      *
      * @return $this
      */
@@ -229,7 +229,7 @@ class LigplaatsEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets heeft_als_neven_adres
      *
-     * @return \BAG\BAG\NummeraanduidingIOHal[]
+     * @return \BAGClient\BAGClient\NummeraanduidingIOHal[]
      */
     public function getHeeftAlsNevenAdres()
     {
@@ -239,7 +239,7 @@ class LigplaatsEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets heeft_als_neven_adres
      *
-     * @param \BAG\BAG\NummeraanduidingIOHal[] $heeft_als_neven_adres heeft_als_neven_adres
+     * @param \BAGClient\BAGClient\NummeraanduidingIOHal[] $heeft_als_neven_adres heeft_als_neven_adres
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * Nummeraanduiding Class Doc Comment
  *
  * @category Class
  * @description Een Nummeraanduiding is een door het bevoegde gemeentelijke orgaan als zodanig toegekende aanduiding van een verblijfsobject, een standplaats of een ligplaats.
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,20 +57,20 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'identificatie' => '\BAG\BAG\NummeraanduidingIdentificatie',
+        'identificatie' => '\BAGClient\BAGClient\NummeraanduidingIdentificatie',
 'domein' => 'string',
 'huisnummer' => 'int',
 'huisletter' => 'string',
 'huisnummertoevoeging' => 'string',
 'postcode' => 'string',
-'type_adresseerbaar_object' => '\BAG\BAG\TypeAdresseerbaarObject',
-'status' => '\BAG\BAG\StatusNaamgeving',
-'geconstateerd' => '\BAG\BAG\Indicatie',
+'type_adresseerbaar_object' => '\BAGClient\BAGClient\TypeAdresseerbaarObject',
+'status' => '\BAGClient\BAGClient\StatusNaamgeving',
+'geconstateerd' => '\BAGClient\BAGClient\Indicatie',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string',
-'voorkomen' => '\BAG\BAG\Voorkomen',
-'ligt_in' => '\BAG\BAG\WoonplaatsIdentificatie',
-'ligt_aan' => '\BAG\BAG\OpenbareRuimteIdentificatie'    ];
+'voorkomen' => '\BAGClient\BAGClient\Voorkomen',
+'ligt_in' => '\BAGClient\BAGClient\WoonplaatsIdentificatie',
+'ligt_aan' => '\BAGClient\BAGClient\OpenbareRuimteIdentificatie'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -308,7 +308,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Gets identificatie
      *
-     * @return \BAG\BAG\NummeraanduidingIdentificatie
+     * @return \BAGClient\BAGClient\NummeraanduidingIdentificatie
      */
     public function getIdentificatie()
     {
@@ -318,7 +318,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Sets identificatie
      *
-     * @param \BAG\BAG\NummeraanduidingIdentificatie $identificatie identificatie
+     * @param \BAGClient\BAGClient\NummeraanduidingIdentificatie $identificatie identificatie
      *
      * @return $this
      */
@@ -452,7 +452,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Gets type_adresseerbaar_object
      *
-     * @return \BAG\BAG\TypeAdresseerbaarObject
+     * @return \BAGClient\BAGClient\TypeAdresseerbaarObject
      */
     public function getTypeAdresseerbaarObject()
     {
@@ -462,7 +462,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Sets type_adresseerbaar_object
      *
-     * @param \BAG\BAG\TypeAdresseerbaarObject $type_adresseerbaar_object type_adresseerbaar_object
+     * @param \BAGClient\BAGClient\TypeAdresseerbaarObject $type_adresseerbaar_object type_adresseerbaar_object
      *
      * @return $this
      */
@@ -476,7 +476,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \BAG\BAG\StatusNaamgeving
+     * @return \BAGClient\BAGClient\StatusNaamgeving
      */
     public function getStatus()
     {
@@ -486,7 +486,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \BAG\BAG\StatusNaamgeving $status status
+     * @param \BAGClient\BAGClient\StatusNaamgeving $status status
      *
      * @return $this
      */
@@ -500,7 +500,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Gets geconstateerd
      *
-     * @return \BAG\BAG\Indicatie
+     * @return \BAGClient\BAGClient\Indicatie
      */
     public function getGeconstateerd()
     {
@@ -510,7 +510,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Sets geconstateerd
      *
-     * @param \BAG\BAG\Indicatie $geconstateerd geconstateerd
+     * @param \BAGClient\BAGClient\Indicatie $geconstateerd geconstateerd
      *
      * @return $this
      */
@@ -572,7 +572,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Gets voorkomen
      *
-     * @return \BAG\BAG\Voorkomen
+     * @return \BAGClient\BAGClient\Voorkomen
      */
     public function getVoorkomen()
     {
@@ -582,7 +582,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Sets voorkomen
      *
-     * @param \BAG\BAG\Voorkomen $voorkomen voorkomen
+     * @param \BAGClient\BAGClient\Voorkomen $voorkomen voorkomen
      *
      * @return $this
      */
@@ -596,7 +596,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Gets ligt_in
      *
-     * @return \BAG\BAG\WoonplaatsIdentificatie
+     * @return \BAGClient\BAGClient\WoonplaatsIdentificatie
      */
     public function getLigtIn()
     {
@@ -606,7 +606,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Sets ligt_in
      *
-     * @param \BAG\BAG\WoonplaatsIdentificatie $ligt_in ligt_in
+     * @param \BAGClient\BAGClient\WoonplaatsIdentificatie $ligt_in ligt_in
      *
      * @return $this
      */
@@ -620,7 +620,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Gets ligt_aan
      *
-     * @return \BAG\BAG\OpenbareRuimteIdentificatie
+     * @return \BAGClient\BAGClient\OpenbareRuimteIdentificatie
      */
     public function getLigtAan()
     {
@@ -630,7 +630,7 @@ class Nummeraanduiding implements ModelInterface, ArrayAccess
     /**
      * Sets ligt_aan
      *
-     * @param \BAG\BAG\OpenbareRuimteIdentificatie $ligt_aan ligt_aan
+     * @param \BAGClient\BAGClient\OpenbareRuimteIdentificatie $ligt_aan ligt_aan
      *
      * @return $this
      */

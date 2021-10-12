@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * VerblijfsobjectEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,9 +56,9 @@ class VerblijfsobjectEmbedded implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'heeft_als_hoofd_adres' => '\BAG\BAG\NummeraanduidingIOHal',
-'heeft_als_neven_adres' => '\BAG\BAG\NummeraanduidingIOHal[]',
-'maakt_deel_uit_van' => '\BAG\BAG\PandIOHal[]'    ];
+        'heeft_als_hoofd_adres' => '\BAGClient\BAGClient\NummeraanduidingIOHal',
+'heeft_als_neven_adres' => '\BAGClient\BAGClient\NummeraanduidingIOHal[]',
+'maakt_deel_uit_van' => '\BAGClient\BAGClient\PandIOHal[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -211,7 +211,7 @@ class VerblijfsobjectEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets heeft_als_hoofd_adres
      *
-     * @return \BAG\BAG\NummeraanduidingIOHal
+     * @return \BAGClient\BAGClient\NummeraanduidingIOHal
      */
     public function getHeeftAlsHoofdAdres()
     {
@@ -221,7 +221,7 @@ class VerblijfsobjectEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets heeft_als_hoofd_adres
      *
-     * @param \BAG\BAG\NummeraanduidingIOHal $heeft_als_hoofd_adres heeft_als_hoofd_adres
+     * @param \BAGClient\BAGClient\NummeraanduidingIOHal $heeft_als_hoofd_adres heeft_als_hoofd_adres
      *
      * @return $this
      */
@@ -235,7 +235,7 @@ class VerblijfsobjectEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets heeft_als_neven_adres
      *
-     * @return \BAG\BAG\NummeraanduidingIOHal[]
+     * @return \BAGClient\BAGClient\NummeraanduidingIOHal[]
      */
     public function getHeeftAlsNevenAdres()
     {
@@ -245,7 +245,7 @@ class VerblijfsobjectEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets heeft_als_neven_adres
      *
-     * @param \BAG\BAG\NummeraanduidingIOHal[] $heeft_als_neven_adres heeft_als_neven_adres
+     * @param \BAGClient\BAGClient\NummeraanduidingIOHal[] $heeft_als_neven_adres heeft_als_neven_adres
      *
      * @return $this
      */
@@ -259,7 +259,7 @@ class VerblijfsobjectEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets maakt_deel_uit_van
      *
-     * @return \BAG\BAG\PandIOHal[]
+     * @return \BAGClient\BAGClient\PandIOHal[]
      */
     public function getMaaktDeelUitVan()
     {
@@ -269,7 +269,7 @@ class VerblijfsobjectEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets maakt_deel_uit_van
      *
-     * @param \BAG\BAG\PandIOHal[] $maakt_deel_uit_van maakt_deel_uit_van
+     * @param \BAGClient\BAGClient\PandIOHal[] $maakt_deel_uit_van maakt_deel_uit_van
      *
      * @return $this
      */

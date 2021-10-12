@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * Error Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,7 +62,7 @@ class Error implements ModelInterface, ArrayAccess
 'detail' => 'string',
 'instance' => 'string',
 'code' => 'string',
-'invalid_params' => '\BAG\BAG\InvalidParams[]'    ];
+'invalid_params' => '\BAGClient\BAGClient\InvalidParams[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -394,7 +394,7 @@ class Error implements ModelInterface, ArrayAccess
     /**
      * Gets invalid_params
      *
-     * @return \BAG\BAG\InvalidParams[]
+     * @return \BAGClient\BAGClient\InvalidParams[]
      */
     public function getInvalidParams()
     {
@@ -404,7 +404,7 @@ class Error implements ModelInterface, ArrayAccess
     /**
      * Sets invalid_params
      *
-     * @param \BAG\BAG\InvalidParams[] $invalid_params invalid_params
+     * @param \BAGClient\BAGClient\InvalidParams[] $invalid_params invalid_params
      *
      * @return $this
      */

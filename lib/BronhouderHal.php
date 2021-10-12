@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * BronhouderHal Class Doc Comment
  *
  * @category Class
  * @description Bronhouder aangevuld met HAL link.
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +57,8 @@ class BronhouderHal implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'bronhouder' => '\BAG\BAG\Bronhouder',
-'_links' => '\BAG\BAG\BronhouderLinks'    ];
+        'bronhouder' => '\BAGClient\BAGClient\Bronhouder',
+'_links' => '\BAGClient\BAGClient\BronhouderLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -209,7 +209,7 @@ class BronhouderHal implements ModelInterface, ArrayAccess
     /**
      * Gets bronhouder
      *
-     * @return \BAG\BAG\Bronhouder
+     * @return \BAGClient\BAGClient\Bronhouder
      */
     public function getBronhouder()
     {
@@ -219,7 +219,7 @@ class BronhouderHal implements ModelInterface, ArrayAccess
     /**
      * Sets bronhouder
      *
-     * @param \BAG\BAG\Bronhouder $bronhouder bronhouder
+     * @param \BAGClient\BAGClient\Bronhouder $bronhouder bronhouder
      *
      * @return $this
      */
@@ -233,7 +233,7 @@ class BronhouderHal implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAG\BAG\BronhouderLinks
+     * @return \BAGClient\BAGClient\BronhouderLinks
      */
     public function getLinks()
     {
@@ -243,7 +243,7 @@ class BronhouderHal implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAG\BAG\BronhouderLinks $_links _links
+     * @param \BAGClient\BAGClient\BronhouderLinks $_links _links
      *
      * @return $this
      */

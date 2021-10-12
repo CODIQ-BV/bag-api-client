@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
-use \BAG\ObjectSerializer;
+namespace BAGClient\BAGClient;
+use \BAGClient\ObjectSerializer;
 
 /**
  * Verblijfsobject Class Doc Comment
  *
  * @category Class
  * @description Een Verblijfsobject is de kleinste binnen een of meer panden gelegen en voor woon-, bedrijfsmatige, of recreatieve doeleinden geschikte eenheid van gebruik die ontsloten wordt via een eigen afsluitbare toegang vanaf de openbare weg, een erf of een gedeelde verkeersruimte, onderwerp kan zijn van goederenrechtelijke rechtshandelingen en in functioneel opzicht zelfstandig is.
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -55,17 +55,17 @@ class Verblijfsobject extends AdresseerbaarObject
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'identificatie' => '\BAG\BAG\VerblijfsobjectIdentificatie',
+        'identificatie' => '\BAGClient\BAGClient\VerblijfsobjectIdentificatie',
 'domein' => 'string',
-'geometrie' => '\BAG\BAG\PuntOfVlak',
-'gebruiksdoelen' => '\BAG\BAG\Gebruiksdoel[]',
+'geometrie' => '\BAGClient\BAGClient\PuntOfVlak',
+'gebruiksdoelen' => '\BAGClient\BAGClient\Gebruiksdoel[]',
 'oppervlakte' => 'int',
-'status' => '\BAG\BAG\StatusVerblijfsobject',
-'geconstateerd' => '\BAG\BAG\Indicatie',
+'status' => '\BAGClient\BAGClient\StatusVerblijfsobject',
+'geconstateerd' => '\BAGClient\BAGClient\Indicatie',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string',
-'voorkomen' => '\BAG\BAG\Voorkomen',
-'maakt_deel_uit_van' => '\BAG\BAG\PandIdentificatie[]'    ];
+'voorkomen' => '\BAGClient\BAGClient\Voorkomen',
+'maakt_deel_uit_van' => '\BAGClient\BAGClient\PandIdentificatie[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -287,7 +287,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets identificatie
      *
-     * @return \BAG\BAG\VerblijfsobjectIdentificatie
+     * @return \BAGClient\BAGClient\VerblijfsobjectIdentificatie
      */
     public function getIdentificatie()
     {
@@ -297,7 +297,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets identificatie
      *
-     * @param \BAG\BAG\VerblijfsobjectIdentificatie $identificatie identificatie
+     * @param \BAGClient\BAGClient\VerblijfsobjectIdentificatie $identificatie identificatie
      *
      * @return $this
      */
@@ -335,7 +335,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets geometrie
      *
-     * @return \BAG\BAG\PuntOfVlak
+     * @return \BAGClient\BAGClient\PuntOfVlak
      */
     public function getGeometrie()
     {
@@ -345,7 +345,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets geometrie
      *
-     * @param \BAG\BAG\PuntOfVlak $geometrie geometrie
+     * @param \BAGClient\BAGClient\PuntOfVlak $geometrie geometrie
      *
      * @return $this
      */
@@ -359,7 +359,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets gebruiksdoelen
      *
-     * @return \BAG\BAG\Gebruiksdoel[]
+     * @return \BAGClient\BAGClient\Gebruiksdoel[]
      */
     public function getGebruiksdoelen()
     {
@@ -369,7 +369,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets gebruiksdoelen
      *
-     * @param \BAG\BAG\Gebruiksdoel[] $gebruiksdoelen gebruiksdoelen
+     * @param \BAGClient\BAGClient\Gebruiksdoel[] $gebruiksdoelen gebruiksdoelen
      *
      * @return $this
      */
@@ -407,7 +407,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets status
      *
-     * @return \BAG\BAG\StatusVerblijfsobject
+     * @return \BAGClient\BAGClient\StatusVerblijfsobject
      */
     public function getStatus()
     {
@@ -417,7 +417,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets status
      *
-     * @param \BAG\BAG\StatusVerblijfsobject $status status
+     * @param \BAGClient\BAGClient\StatusVerblijfsobject $status status
      *
      * @return $this
      */
@@ -431,7 +431,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets geconstateerd
      *
-     * @return \BAG\BAG\Indicatie
+     * @return \BAGClient\BAGClient\Indicatie
      */
     public function getGeconstateerd()
     {
@@ -441,7 +441,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets geconstateerd
      *
-     * @param \BAG\BAG\Indicatie $geconstateerd geconstateerd
+     * @param \BAGClient\BAGClient\Indicatie $geconstateerd geconstateerd
      *
      * @return $this
      */
@@ -503,7 +503,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets voorkomen
      *
-     * @return \BAG\BAG\Voorkomen
+     * @return \BAGClient\BAGClient\Voorkomen
      */
     public function getVoorkomen()
     {
@@ -513,7 +513,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets voorkomen
      *
-     * @param \BAG\BAG\Voorkomen $voorkomen voorkomen
+     * @param \BAGClient\BAGClient\Voorkomen $voorkomen voorkomen
      *
      * @return $this
      */
@@ -527,7 +527,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Gets maakt_deel_uit_van
      *
-     * @return \BAG\BAG\PandIdentificatie[]
+     * @return \BAGClient\BAGClient\PandIdentificatie[]
      */
     public function getMaaktDeelUitVan()
     {
@@ -537,7 +537,7 @@ class Verblijfsobject extends AdresseerbaarObject
     /**
      * Sets maakt_deel_uit_van
      *
-     * @param \BAG\BAG\PandIdentificatie[] $maakt_deel_uit_van maakt_deel_uit_van
+     * @param \BAGClient\BAGClient\PandIdentificatie[] $maakt_deel_uit_van maakt_deel_uit_van
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * NummeraanduidingIOHal Class Doc Comment
  *
  * @category Class
  * @description Nummeraanduiding, aangevuld met een limitatieve opsomming van alle kenmerken van dit object die in onderzoek zijn(als metadata). Bij een normale vraag wordt aangegeven welke kenmerken er op dit moment in onderzoek zijn. Bij een tijdreisvraag wordt aangegeven welke gegevens er ooit in onderzoek zijn geweest. Bij een levenscyclus vraag wordt aangegeven welke gegevens er ooit in onderzoek zijn geweest.
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class NummeraanduidingIOHal implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'nummeraanduiding' => '\BAG\BAG\Nummeraanduiding',
-'inonderzoek' => '\BAG\BAG\KenmerkNummeraanduidingInOnderzoek[]',
-'_embedded' => '\BAG\BAG\NummeraanduidingEmbedded',
-'_links' => '\BAG\BAG\NummeraanduidingLinks'    ];
+        'nummeraanduiding' => '\BAGClient\BAGClient\Nummeraanduiding',
+'inonderzoek' => '\BAGClient\BAGClient\KenmerkNummeraanduidingInOnderzoek[]',
+'_embedded' => '\BAGClient\BAGClient\NummeraanduidingEmbedded',
+'_links' => '\BAGClient\BAGClient\NummeraanduidingLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -221,7 +221,7 @@ class NummeraanduidingIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets nummeraanduiding
      *
-     * @return \BAG\BAG\Nummeraanduiding
+     * @return \BAGClient\BAGClient\Nummeraanduiding
      */
     public function getNummeraanduiding()
     {
@@ -231,7 +231,7 @@ class NummeraanduidingIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets nummeraanduiding
      *
-     * @param \BAG\BAG\Nummeraanduiding $nummeraanduiding nummeraanduiding
+     * @param \BAGClient\BAGClient\Nummeraanduiding $nummeraanduiding nummeraanduiding
      *
      * @return $this
      */
@@ -245,7 +245,7 @@ class NummeraanduidingIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets inonderzoek
      *
-     * @return \BAG\BAG\KenmerkNummeraanduidingInOnderzoek[]
+     * @return \BAGClient\BAGClient\KenmerkNummeraanduidingInOnderzoek[]
      */
     public function getInonderzoek()
     {
@@ -255,7 +255,7 @@ class NummeraanduidingIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets inonderzoek
      *
-     * @param \BAG\BAG\KenmerkNummeraanduidingInOnderzoek[] $inonderzoek inonderzoek
+     * @param \BAGClient\BAGClient\KenmerkNummeraanduidingInOnderzoek[] $inonderzoek inonderzoek
      *
      * @return $this
      */
@@ -269,7 +269,7 @@ class NummeraanduidingIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _embedded
      *
-     * @return \BAG\BAG\NummeraanduidingEmbedded
+     * @return \BAGClient\BAGClient\NummeraanduidingEmbedded
      */
     public function getEmbedded()
     {
@@ -279,7 +279,7 @@ class NummeraanduidingIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _embedded
      *
-     * @param \BAG\BAG\NummeraanduidingEmbedded $_embedded _embedded
+     * @param \BAGClient\BAGClient\NummeraanduidingEmbedded $_embedded _embedded
      *
      * @return $this
      */
@@ -293,7 +293,7 @@ class NummeraanduidingIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAG\BAG\NummeraanduidingLinks
+     * @return \BAGClient\BAGClient\NummeraanduidingLinks
      */
     public function getLinks()
     {
@@ -303,7 +303,7 @@ class NummeraanduidingIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAG\BAG\NummeraanduidingLinks $_links _links
+     * @param \BAGClient\BAGClient\NummeraanduidingLinks $_links _links
      *
      * @return $this
      */

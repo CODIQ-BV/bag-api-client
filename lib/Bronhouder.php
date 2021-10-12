@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * Bronhouder Class Doc Comment
  *
  * @category Class
  * @description Een bronhouder is een gemeente of samenwerkingsverband van gemeenten en heeft een code en naam net als een gemeente.
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class Bronhouder implements ModelInterface, ArrayAccess
 'naam' => 'string',
 'begin_geldigheid' => '\DateTime',
 'eind_geldigheid' => '\DateTime',
-'provincie' => '\BAG\BAG\Provincie'    ];
+'provincie' => '\BAGClient\BAGClient\Provincie'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -326,7 +326,7 @@ class Bronhouder implements ModelInterface, ArrayAccess
     /**
      * Gets provincie
      *
-     * @return \BAG\BAG\Provincie
+     * @return \BAGClient\BAGClient\Provincie
      */
     public function getProvincie()
     {
@@ -336,7 +336,7 @@ class Bronhouder implements ModelInterface, ArrayAccess
     /**
      * Sets provincie
      *
-     * @param \BAG\BAG\Provincie $provincie provincie
+     * @param \BAGClient\BAGClient\Provincie $provincie provincie
      *
      * @return $this
      */

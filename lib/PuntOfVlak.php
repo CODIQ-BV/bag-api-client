@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * PuntOfVlak Class Doc Comment
  *
  * @category Class
  * @description Een samengesteld geometriegegevenstype waarbij wordt afgedwongen dat voor de geometrie een keuze gemaakt moet worden tussen een punt of een vlak.
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +57,8 @@ class PuntOfVlak implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'punt' => '\BAG\BAG\Point',
-'vlak' => '\BAG\BAG\Surface'    ];
+        'punt' => '\BAGClient\BAGClient\Point',
+'vlak' => '\BAGClient\BAGClient\Surface'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -206,7 +206,7 @@ class PuntOfVlak implements ModelInterface, ArrayAccess
     /**
      * Gets punt
      *
-     * @return \BAG\BAG\Point
+     * @return \BAGClient\BAGClient\Point
      */
     public function getPunt()
     {
@@ -216,7 +216,7 @@ class PuntOfVlak implements ModelInterface, ArrayAccess
     /**
      * Sets punt
      *
-     * @param \BAG\BAG\Point $punt punt
+     * @param \BAGClient\BAGClient\Point $punt punt
      *
      * @return $this
      */
@@ -230,7 +230,7 @@ class PuntOfVlak implements ModelInterface, ArrayAccess
     /**
      * Gets vlak
      *
-     * @return \BAG\BAG\Surface
+     * @return \BAGClient\BAGClient\Surface
      */
     public function getVlak()
     {
@@ -240,7 +240,7 @@ class PuntOfVlak implements ModelInterface, ArrayAccess
     /**
      * Sets vlak
      *
-     * @param \BAG\BAG\Surface $vlak vlak
+     * @param \BAGClient\BAGClient\Surface $vlak vlak
      *
      * @return $this
      */

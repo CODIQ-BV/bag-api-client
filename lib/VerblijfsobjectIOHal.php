@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * VerblijfsobjectIOHal Class Doc Comment
  *
  * @category Class
  * @description Een verzameling van een verblijfsobject en een lijst van alle bijbehorende inonderzoek informatie.
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class VerblijfsobjectIOHal implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'verblijfsobject' => '\BAG\BAG\Verblijfsobject',
-'inonderzoek' => '\BAG\BAG\KenmerkVerblijfsobjectInOnderzoek[]',
-'_embedded' => '\BAG\BAG\VerblijfsobjectEmbedded',
-'_links' => '\BAG\BAG\VerblijfsobjectLinks'    ];
+        'verblijfsobject' => '\BAGClient\BAGClient\Verblijfsobject',
+'inonderzoek' => '\BAGClient\BAGClient\KenmerkVerblijfsobjectInOnderzoek[]',
+'_embedded' => '\BAGClient\BAGClient\VerblijfsobjectEmbedded',
+'_links' => '\BAGClient\BAGClient\VerblijfsobjectLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -221,7 +221,7 @@ class VerblijfsobjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets verblijfsobject
      *
-     * @return \BAG\BAG\Verblijfsobject
+     * @return \BAGClient\BAGClient\Verblijfsobject
      */
     public function getVerblijfsobject()
     {
@@ -231,7 +231,7 @@ class VerblijfsobjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets verblijfsobject
      *
-     * @param \BAG\BAG\Verblijfsobject $verblijfsobject verblijfsobject
+     * @param \BAGClient\BAGClient\Verblijfsobject $verblijfsobject verblijfsobject
      *
      * @return $this
      */
@@ -245,7 +245,7 @@ class VerblijfsobjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets inonderzoek
      *
-     * @return \BAG\BAG\KenmerkVerblijfsobjectInOnderzoek[]
+     * @return \BAGClient\BAGClient\KenmerkVerblijfsobjectInOnderzoek[]
      */
     public function getInonderzoek()
     {
@@ -255,7 +255,7 @@ class VerblijfsobjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets inonderzoek
      *
-     * @param \BAG\BAG\KenmerkVerblijfsobjectInOnderzoek[] $inonderzoek inonderzoek
+     * @param \BAGClient\BAGClient\KenmerkVerblijfsobjectInOnderzoek[] $inonderzoek inonderzoek
      *
      * @return $this
      */
@@ -269,7 +269,7 @@ class VerblijfsobjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _embedded
      *
-     * @return \BAG\BAG\VerblijfsobjectEmbedded
+     * @return \BAGClient\BAGClient\VerblijfsobjectEmbedded
      */
     public function getEmbedded()
     {
@@ -279,7 +279,7 @@ class VerblijfsobjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _embedded
      *
-     * @param \BAG\BAG\VerblijfsobjectEmbedded $_embedded _embedded
+     * @param \BAGClient\BAGClient\VerblijfsobjectEmbedded $_embedded _embedded
      *
      * @return $this
      */
@@ -293,7 +293,7 @@ class VerblijfsobjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAG\BAG\VerblijfsobjectLinks
+     * @return \BAGClient\BAGClient\VerblijfsobjectLinks
      */
     public function getLinks()
     {
@@ -303,7 +303,7 @@ class VerblijfsobjectIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAG\BAG\VerblijfsobjectLinks $_links _links
+     * @param \BAGClient\BAGClient\VerblijfsobjectLinks $_links _links
      *
      * @return $this
      */

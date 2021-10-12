@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
-use \BAG\ObjectSerializer;
+namespace BAGClient\BAGClient;
+use \BAGClient\ObjectSerializer;
 
 /**
  * AdresUitgebreid Class Doc Comment
  *
  * @category Class
  * @description Een adres is een verzameling van informatie uit adresseerbare objecten, gerelateerde nummeraanduidingen (hoofd- en nevenadres(sen)), aan de nummeraanduiding gerelateerde openbare ruimte en (indien aanwezig) de aan de nummeraanduiding gerelateerde woonplaats en indien deze niet beschikbaar is, de aan de openbare ruimte gerelateerde woonplaats. Waarbij alleen &#x27;huidige&#x27; object voorkomen informatie wordt geretourneerd, dit houdt in: het actuele object voorkomen mits deze geen eind status heeft. Adres uitgebreid bevat een adres uitgebreid met adresseerbaar object informatie.
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -55,14 +55,14 @@ class AdresUitgebreid extends Adres
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'type_adresseerbaar_object' => '\BAG\BAG\TypeAdresseerbaarObject',
-'adresseerbaar_object_geometrie' => '\BAG\BAG\PuntOfVlak',
+        'type_adresseerbaar_object' => '\BAGClient\BAGClient\TypeAdresseerbaarObject',
+'adresseerbaar_object_geometrie' => '\BAGClient\BAGClient\PuntOfVlak',
 'adresseerbaar_object_status' => 'string',
-'gebruiksdoelen' => '\BAG\BAG\Gebruiksdoel[]',
+'gebruiksdoelen' => '\BAGClient\BAGClient\Gebruiksdoel[]',
 'oppervlakte' => 'int',
 'oorspronkelijk_bouwjaar' => 'string[]',
-'geconstateerd' => '\BAG\BAG\AdresUitgebreidGeconstateerd',
-'inonderzoek' => '\BAG\BAG\AdresUitgebreidInOnderzoek'    ];
+'geconstateerd' => '\BAGClient\BAGClient\AdresUitgebreidGeconstateerd',
+'inonderzoek' => '\BAGClient\BAGClient\AdresUitgebreidInOnderzoek'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -236,7 +236,7 @@ class AdresUitgebreid extends Adres
     /**
      * Gets type_adresseerbaar_object
      *
-     * @return \BAG\BAG\TypeAdresseerbaarObject
+     * @return \BAGClient\BAGClient\TypeAdresseerbaarObject
      */
     public function getTypeAdresseerbaarObject()
     {
@@ -246,7 +246,7 @@ class AdresUitgebreid extends Adres
     /**
      * Sets type_adresseerbaar_object
      *
-     * @param \BAG\BAG\TypeAdresseerbaarObject $type_adresseerbaar_object type_adresseerbaar_object
+     * @param \BAGClient\BAGClient\TypeAdresseerbaarObject $type_adresseerbaar_object type_adresseerbaar_object
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class AdresUitgebreid extends Adres
     /**
      * Gets adresseerbaar_object_geometrie
      *
-     * @return \BAG\BAG\PuntOfVlak
+     * @return \BAGClient\BAGClient\PuntOfVlak
      */
     public function getAdresseerbaarObjectGeometrie()
     {
@@ -270,7 +270,7 @@ class AdresUitgebreid extends Adres
     /**
      * Sets adresseerbaar_object_geometrie
      *
-     * @param \BAG\BAG\PuntOfVlak $adresseerbaar_object_geometrie adresseerbaar_object_geometrie
+     * @param \BAGClient\BAGClient\PuntOfVlak $adresseerbaar_object_geometrie adresseerbaar_object_geometrie
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class AdresUitgebreid extends Adres
     /**
      * Gets gebruiksdoelen
      *
-     * @return \BAG\BAG\Gebruiksdoel[]
+     * @return \BAGClient\BAGClient\Gebruiksdoel[]
      */
     public function getGebruiksdoelen()
     {
@@ -318,7 +318,7 @@ class AdresUitgebreid extends Adres
     /**
      * Sets gebruiksdoelen
      *
-     * @param \BAG\BAG\Gebruiksdoel[] $gebruiksdoelen gebruiksdoelen
+     * @param \BAGClient\BAGClient\Gebruiksdoel[] $gebruiksdoelen gebruiksdoelen
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class AdresUitgebreid extends Adres
     /**
      * Gets geconstateerd
      *
-     * @return \BAG\BAG\AdresUitgebreidGeconstateerd
+     * @return \BAGClient\BAGClient\AdresUitgebreidGeconstateerd
      */
     public function getGeconstateerd()
     {
@@ -390,7 +390,7 @@ class AdresUitgebreid extends Adres
     /**
      * Sets geconstateerd
      *
-     * @param \BAG\BAG\AdresUitgebreidGeconstateerd $geconstateerd geconstateerd
+     * @param \BAGClient\BAGClient\AdresUitgebreidGeconstateerd $geconstateerd geconstateerd
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class AdresUitgebreid extends Adres
     /**
      * Gets inonderzoek
      *
-     * @return \BAG\BAG\AdresUitgebreidInOnderzoek
+     * @return \BAGClient\BAGClient\AdresUitgebreidInOnderzoek
      */
     public function getInonderzoek()
     {
@@ -414,7 +414,7 @@ class AdresUitgebreid extends Adres
     /**
      * Sets inonderzoek
      *
-     * @param \BAG\BAG\AdresUitgebreidInOnderzoek $inonderzoek inonderzoek
+     * @param \BAGClient\BAGClient\AdresUitgebreidInOnderzoek $inonderzoek inonderzoek
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * KenmerkNummeraanduidingInOnderzoek Class Doc Comment
  *
  * @category Class
  * @description Limitatieve opsomming van alle kenmerken van dit object die in onderzoek zijn op dit moment, of van alle kenmerken die ooit in onderzoek zijn geweest als er een tijdreisvraag is gesteld of een vraag naar de levenscyclus.
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class KenmerkNummeraanduidingInOnderzoek implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'kenmerk' => '\BAG\BAG\InOnderzoekNummeraanduiding',
-'identificatie_van_nummeraanduiding' => '\BAG\BAG\NummeraanduidingIdentificatie',
-'in_onderzoek' => '\BAG\BAG\Indicatie',
-'historie' => '\BAG\BAG\HistorieInOnderzoek',
+        'kenmerk' => '\BAGClient\BAGClient\InOnderzoekNummeraanduiding',
+'identificatie_van_nummeraanduiding' => '\BAGClient\BAGClient\NummeraanduidingIdentificatie',
+'in_onderzoek' => '\BAGClient\BAGClient\Indicatie',
+'historie' => '\BAGClient\BAGClient\HistorieInOnderzoek',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string'    ];
 
@@ -242,7 +242,7 @@ class KenmerkNummeraanduidingInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets kenmerk
      *
-     * @return \BAG\BAG\InOnderzoekNummeraanduiding
+     * @return \BAGClient\BAGClient\InOnderzoekNummeraanduiding
      */
     public function getKenmerk()
     {
@@ -252,7 +252,7 @@ class KenmerkNummeraanduidingInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets kenmerk
      *
-     * @param \BAG\BAG\InOnderzoekNummeraanduiding $kenmerk kenmerk
+     * @param \BAGClient\BAGClient\InOnderzoekNummeraanduiding $kenmerk kenmerk
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class KenmerkNummeraanduidingInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets identificatie_van_nummeraanduiding
      *
-     * @return \BAG\BAG\NummeraanduidingIdentificatie
+     * @return \BAGClient\BAGClient\NummeraanduidingIdentificatie
      */
     public function getIdentificatieVanNummeraanduiding()
     {
@@ -276,7 +276,7 @@ class KenmerkNummeraanduidingInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets identificatie_van_nummeraanduiding
      *
-     * @param \BAG\BAG\NummeraanduidingIdentificatie $identificatie_van_nummeraanduiding identificatie_van_nummeraanduiding
+     * @param \BAGClient\BAGClient\NummeraanduidingIdentificatie $identificatie_van_nummeraanduiding identificatie_van_nummeraanduiding
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class KenmerkNummeraanduidingInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets in_onderzoek
      *
-     * @return \BAG\BAG\Indicatie
+     * @return \BAGClient\BAGClient\Indicatie
      */
     public function getInOnderzoek()
     {
@@ -300,7 +300,7 @@ class KenmerkNummeraanduidingInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets in_onderzoek
      *
-     * @param \BAG\BAG\Indicatie $in_onderzoek in_onderzoek
+     * @param \BAGClient\BAGClient\Indicatie $in_onderzoek in_onderzoek
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class KenmerkNummeraanduidingInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Gets historie
      *
-     * @return \BAG\BAG\HistorieInOnderzoek
+     * @return \BAGClient\BAGClient\HistorieInOnderzoek
      */
     public function getHistorie()
     {
@@ -324,7 +324,7 @@ class KenmerkNummeraanduidingInOnderzoek implements ModelInterface, ArrayAccess
     /**
      * Sets historie
      *
-     * @param \BAG\BAG\HistorieInOnderzoek $historie historie
+     * @param \BAGClient\BAGClient\HistorieInOnderzoek $historie historie
      *
      * @return $this
      */

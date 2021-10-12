@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * WoonplaatsIOHal Class Doc Comment
  *
  * @category Class
  * @description Woonplaats, aangevuld met een limitatieve opsomming van alle kenmerken van dit object die in onderzoek zijn(als metadata). Bij een normale vraag wordt aangegeven welke kenmerken er op dit moment in onderzoek zijn. Bij een tijdreisvraag wordt aangegeven welke gegevens er ooit in onderzoek zijn geweest. Bij een levenscyclus vraag wordt aangegeven welke gegevens er ooit in onderzoek zijn geweest.
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,10 +57,10 @@ class WoonplaatsIOHal implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'woonplaats' => '\BAG\BAG\Woonplaats',
-'inonderzoek' => '\BAG\BAG\KenmerkWoonplaatsInOnderzoek[]',
-'_embedded' => '\BAG\BAG\WoonplaatsEmbedded',
-'_links' => '\BAG\BAG\WoonplaatsLinks'    ];
+        'woonplaats' => '\BAGClient\BAGClient\Woonplaats',
+'inonderzoek' => '\BAGClient\BAGClient\KenmerkWoonplaatsInOnderzoek[]',
+'_embedded' => '\BAGClient\BAGClient\WoonplaatsEmbedded',
+'_links' => '\BAGClient\BAGClient\WoonplaatsLinks'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -221,7 +221,7 @@ class WoonplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets woonplaats
      *
-     * @return \BAG\BAG\Woonplaats
+     * @return \BAGClient\BAGClient\Woonplaats
      */
     public function getWoonplaats()
     {
@@ -231,7 +231,7 @@ class WoonplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets woonplaats
      *
-     * @param \BAG\BAG\Woonplaats $woonplaats woonplaats
+     * @param \BAGClient\BAGClient\Woonplaats $woonplaats woonplaats
      *
      * @return $this
      */
@@ -245,7 +245,7 @@ class WoonplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets inonderzoek
      *
-     * @return \BAG\BAG\KenmerkWoonplaatsInOnderzoek[]
+     * @return \BAGClient\BAGClient\KenmerkWoonplaatsInOnderzoek[]
      */
     public function getInonderzoek()
     {
@@ -255,7 +255,7 @@ class WoonplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets inonderzoek
      *
-     * @param \BAG\BAG\KenmerkWoonplaatsInOnderzoek[] $inonderzoek inonderzoek
+     * @param \BAGClient\BAGClient\KenmerkWoonplaatsInOnderzoek[] $inonderzoek inonderzoek
      *
      * @return $this
      */
@@ -269,7 +269,7 @@ class WoonplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _embedded
      *
-     * @return \BAG\BAG\WoonplaatsEmbedded
+     * @return \BAGClient\BAGClient\WoonplaatsEmbedded
      */
     public function getEmbedded()
     {
@@ -279,7 +279,7 @@ class WoonplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _embedded
      *
-     * @param \BAG\BAG\WoonplaatsEmbedded $_embedded _embedded
+     * @param \BAGClient\BAGClient\WoonplaatsEmbedded $_embedded _embedded
      *
      * @return $this
      */
@@ -293,7 +293,7 @@ class WoonplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \BAG\BAG\WoonplaatsLinks
+     * @return \BAGClient\BAGClient\WoonplaatsLinks
      */
     public function getLinks()
     {
@@ -303,7 +303,7 @@ class WoonplaatsIOHal implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \BAG\BAG\WoonplaatsLinks $_links _links
+     * @param \BAGClient\BAGClient\WoonplaatsLinks $_links _links
      *
      * @return $this
      */

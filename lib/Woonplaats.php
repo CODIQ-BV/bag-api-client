@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * Woonplaats Class Doc Comment
  *
  * @category Class
  * @description Een Woonplaats is een door het bevoegde gemeentelijke orgaan als zodanig aangewezen en van een naam voorzien gedeelte van het grondgebied van de gemeente.
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,14 +57,14 @@ class Woonplaats implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'identificatie' => '\BAG\BAG\WoonplaatsIdentificatie',
+        'identificatie' => '\BAGClient\BAGClient\WoonplaatsIdentificatie',
 'domein' => 'string',
 'naam' => 'string',
-'status' => '\BAG\BAG\StatusWoonplaats',
-'geconstateerd' => '\BAG\BAG\Indicatie',
+'status' => '\BAGClient\BAGClient\StatusWoonplaats',
+'geconstateerd' => '\BAGClient\BAGClient\Indicatie',
 'documentdatum' => '\DateTime',
 'documentnummer' => 'string',
-'voorkomen' => '\BAG\BAG\Voorkomen'    ];
+'voorkomen' => '\BAGClient\BAGClient\Voorkomen'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -266,7 +266,7 @@ class Woonplaats implements ModelInterface, ArrayAccess
     /**
      * Gets identificatie
      *
-     * @return \BAG\BAG\WoonplaatsIdentificatie
+     * @return \BAGClient\BAGClient\WoonplaatsIdentificatie
      */
     public function getIdentificatie()
     {
@@ -276,7 +276,7 @@ class Woonplaats implements ModelInterface, ArrayAccess
     /**
      * Sets identificatie
      *
-     * @param \BAG\BAG\WoonplaatsIdentificatie $identificatie identificatie
+     * @param \BAGClient\BAGClient\WoonplaatsIdentificatie $identificatie identificatie
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class Woonplaats implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \BAG\BAG\StatusWoonplaats
+     * @return \BAGClient\BAGClient\StatusWoonplaats
      */
     public function getStatus()
     {
@@ -348,7 +348,7 @@ class Woonplaats implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \BAG\BAG\StatusWoonplaats $status status
+     * @param \BAGClient\BAGClient\StatusWoonplaats $status status
      *
      * @return $this
      */
@@ -362,7 +362,7 @@ class Woonplaats implements ModelInterface, ArrayAccess
     /**
      * Gets geconstateerd
      *
-     * @return \BAG\BAG\Indicatie
+     * @return \BAGClient\BAGClient\Indicatie
      */
     public function getGeconstateerd()
     {
@@ -372,7 +372,7 @@ class Woonplaats implements ModelInterface, ArrayAccess
     /**
      * Sets geconstateerd
      *
-     * @param \BAG\BAG\Indicatie $geconstateerd geconstateerd
+     * @param \BAGClient\BAGClient\Indicatie $geconstateerd geconstateerd
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class Woonplaats implements ModelInterface, ArrayAccess
     /**
      * Gets voorkomen
      *
-     * @return \BAG\BAG\Voorkomen
+     * @return \BAGClient\BAGClient\Voorkomen
      */
     public function getVoorkomen()
     {
@@ -444,7 +444,7 @@ class Woonplaats implements ModelInterface, ArrayAccess
     /**
      * Sets voorkomen
      *
-     * @param \BAG\BAG\Voorkomen $voorkomen voorkomen
+     * @param \BAGClient\BAGClient\Voorkomen $voorkomen voorkomen
      *
      * @return $this
      */

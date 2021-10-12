@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
-use \BAG\ObjectSerializer;
+namespace BAGClient\BAGClient;
+use \BAGClient\ObjectSerializer;
 
 /**
  * AdresIO Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -54,8 +54,8 @@ class AdresIO extends Adres
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'geconstateerd' => '\BAG\BAG\Geconstateerd',
-'inonderzoek' => '\BAG\BAG\AdresInOnderzoek'    ];
+        'geconstateerd' => '\BAGClient\BAGClient\Geconstateerd',
+'inonderzoek' => '\BAGClient\BAGClient\AdresInOnderzoek'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class AdresIO extends Adres
     /**
      * Gets geconstateerd
      *
-     * @return \BAG\BAG\Geconstateerd
+     * @return \BAGClient\BAGClient\Geconstateerd
      */
     public function getGeconstateerd()
     {
@@ -209,7 +209,7 @@ class AdresIO extends Adres
     /**
      * Sets geconstateerd
      *
-     * @param \BAG\BAG\Geconstateerd $geconstateerd geconstateerd
+     * @param \BAGClient\BAGClient\Geconstateerd $geconstateerd geconstateerd
      *
      * @return $this
      */
@@ -223,7 +223,7 @@ class AdresIO extends Adres
     /**
      * Gets inonderzoek
      *
-     * @return \BAG\BAG\AdresInOnderzoek
+     * @return \BAGClient\BAGClient\AdresInOnderzoek
      */
     public function getInonderzoek()
     {
@@ -233,7 +233,7 @@ class AdresIO extends Adres
     /**
      * Sets inonderzoek
      *
-     * @param \BAG\BAG\AdresInOnderzoek $inonderzoek inonderzoek
+     * @param \BAGClient\BAGClient\AdresInOnderzoek $inonderzoek inonderzoek
      *
      * @return $this
      */

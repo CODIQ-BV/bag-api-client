@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * HalLink Class Doc Comment
  *
  * @category Class
  * @description Het Link Object zoals gespecificeerd in https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class HalLink implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'href' => '\BAG\BAG\Href',
+        'href' => '\BAGClient\BAGClient\Href',
 'templated' => 'bool',
 'title' => 'string'    ];
 
@@ -215,7 +215,7 @@ class HalLink implements ModelInterface, ArrayAccess
     /**
      * Gets href
      *
-     * @return \BAG\BAG\Href
+     * @return \BAGClient\BAGClient\Href
      */
     public function getHref()
     {
@@ -225,7 +225,7 @@ class HalLink implements ModelInterface, ArrayAccess
     /**
      * Sets href
      *
-     * @param \BAG\BAG\Href $href href
+     * @param \BAGClient\BAGClient\Href $href href
      *
      * @return $this
      */

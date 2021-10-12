@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * PandIOLvcHalCollectionEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class PandIOLvcHalCollectionEmbedded implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'voorkomens' => '\BAG\BAG\PandIOHal[]'    ];
+        'voorkomens' => '\BAGClient\BAGClient\PandIOHal[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class PandIOLvcHalCollectionEmbedded implements ModelInterface, ArrayAccess
     /**
      * Gets voorkomens
      *
-     * @return \BAG\BAG\PandIOHal[]
+     * @return \BAGClient\BAGClient\PandIOHal[]
      */
     public function getVoorkomens()
     {
@@ -209,7 +209,7 @@ class PandIOLvcHalCollectionEmbedded implements ModelInterface, ArrayAccess
     /**
      * Sets voorkomens
      *
-     * @param \BAG\BAG\PandIOHal[] $voorkomens voorkomens
+     * @param \BAGClient\BAGClient\PandIOHal[] $voorkomens voorkomens
      *
      * @return $this
      */

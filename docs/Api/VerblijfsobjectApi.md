@@ -1,4 +1,4 @@
-# BAG\VerblijfsobjectApi
+# BAGClient\VerblijfsobjectApi
 
 All URIs are relative to *https://api.bag.acceptatie.kadaster.nl/lvbag/individuelebevragingen/v2*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**zoekVerblijfsobjecten**](VerblijfsobjectApi.md#zoekverblijfsobjecten) | **GET** /verblijfsobjecten | bevragen van alle aan een pand gerelateerde verblijfsobjecten (met paginering).
 
 # **verblijfsobjectIdentificatie**
-> \BAG\BAG\VerblijfsobjectIOHal verblijfsobjectIdentificatie($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
+> \BAGClient\BAGClient\VerblijfsobjectIOHal verblijfsobjectIdentificatie($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
 
 bevragen 1 verblijfsobject met de identificatie van een verblijfsobject.
 
@@ -21,11 +21,11 @@ Bevragen/raadplegen van één voorkomen van een Verblijfsobject met de identific
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\BAG\VerblijfsobjectApi(
+$apiInstance = new BAGClient\BAG\VerblijfsobjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\BAG\VerblijfsobjectIOHal**](../Model/VerblijfsobjectIOHal.md)
+[**\BAGClient\BAGClient\VerblijfsobjectIOHal**](../Model/VerblijfsobjectIOHal.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **verblijfsobjectIdentificatieVoorkomen**
-> \BAG\BAG\VerblijfsobjectIOHal verblijfsobjectIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $accept_crs)
+> \BAGClient\BAGClient\VerblijfsobjectIOHal verblijfsobjectIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $accept_crs)
 
 bevragen voorkomen van een verblijfsobject, op basis van de identificatie van een verblijfsobject en de identificatie van een voorkomen
 
@@ -83,11 +83,11 @@ Bevragen/raadplegen van een voorkomen van een verblijfsobject, met de identifica
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\BAG\VerblijfsobjectApi(
+$apiInstance = new BAGClient\BAG\VerblijfsobjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -118,7 +118,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\BAG\VerblijfsobjectIOHal**](../Model/VerblijfsobjectIOHal.md)
+[**\BAGClient\BAGClient\VerblijfsobjectIOHal**](../Model/VerblijfsobjectIOHal.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **verblijfsobjectLvcIdentificatie**
-> \BAG\BAG\VerblijfsobjectIOLvcHalCollection verblijfsobjectLvcIdentificatie($identificatie, $gehele_lvc, $accept_crs)
+> \BAGClient\BAGClient\VerblijfsobjectIOLvcHalCollection verblijfsobjectLvcIdentificatie($identificatie, $gehele_lvc, $accept_crs)
 
 bevragen levenscyclus van een verblijfsobject met de identificatie van een verblijfsobject.
 
@@ -143,11 +143,11 @@ Bevragen/raadplegen van de levenscyclus van een Verblijfsobject met de identific
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\BAG\VerblijfsobjectApi(
+$apiInstance = new BAGClient\BAG\VerblijfsobjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -176,7 +176,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\BAG\VerblijfsobjectIOLvcHalCollection**](../Model/VerblijfsobjectIOLvcHalCollection.md)
+[**\BAGClient\BAGClient\VerblijfsobjectIOLvcHalCollection**](../Model/VerblijfsobjectIOLvcHalCollection.md)
 
 ### Authorization
 
@@ -190,7 +190,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **zoekVerblijfsobjecten**
-> \BAG\BAG\VerblijfsobjectIOHalCollection zoekVerblijfsobjecten($pand_identificatie, $huidig, $geldig_op, $beschikbaar_op, $page, $page_size, $accept_crs)
+> \BAGClient\BAGClient\VerblijfsobjectIOHalCollection zoekVerblijfsobjecten($pand_identificatie, $huidig, $geldig_op, $beschikbaar_op, $page, $page_size, $accept_crs)
 
 bevragen van alle aan een pand gerelateerde verblijfsobjecten (met paginering).
 
@@ -201,11 +201,11 @@ Bevragen/zoeken van alle aan een pand gerelateerde verblijfsobjecten, met een pa
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\BAG\VerblijfsobjectApi(
+$apiInstance = new BAGClient\BAG\VerblijfsobjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\BAG\VerblijfsobjectIOHalCollection**](../Model/VerblijfsobjectIOHalCollection.md)
+[**\BAGClient\BAGClient\VerblijfsobjectIOHalCollection**](../Model/VerblijfsobjectIOHalCollection.md)
 
 ### Authorization
 

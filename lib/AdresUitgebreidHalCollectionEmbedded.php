@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * AdresUitgebreidHalCollectionEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class AdresUitgebreidHalCollectionEmbedded implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adressen' => '\BAG\BAG\AdresUitgebreidHal[]'    ];
+        'adressen' => '\BAGClient\BAGClient\AdresUitgebreidHal[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class AdresUitgebreidHalCollectionEmbedded implements ModelInterface, ArrayAcces
     /**
      * Gets adressen
      *
-     * @return \BAG\BAG\AdresUitgebreidHal[]
+     * @return \BAGClient\BAGClient\AdresUitgebreidHal[]
      */
     public function getAdressen()
     {
@@ -209,7 +209,7 @@ class AdresUitgebreidHalCollectionEmbedded implements ModelInterface, ArrayAcces
     /**
      * Sets adressen
      *
-     * @param \BAG\BAG\AdresUitgebreidHal[] $adressen adressen
+     * @param \BAGClient\BAGClient\AdresUitgebreidHal[] $adressen adressen
      *
      * @return $this
      */

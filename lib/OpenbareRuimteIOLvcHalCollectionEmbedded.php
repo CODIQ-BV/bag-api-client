@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace BAG\BAG;
+namespace BAGClient\BAGClient;
 
 use \ArrayAccess;
-use \BAG\ObjectSerializer;
+use \BAGClient\ObjectSerializer;
 
 /**
  * OpenbareRuimteIOLvcHalCollectionEmbedded Class Doc Comment
  *
  * @category Class
- * @package  BAG
+ * @package  BAGClient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class OpenbareRuimteIOLvcHalCollectionEmbedded implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'voorkomens' => '\BAG\BAG\OpenbareRuimteIOHal[]'    ];
+        'voorkomens' => '\BAGClient\BAGClient\OpenbareRuimteIOHal[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class OpenbareRuimteIOLvcHalCollectionEmbedded implements ModelInterface, ArrayA
     /**
      * Gets voorkomens
      *
-     * @return \BAG\BAG\OpenbareRuimteIOHal[]
+     * @return \BAGClient\BAGClient\OpenbareRuimteIOHal[]
      */
     public function getVoorkomens()
     {
@@ -209,7 +209,7 @@ class OpenbareRuimteIOLvcHalCollectionEmbedded implements ModelInterface, ArrayA
     /**
      * Sets voorkomens
      *
-     * @param \BAG\BAG\OpenbareRuimteIOHal[] $voorkomens voorkomens
+     * @param \BAGClient\BAGClient\OpenbareRuimteIOHal[] $voorkomens voorkomens
      *
      * @return $this
      */

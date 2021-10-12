@@ -1,4 +1,4 @@
-# BAG\AdresUitgebreidApi
+# BAGClient\AdresUitgebreidApi
 
 All URIs are relative to *https://api.bag.acceptatie.kadaster.nl/lvbag/individuelebevragingen/v2*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**zoekAdresUitgebreid**](AdresUitgebreidApi.md#zoekadresuitgebreid) | **GET** /adressenuitgebreid | Bevragen van de uitgebreide informatie van één of meer huidige adressen op basis van verschillende combinaties van parameters.
 
 # **bevraagAdresUitgebreidMetNumId**
-> \BAG\BAG\AdresUitgebreidHal bevraagAdresUitgebreidMetNumId($nummeraanduiding_identificatie, $accept_crs)
+> \BAGClient\BAGClient\AdresUitgebreidHal bevraagAdresUitgebreidMetNumId($nummeraanduiding_identificatie, $accept_crs)
 
 Bevragen van de uitgebreide informatie van één huidig adres met de identificatie van een nummeraanduiding.
 
@@ -19,11 +19,11 @@ Bevragen van de uitgebreide informatie van één huidig adres met de identificat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\BAG\AdresUitgebreidApi(
+$apiInstance = new BAGClient\BAG\AdresUitgebreidApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\BAG\AdresUitgebreidHal**](../Model/AdresUitgebreidHal.md)
+[**\BAGClient\BAGClient\AdresUitgebreidHal**](../Model/AdresUitgebreidHal.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **zoekAdresUitgebreid**
-> \BAG\BAG\AdresUitgebreidHalCollection zoekAdresUitgebreid($postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $adresseerbaar_object_identificatie, $woonplaats_naam, $openbare_ruimte_naam, $accept_crs)
+> \BAGClient\BAGClient\AdresUitgebreidHalCollection zoekAdresUitgebreid($postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $adresseerbaar_object_identificatie, $woonplaats_naam, $openbare_ruimte_naam, $accept_crs)
 
 Bevragen van de uitgebreide informatie van één of meer huidige adressen op basis van verschillende combinaties van parameters.
 
@@ -75,11 +75,11 @@ De volgende (combinaties van) parameters worden ondersteund: <ol>   <li>Bevragen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = BAG\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = BAGClient\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BAG\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = BAGClient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new BAG\BAG\AdresUitgebreidApi(
+$apiInstance = new BAGClient\BAG\AdresUitgebreidApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAG\BAG\AdresUitgebreidHalCollection**](../Model/AdresUitgebreidHalCollection.md)
+[**\BAGClient\BAGClient\AdresUitgebreidHalCollection**](../Model/AdresUitgebreidHalCollection.md)
 
 ### Authorization
 
