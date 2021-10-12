@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  BAG
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace BAG;
 
 /**
  * ProvincieTest Class Doc Comment
  *
  * @category    Class
  * @description Gegevens van een provincie
- * @package     Swagger\Client
+ * @package     BAG
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

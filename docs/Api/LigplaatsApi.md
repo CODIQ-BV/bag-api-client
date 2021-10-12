@@ -1,4 +1,4 @@
-# Swagger\Client\LigplaatsApi
+# BAG\LigplaatsApi
 
 All URIs are relative to *https://api.bag.acceptatie.kadaster.nl/lvbag/individuelebevragingen/v2*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**ligplaatsLvcIdentificatie**](LigplaatsApi.md#ligplaatslvcidentificatie) | **GET** /ligplaatsen/{identificatie}/lvc | bevragen levenscyclus van een ligplaats met de identificatie van een ligplaats.
 
 # **ligplaatsGeometrie**
-> \Swagger\Client\Model\LigplaatsIOHalCollection ligplaatsGeometrie($body, $content_crs, $accept_crs, $geldig_op, $beschikbaar_op, $huidig, $expand)
+> \BAG\BAG\LigplaatsIOHalCollection ligplaatsGeometrie($body, $content_crs, $accept_crs, $geldig_op, $beschikbaar_op, $huidig, $expand)
 
 bevragen van een ligplaats, op basis van een geometrische locatie.
 
@@ -21,17 +21,17 @@ Bevragen/raadplegen van één of meer ligplaatsen met een geometrische locatie. 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = BAG\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = BAG\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\LigplaatsApi(
+$apiInstance = new BAG\BAG\LigplaatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\Point(); // \Swagger\Client\Model\Point | Geometrisch punt waarop de ligplaatsen bepaald moeten worden.
+$body = new \BAG\BAG\Point(); // \BAG\BAG\Point | Geometrisch punt waarop de ligplaatsen bepaald moeten worden.
 $content_crs = "content_crs_example"; // string | CRS van de meegegeven geometrie.
 $accept_crs = "accept_crs_example"; // string | Gewenste CRS van de co�rdinaten in de response.
 $geldig_op = new \DateTime("2013-10-20"); // \DateTime | Filtert op objecten die geldig zijn op de opgegeven datum `JJJJ-MM-DD` Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen.
@@ -52,7 +52,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Point**](../Model/Point.md)| Geometrisch punt waarop de ligplaatsen bepaald moeten worden. |
+ **body** | [**\BAG\BAG\Point**](../Model/Point.md)| Geometrisch punt waarop de ligplaatsen bepaald moeten worden. |
  **content_crs** | **string**| CRS van de meegegeven geometrie. | [optional]
  **accept_crs** | **string**| Gewenste CRS van de co�rdinaten in de response. | [optional]
  **geldig_op** | **\DateTime**| Filtert op objecten die geldig zijn op de opgegeven datum &#x60;JJJJ-MM-DD&#x60; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. | [optional]
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\LigplaatsIOHalCollection**](../Model/LigplaatsIOHalCollection.md)
+[**\BAG\BAG\LigplaatsIOHalCollection**](../Model/LigplaatsIOHalCollection.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **ligplaatsIdentificatie**
-> \Swagger\Client\Model\LigplaatsIOHal ligplaatsIdentificatie($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
+> \BAG\BAG\LigplaatsIOHal ligplaatsIdentificatie($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
 
 bevragen 1 ligplaats met de identificatie van een ligplaats.
 
@@ -87,11 +87,11 @@ Bevragen/raadplegen van een voorkomen van een ligplaats met de identificatie van
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = BAG\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = BAG\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\LigplaatsApi(
+$apiInstance = new BAG\BAG\LigplaatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\LigplaatsIOHal**](../Model/LigplaatsIOHal.md)
+[**\BAG\BAG\LigplaatsIOHal**](../Model/LigplaatsIOHal.md)
 
 ### Authorization
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **ligplaatsIdentificatieVoorkomen**
-> \Swagger\Client\Model\LigplaatsIOHal ligplaatsIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $accept_crs)
+> \BAG\BAG\LigplaatsIOHal ligplaatsIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $accept_crs)
 
 bevragen voorkomen van een ligplaats met de identificatie van een ligplaats en de identificatie van een voorkomen, bestaande uit een versie en een timestamp van het tijdstip van registratie in de LV BAG.
 
@@ -149,11 +149,11 @@ Bevragen/raadplegen van een voorkomen van een ligplaats met de identificatie van
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = BAG\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = BAG\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\LigplaatsApi(
+$apiInstance = new BAG\BAG\LigplaatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\LigplaatsIOHal**](../Model/LigplaatsIOHal.md)
+[**\BAG\BAG\LigplaatsIOHal**](../Model/LigplaatsIOHal.md)
 
 ### Authorization
 
@@ -198,7 +198,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **ligplaatsLvcIdentificatie**
-> \Swagger\Client\Model\LigplaatsIOLvcHalCollection ligplaatsLvcIdentificatie($identificatie, $gehele_lvc, $accept_crs)
+> \BAG\BAG\LigplaatsIOLvcHalCollection ligplaatsLvcIdentificatie($identificatie, $gehele_lvc, $accept_crs)
 
 bevragen levenscyclus van een ligplaats met de identificatie van een ligplaats.
 
@@ -209,11 +209,11 @@ Bevragen/raadplegen van de levenscyclus van een ligplaats, via de identificatie 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = BAG\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = BAG\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\LigplaatsApi(
+$apiInstance = new BAG\BAG\LigplaatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\LigplaatsIOLvcHalCollection**](../Model/LigplaatsIOLvcHalCollection.md)
+[**\BAG\BAG\LigplaatsIOLvcHalCollection**](../Model/LigplaatsIOLvcHalCollection.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  BAG
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace BAG;
 
 /**
  * PolygonTest Class Doc Comment
  *
  * @category    Class
  * @description Deze definitie is gekopieerd van: http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/polygonGeoJSON.yaml
- * @package     Swagger\Client
+ * @package     BAG
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

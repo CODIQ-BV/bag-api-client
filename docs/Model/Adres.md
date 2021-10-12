@@ -10,11 +10,11 @@ Name | Type | Description | Notes
 **huisnummertoevoeging** | **string** | Een door of namens het gemeentebestuur ten aanzien van een adresseerbaar object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer en huisletter. | [optional] 
 **postcode** | **string** | De door PostNL vastgestelde code behorende bij een bepaalde combinatie van een straatnaam en een huisnummer. | [optional] 
 **woonplaats_naam** | **string** | De benaming van een door het gemeentebestuur aangewezen woonplaats. | 
-**nummeraanduiding_identificatie** | [**\Swagger\Client\Model\NummeraanduidingIdentificatie**](NummeraanduidingIdentificatie.md) |  | 
-**openbare_ruimte_identificatie** | [**\Swagger\Client\Model\OpenbareRuimteIdentificatie**](OpenbareRuimteIdentificatie.md) |  | 
-**woonplaats_identificatie** | [**\Swagger\Client\Model\WoonplaatsIdentificatie**](WoonplaatsIdentificatie.md) |  | 
-**adresseerbaar_object_identificatie** | [**\Swagger\Client\Model\AdresseerbaarObjectIdentificatie**](AdresseerbaarObjectIdentificatie.md) |  | [optional] 
-**pand_identificaties** | [**\Swagger\Client\Model\PandIdentificatie[]**](PandIdentificatie.md) | Identificatie(s) van het pand of de panden waar het verblijfsobject deel van uit maakt. | [optional] 
+**nummeraanduiding_identificatie** | [**\BAG\BAG\NummeraanduidingIdentificatie**](NummeraanduidingIdentificatie.md) |  | 
+**openbare_ruimte_identificatie** | [**\BAG\BAG\OpenbareRuimteIdentificatie**](OpenbareRuimteIdentificatie.md) |  | 
+**woonplaats_identificatie** | [**\BAG\BAG\WoonplaatsIdentificatie**](WoonplaatsIdentificatie.md) |  | 
+**adresseerbaar_object_identificatie** | [**\BAG\BAG\AdresseerbaarObjectIdentificatie**](AdresseerbaarObjectIdentificatie.md) |  | [optional] 
+**pand_identificaties** | [**\BAG\BAG\PandIdentificatie[]**](PandIdentificatie.md) | Identificatie(s) van het pand of de panden waar het verblijfsobject deel van uit maakt. | [optional] 
 **indicatie_nevenadres** | **bool** | Indicatie dat dit adres een nevenadres is van een adresseerbaar object. Het adres is een hoofdadres als deze indicatie niet wordt meegeleverd. | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)

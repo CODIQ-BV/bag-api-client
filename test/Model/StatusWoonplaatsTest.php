@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  BAG
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace BAG;
 
 /**
  * StatusWoonplaatsTest Class Doc Comment
  *
  * @category    Class
  * @description Een aanduiding van alle waarden die de status van een woonplaats kan aannemen.
- * @package     Swagger\Client
+ * @package     BAG
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

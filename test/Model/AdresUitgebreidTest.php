@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  BAG
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace BAG;
 
 /**
  * AdresUitgebreidTest Class Doc Comment
  *
  * @category    Class
  * @description Een adres is een verzameling van informatie uit adresseerbare objecten, gerelateerde nummeraanduidingen (hoofd- en nevenadres(sen)), aan de nummeraanduiding gerelateerde openbare ruimte en (indien aanwezig) de aan de nummeraanduiding gerelateerde woonplaats en indien deze niet beschikbaar is, de aan de openbare ruimte gerelateerde woonplaats. Waarbij alleen &#x27;huidige&#x27; object voorkomen informatie wordt geretourneerd, dit houdt in: het actuele object voorkomen mits deze geen eind status heeft. Adres uitgebreid bevat een adres uitgebreid met adresseerbaar object informatie.
- * @package     Swagger\Client
+ * @package     BAG
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

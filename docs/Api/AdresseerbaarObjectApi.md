@@ -1,4 +1,4 @@
-# Swagger\Client\AdresseerbaarObjectApi
+# BAG\AdresseerbaarObjectApi
 
 All URIs are relative to *https://api.bag.acceptatie.kadaster.nl/lvbag/individuelebevragingen/v2*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**zoekAdresseerbaarObject**](AdresseerbaarObjectApi.md#zoekadresseerbaarobject) | **GET** /adresseerbareobjecten | Bevragen van één of meer adresseerbare objecten op basis van een nummeraanduiding identificatie.
 
 # **bevragenAdresseerbaarObject**
-> \Swagger\Client\Model\AdresseerbaarObjectIOHal bevragenAdresseerbaarObject($adresseerbaar_object_identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
+> \BAG\BAG\AdresseerbaarObjectIOHal bevragenAdresseerbaarObject($adresseerbaar_object_identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
 
 Bevragen van één adresseerbaar object met een adresseerbaar object identificatie.
 
@@ -20,11 +20,11 @@ Bevragen van één adresseerbaar object (ligplaats, standplaats of verblijfsobje
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = BAG\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = BAG\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AdresseerbaarObjectApi(
+$apiInstance = new BAG\BAG\AdresseerbaarObjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AdresseerbaarObjectIOHal**](../Model/AdresseerbaarObjectIOHal.md)
+[**\BAG\BAG\AdresseerbaarObjectIOHal**](../Model/AdresseerbaarObjectIOHal.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bevragenAdresseerbaarObjectLvc**
-> \Swagger\Client\Model\AdresseerbaarObjectLvcIOHalCollection bevragenAdresseerbaarObjectLvc($adresseerbaar_object_identificatie, $gehele_lvc, $accept_crs)
+> \BAG\BAG\AdresseerbaarObjectLvcIOHalCollection bevragenAdresseerbaarObjectLvc($adresseerbaar_object_identificatie, $gehele_lvc, $accept_crs)
 
 Bevragen van de levenscyclus van een adresseerbaar object met een adresseerbaar object identificatie.
 
@@ -82,11 +82,11 @@ Bevragen van de levenscyclus van een adresseerbaar object (ligplaats, standplaat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = BAG\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = BAG\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AdresseerbaarObjectApi(
+$apiInstance = new BAG\BAG\AdresseerbaarObjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -115,7 +115,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AdresseerbaarObjectLvcIOHalCollection**](../Model/AdresseerbaarObjectLvcIOHalCollection.md)
+[**\BAG\BAG\AdresseerbaarObjectLvcIOHalCollection**](../Model/AdresseerbaarObjectLvcIOHalCollection.md)
 
 ### Authorization
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **zoekAdresseerbaarObject**
-> \Swagger\Client\Model\AdresseerbareObjectenIOHalCollection zoekAdresseerbaarObject($nummeraanduiding_identificatie, $huidig, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
+> \BAG\BAG\AdresseerbareObjectenIOHalCollection zoekAdresseerbaarObject($nummeraanduiding_identificatie, $huidig, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
 
 Bevragen van één of meer adresseerbare objecten op basis van een nummeraanduiding identificatie.
 
@@ -140,11 +140,11 @@ Bevragen/zoeken van alle aan een nummeraanduiding identificatie gerelateerde adr
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKeyBAG
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
+$config = BAG\Configuration::getDefaultConfiguration()->setApiKey('X-Api-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
+// $config = BAG\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Api-Key', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AdresseerbaarObjectApi(
+$apiInstance = new BAG\BAG\AdresseerbaarObjectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AdresseerbareObjectenIOHalCollection**](../Model/AdresseerbareObjectenIOHalCollection.md)
+[**\BAG\BAG\AdresseerbareObjectenIOHalCollection**](../Model/AdresseerbareObjectenIOHalCollection.md)
 
 ### Authorization
 

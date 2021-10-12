@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**kenmerk** | [**\Swagger\Client\Model\InOnderzoekNummeraanduiding**](InOnderzoekNummeraanduiding.md) |  | 
-**identificatie_van_nummeraanduiding** | [**\Swagger\Client\Model\NummeraanduidingIdentificatie**](NummeraanduidingIdentificatie.md) |  | 
-**in_onderzoek** | [**\Swagger\Client\Model\Indicatie**](Indicatie.md) |  | 
-**historie** | [**\Swagger\Client\Model\HistorieInOnderzoek**](HistorieInOnderzoek.md) |  | 
+**kenmerk** | [**\BAG\BAG\InOnderzoekNummeraanduiding**](InOnderzoekNummeraanduiding.md) |  | 
+**identificatie_van_nummeraanduiding** | [**\BAG\BAG\NummeraanduidingIdentificatie**](NummeraanduidingIdentificatie.md) |  | 
+**in_onderzoek** | [**\BAG\BAG\Indicatie**](Indicatie.md) |  | 
+**historie** | [**\BAG\BAG\HistorieInOnderzoek**](HistorieInOnderzoek.md) |  | 
 **documentdatum** | [**\DateTime**](\DateTime.md) | De datum van het document waarin de grondslag van het onderzoek wordt vastgelegd. Dit wordt vastgelegd in het attribuut documentdatum. | [optional] 
 **documentnummer** | **string** | Het nummer van het document waarin de grondslag van het onderzoek wordt vastgelegd. Dit wordt vastgelegd in het attribuut documentnummer. | [optional] 
 
