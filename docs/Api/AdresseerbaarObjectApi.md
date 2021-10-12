@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**zoekAdresseerbaarObject**](AdresseerbaarObjectApi.md#zoekadresseerbaarobject) | **GET** /adresseerbareobjecten | Bevragen van één of meer adresseerbare objecten op basis van een nummeraanduiding identificatie.
 
 # **bevragenAdresseerbaarObject**
-> \BAGClient\BAGClient\AdresseerbaarObjectIOHal bevragenAdresseerbaarObject($adresseerbaar_object_identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
+> \BAGClient\BAG\AdresseerbaarObjectIOHal bevragenAdresseerbaarObject($adresseerbaar_object_identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
 
 Bevragen van één adresseerbaar object met een adresseerbaar object identificatie.
 
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\AdresseerbaarObjectIOHal**](../Model/AdresseerbaarObjectIOHal.md)
+[**\BAGClient\BAG\AdresseerbaarObjectIOHal**](../Model/AdresseerbaarObjectIOHal.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bevragenAdresseerbaarObjectLvc**
-> \BAGClient\BAGClient\AdresseerbaarObjectLvcIOHalCollection bevragenAdresseerbaarObjectLvc($adresseerbaar_object_identificatie, $gehele_lvc, $accept_crs)
+> \BAGClient\BAG\AdresseerbaarObjectLvcIOHalCollection bevragenAdresseerbaarObjectLvc($adresseerbaar_object_identificatie, $gehele_lvc, $accept_crs)
 
 Bevragen van de levenscyclus van een adresseerbaar object met een adresseerbaar object identificatie.
 
@@ -115,7 +115,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\AdresseerbaarObjectLvcIOHalCollection**](../Model/AdresseerbaarObjectLvcIOHalCollection.md)
+[**\BAGClient\BAG\AdresseerbaarObjectLvcIOHalCollection**](../Model/AdresseerbaarObjectLvcIOHalCollection.md)
 
 ### Authorization
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **zoekAdresseerbaarObject**
-> \BAGClient\BAGClient\AdresseerbareObjectenIOHalCollection zoekAdresseerbaarObject($nummeraanduiding_identificatie, $huidig, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
+> \BAGClient\BAG\AdresseerbareObjectenIOHalCollection zoekAdresseerbaarObject($nummeraanduiding_identificatie, $huidig, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
 
 Bevragen van één of meer adresseerbare objecten op basis van een nummeraanduiding identificatie.
 
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\AdresseerbareObjectenIOHalCollection**](../Model/AdresseerbareObjectenIOHalCollection.md)
+[**\BAGClient\BAG\AdresseerbareObjectenIOHalCollection**](../Model/AdresseerbareObjectenIOHalCollection.md)
 
 ### Authorization
 

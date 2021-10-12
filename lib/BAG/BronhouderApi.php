@@ -97,7 +97,7 @@ class BronhouderApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\BronhouderHal
+     * @return \BAGClient\BAG\BronhouderHal
      */
     public function bevragenBronhouder($identificatie, $geldig_op = null, $beschikbaar_op = null)
     {
@@ -116,11 +116,11 @@ class BronhouderApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\BronhouderHal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\BronhouderHal, HTTP status code, HTTP response headers (array of strings)
      */
     public function bevragenBronhouderWithHttpInfo($identificatie, $geldig_op = null, $beschikbaar_op = null)
     {
-        $returnType = '\BAGClient\BAGClient\BronhouderHal';
+        $returnType = '\BAGClient\BAG\BronhouderHal';
         $request = $this->bevragenBronhouderRequest($identificatie, $geldig_op, $beschikbaar_op);
 
         try {
@@ -172,7 +172,7 @@ class BronhouderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\BronhouderHal',
+                        '\BAGClient\BAG\BronhouderHal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -180,7 +180,7 @@ class BronhouderApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class BronhouderApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -196,7 +196,7 @@ class BronhouderApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -204,7 +204,7 @@ class BronhouderApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -212,7 +212,7 @@ class BronhouderApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -220,7 +220,7 @@ class BronhouderApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -228,7 +228,7 @@ class BronhouderApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -236,7 +236,7 @@ class BronhouderApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -282,7 +282,7 @@ class BronhouderApi
      */
     public function bevragenBronhouderAsyncWithHttpInfo($identificatie, $geldig_op = null, $beschikbaar_op = null)
     {
-        $returnType = '\BAGClient\BAGClient\BronhouderHal';
+        $returnType = '\BAGClient\BAG\BronhouderHal';
         $request = $this->bevragenBronhouderRequest($identificatie, $geldig_op, $beschikbaar_op);
 
         return $this->client
@@ -446,7 +446,7 @@ class BronhouderApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\BronhouderHal
+     * @return \BAGClient\BAG\BronhouderHal
      */
     public function bronhouderIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv)
     {
@@ -465,11 +465,11 @@ class BronhouderApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\BronhouderHal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\BronhouderHal, HTTP status code, HTTP response headers (array of strings)
      */
     public function bronhouderIdentificatieVoorkomenWithHttpInfo($identificatie, $versie, $timestamp_registratie_lv)
     {
-        $returnType = '\BAGClient\BAGClient\BronhouderHal';
+        $returnType = '\BAGClient\BAG\BronhouderHal';
         $request = $this->bronhouderIdentificatieVoorkomenRequest($identificatie, $versie, $timestamp_registratie_lv);
 
         try {
@@ -521,7 +521,7 @@ class BronhouderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\BronhouderHal',
+                        '\BAGClient\BAG\BronhouderHal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -529,7 +529,7 @@ class BronhouderApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -537,7 +537,7 @@ class BronhouderApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -545,7 +545,7 @@ class BronhouderApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -553,7 +553,7 @@ class BronhouderApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -561,7 +561,7 @@ class BronhouderApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -569,7 +569,7 @@ class BronhouderApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -577,7 +577,7 @@ class BronhouderApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -585,7 +585,7 @@ class BronhouderApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -593,7 +593,7 @@ class BronhouderApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -639,7 +639,7 @@ class BronhouderApi
      */
     public function bronhouderIdentificatieVoorkomenAsyncWithHttpInfo($identificatie, $versie, $timestamp_registratie_lv)
     {
-        $returnType = '\BAGClient\BAGClient\BronhouderHal';
+        $returnType = '\BAGClient\BAG\BronhouderHal';
         $request = $this->bronhouderIdentificatieVoorkomenRequest($identificatie, $versie, $timestamp_registratie_lv);
 
         return $this->client
@@ -824,7 +824,7 @@ class BronhouderApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\BronhouderHalCollection
+     * @return \BAGClient\BAG\BronhouderHalCollection
      */
     public function zoekBronhouder($woonplaats_identificatie = null, $object_identificatie = null, $geldig_op = null, $beschikbaar_op = null)
     {
@@ -844,11 +844,11 @@ class BronhouderApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\BronhouderHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\BronhouderHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function zoekBronhouderWithHttpInfo($woonplaats_identificatie = null, $object_identificatie = null, $geldig_op = null, $beschikbaar_op = null)
     {
-        $returnType = '\BAGClient\BAGClient\BronhouderHalCollection';
+        $returnType = '\BAGClient\BAG\BronhouderHalCollection';
         $request = $this->zoekBronhouderRequest($woonplaats_identificatie, $object_identificatie, $geldig_op, $beschikbaar_op);
 
         try {
@@ -900,7 +900,7 @@ class BronhouderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\BronhouderHalCollection',
+                        '\BAGClient\BAG\BronhouderHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -908,7 +908,7 @@ class BronhouderApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -916,7 +916,7 @@ class BronhouderApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -924,7 +924,7 @@ class BronhouderApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -932,7 +932,7 @@ class BronhouderApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -940,7 +940,7 @@ class BronhouderApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -948,7 +948,7 @@ class BronhouderApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -956,7 +956,7 @@ class BronhouderApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -964,7 +964,7 @@ class BronhouderApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1012,7 +1012,7 @@ class BronhouderApi
      */
     public function zoekBronhouderAsyncWithHttpInfo($woonplaats_identificatie = null, $object_identificatie = null, $geldig_op = null, $beschikbaar_op = null)
     {
-        $returnType = '\BAGClient\BAGClient\BronhouderHalCollection';
+        $returnType = '\BAGClient\BAG\BronhouderHalCollection';
         $request = $this->zoekBronhouderRequest($woonplaats_identificatie, $object_identificatie, $geldig_op, $beschikbaar_op);
 
         return $this->client

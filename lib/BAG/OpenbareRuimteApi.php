@@ -98,7 +98,7 @@ class OpenbareRuimteApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\OpenbareRuimteIOHal
+     * @return \BAGClient\BAG\OpenbareRuimteIOHal
      */
     public function openbareruimteIdentificatie($openbare_ruimte_identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null)
     {
@@ -118,11 +118,11 @@ class OpenbareRuimteApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\OpenbareRuimteIOHal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\OpenbareRuimteIOHal, HTTP status code, HTTP response headers (array of strings)
      */
     public function openbareruimteIdentificatieWithHttpInfo($openbare_ruimte_identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null)
     {
-        $returnType = '\BAGClient\BAGClient\OpenbareRuimteIOHal';
+        $returnType = '\BAGClient\BAG\OpenbareRuimteIOHal';
         $request = $this->openbareruimteIdentificatieRequest($openbare_ruimte_identificatie, $geldig_op, $beschikbaar_op, $expand);
 
         try {
@@ -174,7 +174,7 @@ class OpenbareRuimteApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\OpenbareRuimteIOHal',
+                        '\BAGClient\BAG\OpenbareRuimteIOHal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -182,7 +182,7 @@ class OpenbareRuimteApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -190,7 +190,7 @@ class OpenbareRuimteApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -198,7 +198,7 @@ class OpenbareRuimteApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class OpenbareRuimteApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class OpenbareRuimteApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -222,7 +222,7 @@ class OpenbareRuimteApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -230,7 +230,7 @@ class OpenbareRuimteApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -238,7 +238,7 @@ class OpenbareRuimteApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -246,7 +246,7 @@ class OpenbareRuimteApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -294,7 +294,7 @@ class OpenbareRuimteApi
      */
     public function openbareruimteIdentificatieAsyncWithHttpInfo($openbare_ruimte_identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null)
     {
-        $returnType = '\BAGClient\BAGClient\OpenbareRuimteIOHal';
+        $returnType = '\BAGClient\BAG\OpenbareRuimteIOHal';
         $request = $this->openbareruimteIdentificatieRequest($openbare_ruimte_identificatie, $geldig_op, $beschikbaar_op, $expand);
 
         return $this->client
@@ -463,7 +463,7 @@ class OpenbareRuimteApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\OpenbareRuimteIOHal
+     * @return \BAGClient\BAG\OpenbareRuimteIOHal
      */
     public function openbareruimteIdentificatieVoorkomen($openbare_ruimte_identificatie, $versie, $timestamp_registratie_lv)
     {
@@ -482,11 +482,11 @@ class OpenbareRuimteApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\OpenbareRuimteIOHal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\OpenbareRuimteIOHal, HTTP status code, HTTP response headers (array of strings)
      */
     public function openbareruimteIdentificatieVoorkomenWithHttpInfo($openbare_ruimte_identificatie, $versie, $timestamp_registratie_lv)
     {
-        $returnType = '\BAGClient\BAGClient\OpenbareRuimteIOHal';
+        $returnType = '\BAGClient\BAG\OpenbareRuimteIOHal';
         $request = $this->openbareruimteIdentificatieVoorkomenRequest($openbare_ruimte_identificatie, $versie, $timestamp_registratie_lv);
 
         try {
@@ -538,7 +538,7 @@ class OpenbareRuimteApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\OpenbareRuimteIOHal',
+                        '\BAGClient\BAG\OpenbareRuimteIOHal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -546,7 +546,7 @@ class OpenbareRuimteApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -554,7 +554,7 @@ class OpenbareRuimteApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -562,7 +562,7 @@ class OpenbareRuimteApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -570,7 +570,7 @@ class OpenbareRuimteApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -578,7 +578,7 @@ class OpenbareRuimteApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -586,7 +586,7 @@ class OpenbareRuimteApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -594,7 +594,7 @@ class OpenbareRuimteApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -602,7 +602,7 @@ class OpenbareRuimteApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -610,7 +610,7 @@ class OpenbareRuimteApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -656,7 +656,7 @@ class OpenbareRuimteApi
      */
     public function openbareruimteIdentificatieVoorkomenAsyncWithHttpInfo($openbare_ruimte_identificatie, $versie, $timestamp_registratie_lv)
     {
-        $returnType = '\BAGClient\BAGClient\OpenbareRuimteIOHal';
+        $returnType = '\BAGClient\BAG\OpenbareRuimteIOHal';
         $request = $this->openbareruimteIdentificatieVoorkomenRequest($openbare_ruimte_identificatie, $versie, $timestamp_registratie_lv);
 
         return $this->client
@@ -839,7 +839,7 @@ class OpenbareRuimteApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\OpenbareRuimteIOLvcHalCollection
+     * @return \BAGClient\BAG\OpenbareRuimteIOLvcHalCollection
      */
     public function openbareruimteLvcIdentificatie($openbare_ruimte_identificatie, $gehele_lvc = 'false')
     {
@@ -857,11 +857,11 @@ class OpenbareRuimteApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\OpenbareRuimteIOLvcHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\OpenbareRuimteIOLvcHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function openbareruimteLvcIdentificatieWithHttpInfo($openbare_ruimte_identificatie, $gehele_lvc = 'false')
     {
-        $returnType = '\BAGClient\BAGClient\OpenbareRuimteIOLvcHalCollection';
+        $returnType = '\BAGClient\BAG\OpenbareRuimteIOLvcHalCollection';
         $request = $this->openbareruimteLvcIdentificatieRequest($openbare_ruimte_identificatie, $gehele_lvc);
 
         try {
@@ -913,7 +913,7 @@ class OpenbareRuimteApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\OpenbareRuimteIOLvcHalCollection',
+                        '\BAGClient\BAG\OpenbareRuimteIOLvcHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -921,7 +921,7 @@ class OpenbareRuimteApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -929,7 +929,7 @@ class OpenbareRuimteApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -937,7 +937,7 @@ class OpenbareRuimteApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -945,7 +945,7 @@ class OpenbareRuimteApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -953,7 +953,7 @@ class OpenbareRuimteApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -961,7 +961,7 @@ class OpenbareRuimteApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -969,7 +969,7 @@ class OpenbareRuimteApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -977,7 +977,7 @@ class OpenbareRuimteApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -985,7 +985,7 @@ class OpenbareRuimteApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1029,7 +1029,7 @@ class OpenbareRuimteApi
      */
     public function openbareruimteLvcIdentificatieAsyncWithHttpInfo($openbare_ruimte_identificatie, $gehele_lvc = 'false')
     {
-        $returnType = '\BAGClient\BAGClient\OpenbareRuimteIOLvcHalCollection';
+        $returnType = '\BAGClient\BAG\OpenbareRuimteIOLvcHalCollection';
         $request = $this->openbareruimteLvcIdentificatieRequest($openbare_ruimte_identificatie, $gehele_lvc);
 
         return $this->client
@@ -1194,7 +1194,7 @@ class OpenbareRuimteApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\OpenbareRuimteIOHalCollection
+     * @return \BAGClient\BAG\OpenbareRuimteIOHalCollection
      */
     public function zoekOpenbareRuimten($woonplaats_naam = null, $openbare_ruimte_naam = null, $woonplaats_identificatie = null, $huidig = 'false', $geldig_op = null, $beschikbaar_op = null, $page = '1', $page_size = '20', $expand = null)
     {
@@ -1219,11 +1219,11 @@ class OpenbareRuimteApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\OpenbareRuimteIOHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\OpenbareRuimteIOHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function zoekOpenbareRuimtenWithHttpInfo($woonplaats_naam = null, $openbare_ruimte_naam = null, $woonplaats_identificatie = null, $huidig = 'false', $geldig_op = null, $beschikbaar_op = null, $page = '1', $page_size = '20', $expand = null)
     {
-        $returnType = '\BAGClient\BAGClient\OpenbareRuimteIOHalCollection';
+        $returnType = '\BAGClient\BAG\OpenbareRuimteIOHalCollection';
         $request = $this->zoekOpenbareRuimtenRequest($woonplaats_naam, $openbare_ruimte_naam, $woonplaats_identificatie, $huidig, $geldig_op, $beschikbaar_op, $page, $page_size, $expand);
 
         try {
@@ -1275,7 +1275,7 @@ class OpenbareRuimteApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\OpenbareRuimteIOHalCollection',
+                        '\BAGClient\BAG\OpenbareRuimteIOHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1283,7 +1283,7 @@ class OpenbareRuimteApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1291,7 +1291,7 @@ class OpenbareRuimteApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1299,7 +1299,7 @@ class OpenbareRuimteApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1307,7 +1307,7 @@ class OpenbareRuimteApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1315,7 +1315,7 @@ class OpenbareRuimteApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1323,7 +1323,7 @@ class OpenbareRuimteApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1331,7 +1331,7 @@ class OpenbareRuimteApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1339,7 +1339,7 @@ class OpenbareRuimteApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1397,7 +1397,7 @@ class OpenbareRuimteApi
      */
     public function zoekOpenbareRuimtenAsyncWithHttpInfo($woonplaats_naam = null, $openbare_ruimte_naam = null, $woonplaats_identificatie = null, $huidig = 'false', $geldig_op = null, $beschikbaar_op = null, $page = '1', $page_size = '20', $expand = null)
     {
-        $returnType = '\BAGClient\BAGClient\OpenbareRuimteIOHalCollection';
+        $returnType = '\BAGClient\BAG\OpenbareRuimteIOHalCollection';
         $request = $this->zoekOpenbareRuimtenRequest($woonplaats_naam, $openbare_ruimte_naam, $woonplaats_identificatie, $huidig, $geldig_op, $beschikbaar_op, $page, $page_size, $expand);
 
         return $this->client

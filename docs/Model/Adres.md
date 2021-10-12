@@ -10,11 +10,11 @@ Name | Type | Description | Notes
 **huisnummertoevoeging** | **string** | Een door of namens het gemeentebestuur ten aanzien van een adresseerbaar object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer en huisletter. | [optional] 
 **postcode** | **string** | De door PostNL vastgestelde code behorende bij een bepaalde combinatie van een straatnaam en een huisnummer. | [optional] 
 **woonplaats_naam** | **string** | De benaming van een door het gemeentebestuur aangewezen woonplaats. | 
-**nummeraanduiding_identificatie** | [**\BAGClient\BAGClient\NummeraanduidingIdentificatie**](NummeraanduidingIdentificatie.md) |  | 
-**openbare_ruimte_identificatie** | [**\BAGClient\BAGClient\OpenbareRuimteIdentificatie**](OpenbareRuimteIdentificatie.md) |  | 
-**woonplaats_identificatie** | [**\BAGClient\BAGClient\WoonplaatsIdentificatie**](WoonplaatsIdentificatie.md) |  | 
-**adresseerbaar_object_identificatie** | [**\BAGClient\BAGClient\AdresseerbaarObjectIdentificatie**](AdresseerbaarObjectIdentificatie.md) |  | [optional] 
-**pand_identificaties** | [**\BAGClient\BAGClient\PandIdentificatie[]**](PandIdentificatie.md) | Identificatie(s) van het pand of de panden waar het verblijfsobject deel van uit maakt. | [optional] 
+**nummeraanduiding_identificatie** | [**\BAGClient\BAG\NummeraanduidingIdentificatie**](NummeraanduidingIdentificatie.md) |  | 
+**openbare_ruimte_identificatie** | [**\BAGClient\BAG\OpenbareRuimteIdentificatie**](OpenbareRuimteIdentificatie.md) |  | 
+**woonplaats_identificatie** | [**\BAGClient\BAG\WoonplaatsIdentificatie**](WoonplaatsIdentificatie.md) |  | 
+**adresseerbaar_object_identificatie** | [**\BAGClient\BAG\AdresseerbaarObjectIdentificatie**](AdresseerbaarObjectIdentificatie.md) |  | [optional] 
+**pand_identificaties** | [**\BAGClient\BAG\PandIdentificatie[]**](PandIdentificatie.md) | Identificatie(s) van het pand of de panden waar het verblijfsobject deel van uit maakt. | [optional] 
 **indicatie_nevenadres** | **bool** | Indicatie dat dit adres een nevenadres is van een adresseerbaar object. Het adres is een hoofdadres als deze indicatie niet wordt meegeleverd. | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)

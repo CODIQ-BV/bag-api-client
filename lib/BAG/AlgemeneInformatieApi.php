@@ -94,7 +94,7 @@ class AlgemeneInformatieApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\APIInfo
+     * @return \BAGClient\BAG\APIInfo
      */
     public function getInfo()
     {
@@ -110,11 +110,11 @@ class AlgemeneInformatieApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\APIInfo, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\APIInfo, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInfoWithHttpInfo()
     {
-        $returnType = '\BAGClient\BAGClient\APIInfo';
+        $returnType = '\BAGClient\BAG\APIInfo';
         $request = $this->getInfoRequest();
 
         try {
@@ -166,7 +166,7 @@ class AlgemeneInformatieApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\APIInfo',
+                        '\BAGClient\BAG\APIInfo',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -174,7 +174,7 @@ class AlgemeneInformatieApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class AlgemeneInformatieApi
      */
     public function getInfoAsyncWithHttpInfo()
     {
-        $returnType = '\BAGClient\BAGClient\APIInfo';
+        $returnType = '\BAGClient\BAG\APIInfo';
         $request = $this->getInfoRequest();
 
         return $this->client

@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**getInfo**](AlgemeneInformatieApi.md#getinfo) | **GET** /info | Algemene info van de API
 
 # **getInfo**
-> \BAGClient\BAGClient\APIInfo getInfo()
+> \BAGClient\BAG\APIInfo getInfo()
 
 Algemene info van de API
 
@@ -41,7 +41,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\BAGClient\BAGClient\APIInfo**](../Model/APIInfo.md)
+[**\BAGClient\BAG\APIInfo**](../Model/APIInfo.md)
 
 ### Authorization
 

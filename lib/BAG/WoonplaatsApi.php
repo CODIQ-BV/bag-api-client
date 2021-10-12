@@ -91,7 +91,7 @@ class WoonplaatsApi
      *
      * bevragen van een woonplaats met een geometrische locatie.
      *
-     * @param  \BAGClient\BAGClient\Point $body Geometrisch punt waarop de woonplaatsen bepaald moeten worden. (required)
+     * @param  \BAGClient\BAG\Point $body Geometrisch punt waarop de woonplaatsen bepaald moeten worden. (required)
      * @param  string $content_crs CRS van de meegegeven geometrie. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      * @param  \DateTime $geldig_op Filtert op objecten die geldig zijn op de opgegeven datum &#x27;YYYY-MM-DD&#x27; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
@@ -101,7 +101,7 @@ class WoonplaatsApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\WoonplaatsIOHalCollection
+     * @return \BAGClient\BAG\WoonplaatsIOHalCollection
      */
     public function woonplaatsGeometrie($body, $content_crs = null, $accept_crs = null, $geldig_op = null, $beschikbaar_op = null, $huidig = 'false', $expand = null)
     {
@@ -114,7 +114,7 @@ class WoonplaatsApi
      *
      * bevragen van een woonplaats met een geometrische locatie.
      *
-     * @param  \BAGClient\BAGClient\Point $body Geometrisch punt waarop de woonplaatsen bepaald moeten worden. (required)
+     * @param  \BAGClient\BAG\Point $body Geometrisch punt waarop de woonplaatsen bepaald moeten worden. (required)
      * @param  string $content_crs CRS van de meegegeven geometrie. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      * @param  \DateTime $geldig_op Filtert op objecten die geldig zijn op de opgegeven datum &#x27;YYYY-MM-DD&#x27; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
@@ -124,11 +124,11 @@ class WoonplaatsApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\WoonplaatsIOHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\WoonplaatsIOHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function woonplaatsGeometrieWithHttpInfo($body, $content_crs = null, $accept_crs = null, $geldig_op = null, $beschikbaar_op = null, $huidig = 'false', $expand = null)
     {
-        $returnType = '\BAGClient\BAGClient\WoonplaatsIOHalCollection';
+        $returnType = '\BAGClient\BAG\WoonplaatsIOHalCollection';
         $request = $this->woonplaatsGeometrieRequest($body, $content_crs, $accept_crs, $geldig_op, $beschikbaar_op, $huidig, $expand);
 
         try {
@@ -180,7 +180,7 @@ class WoonplaatsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\WoonplaatsIOHalCollection',
+                        '\BAGClient\BAG\WoonplaatsIOHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class WoonplaatsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -196,7 +196,7 @@ class WoonplaatsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -204,7 +204,7 @@ class WoonplaatsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -212,7 +212,7 @@ class WoonplaatsApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -220,7 +220,7 @@ class WoonplaatsApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -228,7 +228,7 @@ class WoonplaatsApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -236,7 +236,7 @@ class WoonplaatsApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -244,7 +244,7 @@ class WoonplaatsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -252,7 +252,7 @@ class WoonplaatsApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -260,7 +260,7 @@ class WoonplaatsApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -275,7 +275,7 @@ class WoonplaatsApi
      *
      * bevragen van een woonplaats met een geometrische locatie.
      *
-     * @param  \BAGClient\BAGClient\Point $body Geometrisch punt waarop de woonplaatsen bepaald moeten worden. (required)
+     * @param  \BAGClient\BAG\Point $body Geometrisch punt waarop de woonplaatsen bepaald moeten worden. (required)
      * @param  string $content_crs CRS van de meegegeven geometrie. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      * @param  \DateTime $geldig_op Filtert op objecten die geldig zijn op de opgegeven datum &#x27;YYYY-MM-DD&#x27; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
@@ -301,7 +301,7 @@ class WoonplaatsApi
      *
      * bevragen van een woonplaats met een geometrische locatie.
      *
-     * @param  \BAGClient\BAGClient\Point $body Geometrisch punt waarop de woonplaatsen bepaald moeten worden. (required)
+     * @param  \BAGClient\BAG\Point $body Geometrisch punt waarop de woonplaatsen bepaald moeten worden. (required)
      * @param  string $content_crs CRS van de meegegeven geometrie. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      * @param  \DateTime $geldig_op Filtert op objecten die geldig zijn op de opgegeven datum &#x27;YYYY-MM-DD&#x27; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
@@ -314,7 +314,7 @@ class WoonplaatsApi
      */
     public function woonplaatsGeometrieAsyncWithHttpInfo($body, $content_crs = null, $accept_crs = null, $geldig_op = null, $beschikbaar_op = null, $huidig = 'false', $expand = null)
     {
-        $returnType = '\BAGClient\BAGClient\WoonplaatsIOHalCollection';
+        $returnType = '\BAGClient\BAG\WoonplaatsIOHalCollection';
         $request = $this->woonplaatsGeometrieRequest($body, $content_crs, $accept_crs, $geldig_op, $beschikbaar_op, $huidig, $expand);
 
         return $this->client
@@ -357,7 +357,7 @@ class WoonplaatsApi
     /**
      * Create request for operation 'woonplaatsGeometrie'
      *
-     * @param  \BAGClient\BAGClient\Point $body Geometrisch punt waarop de woonplaatsen bepaald moeten worden. (required)
+     * @param  \BAGClient\BAG\Point $body Geometrisch punt waarop de woonplaatsen bepaald moeten worden. (required)
      * @param  string $content_crs CRS van de meegegeven geometrie. (optional)
      * @param  string $accept_crs Gewenste CRS van de co�rdinaten in de response. (optional)
      * @param  \DateTime $geldig_op Filtert op objecten die geldig zijn op de opgegeven datum &#x27;YYYY-MM-DD&#x27; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. (optional)
@@ -495,7 +495,7 @@ class WoonplaatsApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\WoonplaatsIOHal
+     * @return \BAGClient\BAG\WoonplaatsIOHal
      */
     public function woonplaatsIdentificatie($identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
@@ -516,11 +516,11 @@ class WoonplaatsApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\WoonplaatsIOHal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\WoonplaatsIOHal, HTTP status code, HTTP response headers (array of strings)
      */
     public function woonplaatsIdentificatieWithHttpInfo($identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAGClient\BAGClient\WoonplaatsIOHal';
+        $returnType = '\BAGClient\BAG\WoonplaatsIOHal';
         $request = $this->woonplaatsIdentificatieRequest($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs);
 
         try {
@@ -572,7 +572,7 @@ class WoonplaatsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\WoonplaatsIOHal',
+                        '\BAGClient\BAG\WoonplaatsIOHal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -580,7 +580,7 @@ class WoonplaatsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -588,7 +588,7 @@ class WoonplaatsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -596,7 +596,7 @@ class WoonplaatsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -604,7 +604,7 @@ class WoonplaatsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -612,7 +612,7 @@ class WoonplaatsApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -620,7 +620,7 @@ class WoonplaatsApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -628,7 +628,7 @@ class WoonplaatsApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -636,7 +636,7 @@ class WoonplaatsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -644,7 +644,7 @@ class WoonplaatsApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -652,7 +652,7 @@ class WoonplaatsApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -702,7 +702,7 @@ class WoonplaatsApi
      */
     public function woonplaatsIdentificatieAsyncWithHttpInfo($identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAGClient\BAGClient\WoonplaatsIOHal';
+        $returnType = '\BAGClient\BAG\WoonplaatsIOHal';
         $request = $this->woonplaatsIdentificatieRequest($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs);
 
         return $this->client
@@ -878,7 +878,7 @@ class WoonplaatsApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\WoonplaatsIOHal
+     * @return \BAGClient\BAG\WoonplaatsIOHal
      */
     public function woonplaatsIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $expand = null, $accept_crs = null)
     {
@@ -899,11 +899,11 @@ class WoonplaatsApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\WoonplaatsIOHal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\WoonplaatsIOHal, HTTP status code, HTTP response headers (array of strings)
      */
     public function woonplaatsIdentificatieVoorkomenWithHttpInfo($identificatie, $versie, $timestamp_registratie_lv, $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAGClient\BAGClient\WoonplaatsIOHal';
+        $returnType = '\BAGClient\BAG\WoonplaatsIOHal';
         $request = $this->woonplaatsIdentificatieVoorkomenRequest($identificatie, $versie, $timestamp_registratie_lv, $expand, $accept_crs);
 
         try {
@@ -955,7 +955,7 @@ class WoonplaatsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\WoonplaatsIOHal',
+                        '\BAGClient\BAG\WoonplaatsIOHal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -963,7 +963,7 @@ class WoonplaatsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -971,7 +971,7 @@ class WoonplaatsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -979,7 +979,7 @@ class WoonplaatsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -987,7 +987,7 @@ class WoonplaatsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -995,7 +995,7 @@ class WoonplaatsApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1003,7 +1003,7 @@ class WoonplaatsApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1011,7 +1011,7 @@ class WoonplaatsApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1019,7 +1019,7 @@ class WoonplaatsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1027,7 +1027,7 @@ class WoonplaatsApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1035,7 +1035,7 @@ class WoonplaatsApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1085,7 +1085,7 @@ class WoonplaatsApi
      */
     public function woonplaatsIdentificatieVoorkomenAsyncWithHttpInfo($identificatie, $versie, $timestamp_registratie_lv, $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAGClient\BAGClient\WoonplaatsIOHal';
+        $returnType = '\BAGClient\BAG\WoonplaatsIOHal';
         $request = $this->woonplaatsIdentificatieVoorkomenRequest($identificatie, $versie, $timestamp_registratie_lv, $expand, $accept_crs);
 
         return $this->client
@@ -1280,7 +1280,7 @@ class WoonplaatsApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\WoonplaatsIOLvcHalCollection
+     * @return \BAGClient\BAG\WoonplaatsIOLvcHalCollection
      */
     public function woonplaatsLvcIdentificatie($identificatie, $gehele_lvc = 'false', $expand = null, $accept_crs = null)
     {
@@ -1300,11 +1300,11 @@ class WoonplaatsApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\WoonplaatsIOLvcHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\WoonplaatsIOLvcHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function woonplaatsLvcIdentificatieWithHttpInfo($identificatie, $gehele_lvc = 'false', $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAGClient\BAGClient\WoonplaatsIOLvcHalCollection';
+        $returnType = '\BAGClient\BAG\WoonplaatsIOLvcHalCollection';
         $request = $this->woonplaatsLvcIdentificatieRequest($identificatie, $gehele_lvc, $expand, $accept_crs);
 
         try {
@@ -1356,7 +1356,7 @@ class WoonplaatsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\WoonplaatsIOLvcHalCollection',
+                        '\BAGClient\BAG\WoonplaatsIOLvcHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1364,7 +1364,7 @@ class WoonplaatsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1372,7 +1372,7 @@ class WoonplaatsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1380,7 +1380,7 @@ class WoonplaatsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1388,7 +1388,7 @@ class WoonplaatsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1396,7 +1396,7 @@ class WoonplaatsApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1404,7 +1404,7 @@ class WoonplaatsApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1412,7 +1412,7 @@ class WoonplaatsApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1420,7 +1420,7 @@ class WoonplaatsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1428,7 +1428,7 @@ class WoonplaatsApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1436,7 +1436,7 @@ class WoonplaatsApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1484,7 +1484,7 @@ class WoonplaatsApi
      */
     public function woonplaatsLvcIdentificatieAsyncWithHttpInfo($identificatie, $gehele_lvc = 'false', $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAGClient\BAGClient\WoonplaatsIOLvcHalCollection';
+        $returnType = '\BAGClient\BAG\WoonplaatsIOLvcHalCollection';
         $request = $this->woonplaatsLvcIdentificatieRequest($identificatie, $gehele_lvc, $expand, $accept_crs);
 
         return $this->client
@@ -1655,7 +1655,7 @@ class WoonplaatsApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\WoonplaatsIOHalCollection
+     * @return \BAGClient\BAG\WoonplaatsIOHalCollection
      */
     public function woonplaatsNaam($naam, $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
@@ -1676,11 +1676,11 @@ class WoonplaatsApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\WoonplaatsIOHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\WoonplaatsIOHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function woonplaatsNaamWithHttpInfo($naam, $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAGClient\BAGClient\WoonplaatsIOHalCollection';
+        $returnType = '\BAGClient\BAG\WoonplaatsIOHalCollection';
         $request = $this->woonplaatsNaamRequest($naam, $geldig_op, $beschikbaar_op, $expand, $accept_crs);
 
         try {
@@ -1732,7 +1732,7 @@ class WoonplaatsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\WoonplaatsIOHalCollection',
+                        '\BAGClient\BAG\WoonplaatsIOHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1740,7 +1740,7 @@ class WoonplaatsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1748,7 +1748,7 @@ class WoonplaatsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1756,7 +1756,7 @@ class WoonplaatsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1764,7 +1764,7 @@ class WoonplaatsApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1772,7 +1772,7 @@ class WoonplaatsApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1780,7 +1780,7 @@ class WoonplaatsApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1788,7 +1788,7 @@ class WoonplaatsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1796,7 +1796,7 @@ class WoonplaatsApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1804,7 +1804,7 @@ class WoonplaatsApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1854,7 +1854,7 @@ class WoonplaatsApi
      */
     public function woonplaatsNaamAsyncWithHttpInfo($naam, $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAGClient\BAGClient\WoonplaatsIOHalCollection';
+        $returnType = '\BAGClient\BAG\WoonplaatsIOHalCollection';
         $request = $this->woonplaatsNaamRequest($naam, $geldig_op, $beschikbaar_op, $expand, $accept_crs);
 
         return $this->client

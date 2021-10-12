@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**zoek**](AdresApi.md#zoek) | **GET** /adressen/zoek | Zoeken van huidige adressen
 
 # **bevraagAdressen**
-> \BAGClient\BAGClient\AdresIOHalCollection bevraagAdressen($zoekresultaat_identificatie, $postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $adresseerbaar_object_identificatie, $woonplaats_naam, $openbare_ruimte_naam, $pand_identificatie, $expand, $page, $page_size)
+> \BAGClient\BAG\AdresIOHalCollection bevraagAdressen($zoekresultaat_identificatie, $postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $adresseerbaar_object_identificatie, $woonplaats_naam, $openbare_ruimte_naam, $pand_identificatie, $expand, $page, $page_size)
 
 Bevragen van huidige adressen met een (combinatie van) zoek parameters.
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\AdresIOHalCollection**](../Model/AdresIOHalCollection.md)
+[**\BAGClient\BAG\AdresIOHalCollection**](../Model/AdresIOHalCollection.md)
 
 ### Authorization
 
@@ -87,7 +87,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bevraagAdressenMetNumId**
-> \BAGClient\BAGClient\AdresIOHal bevraagAdressenMetNumId($nummeraanduiding_identificatie, $expand)
+> \BAGClient\BAG\AdresIOHal bevraagAdressenMetNumId($nummeraanduiding_identificatie, $expand)
 
 Bevragen van een huidig adres met de identificatie van een nummeraanduiding.
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\AdresIOHal**](../Model/AdresIOHal.md)
+[**\BAGClient\BAG\AdresIOHal**](../Model/AdresIOHal.md)
 
 ### Authorization
 
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **zoek**
-> \BAGClient\BAGClient\ZoekResultaatHalCollection zoek($zoek, $page, $page_size)
+> \BAGClient\BAG\ZoekResultaatHalCollection zoek($zoek, $page, $page_size)
 
 Zoeken van huidige adressen
 
@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\ZoekResultaatHalCollection**](../Model/ZoekResultaatHalCollection.md)
+[**\BAGClient\BAG\ZoekResultaatHalCollection**](../Model/ZoekResultaatHalCollection.md)
 
 ### Authorization
 

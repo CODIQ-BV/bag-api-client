@@ -96,7 +96,7 @@ class AdresUitgebreidApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\AdresUitgebreidHal
+     * @return \BAGClient\BAG\AdresUitgebreidHal
      */
     public function bevraagAdresUitgebreidMetNumId($nummeraanduiding_identificatie, $accept_crs = null)
     {
@@ -114,11 +114,11 @@ class AdresUitgebreidApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\AdresUitgebreidHal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\AdresUitgebreidHal, HTTP status code, HTTP response headers (array of strings)
      */
     public function bevraagAdresUitgebreidMetNumIdWithHttpInfo($nummeraanduiding_identificatie, $accept_crs = null)
     {
-        $returnType = '\BAGClient\BAGClient\AdresUitgebreidHal';
+        $returnType = '\BAGClient\BAG\AdresUitgebreidHal';
         $request = $this->bevraagAdresUitgebreidMetNumIdRequest($nummeraanduiding_identificatie, $accept_crs);
 
         try {
@@ -170,7 +170,7 @@ class AdresUitgebreidApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\AdresUitgebreidHal',
+                        '\BAGClient\BAG\AdresUitgebreidHal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -178,7 +178,7 @@ class AdresUitgebreidApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -186,7 +186,7 @@ class AdresUitgebreidApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -194,7 +194,7 @@ class AdresUitgebreidApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -202,7 +202,7 @@ class AdresUitgebreidApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class AdresUitgebreidApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class AdresUitgebreidApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -226,7 +226,7 @@ class AdresUitgebreidApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -234,7 +234,7 @@ class AdresUitgebreidApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -278,7 +278,7 @@ class AdresUitgebreidApi
      */
     public function bevraagAdresUitgebreidMetNumIdAsyncWithHttpInfo($nummeraanduiding_identificatie, $accept_crs = null)
     {
-        $returnType = '\BAGClient\BAGClient\AdresUitgebreidHal';
+        $returnType = '\BAGClient\BAG\AdresUitgebreidHal';
         $request = $this->bevraagAdresUitgebreidMetNumIdRequest($nummeraanduiding_identificatie, $accept_crs);
 
         return $this->client
@@ -443,7 +443,7 @@ class AdresUitgebreidApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\AdresUitgebreidHalCollection
+     * @return \BAGClient\BAG\AdresUitgebreidHalCollection
      */
     public function zoekAdresUitgebreid($postcode = null, $huisnummer = null, $huisnummertoevoeging = null, $huisletter = null, $exacte_match = 'false', $adresseerbaar_object_identificatie = null, $woonplaats_naam = null, $openbare_ruimte_naam = null, $accept_crs = null)
     {
@@ -468,11 +468,11 @@ class AdresUitgebreidApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\AdresUitgebreidHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\AdresUitgebreidHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function zoekAdresUitgebreidWithHttpInfo($postcode = null, $huisnummer = null, $huisnummertoevoeging = null, $huisletter = null, $exacte_match = 'false', $adresseerbaar_object_identificatie = null, $woonplaats_naam = null, $openbare_ruimte_naam = null, $accept_crs = null)
     {
-        $returnType = '\BAGClient\BAGClient\AdresUitgebreidHalCollection';
+        $returnType = '\BAGClient\BAG\AdresUitgebreidHalCollection';
         $request = $this->zoekAdresUitgebreidRequest($postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $adresseerbaar_object_identificatie, $woonplaats_naam, $openbare_ruimte_naam, $accept_crs);
 
         try {
@@ -524,7 +524,7 @@ class AdresUitgebreidApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\AdresUitgebreidHalCollection',
+                        '\BAGClient\BAG\AdresUitgebreidHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -532,7 +532,7 @@ class AdresUitgebreidApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -540,7 +540,7 @@ class AdresUitgebreidApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -548,7 +548,7 @@ class AdresUitgebreidApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -556,7 +556,7 @@ class AdresUitgebreidApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -564,7 +564,7 @@ class AdresUitgebreidApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -572,7 +572,7 @@ class AdresUitgebreidApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -580,7 +580,7 @@ class AdresUitgebreidApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -588,7 +588,7 @@ class AdresUitgebreidApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -646,7 +646,7 @@ class AdresUitgebreidApi
      */
     public function zoekAdresUitgebreidAsyncWithHttpInfo($postcode = null, $huisnummer = null, $huisnummertoevoeging = null, $huisletter = null, $exacte_match = 'false', $adresseerbaar_object_identificatie = null, $woonplaats_naam = null, $openbare_ruimte_naam = null, $accept_crs = null)
     {
-        $returnType = '\BAGClient\BAGClient\AdresUitgebreidHalCollection';
+        $returnType = '\BAGClient\BAG\AdresUitgebreidHalCollection';
         $request = $this->zoekAdresUitgebreidRequest($postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $adresseerbaar_object_identificatie, $woonplaats_naam, $openbare_ruimte_naam, $accept_crs);
 
         return $this->client

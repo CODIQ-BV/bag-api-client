@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**ligplaatsLvcIdentificatie**](LigplaatsApi.md#ligplaatslvcidentificatie) | **GET** /ligplaatsen/{identificatie}/lvc | bevragen levenscyclus van een ligplaats met de identificatie van een ligplaats.
 
 # **ligplaatsGeometrie**
-> \BAGClient\BAGClient\LigplaatsIOHalCollection ligplaatsGeometrie($body, $content_crs, $accept_crs, $geldig_op, $beschikbaar_op, $huidig, $expand)
+> \BAGClient\BAG\LigplaatsIOHalCollection ligplaatsGeometrie($body, $content_crs, $accept_crs, $geldig_op, $beschikbaar_op, $huidig, $expand)
 
 bevragen van een ligplaats, op basis van een geometrische locatie.
 
@@ -31,7 +31,7 @@ $apiInstance = new BAGClient\BAG\LigplaatsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \BAGClient\BAGClient\Point(); // \BAGClient\BAGClient\Point | Geometrisch punt waarop de ligplaatsen bepaald moeten worden.
+$body = new \BAGClient\BAG\Point(); // \BAGClient\BAG\Point | Geometrisch punt waarop de ligplaatsen bepaald moeten worden.
 $content_crs = "content_crs_example"; // string | CRS van de meegegeven geometrie.
 $accept_crs = "accept_crs_example"; // string | Gewenste CRS van de co�rdinaten in de response.
 $geldig_op = new \DateTime("2013-10-20"); // \DateTime | Filtert op objecten die geldig zijn op de opgegeven datum `JJJJ-MM-DD` Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen.
@@ -52,7 +52,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\BAGClient\BAGClient\Point**](../Model/Point.md)| Geometrisch punt waarop de ligplaatsen bepaald moeten worden. |
+ **body** | [**\BAGClient\BAG\Point**](../Model/Point.md)| Geometrisch punt waarop de ligplaatsen bepaald moeten worden. |
  **content_crs** | **string**| CRS van de meegegeven geometrie. | [optional]
  **accept_crs** | **string**| Gewenste CRS van de co�rdinaten in de response. | [optional]
  **geldig_op** | **\DateTime**| Filtert op objecten die geldig zijn op de opgegeven datum &#x60;JJJJ-MM-DD&#x60; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. | [optional]
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\LigplaatsIOHalCollection**](../Model/LigplaatsIOHalCollection.md)
+[**\BAGClient\BAG\LigplaatsIOHalCollection**](../Model/LigplaatsIOHalCollection.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **ligplaatsIdentificatie**
-> \BAGClient\BAGClient\LigplaatsIOHal ligplaatsIdentificatie($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
+> \BAGClient\BAG\LigplaatsIOHal ligplaatsIdentificatie($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
 
 bevragen 1 ligplaats met de identificatie van een ligplaats.
 
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\LigplaatsIOHal**](../Model/LigplaatsIOHal.md)
+[**\BAGClient\BAG\LigplaatsIOHal**](../Model/LigplaatsIOHal.md)
 
 ### Authorization
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **ligplaatsIdentificatieVoorkomen**
-> \BAGClient\BAGClient\LigplaatsIOHal ligplaatsIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $accept_crs)
+> \BAGClient\BAG\LigplaatsIOHal ligplaatsIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $accept_crs)
 
 bevragen voorkomen van een ligplaats met de identificatie van een ligplaats en de identificatie van een voorkomen, bestaande uit een versie en een timestamp van het tijdstip van registratie in de LV BAG.
 
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\LigplaatsIOHal**](../Model/LigplaatsIOHal.md)
+[**\BAGClient\BAG\LigplaatsIOHal**](../Model/LigplaatsIOHal.md)
 
 ### Authorization
 
@@ -198,7 +198,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **ligplaatsLvcIdentificatie**
-> \BAGClient\BAGClient\LigplaatsIOLvcHalCollection ligplaatsLvcIdentificatie($identificatie, $gehele_lvc, $accept_crs)
+> \BAGClient\BAG\LigplaatsIOLvcHalCollection ligplaatsLvcIdentificatie($identificatie, $gehele_lvc, $accept_crs)
 
 bevragen levenscyclus van een ligplaats met de identificatie van een ligplaats.
 
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\LigplaatsIOLvcHalCollection**](../Model/LigplaatsIOLvcHalCollection.md)
+[**\BAGClient\BAG\LigplaatsIOLvcHalCollection**](../Model/LigplaatsIOLvcHalCollection.md)
 
 ### Authorization
 

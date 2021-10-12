@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**zoekOpenbareRuimten**](OpenbareRuimteApi.md#zoekopenbareruimten) | **GET** /openbareruimten | bevragen openbare ruimte(n) op basis van de verschillende combinaties van parameters.
 
 # **openbareruimteIdentificatie**
-> \BAGClient\BAGClient\OpenbareRuimteIOHal openbareruimteIdentificatie($openbare_ruimte_identificatie, $geldig_op, $beschikbaar_op, $expand)
+> \BAGClient\BAG\OpenbareRuimteIOHal openbareruimteIdentificatie($openbare_ruimte_identificatie, $geldig_op, $beschikbaar_op, $expand)
 
 bevragen van een openbare ruimte met de identificatie van een openbare ruimte.
 
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\OpenbareRuimteIOHal**](../Model/OpenbareRuimteIOHal.md)
+[**\BAGClient\BAG\OpenbareRuimteIOHal**](../Model/OpenbareRuimteIOHal.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **openbareruimteIdentificatieVoorkomen**
-> \BAGClient\BAGClient\OpenbareRuimteIOHal openbareruimteIdentificatieVoorkomen($openbare_ruimte_identificatie, $versie, $timestamp_registratie_lv)
+> \BAGClient\BAG\OpenbareRuimteIOHal openbareruimteIdentificatieVoorkomen($openbare_ruimte_identificatie, $versie, $timestamp_registratie_lv)
 
 bevragen van een voorkomen van een openbare ruimte met de identificatie van een openbare ruimte en de identificatie van een voorkomen, bestaande uit een versie en een timestamp van het tijdstip van registratie in de LV BAG.
 
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\OpenbareRuimteIOHal**](../Model/OpenbareRuimteIOHal.md)
+[**\BAGClient\BAG\OpenbareRuimteIOHal**](../Model/OpenbareRuimteIOHal.md)
 
 ### Authorization
 
@@ -128,7 +128,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **openbareruimteLvcIdentificatie**
-> \BAGClient\BAGClient\OpenbareRuimteIOLvcHalCollection openbareruimteLvcIdentificatie($openbare_ruimte_identificatie, $gehele_lvc)
+> \BAGClient\BAG\OpenbareRuimteIOLvcHalCollection openbareruimteLvcIdentificatie($openbare_ruimte_identificatie, $gehele_lvc)
 
 bevragen levenscyclus van een openbare ruimte met de identificatie van een openbare ruimte.
 
@@ -170,7 +170,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\OpenbareRuimteIOLvcHalCollection**](../Model/OpenbareRuimteIOLvcHalCollection.md)
+[**\BAGClient\BAG\OpenbareRuimteIOLvcHalCollection**](../Model/OpenbareRuimteIOLvcHalCollection.md)
 
 ### Authorization
 
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **zoekOpenbareRuimten**
-> \BAGClient\BAGClient\OpenbareRuimteIOHalCollection zoekOpenbareRuimten($woonplaats_naam, $openbare_ruimte_naam, $woonplaats_identificatie, $huidig, $geldig_op, $beschikbaar_op, $page, $page_size, $expand)
+> \BAGClient\BAG\OpenbareRuimteIOHalCollection zoekOpenbareRuimten($woonplaats_naam, $openbare_ruimte_naam, $woonplaats_identificatie, $huidig, $geldig_op, $beschikbaar_op, $page, $page_size, $expand)
 
 bevragen openbare ruimte(n) op basis van de verschillende combinaties van parameters.
 
@@ -240,7 +240,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\OpenbareRuimteIOHalCollection**](../Model/OpenbareRuimteIOHalCollection.md)
+[**\BAGClient\BAG\OpenbareRuimteIOHalCollection**](../Model/OpenbareRuimteIOHalCollection.md)
 
 ### Authorization
 

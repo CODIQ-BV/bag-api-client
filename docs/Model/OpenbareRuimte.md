@@ -3,17 +3,17 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identificatie** | [**\BAGClient\BAGClient\OpenbareRuimteIdentificatie**](OpenbareRuimteIdentificatie.md) |  | 
+**identificatie** | [**\BAGClient\BAG\OpenbareRuimteIdentificatie**](OpenbareRuimteIdentificatie.md) |  | 
 **domein** | **string** | NL.IMBAG.Openbareruimte | 
 **naam** | **string** | Een naam die aan een openbare ruimte is toegekend in een daartoe strekkend formeel gemeentelijk besluit. | 
-**type** | [**\BAGClient\BAGClient\TypeOpenbareRuimte**](TypeOpenbareRuimte.md) |  | 
-**status** | [**\BAGClient\BAGClient\StatusNaamgeving**](StatusNaamgeving.md) |  | 
+**type** | [**\BAGClient\BAG\TypeOpenbareRuimte**](TypeOpenbareRuimte.md) |  | 
+**status** | [**\BAGClient\BAG\StatusNaamgeving**](StatusNaamgeving.md) |  | 
 **korte_naam** | **string** | De officiële openbare ruimte naam als deze niet langer is dan 24 tekens of de volgens de NEN5825 verkorte naam van maximaal 24 tekens. | 
-**geconstateerd** | [**\BAGClient\BAGClient\Indicatie**](Indicatie.md) |  | 
+**geconstateerd** | [**\BAGClient\BAG\Indicatie**](Indicatie.md) |  | 
 **documentdatum** | [**\DateTime**](\DateTime.md) | De datum waarop het brondocument is vastgesteld, op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een object heeft plaatsgevonden. | 
 **documentnummer** | **string** | De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een woonplaats heeft plaatsgevonden binnen een gemeente. Alle karakters uit de MES-1 karakterset zijn toegestaan. | 
-**voorkomen** | [**\BAGClient\BAGClient\Voorkomen**](Voorkomen.md) |  | 
-**ligt_in** | [**\BAGClient\BAGClient\WoonplaatsIdentificatie**](WoonplaatsIdentificatie.md) |  | 
+**voorkomen** | [**\BAGClient\BAG\Voorkomen**](Voorkomen.md) |  | 
+**ligt_in** | [**\BAGClient\BAG\WoonplaatsIdentificatie**](WoonplaatsIdentificatie.md) |  | 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

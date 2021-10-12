@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**zoekBronhouder**](BronhouderApi.md#zoekbronhouder) | **GET** /bronhouders | Bevragen bronhouder met een object identificatie.
 
 # **bevragenBronhouder**
-> \BAGClient\BAGClient\BronhouderHal bevragenBronhouder($identificatie, $geldig_op, $beschikbaar_op)
+> \BAGClient\BAG\BronhouderHal bevragenBronhouder($identificatie, $geldig_op, $beschikbaar_op)
 
 Bevragen bronhouder met de bronhouder identificatie (gemeentecode).
 
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\BronhouderHal**](../Model/BronhouderHal.md)
+[**\BAGClient\BAG\BronhouderHal**](../Model/BronhouderHal.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bronhouderIdentificatieVoorkomen**
-> \BAGClient\BAGClient\BronhouderHal bronhouderIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv)
+> \BAGClient\BAG\BronhouderHal bronhouderIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv)
 
 bevragen voorkomen van een bronhouder met de identificatie van een bronhouder en de identificatie van een voorkomen, bestaande uit een versie en een timestamp van het tijdstip van registratie in de LV BAG.
 
@@ -111,7 +111,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\BronhouderHal**](../Model/BronhouderHal.md)
+[**\BAGClient\BAG\BronhouderHal**](../Model/BronhouderHal.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **zoekBronhouder**
-> \BAGClient\BAGClient\BronhouderHalCollection zoekBronhouder($woonplaats_identificatie, $object_identificatie, $geldig_op, $beschikbaar_op)
+> \BAGClient\BAG\BronhouderHalCollection zoekBronhouder($woonplaats_identificatie, $object_identificatie, $geldig_op, $beschikbaar_op)
 
 Bevragen bronhouder met een object identificatie.
 
@@ -171,7 +171,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\BronhouderHalCollection**](../Model/BronhouderHalCollection.md)
+[**\BAGClient\BAG\BronhouderHalCollection**](../Model/BronhouderHalCollection.md)
 
 ### Authorization
 

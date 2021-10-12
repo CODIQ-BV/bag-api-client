@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**standplaatsLvcIdentificatie**](StandplaatsApi.md#standplaatslvcidentificatie) | **GET** /standplaatsen/{identificatie}/lvc | bevragen levenscyclus van een standplaats met de identificatie van een standplaats.
 
 # **standplaatsGeometrie**
-> \BAGClient\BAGClient\StandplaatsIOHalCollection standplaatsGeometrie($body, $content_crs, $accept_crs, $geldig_op, $beschikbaar_op, $huidig, $expand)
+> \BAGClient\BAG\StandplaatsIOHalCollection standplaatsGeometrie($body, $content_crs, $accept_crs, $geldig_op, $beschikbaar_op, $huidig, $expand)
 
 bevragen van een standplaats met een geometrische locatie.
 
@@ -31,7 +31,7 @@ $apiInstance = new BAGClient\BAG\StandplaatsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \BAGClient\BAGClient\Point(); // \BAGClient\BAGClient\Point | Geometrisch punt waarop de standplaatsen bepaald moeten worden.
+$body = new \BAGClient\BAG\Point(); // \BAGClient\BAG\Point | Geometrisch punt waarop de standplaatsen bepaald moeten worden.
 $content_crs = "content_crs_example"; // string | CRS van de meegegeven geometrie.
 $accept_crs = "accept_crs_example"; // string | Gewenste CRS van de co�rdinaten in de response.
 $geldig_op = new \DateTime("2013-10-20"); // \DateTime | Filtert op objecten die geldig zijn op de opgegeven datum `JJJJ-MM-DD` Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen.
@@ -52,7 +52,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\BAGClient\BAGClient\Point**](../Model/Point.md)| Geometrisch punt waarop de standplaatsen bepaald moeten worden. |
+ **body** | [**\BAGClient\BAG\Point**](../Model/Point.md)| Geometrisch punt waarop de standplaatsen bepaald moeten worden. |
  **content_crs** | **string**| CRS van de meegegeven geometrie. | [optional]
  **accept_crs** | **string**| Gewenste CRS van de co�rdinaten in de response. | [optional]
  **geldig_op** | **\DateTime**| Filtert op objecten die geldig zijn op de opgegeven datum &#x60;JJJJ-MM-DD&#x60; Deze parameters komen uit de API strategie, het hoofdstuk tijdreizen. | [optional]
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\StandplaatsIOHalCollection**](../Model/StandplaatsIOHalCollection.md)
+[**\BAGClient\BAG\StandplaatsIOHalCollection**](../Model/StandplaatsIOHalCollection.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **standplaatsIdentificatie**
-> \BAGClient\BAGClient\StandplaatsIOHal standplaatsIdentificatie($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
+> \BAGClient\BAG\StandplaatsIOHal standplaatsIdentificatie($identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs)
 
 bevragen van een standplaats met de identificatie van een standplaats.
 
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\StandplaatsIOHal**](../Model/StandplaatsIOHal.md)
+[**\BAGClient\BAG\StandplaatsIOHal**](../Model/StandplaatsIOHal.md)
 
 ### Authorization
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **standplaatsIdentificatieVoorkomen**
-> \BAGClient\BAGClient\StandplaatsIOHal standplaatsIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $accept_crs)
+> \BAGClient\BAG\StandplaatsIOHal standplaatsIdentificatieVoorkomen($identificatie, $versie, $timestamp_registratie_lv, $accept_crs)
 
 bevragen van een voorkomen van een standplaats met de identificatie van een standplaats en de identificatie van een voorkomen, bestaande uit een versie en een timestamp van het tijdstip van registratie in de LV BAG.
 
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\StandplaatsIOHal**](../Model/StandplaatsIOHal.md)
+[**\BAGClient\BAG\StandplaatsIOHal**](../Model/StandplaatsIOHal.md)
 
 ### Authorization
 
@@ -198,7 +198,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **standplaatsLvcIdentificatie**
-> \BAGClient\BAGClient\StandplaatsIOLvcHalCollection standplaatsLvcIdentificatie($identificatie, $gehele_lvc, $accept_crs)
+> \BAGClient\BAG\StandplaatsIOLvcHalCollection standplaatsLvcIdentificatie($identificatie, $gehele_lvc, $accept_crs)
 
 bevragen levenscyclus van een standplaats met de identificatie van een standplaats.
 
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\StandplaatsIOLvcHalCollection**](../Model/StandplaatsIOLvcHalCollection.md)
+[**\BAGClient\BAG\StandplaatsIOLvcHalCollection**](../Model/StandplaatsIOLvcHalCollection.md)
 
 ### Authorization
 

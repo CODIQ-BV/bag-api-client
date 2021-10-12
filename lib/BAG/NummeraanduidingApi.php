@@ -98,7 +98,7 @@ class NummeraanduidingApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\NummeraanduidingIOHal
+     * @return \BAGClient\BAG\NummeraanduidingIOHal
      */
     public function nummeraanduidingIdentificatie($nummeraanduiding_identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null)
     {
@@ -118,11 +118,11 @@ class NummeraanduidingApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\NummeraanduidingIOHal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\NummeraanduidingIOHal, HTTP status code, HTTP response headers (array of strings)
      */
     public function nummeraanduidingIdentificatieWithHttpInfo($nummeraanduiding_identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null)
     {
-        $returnType = '\BAGClient\BAGClient\NummeraanduidingIOHal';
+        $returnType = '\BAGClient\BAG\NummeraanduidingIOHal';
         $request = $this->nummeraanduidingIdentificatieRequest($nummeraanduiding_identificatie, $geldig_op, $beschikbaar_op, $expand);
 
         try {
@@ -174,7 +174,7 @@ class NummeraanduidingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\NummeraanduidingIOHal',
+                        '\BAGClient\BAG\NummeraanduidingIOHal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -182,7 +182,7 @@ class NummeraanduidingApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -190,7 +190,7 @@ class NummeraanduidingApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -198,7 +198,7 @@ class NummeraanduidingApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class NummeraanduidingApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class NummeraanduidingApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -222,7 +222,7 @@ class NummeraanduidingApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -230,7 +230,7 @@ class NummeraanduidingApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -238,7 +238,7 @@ class NummeraanduidingApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -246,7 +246,7 @@ class NummeraanduidingApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -294,7 +294,7 @@ class NummeraanduidingApi
      */
     public function nummeraanduidingIdentificatieAsyncWithHttpInfo($nummeraanduiding_identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null)
     {
-        $returnType = '\BAGClient\BAGClient\NummeraanduidingIOHal';
+        $returnType = '\BAGClient\BAG\NummeraanduidingIOHal';
         $request = $this->nummeraanduidingIdentificatieRequest($nummeraanduiding_identificatie, $geldig_op, $beschikbaar_op, $expand);
 
         return $this->client
@@ -463,7 +463,7 @@ class NummeraanduidingApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\NummeraanduidingIOHal
+     * @return \BAGClient\BAG\NummeraanduidingIOHal
      */
     public function nummeraanduidingIdentificatieVoorkomen($nummeraanduiding_identificatie, $versie, $timestamp_registratie_lv)
     {
@@ -482,11 +482,11 @@ class NummeraanduidingApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\NummeraanduidingIOHal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\NummeraanduidingIOHal, HTTP status code, HTTP response headers (array of strings)
      */
     public function nummeraanduidingIdentificatieVoorkomenWithHttpInfo($nummeraanduiding_identificatie, $versie, $timestamp_registratie_lv)
     {
-        $returnType = '\BAGClient\BAGClient\NummeraanduidingIOHal';
+        $returnType = '\BAGClient\BAG\NummeraanduidingIOHal';
         $request = $this->nummeraanduidingIdentificatieVoorkomenRequest($nummeraanduiding_identificatie, $versie, $timestamp_registratie_lv);
 
         try {
@@ -538,7 +538,7 @@ class NummeraanduidingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\NummeraanduidingIOHal',
+                        '\BAGClient\BAG\NummeraanduidingIOHal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -546,7 +546,7 @@ class NummeraanduidingApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -554,7 +554,7 @@ class NummeraanduidingApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -562,7 +562,7 @@ class NummeraanduidingApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -570,7 +570,7 @@ class NummeraanduidingApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -578,7 +578,7 @@ class NummeraanduidingApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -586,7 +586,7 @@ class NummeraanduidingApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -594,7 +594,7 @@ class NummeraanduidingApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -602,7 +602,7 @@ class NummeraanduidingApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -610,7 +610,7 @@ class NummeraanduidingApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -656,7 +656,7 @@ class NummeraanduidingApi
      */
     public function nummeraanduidingIdentificatieVoorkomenAsyncWithHttpInfo($nummeraanduiding_identificatie, $versie, $timestamp_registratie_lv)
     {
-        $returnType = '\BAGClient\BAGClient\NummeraanduidingIOHal';
+        $returnType = '\BAGClient\BAG\NummeraanduidingIOHal';
         $request = $this->nummeraanduidingIdentificatieVoorkomenRequest($nummeraanduiding_identificatie, $versie, $timestamp_registratie_lv);
 
         return $this->client
@@ -839,7 +839,7 @@ class NummeraanduidingApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\NummeraanduidingIOLvcHalCollection
+     * @return \BAGClient\BAG\NummeraanduidingIOLvcHalCollection
      */
     public function nummeraanduidingLvcIdentificatie($nummeraanduiding_identificatie, $gehele_lvc = 'false')
     {
@@ -857,11 +857,11 @@ class NummeraanduidingApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\NummeraanduidingIOLvcHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\NummeraanduidingIOLvcHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function nummeraanduidingLvcIdentificatieWithHttpInfo($nummeraanduiding_identificatie, $gehele_lvc = 'false')
     {
-        $returnType = '\BAGClient\BAGClient\NummeraanduidingIOLvcHalCollection';
+        $returnType = '\BAGClient\BAG\NummeraanduidingIOLvcHalCollection';
         $request = $this->nummeraanduidingLvcIdentificatieRequest($nummeraanduiding_identificatie, $gehele_lvc);
 
         try {
@@ -913,7 +913,7 @@ class NummeraanduidingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\NummeraanduidingIOLvcHalCollection',
+                        '\BAGClient\BAG\NummeraanduidingIOLvcHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -921,7 +921,7 @@ class NummeraanduidingApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -929,7 +929,7 @@ class NummeraanduidingApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -937,7 +937,7 @@ class NummeraanduidingApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -945,7 +945,7 @@ class NummeraanduidingApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -953,7 +953,7 @@ class NummeraanduidingApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -961,7 +961,7 @@ class NummeraanduidingApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -969,7 +969,7 @@ class NummeraanduidingApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -977,7 +977,7 @@ class NummeraanduidingApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -985,7 +985,7 @@ class NummeraanduidingApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1029,7 +1029,7 @@ class NummeraanduidingApi
      */
     public function nummeraanduidingLvcIdentificatieAsyncWithHttpInfo($nummeraanduiding_identificatie, $gehele_lvc = 'false')
     {
-        $returnType = '\BAGClient\BAGClient\NummeraanduidingIOLvcHalCollection';
+        $returnType = '\BAGClient\BAG\NummeraanduidingIOLvcHalCollection';
         $request = $this->nummeraanduidingLvcIdentificatieRequest($nummeraanduiding_identificatie, $gehele_lvc);
 
         return $this->client
@@ -1199,7 +1199,7 @@ class NummeraanduidingApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\NummeraanduidingIOHalCollection
+     * @return \BAGClient\BAG\NummeraanduidingIOHalCollection
      */
     public function zoekNummeraanduiding($postcode = null, $huisnummer = null, $huisnummertoevoeging = null, $huisletter = null, $exacte_match = 'false', $woonplaats_naam = null, $openbare_ruimte_naam = null, $openbare_ruimte_identificatie = null, $huidig = 'false', $geldig_op = null, $beschikbaar_op = null, $page = '1', $page_size = '20', $expand = null)
     {
@@ -1229,11 +1229,11 @@ class NummeraanduidingApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\NummeraanduidingIOHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\NummeraanduidingIOHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function zoekNummeraanduidingWithHttpInfo($postcode = null, $huisnummer = null, $huisnummertoevoeging = null, $huisletter = null, $exacte_match = 'false', $woonplaats_naam = null, $openbare_ruimte_naam = null, $openbare_ruimte_identificatie = null, $huidig = 'false', $geldig_op = null, $beschikbaar_op = null, $page = '1', $page_size = '20', $expand = null)
     {
-        $returnType = '\BAGClient\BAGClient\NummeraanduidingIOHalCollection';
+        $returnType = '\BAGClient\BAG\NummeraanduidingIOHalCollection';
         $request = $this->zoekNummeraanduidingRequest($postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $woonplaats_naam, $openbare_ruimte_naam, $openbare_ruimte_identificatie, $huidig, $geldig_op, $beschikbaar_op, $page, $page_size, $expand);
 
         try {
@@ -1285,7 +1285,7 @@ class NummeraanduidingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\NummeraanduidingIOHalCollection',
+                        '\BAGClient\BAG\NummeraanduidingIOHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1293,7 +1293,7 @@ class NummeraanduidingApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1301,7 +1301,7 @@ class NummeraanduidingApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1309,7 +1309,7 @@ class NummeraanduidingApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1317,7 +1317,7 @@ class NummeraanduidingApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1325,7 +1325,7 @@ class NummeraanduidingApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1333,7 +1333,7 @@ class NummeraanduidingApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1341,7 +1341,7 @@ class NummeraanduidingApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1349,7 +1349,7 @@ class NummeraanduidingApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1417,7 +1417,7 @@ class NummeraanduidingApi
      */
     public function zoekNummeraanduidingAsyncWithHttpInfo($postcode = null, $huisnummer = null, $huisnummertoevoeging = null, $huisletter = null, $exacte_match = 'false', $woonplaats_naam = null, $openbare_ruimte_naam = null, $openbare_ruimte_identificatie = null, $huidig = 'false', $geldig_op = null, $beschikbaar_op = null, $page = '1', $page_size = '20', $expand = null)
     {
-        $returnType = '\BAGClient\BAGClient\NummeraanduidingIOHalCollection';
+        $returnType = '\BAGClient\BAG\NummeraanduidingIOHalCollection';
         $request = $this->zoekNummeraanduidingRequest($postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $woonplaats_naam, $openbare_ruimte_naam, $openbare_ruimte_identificatie, $huidig, $geldig_op, $beschikbaar_op, $page, $page_size, $expand);
 
         return $this->client

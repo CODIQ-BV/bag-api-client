@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**zoekAdresUitgebreid**](AdresUitgebreidApi.md#zoekadresuitgebreid) | **GET** /adressenuitgebreid | Bevragen van de uitgebreide informatie van één of meer huidige adressen op basis van verschillende combinaties van parameters.
 
 # **bevraagAdresUitgebreidMetNumId**
-> \BAGClient\BAGClient\AdresUitgebreidHal bevraagAdresUitgebreidMetNumId($nummeraanduiding_identificatie, $accept_crs)
+> \BAGClient\BAG\AdresUitgebreidHal bevraagAdresUitgebreidMetNumId($nummeraanduiding_identificatie, $accept_crs)
 
 Bevragen van de uitgebreide informatie van één huidig adres met de identificatie van een nummeraanduiding.
 
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\AdresUitgebreidHal**](../Model/AdresUitgebreidHal.md)
+[**\BAGClient\BAG\AdresUitgebreidHal**](../Model/AdresUitgebreidHal.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **zoekAdresUitgebreid**
-> \BAGClient\BAGClient\AdresUitgebreidHalCollection zoekAdresUitgebreid($postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $adresseerbaar_object_identificatie, $woonplaats_naam, $openbare_ruimte_naam, $accept_crs)
+> \BAGClient\BAG\AdresUitgebreidHalCollection zoekAdresUitgebreid($postcode, $huisnummer, $huisnummertoevoeging, $huisletter, $exacte_match, $adresseerbaar_object_identificatie, $woonplaats_naam, $openbare_ruimte_naam, $accept_crs)
 
 Bevragen van de uitgebreide informatie van één of meer huidige adressen op basis van verschillende combinaties van parameters.
 
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BAGClient\BAGClient\AdresUitgebreidHalCollection**](../Model/AdresUitgebreidHalCollection.md)
+[**\BAGClient\BAG\AdresUitgebreidHalCollection**](../Model/AdresUitgebreidHalCollection.md)
 
 ### Authorization
 

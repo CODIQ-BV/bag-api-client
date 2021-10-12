@@ -99,7 +99,7 @@ class AdresseerbaarObjectApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\AdresseerbaarObjectIOHal
+     * @return \BAGClient\BAG\AdresseerbaarObjectIOHal
      */
     public function bevragenAdresseerbaarObject($adresseerbaar_object_identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
@@ -120,11 +120,11 @@ class AdresseerbaarObjectApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\AdresseerbaarObjectIOHal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\AdresseerbaarObjectIOHal, HTTP status code, HTTP response headers (array of strings)
      */
     public function bevragenAdresseerbaarObjectWithHttpInfo($adresseerbaar_object_identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAGClient\BAGClient\AdresseerbaarObjectIOHal';
+        $returnType = '\BAGClient\BAG\AdresseerbaarObjectIOHal';
         $request = $this->bevragenAdresseerbaarObjectRequest($adresseerbaar_object_identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs);
 
         try {
@@ -176,7 +176,7 @@ class AdresseerbaarObjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\AdresseerbaarObjectIOHal',
+                        '\BAGClient\BAG\AdresseerbaarObjectIOHal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -184,7 +184,7 @@ class AdresseerbaarObjectApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -192,7 +192,7 @@ class AdresseerbaarObjectApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -200,7 +200,7 @@ class AdresseerbaarObjectApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -208,7 +208,7 @@ class AdresseerbaarObjectApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -216,7 +216,7 @@ class AdresseerbaarObjectApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -224,7 +224,7 @@ class AdresseerbaarObjectApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -232,7 +232,7 @@ class AdresseerbaarObjectApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -240,7 +240,7 @@ class AdresseerbaarObjectApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -248,7 +248,7 @@ class AdresseerbaarObjectApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -298,7 +298,7 @@ class AdresseerbaarObjectApi
      */
     public function bevragenAdresseerbaarObjectAsyncWithHttpInfo($adresseerbaar_object_identificatie, $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAGClient\BAGClient\AdresseerbaarObjectIOHal';
+        $returnType = '\BAGClient\BAG\AdresseerbaarObjectIOHal';
         $request = $this->bevragenAdresseerbaarObjectRequest($adresseerbaar_object_identificatie, $geldig_op, $beschikbaar_op, $expand, $accept_crs);
 
         return $this->client
@@ -472,7 +472,7 @@ class AdresseerbaarObjectApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\AdresseerbaarObjectLvcIOHalCollection
+     * @return \BAGClient\BAG\AdresseerbaarObjectLvcIOHalCollection
      */
     public function bevragenAdresseerbaarObjectLvc($adresseerbaar_object_identificatie, $gehele_lvc = 'false', $accept_crs = null)
     {
@@ -491,11 +491,11 @@ class AdresseerbaarObjectApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\AdresseerbaarObjectLvcIOHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\AdresseerbaarObjectLvcIOHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function bevragenAdresseerbaarObjectLvcWithHttpInfo($adresseerbaar_object_identificatie, $gehele_lvc = 'false', $accept_crs = null)
     {
-        $returnType = '\BAGClient\BAGClient\AdresseerbaarObjectLvcIOHalCollection';
+        $returnType = '\BAGClient\BAG\AdresseerbaarObjectLvcIOHalCollection';
         $request = $this->bevragenAdresseerbaarObjectLvcRequest($adresseerbaar_object_identificatie, $gehele_lvc, $accept_crs);
 
         try {
@@ -547,7 +547,7 @@ class AdresseerbaarObjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\AdresseerbaarObjectLvcIOHalCollection',
+                        '\BAGClient\BAG\AdresseerbaarObjectLvcIOHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -555,7 +555,7 @@ class AdresseerbaarObjectApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -563,7 +563,7 @@ class AdresseerbaarObjectApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -571,7 +571,7 @@ class AdresseerbaarObjectApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -579,7 +579,7 @@ class AdresseerbaarObjectApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -587,7 +587,7 @@ class AdresseerbaarObjectApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -595,7 +595,7 @@ class AdresseerbaarObjectApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -603,7 +603,7 @@ class AdresseerbaarObjectApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -611,7 +611,7 @@ class AdresseerbaarObjectApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -619,7 +619,7 @@ class AdresseerbaarObjectApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -665,7 +665,7 @@ class AdresseerbaarObjectApi
      */
     public function bevragenAdresseerbaarObjectLvcAsyncWithHttpInfo($adresseerbaar_object_identificatie, $gehele_lvc = 'false', $accept_crs = null)
     {
-        $returnType = '\BAGClient\BAGClient\AdresseerbaarObjectLvcIOHalCollection';
+        $returnType = '\BAGClient\BAG\AdresseerbaarObjectLvcIOHalCollection';
         $request = $this->bevragenAdresseerbaarObjectLvcRequest($adresseerbaar_object_identificatie, $gehele_lvc, $accept_crs);
 
         return $this->client
@@ -832,7 +832,7 @@ class AdresseerbaarObjectApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \BAGClient\BAGClient\AdresseerbareObjectenIOHalCollection
+     * @return \BAGClient\BAG\AdresseerbareObjectenIOHalCollection
      */
     public function zoekAdresseerbaarObject($nummeraanduiding_identificatie = null, $huidig = 'false', $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
@@ -854,11 +854,11 @@ class AdresseerbaarObjectApi
      *
      * @throws \BAGClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \BAGClient\BAGClient\AdresseerbareObjectenIOHalCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BAGClient\BAG\AdresseerbareObjectenIOHalCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function zoekAdresseerbaarObjectWithHttpInfo($nummeraanduiding_identificatie = null, $huidig = 'false', $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAGClient\BAGClient\AdresseerbareObjectenIOHalCollection';
+        $returnType = '\BAGClient\BAG\AdresseerbareObjectenIOHalCollection';
         $request = $this->zoekAdresseerbaarObjectRequest($nummeraanduiding_identificatie, $huidig, $geldig_op, $beschikbaar_op, $expand, $accept_crs);
 
         try {
@@ -910,7 +910,7 @@ class AdresseerbaarObjectApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\AdresseerbareObjectenIOHalCollection',
+                        '\BAGClient\BAG\AdresseerbareObjectenIOHalCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -918,7 +918,7 @@ class AdresseerbaarObjectApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -926,7 +926,7 @@ class AdresseerbaarObjectApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -934,7 +934,7 @@ class AdresseerbaarObjectApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -942,7 +942,7 @@ class AdresseerbaarObjectApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -950,7 +950,7 @@ class AdresseerbaarObjectApi
                 case 412:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -958,7 +958,7 @@ class AdresseerbaarObjectApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -966,7 +966,7 @@ class AdresseerbaarObjectApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -974,7 +974,7 @@ class AdresseerbaarObjectApi
                 case 0:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\BAGClient\BAGClient\Error',
+                        '\BAGClient\BAG\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1026,7 +1026,7 @@ class AdresseerbaarObjectApi
      */
     public function zoekAdresseerbaarObjectAsyncWithHttpInfo($nummeraanduiding_identificatie = null, $huidig = 'false', $geldig_op = null, $beschikbaar_op = null, $expand = null, $accept_crs = null)
     {
-        $returnType = '\BAGClient\BAGClient\AdresseerbareObjectenIOHalCollection';
+        $returnType = '\BAGClient\BAG\AdresseerbareObjectenIOHalCollection';
         $request = $this->zoekAdresseerbaarObjectRequest($nummeraanduiding_identificatie, $huidig, $geldig_op, $beschikbaar_op, $expand, $accept_crs);
 
         return $this->client
